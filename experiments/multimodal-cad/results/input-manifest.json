@@ -1,0 +1,70 @@
+{
+  "files": [
+    {
+      "file": "back-cad.png",
+      "sha256": "2800cae22b9e1f3eabb06a8e299007156ac37beade3065db9df0159088b55b67",
+      "bytes": 53169
+    },
+    {
+      "file": "back-ids.png",
+      "sha256": "b8506701dc35120ef72ec16cc257c5523f4e2b1b474ce069c9b38abb3e729154",
+      "bytes": 30631
+    },
+    {
+      "file": "back-labelled.png",
+      "sha256": "22725751c9527c0b52f5fe1a3ffe3bcf4b91cdb8970813b497abb4b356f9e63f",
+      "bytes": 59323
+    },
+    {
+      "file": "candidates.json",
+      "sha256": "2f3f922942c4707fd3a8fefb164f065c2c33c96760278ee2b97ddbc23407bc94",
+      "bytes": 42568
+    },
+    {
+      "file": "documents.json",
+      "sha256": "cb0ce91e069a759359f8f5a75d0c881730dcf5d934659c4c076675f2c8a9dc76",
+      "bytes": 13839
+    },
+    {
+      "file": "front-cad.png",
+      "sha256": "c262146be415b8ccc9e7a58f8a6e9b27b24ea38a3f79f74e5f7c7665826d05bb",
+      "bytes": 58189
+    },
+    {
+      "file": "front-ids.png",
+      "sha256": "49da3302bdcb0b3234819739bd24b561a54f363ed3268d01958e5a0739314e55",
+      "bytes": 33000
+    },
+    {
+      "file": "front-labelled.png",
+      "sha256": "a450a18bd9c0e4e1c084c24c9d39e13a57480464011c6b764c0977f86035e0ba",
+      "bytes": 70613
+    },
+    {
+      "file": "geometry.glb",
+      "sha256": "841508deb9de671cedda932bda38f6c0188f5902f09d362674601f8b9a66e90a",
+      "bytes": 39253012
+    },
+    {
+      "file": "reference.png",
+      "sha256": "328bf630ffd2f8c10308aa8895cedf6b23fcd8ff45eff651f21175cde50a7ba5",
+      "bytes": 301643
+    },
+    {
+      "file": "render.json",
+      "sha256": "dea7b8681b87dbef480c7add8f3a5c9cbee7bb31b2fe133d98e89934072353d5",
+      "bytes": 6847
+    },
+    {
+      "file": "target-a.jpg",
+      "sha256": "29c5e99fe2d9cc29b137301f5540bcbb23a5954ceef7c8e100988d4e0d4da688",
+      "bytes": 224596
+    },
+    {
+      "file": "target-b.jpg",
+      "sha256": "f55f15b1453215bbed6f9e3691c24b417aea42b4514b4e0815e8609ed5577a3b",
+      "bytes": 2026624
+    }
+  ],
+  "inferenceInputDoesNotContainHistoricalLabels": true
+}

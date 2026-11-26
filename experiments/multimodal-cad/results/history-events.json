@@ -1,0 +1,409 @@
+{
+  "schema": "tool-history-audit/1",
+  "scopeUTC": [
+    [
+      "2026-11-23T22:55",
+      "2026-11-23T23:37"
+    ],
+    [
+      "2026-11-26T09:58",
+      "2026-11-26T10:12"
+    ]
+  ],
+  "privateLogNotRedistributed": true,
+  "reasoningMessagesReadOrExported": false,
+  "events": [
+    {
+      "utc": "2026-11-23T22:55:43.600Z",
+      "sourceLine": 13113,
+      "tool": "exec",
+      "callId": "call_d004544bb6114d2fb24f6a0d54efe7d5",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "d3ef56ca3f059b06e34f741cdbaf90d544ff738cc302161018be4b074ad58b98",
+      "observableEvents": [
+        "image_view_tool"
+      ]
+    },
+    {
+      "utc": "2026-11-23T22:57:55.251Z",
+      "sourceLine": 13171,
+      "tool": "exec",
+      "callId": "call_d65c0f9b16094a0688d1ad2d7a2cd192",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "906a62ce7d5b85e9ee46f20e627221f4af294d5d93bc3911fd0debe6b64e6443",
+      "observableEvents": [
+        "STEP_numeric_inventory"
+      ]
+    },
+    {
+      "utc": "2026-11-23T22:58:42.659Z",
+      "sourceLine": 13186,
+      "tool": "exec",
+      "callId": "call_734982b936d14dc4a3fcccb38272e405",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "4b7da90074f5c74b6e0d0ede1eed8ed909eec0e1def19320f16ef414c367fbb6",
+      "observableEvents": [
+        "STEP_numeric_inventory"
+      ]
+    },
+    {
+      "utc": "2026-11-23T22:59:32.125Z",
+      "sourceLine": 13201,
+      "tool": "exec",
+      "callId": "call_c04247072678414ea589d1af91d71413",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "e6de8dacd7cb0839b825add3a27ad30cbffaf132f4b90e49e8a04fc6fa8680d0",
+      "observableEvents": [
+        "STEP_numeric_inventory"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:00:20.659Z",
+      "sourceLine": 13208,
+      "tool": "exec",
+      "callId": "call_a426940b41254e84938f469548804e9d",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "07f73b31cccc60e70a07a3a41a98300b382ef5c259e26e2ad2370e76871b87e9",
+      "observableEvents": [
+        "STEP_numeric_inventory",
+        "historical_reference_binding"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:03:39.203Z",
+      "sourceLine": 13242,
+      "tool": "exec",
+      "callId": "call_38a25ff891fc4add8cb5a3e457fbc992",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "3464328e66f6d63fe92b46b90600e9153b9c8e5175a49b01f43f88afacaef0d7",
+      "observableEvents": [
+        "historical_reference_binding"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:05:17.262Z",
+      "sourceLine": 13270,
+      "tool": "exec",
+      "callId": "call_c2b38e918b3f4e1bbfdfac11ac858122",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "50fefda43632ad61cee78daa110f5731431f0b1a64ab238e5bcf76e45b19a196",
+      "observableEvents": [
+        "image_view_tool"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:06:12.849Z",
+      "sourceLine": 13283,
+      "tool": "exec",
+      "callId": "call_307089518daf4f978bb7ef72f4bf220f",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "17ae6f666022740694515be4af30e2c17c0e1276bba452117074ce2c7d97df64",
+      "observableEvents": [
+        "STEP_numeric_inventory",
+        "historical_reference_binding"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:09:26.263Z",
+      "sourceLine": 13322,
+      "tool": "exec",
+      "callId": "call_c87840a7594b44389bc87ae9dc5288f5",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "e43bec3de54b565b7b0fb87cf40c0a7f33570ade852c1d691412b32436853e1f",
+      "observableEvents": [
+        "image_view_tool"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:35:00.123Z",
+      "sourceLine": 13425,
+      "tool": "exec",
+      "callId": "call_ac628245b555453ba203d7d46e5f4993",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "061cf064e254cd51b7535cded537ec80a3277f969f3ba97e4914897b1c4eb70f",
+      "observableEvents": [
+        "manufacturer_product_page",
+        "historical_reference_binding"
+      ]
+    },
+    {
+      "utc": "2026-11-23T23:36:44.641Z",
+      "sourceLine": 13449,
+      "tool": "exec",
+      "callId": "call_c853e3bc1c0c4252971be3a95a61dff1",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "f3f0ea59efbbe73e3da173ffbc363b6b4664ed517360e01150754f942982f88e",
+      "observableEvents": [
+        "CAD_mesh_provenance",
+        "manufacturer_product_page",
+        "component_registry"
+      ]
+    },
+    {
+      "utc": "2026-11-26T09:59:05.347Z",
+      "sourceLine": 25379,
+      "tool": "exec",
+      "callId": "call_155d843ef650488e9d3e91cbe65aecc0",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "7572a55611e2d63c245d5864bdc7fee68aa84ccd23227e7519de6f241d2bb995",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T09:59:50.262Z",
+      "sourceLine": 25407,
+      "tool": "js",
+      "callId": "call_1ada9fe5c9ba4fe7bd7bd1483e524321",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "a98c17d930a20bf98808a5a012509483a7e21ab4d50d916dc85f196666ad08b7",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:00:32.907Z",
+      "sourceLine": 25421,
+      "tool": "js",
+      "callId": "call_ab30697c84e64a2b97e5c0d658cd9823",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "3c42ca718654fd7bfb34f824e6a25a77ed2497972d25db22ffc4ae39349b332e",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:00:41.175Z",
+      "sourceLine": 25426,
+      "tool": "js",
+      "callId": "call_19f75353a43d4509a0eba4512f1ead79",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "fe78d81f0a2c95dfcbfde5f0836645eec407036997ea939ab5da6e05082bd428",
+      "observableEvents": [
+        "browser_screenshot",
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:00:58.155Z",
+      "sourceLine": 25433,
+      "tool": "js",
+      "callId": "call_c46eb76def674b9b9bfc56c176693241",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "4232c796234c0e113e23c7687651e09ad6c3475adf9a5a937e610eff94e1b6e4",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:01:43.526Z",
+      "sourceLine": 25454,
+      "tool": "exec",
+      "callId": "call_2ed6b9b1c1d4499783a9944858aaaaac",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "68d98c5c86dc708220329266c8e92a1ac5e2115b8a05c2628783e13ba219ac23",
+      "observableEvents": [
+        "CAD_mesh_provenance",
+        "manufacturer_product_page"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:01:54.987Z",
+      "sourceLine": 25461,
+      "tool": "exec",
+      "callId": "call_9b576cbf329f4f53a07c0f2cba092ba3",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "9e61a160d6691d507fa2e7b31bf1cac22373c8a05f1f8161649879203a6c1fec",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:02:02.454Z",
+      "sourceLine": 25468,
+      "tool": "exec",
+      "callId": "call_27ddb71018764f8c8f58e3abad3436a8",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "5a4f755aae0689e1167ae74b59fbfd77f0a1a51f58ec67353f0b003671262451",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:02:08.186Z",
+      "sourceLine": 25475,
+      "tool": "exec",
+      "callId": "call_be9437d2808d4daba30b1dba5480739c",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "b2755e9814190e8180f5709b315fdf8f95aff80fb76c732c4e3863cb634620be",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:05:35.500Z",
+      "sourceLine": 25539,
+      "tool": "exec",
+      "callId": "call_cbae12659785479089cf0b0d49390d87",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "94615e800fd9b68e7089772ec6d2f3dc116cd84af603c92fd45081d98b110031",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:05:47.615Z",
+      "sourceLine": 25546,
+      "tool": "exec",
+      "callId": "call_a2d3ae5239464522bdb109f62988f998",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "357fb0e2988b6146c1c69bcaa37ffe65a46e377430797abbce8c3c0619039009",
+      "observableEvents": [
+        "manufacturer_product_page"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:06:26.177Z",
+      "sourceLine": 25561,
+      "tool": "exec",
+      "callId": "call_0b1a075c484b4852b9da0c699ffcc01e",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "ca4ff599fa3b404f8b1143e572de776370c28d8534a31c912cec21d1d8b58868",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:06:56.490Z",
+      "sourceLine": 25570,
+      "tool": "exec",
+      "callId": "call_ecd6bfad9d104b50b42b910aa5a6d239",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "f58d86c53d74f7586d4f5aca2362d1d051aef25594f07e7313fe01dad5437165",
+      "observableEvents": [
+        "official_reference_image_access",
+        "image_view_tool"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:07:04.224Z",
+      "sourceLine": 25578,
+      "tool": "exec",
+      "callId": "call_a0457b30f9f14e6b935403c039e9b708",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "438cd48a3d949306c3d4929790dbb7c04a06fffaff83a6178b2555cf426c8cf7",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:07:55.962Z",
+      "sourceLine": 25585,
+      "tool": "exec",
+      "callId": "call_6ec11296026544c09a7206330bff70d8",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "4a614251dd7a92bf0eabd7490e33e0e9e5684fdec4133b76d63a34a8e97f7b82",
+      "observableEvents": [
+        "CAD_mesh_provenance",
+        "writes_explicit_catalogue_decisions",
+        "manufacturer_product_page"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:09:32.443Z",
+      "sourceLine": 25634,
+      "tool": "exec",
+      "callId": "call_6cdfdc926c0647b99a0e2e786ce20113",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "679921eba5ef803db85ac6c38fad5714028ac16bb9af4e5470ab24d200b33b76",
+      "observableEvents": [
+        "CAD_mesh_provenance"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:10:50.402Z",
+      "sourceLine": 25684,
+      "tool": "js",
+      "callId": "call_10603ce791e44856a044dbb757f0aa0f",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "3400754555c01c1b1e2b52d41e131036ef68c71f33d89525bec1056292a04e39",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:10:53.950Z",
+      "sourceLine": 25691,
+      "tool": "js",
+      "callId": "call_74bde965f36e45d387f4697eabad6f82",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "d6cdacff392ff3e51b1b7a945697075305569645ad62b8a8c27a47c65938a81b",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:11:02.256Z",
+      "sourceLine": 25698,
+      "tool": "js",
+      "callId": "call_38f949c281b746bbb36997936f1e81c9",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "7a398c783e8db96a8b0ac8fe22dac98f1eda31c1070fdcc967c8e7ad12784a76",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:11:16.173Z",
+      "sourceLine": 25712,
+      "tool": "js",
+      "callId": "call_f19760fa408244e9b60a972c737293c5",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "76fc110c23a8b1c53a131e8c26295a909507cc7416c00bf98703643ab9beb290",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:11:28.283Z",
+      "sourceLine": 25724,
+      "tool": "js",
+      "callId": "call_66758de03670472188e5e74d2941c1fb",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "2cb03e747fd11c2db96c02f2ae526a37047f68da394685c18ad5932df051109f",
+      "observableEvents": [
+        "browser_screenshot"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:11:42.027Z",
+      "sourceLine": 25731,
+      "tool": "js",
+      "callId": "call_3c5be2f01fc343d7bdffaecf5b7bf4e1",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "b860560dc96f68605920d426b5aca232ad83cabd18d5de7b8b4a90950c2dfe28",
+      "observableEvents": [
+        "browser_screenshot",
+        "Ethernet_selection_check"
+      ]
+    },
+    {
+      "utc": "2026-11-26T10:11:48.440Z",
+      "sourceLine": 25736,
+      "tool": "js",
+      "callId": "call_9ce5add1fbe1451d8632e1eccfd21103",
+      "modelFromTurnContext": "gpt-6-astra",
+      "argumentSHA256": "9c4f7dfafe1eb69eaeeea8acc4753bc3cbd7ede059e421d42e4807cb72290c41",
+      "observableEvents": [
+        "browser_screenshot",
+        "RAM_selection_check",
+        "USB_selection_check"
+      ]
+    }
+  ],
+  "limits": [
+    "Tool receipt proves an image was supplied, not which pixel justified each identity.",
+    "No independent human review or Gemini semantic association request found in the inspected decision windows.",
+    "No reconstruction of unrecorded reasoning."
+  ]
+}
