@@ -1,0 +1,581 @@
+{
+  "boards": [
+    {
+      "case": "nano",
+      "identity": {
+        "manufacturer": "Arduino",
+        "model": "Nano ESP32",
+        "hardwareRevision": null,
+        "confidence": "catalog_identity",
+        "revisionNote": "SKU ABX00083. Fecha STEP 2023-06-21; revisión electrónica no declarada.",
+        "basis": "registered_name",
+        "probability": null
+      },
+      "recordSHA256": "6a80d68a36d0c84057988fc6187bdfd8fecdbd2ab4876365b7a34f5fbf8cab50",
+      "modelSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "modelAvailable": true,
+      "boundComponents": 52,
+      "generatedLessons": 48,
+      "reviewedOrOther": 4,
+      "coverage": {
+        "boundComponents": 52,
+        "documentedComponents": 52,
+        "educationalCards": 48,
+        "meshNodes": 184,
+        "unassignedMeshNodes": 5,
+        "materialProvisional": 34,
+        "materialUnknown": 150
+      },
+      "timingsMs": {
+        "identity": 0.058100000000024465,
+        "source": 1455.4238,
+        "conversion": 7894.226000000001,
+        "inventory": 8.253899999999703,
+        "documentation": 4.230900000000474,
+        "enrichment_sources": 1152.0378,
+        "appearance": 11738.8378,
+        "components": 8.627300000000105,
+        "store": 116.97950000000128
+      },
+      "totalMs": 22394.7827,
+      "completion": {
+        "policy": "documented-component-completion/1",
+        "route": "independently_registered_bodies",
+        "preserved": 4,
+        "added": 48,
+        "skipped": [
+          {
+            "id": "ecad-m1",
+            "reason": "existing_geometry_association_preserved",
+            "nodeIndices": [
+              19,
+              22,
+              24,
+              26,
+              29,
+              31,
+              33,
+              36,
+              38,
+              40,
+              43,
+              44,
+              45,
+              48,
+              50,
+              52,
+              55,
+              57,
+              59,
+              62,
+              64,
+              66,
+              69,
+              71,
+              73,
+              76,
+              78,
+              80,
+              83,
+              85,
+              87,
+              90,
+              92,
+              94,
+              97,
+              99,
+              101,
+              104,
+              106,
+              108,
+              111,
+              113,
+              115,
+              118,
+              120,
+              122,
+              125,
+              127,
+              129,
+              132,
+              134,
+              136,
+              139,
+              141,
+              142,
+              143,
+              144,
+              145,
+              146,
+              149,
+              152,
+              154,
+              156,
+              159,
+              161,
+              163,
+              166,
+              168,
+              170,
+              173,
+              175,
+              177,
+              180,
+              182,
+              184,
+              187,
+              189,
+              191,
+              194,
+              196,
+              198,
+              201,
+              203,
+              205,
+              208,
+              210,
+              212,
+              215,
+              217,
+              219,
+              222,
+              224,
+              226,
+              229,
+              231,
+              233,
+              236,
+              238,
+              240
+            ]
+          },
+          {
+            "id": "ecad-u3",
+            "reason": "existing_geometry_association_preserved",
+            "nodeIndices": [
+              247,
+              249,
+              250,
+              252,
+              253,
+              255,
+              256,
+              258,
+              259,
+              261,
+              262,
+              264,
+              265,
+              267,
+              268,
+              270,
+              271,
+              273,
+              274
+            ]
+          },
+          {
+            "id": "ecad-u2",
+            "reason": "existing_geometry_association_preserved",
+            "nodeIndices": [
+              323,
+              325,
+              327,
+              329,
+              331,
+              333,
+              335,
+              337,
+              339,
+              341
+            ]
+          },
+          {
+            "id": "ecad-j1",
+            "reason": "existing_geometry_association_preserved",
+            "nodeIndices": [
+              386
+            ]
+          }
+        ],
+        "ms": 8.228499999997439
+      },
+      "classes": {
+        "reviewed_or_pending": 4,
+        "resistor": 22,
+        "capacitor": 16,
+        "crystal": 1,
+        "inductor": 2,
+        "mosfet": 1,
+        "led": 3,
+        "schottky": 1,
+        "switch": 1,
+        "tvs": 1
+      },
+      "registration": {
+        "status": "verified",
+        "fit": 26,
+        "heldout": 26,
+        "coverage": [
+          0.601212102137848,
+          0.6569181042714572
+        ],
+        "maxHeldoutErrorMm": 0.00012369525269839698,
+        "policy": "ecad-named-groups/1"
+      },
+      "surfaces": [
+        {
+          "kind": "silk",
+          "sha256": "add107ff9877172a65367db9386875060e8d10ee2fe73efe3066e59628784852"
+        },
+        {
+          "kind": "contacts",
+          "sha256": "130b04a44250d57ab93c6f049502f1edc836fb0243a6a1e2685506dda3bdc25a"
+        },
+        {
+          "kind": "silk",
+          "sha256": "2d00ecdf602041b1426160d680b5c92da100a02077ac6e0cbe54245ffc3fc87c"
+        },
+        {
+          "kind": "contacts",
+          "sha256": "51865f393a75730b51e9cc7d7e39b03ab6965603aee299c5d00df3a338fb3d54"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/static/7ad906834db029723652f0e885968d73/ABX00083-cad-files.zip",
+          "sha256": "99d89d826d59487b2ba9de6c886f3a4419bc79da25faa5cb3d40bd61979b5c5d",
+          "kind": "cad"
+        },
+        {
+          "url": "https://docs.arduino.cc/static/16ee1bfc3c776cc156782c867675f0d6/image.svg",
+          "sha256": "9983ca688f25bb51a60093478fc907919c9c75dce7c9b2378a53de994175e165",
+          "kind": "image"
+        }
+      ],
+      "limitations": [
+        "El interior del módulo contiene un nombre CAD ESP32-S2; la documentación identifica el módulo NORA-W106 con ESP32-S3. No se usa ese nombre interno para identificar el SoC.",
+        "Los headers usan nombres de biblioteca 1X8; no se identifican sus pines por ese nombre.",
+        "Materiales inferidos por semántica CAD son provisionales; carcasas con materiales mixtos no se repintan completas."
+      ]
+    },
+    {
+      "case": "coral",
+      "identity": {
+        "model": "Dev Board Micro",
+        "manufacturer": "Coral",
+        "hardwareRevision": null,
+        "basis": "name_matches_document_heading",
+        "probability": null
+      },
+      "recordSHA256": "c40e03253f395ead641c98c8d2b593e5b47dc2f8b4b5be365f8ed6d52ccb892d",
+      "modelSHA256": "ae5fb9077a319a8b379a695ed690315314e6e100904baade487369d0e68482ce",
+      "modelAvailable": true,
+      "boundComponents": 229,
+      "generatedLessons": 222,
+      "reviewedOrOther": 7,
+      "coverage": {
+        "boundComponents": 229,
+        "documentedComponents": 229,
+        "meshNodes": 333,
+        "unassignedMeshNodes": 104,
+        "materialProvisional": 0,
+        "materialUnknown": 333,
+        "educationalCards": 222
+      },
+      "timingsMs": {
+        "discovery": 177.06280000000004,
+        "acquisition": 3860.4174999999996,
+        "model": 16091.9038,
+        "appearance": 8877.118999999999,
+        "components": 30.799199999997654,
+        "education": 0.08069999999861466,
+        "store": 93.80880000000252
+      },
+      "totalMs": 29141.004800000002,
+      "completion": {
+        "policy": "documented-component-completion/1",
+        "route": "independently_registered_bodies",
+        "preserved": 0,
+        "added": 229,
+        "skipped": [],
+        "ms": 17.730999999999767
+      },
+      "classes": {
+        "crystal": 1,
+        "usb_controller": 1,
+        "flash": 1,
+        "reviewed_or_pending": 7,
+        "tvs": 1,
+        "resistor": 83,
+        "led": 4,
+        "inductor": 3,
+        "capacitor": 123,
+        "mosfet": 5
+      },
+      "registration": {
+        "status": "verified",
+        "fit": 119,
+        "heldout": 110,
+        "coverage": [
+          0.893343349901419,
+          0.7923800507566346
+        ],
+        "maxHeldoutErrorMm": 0.00035010649487077217,
+        "policy": "ecad-mcad-registration/1"
+      },
+      "surfaces": [
+        {
+          "kind": "silk",
+          "sha256": "0eb07202784c0399c9d4c42463fd6ce124ea556cdc7281cf0ee29fbc5c18ae45"
+        },
+        {
+          "kind": "contacts",
+          "sha256": "9c506364a4ac95e3e8182724aceab2f74110a911b6212e3094c59a2add0b96e6"
+        },
+        {
+          "kind": "silk",
+          "sha256": "850227c547e44206e038d04e0cc7a6bc753eeb8cc3c9d50104057a8ec46c033c"
+        },
+        {
+          "kind": "contacts",
+          "sha256": "ee7bd63c607337116b4b576b22e81eb8afe13aff7311ac09c380a14acdb6bfd1"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://gweb-coral-full.uc.r.appspot.com/static/files/Coral-Dev-Board-Micro-datasheet.pdf",
+          "sha256": "ee655862469c7e2492f5b714634d2b5b95e9daf28c2c6c8f97a32a09a1049705",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/Coral-Dev-Board-Micro-Altium.zip",
+          "sha256": "2ec40f4dbd620fb18596ec61fe515523c6fa3b05217e2bcb8912f0d3b9ccfd1b",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/Coral-Dev-Board-Micro-schematic.pdf",
+          "sha256": "32a2e179f777922a13189bb1e70fb8ee9b18e223248827fb278cb91a11b9b093",
+          "kind": "schematic"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/DevBoardMicroAddOn/B2B.kicad_sch",
+          "sha256": "3ebdae81f7f88421c557cc66acda49f6e9df143144959d9ee2028825492a5f80",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/DevBoardMicroAddOn/DevBoardMicroAddOn.kicad_pcb",
+          "sha256": "94f30ba8f9747ef8c5aa0b295b5b8ede76b7da43f5a36f2ff6fcc878044f33bb",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/DevBoardMicroAddOn/DevBoardMicroAddOn.kicad_sch",
+          "sha256": "e3b963b7ba3ffdeb402d23627aff3ccfbd415eb63240dbc85db567b5bcb02429",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/DevBoardMicroAddOn/meta/icon.png",
+          "sha256": "b835ba5d35206bfaa85fbadf412d1686cd800d978a278b53fe83e2ea5c18deab",
+          "kind": "image"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/DevBoardMicroAddOn/meta/preview.png",
+          "sha256": "b9eae9231ab21e1a6771c3dad16fab82e09d6ac73646e4e3f609014e7ca97d06",
+          "kind": "image"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "kind": "license"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/mechanicals/be47f619f5cb43b1fb19973abe988b733ed16560/dev_board_micro/Dev%20Board%20Micro.step",
+          "sha256": "0e13437ab0fd3c8d32667c3e9e04d0bf80d3f27a95418148402a198373e05e33",
+          "kind": "step"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/google-coral/mechanicals/be47f619f5cb43b1fb19973abe988b733ed16560/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "kind": "license"
+        }
+      ],
+      "limitations": [
+        "discovery: revision_not_determined",
+        "acquisition: license_and_revision_require_per_asset_evidence",
+        "model: incomplete_cad_preview",
+        "appearance: registered_surfaces_partial",
+        "components: registered_components_partial",
+        "education: documented_lessons_partial"
+      ]
+    },
+    {
+      "case": "new-board",
+      "identity": {
+        "model": "Nano RP2040 Connect",
+        "manufacturer": null,
+        "hardwareRevision": null,
+        "basis": "name_matches_document_heading",
+        "probability": null
+      },
+      "recordSHA256": "e47f83f52c3fff278e05f67c2af290e8dd3053c4357acd955dfec3ce0cb372fd",
+      "modelSHA256": null,
+      "modelAvailable": false,
+      "boundComponents": 0,
+      "generatedLessons": 0,
+      "reviewedOrOther": 0,
+      "coverage": {
+        "boundComponents": 0,
+        "documentedComponents": 0,
+        "meshNodes": 0,
+        "unassignedMeshNodes": 0,
+        "materialProvisional": 0,
+        "materialUnknown": 0,
+        "educationalCards": 0
+      },
+      "timingsMs": {
+        "discovery": 24404.3086,
+        "acquisition": 24700.716500000002,
+        "model": 27.573199999998906,
+        "reconstruction": 379.85689999999886,
+        "appearance": 0.18779999999969732,
+        "components": 2.605999999999767,
+        "education": 0.19350000000122236,
+        "store": 3.882100000002538
+      },
+      "totalMs": 49523.218400000005,
+      "classes": {},
+      "registration": null,
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/resources/pinouts/ABX00053-full-pinout.pdf",
+          "sha256": "3deceec024b7f12b3fcc8ab6bf62cb0d0fff68691ff1948142baf26b602cff63",
+          "kind": "pinout"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00053-datasheet.pdf",
+          "sha256": "098dca0aa251d4ec04cc2bc35880b288ae08041c02ce539f3529def9cf8c22b9",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/schematics/ABX00053-schematics.pdf",
+          "sha256": "ef2159ecf89098d2e6a28d912a886b1ea39a1ec6fb4cb2cd2593aabb22fdb810",
+          "kind": "schematic"
+        },
+        {
+          "url": "https://docs.arduino.cc/static/5a9afadd72059a97cf9835d98c91f611/ABX00053-cad-files.zip",
+          "sha256": "299205e322961346207efc7767dca3cfc8c89ba7ab5a57ffb0976286fa67797b",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/stm32duino/X-NUCLEO-IKS01A3/8845148396d5478c9585b23f8fd18f27e0722302/LICENSE.md",
+          "sha256": "dd22663d1b9af1913898f5d04ca2b8a14ee34419787204f143485ef3deda9809",
+          "kind": "license"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052-DoC_CE_with%20or%20without%20headers.pdf",
+          "sha256": "aaebb47404f537f9a364d0358d59b602eae1e0371d427ce195772ff6ddce929c",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052-DoC_UKCA_with%20or%20without%20headers.pdf",
+          "sha256": "86d5b9a806d667b24e173d52dafd65c3a17a3614b62bb3ea912671c4ee88c69c",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052_ABX00053-CERT_CE_RED.pdf",
+          "sha256": "c00c525ae09878a2d187075d71533b9ae29ad4f7a475e48b989486ae17c277a9",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052_ABX00053-CERT_RCM.pdf",
+          "sha256": "42ca6b7ca8fd26029c8ec17ba924910cf859e739d0745c2aacda3de529751c8a",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052_ABX00053-CERT_RoHS.pdf",
+          "sha256": "132be64fa7b589ef1410cebf5a8133a248bdd95bc66465439efcb7ac1af0f895",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00052_ABX00053-CERT_UKCA.pdf",
+          "sha256": "a095d5c35fded640dcf777abb62cef8a6741705c1a18c5ccf72eae8adc8ada50",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00053-CERT_FCC_DSS.pdf",
+          "sha256": "2806cae7fdab80868073b436bcd13a704345b69d5b3132d647abd3d353ffc853",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/certifications/Arduino_ABX00053-CERT_FCC_DTS.pdf",
+          "sha256": "0622977ee6e33737ac31647858511c55a9dc0db2375548e3302273d6ce078409",
+          "kind": "documentation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/downloads/ABX00053-cad-files.zip",
+          "sha256": "299205e322961346207efc7767dca3cfc8c89ba7ab5a57ffb0976286fa67797b",
+          "kind": "cad"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/downloads/ABX00053-full-pinout.pdf",
+          "sha256": "3deceec024b7f12b3fcc8ab6bf62cb0d0fff68691ff1948142baf26b602cff63",
+          "kind": "pinout"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/downloads/ABX00053-schematics.pdf",
+          "sha256": "ef2159ecf89098d2e6a28d912a886b1ea39a1ec6fb4cb2cd2593aabb22fdb810",
+          "kind": "schematic"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/interactive/ABX00053-pinout.png",
+          "sha256": "39ce33dc1e3809647df80e3b93275e0e1a582852981cb0137456ae47cb04db61",
+          "kind": "pinout"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/tutorials/rp2040-01-technical-reference/assets/pinout.png",
+          "sha256": "39ce33dc1e3809647df80e3b93275e0e1a582852981cb0137456ae47cb04db61",
+          "kind": "pinout"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/micropython/04.board-examples/nano-rp2040-connect/assets/ABX00053-pinout.png",
+          "sha256": "39ce33dc1e3809647df80e3b93275e0e1a582852981cb0137456ae47cb04db61",
+          "kind": "pinout"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/LICENSE.md",
+          "sha256": "733e4dca70c92c4259348b1c8c8223d072dca7a3f72bff73221dec21f892236d",
+          "kind": "license"
+        },
+        {
+          "url": "https://docs.arduino.cc/static/91a5702e9fbab085c68b3a8236e38cc2/image.svg",
+          "sha256": "c2c69ad489667ee5abbc8942a7479a2ada3d31423ad0a1bd126b930d5d7531e1",
+          "kind": "image"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/datasheet/assets/featured.jpg",
+          "sha256": "bc2d8eb3f38a7fd58fe964bc59b425066088ffc68ae49e9bca4b454ca76fdc97",
+          "kind": "image"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/datasheet/assets/nanoRP2040BlockDiagram.svg",
+          "sha256": "0534ccd7572bff0d2d8ee6c3794dd8d853d56d1ee1bda0b64f291733b3f00b02",
+          "kind": "image"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/arduino/docs-content/2f5e79ba3c1f67bf64daaa8b0a2546cd5fd9cf3b/content/hardware/nano/boards/nano-rp2040-connect/datasheet/assets/nanoRP2040BoardTopologyBack.png",
+          "sha256": "e22131dbdf64b4c0b13f4c41393682d12f609c1c0f30d28f898414e920075a19",
+          "kind": "image"
+        }
+      ],
+      "limitations": [
+        "discovery: revision_not_determined",
+        "acquisition: license_and_revision_require_per_asset_evidence",
+        "model: no_convertible_3d_asset_found",
+        "reconstruction: reconstruction_gemini_session_not_configured",
+        "appearance: requires_3d_asset",
+        "components: requires_3d_asset_and_document_to_cad_correspondences",
+        "education: no_bilingual_function_and_example_generation_adapter"
+      ]
+    }
+  ]
+}

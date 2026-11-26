@@ -1,0 +1,232 @@
+{
+  "mode": "normal_no_cad_generator_with_verified_historical_AI_evidence",
+  "savedGLBRead": false,
+  "savedPresentationRead": false,
+  "newCloudRequests": 0,
+  "elapsedMs": 6613.2906,
+  "modelSHA256": "88cd197a301adb043c6a2323f143853757b51ba2c9cc4bece463bf1f7283a09a",
+  "dimensions": {
+    "valueMm": 1.6,
+    "basis": "User-authorized educational representation; not a measurement or manufacturer dimension",
+    "policy": "educational-relief/2",
+    "assemblyMaxMm": 7.7,
+    "componentHeightsInferred": false
+  },
+  "reliefCount": 13,
+  "meshNodes": 31,
+  "triangles": 714,
+  "backside": {
+    "sourceId": "source-4",
+    "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+    "file": "reconstruction\\source-4.png",
+    "cornersPixels": [
+      [
+        1342,
+        316
+      ],
+      [
+        163,
+        316
+      ],
+      [
+        163,
+        1183
+      ],
+      [
+        1342,
+        1183
+      ]
+    ],
+    "identityAndFaceBasis": "Gemini visual source/face/orientation proposal; not a human review",
+    "selectionOrigin": "gemini_proposal",
+    "selection": {
+      "schema": "backside-choice/1",
+      "mode": "gemini_proposal",
+      "sourceId": "source-4",
+      "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+      "sourceURL": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "clockwiseRotationDeg": 0,
+      "note": "source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation.",
+      "faceEvidence": "source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.",
+      "orientationEvidence": "The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.",
+      "proposalSHA256": "29cc83ffd8cbccacb798312fb0dcc059cdd6e4ae5e81a6879de007da5ecd71b6",
+      "requestSHA256": "9b493f7e111a358e0e7880ef8a91e1231e1d865a25459a7ded2f5695bdad4737"
+    },
+    "reviewSHA256": "491a0383e25622fe6f0a05b8d49f19c6c9fb1a49ee46898759b45b3303ed70fb",
+    "observationsSHA256": "63d3a52a83114cae51ebab6c5676136af32b7943dcf03a6e172e130a152c5a69",
+    "orientation": "back_view_horizontal_reversal",
+    "clockwiseRotationDeg": 0,
+    "aspectError": 0.006254990684056438,
+    "independentHoleErrorsMm": [
+      0.3182789385318756,
+      0.17310260236263275,
+      0.3479449152946472,
+      0.2773221433162689
+    ],
+    "validation": "outline fit checked against observed hole centres; approximate registration; face and orientation evidence recorded separately",
+    "details": "Photographic silkscreen and visible rear contacts, no invented solder volumes"
+  },
+  "backsideAudit": {
+    "policy": "backside-selection/2",
+    "status": "applied",
+    "automaticFaceIdentification": true,
+    "attempts": [
+      {
+        "sourceId": "source-4",
+        "mode": "gemini_proposal",
+        "clockwiseRotationDeg": 0,
+        "status": "verified",
+        "registration": {
+          "sourceId": "source-4",
+          "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+          "file": "reconstruction\\source-4.png",
+          "cornersPixels": [
+            [
+              1342,
+              316
+            ],
+            [
+              163,
+              316
+            ],
+            [
+              163,
+              1183
+            ],
+            [
+              1342,
+              1183
+            ]
+          ],
+          "identityAndFaceBasis": "Gemini visual source/face/orientation proposal; not a human review",
+          "selectionOrigin": "gemini_proposal",
+          "selection": {
+            "schema": "backside-choice/1",
+            "mode": "gemini_proposal",
+            "sourceId": "source-4",
+            "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+            "sourceURL": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+            "clockwiseRotationDeg": 0,
+            "note": "source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation.",
+            "faceEvidence": "source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.",
+            "orientationEvidence": "The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.",
+            "proposalSHA256": "29cc83ffd8cbccacb798312fb0dcc059cdd6e4ae5e81a6879de007da5ecd71b6",
+            "requestSHA256": "9b493f7e111a358e0e7880ef8a91e1231e1d865a25459a7ded2f5695bdad4737"
+          },
+          "reviewSHA256": "491a0383e25622fe6f0a05b8d49f19c6c9fb1a49ee46898759b45b3303ed70fb",
+          "observationsSHA256": "63d3a52a83114cae51ebab6c5676136af32b7943dcf03a6e172e130a152c5a69",
+          "orientation": "back_view_horizontal_reversal",
+          "clockwiseRotationDeg": 0,
+          "aspectError": 0.006254990684056438,
+          "independentHoleErrorsMm": [
+            0.3182789385318756,
+            0.17310260236263275,
+            0.3479449152946472,
+            0.2773221433162689
+          ],
+          "validation": "outline fit checked against observed hole centres; approximate registration; face and orientation evidence recorded separately",
+          "details": "Photographic silkscreen and visible rear contacts, no invented solder volumes"
+        }
+      }
+    ],
+    "sourceCandidates": [],
+    "sourceReason": "no_explicit_source_backside_caption",
+    "inference": {
+      "modelRequested": "gemini-3.5-flash-lite",
+      "modelVersion": null,
+      "inferenceSource": "in_cloud",
+      "newRequests": 0,
+      "requests": 1,
+      "reused": true,
+      "inferenceMs": 18925.70000001788,
+      "totalMs": 21407.30000001192,
+      "usageMetadata": {
+        "promptTokenCount": 7803,
+        "candidatesTokenCount": 176,
+        "totalTokenCount": 7979,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1281
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 6522
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "estimatedCostUSD": null,
+      "requestSHA256": "9b493f7e111a358e0e7880ef8a91e1231e1d865a25459a7ded2f5695bdad4737",
+      "responseFile": "gemini-backside.json",
+      "evidenceKind": "real_firebase_browser"
+    },
+    "proposal": {
+      "status": "selected",
+      "sourceId": "source-4",
+      "clockwiseRotationDeg": 0,
+      "mirrored": false,
+      "faceEvidence": "source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.",
+      "orientationEvidence": "The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.",
+      "alternatives": [],
+      "reason": "source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation."
+    },
+    "selectionOrigin": "gemini_proposal",
+    "registration": {
+      "sourceId": "source-4",
+      "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+      "file": "reconstruction\\source-4.png",
+      "cornersPixels": [
+        [
+          1342,
+          316
+        ],
+        [
+          163,
+          316
+        ],
+        [
+          163,
+          1183
+        ],
+        [
+          1342,
+          1183
+        ]
+      ],
+      "identityAndFaceBasis": "Gemini visual source/face/orientation proposal; not a human review",
+      "selectionOrigin": "gemini_proposal",
+      "selection": {
+        "schema": "backside-choice/1",
+        "mode": "gemini_proposal",
+        "sourceId": "source-4",
+        "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+        "sourceURL": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+        "clockwiseRotationDeg": 0,
+        "note": "source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation.",
+        "faceEvidence": "source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.",
+        "orientationEvidence": "The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.",
+        "proposalSHA256": "29cc83ffd8cbccacb798312fb0dcc059cdd6e4ae5e81a6879de007da5ecd71b6",
+        "requestSHA256": "9b493f7e111a358e0e7880ef8a91e1231e1d865a25459a7ded2f5695bdad4737"
+      },
+      "reviewSHA256": "491a0383e25622fe6f0a05b8d49f19c6c9fb1a49ee46898759b45b3303ed70fb",
+      "observationsSHA256": "63d3a52a83114cae51ebab6c5676136af32b7943dcf03a6e172e130a152c5a69",
+      "orientation": "back_view_horizontal_reversal",
+      "clockwiseRotationDeg": 0,
+      "aspectError": 0.006254990684056438,
+      "independentHoleErrorsMm": [
+        0.3182789385318756,
+        0.17310260236263275,
+        0.3479449152946472,
+        0.2773221433162689
+      ],
+      "validation": "outline fit checked against observed hole centres; approximate registration; face and orientation evidence recorded separately",
+      "details": "Photographic silkscreen and visible rear contacts, no invented solder volumes"
+    },
+    "sourceId": "source-4",
+    "sourceURL": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+    "sourceSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+    "reason": "selection_followed_by_geometric_verification",
+    "totalMs": 2246.2032
+  }
+}

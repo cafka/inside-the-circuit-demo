@@ -8,6 +8,10 @@ import {bindPhotoComponents} from '../experiments/board-library/photo-scene.mjs'
 import {sourceBacksideCandidates} from '../experiments/board-library/backside-selection.mjs';
 const out=process.argv[2];if(!out||fs.existsSync(out))throw Error('Usage: node scripts/measure-recovered-methods.mjs NEW_OUTPUT');fs.mkdirSync(out,{recursive:true});
 const read=p=>JSON.parse(fs.readFileSync(p)),write=(p,v)=>fs.writeFileSync(path.join(out,p),JSON.stringify(v,null,2)+'\n');
+const compactVerification=v=>({...v,components:v.components.map(c=>{
+ const {contour,displayPolygon,...metrics}=c.verification;
+ return {...c,verification:{...metrics,contourPoints:contour?.length||0,contourSHA256:contour?hash(JSON.stringify(contour)):null,displayPolygonPoints:displayPolygon?.length||0,displayPolygonSHA256:displayPolygon?hash(JSON.stringify(displayPolygon)):null}};
+})});
 const base='b79bfbc6e720d8ad654ecb0f3dc9f43475078f71';
 const catalogue=enrichCatalog(read('release/catalog/raspberry-pi-5/record.json'),read('experiments/board-library/catalog-enrichment.json'));
 const photos=[];
@@ -19,7 +23,7 @@ for(const name of ['pi5-final-response','pi5-public-response','pi5-verified-resp
   associationsBefore:before.filter(p=>p.componentId).length,associationsAfter:after.filter(p=>p.componentId).length,
   pixelBackedBefore:before.filter(p=>p.componentId&&r.verification.components.find(v=>v.id===p.id)?.verification.accepted).length,
   pixelBackedAfter:after.filter(p=>p.componentId&&r.verification.components.find(v=>v.id===p.id)?.verification.accepted).length,
-  originalVisible:r.visibleCount,geometryUnchanged:true,verification:r.verification,
+  originalVisible:r.visibleCount,geometryUnchanged:true,originalEvidence:file,verification:compactVerification(r.verification),
   rows:after.map((p,i)=>({id:p.id,name:p.name,marking:p.marking,box:p.box,before:before[i].componentId,after:p.componentId,pixelAccepted:r.verification.components.find(v=>v.id===p.id)?.verification.accepted,binding:p.binding}))});
 }
 write('photo-replay.json',{base,evidenceKind:'real_response_replay_not_new_inference',photos});
@@ -35,6 +39,11 @@ for(const [id,dir] of cases){if(!fs.existsSync(dir+'/record.json'))continue;cons
 }
 write('boards.json',{boards});
 const work='.local/jury-demo/motor-live-catalog/discovered-1d4f241a74545d8a/reconstruction';
+if(!fs.existsSync(work+'/input-manifest.json')){
+ write('rear-source-replay.json',{status:'not_run',reason:'private_official_source_dossier_not_present',newCloudRequests:0});
+ console.log(JSON.stringify({photos:photos.map(p=>({name:p.name,before:p.pixelBackedBefore,after:p.pixelBackedAfter})),boards:boards.length,rear:'source_dossier_required'}));
+ process.exit(0);
+}
 const manifest=read(work+'/input-manifest.json'),observations=read(work+'/observations.json'),start=performance.now();
 const candidates=sourceBacksideCandidates(work,manifest.sources,observations.referenceImageId);
 write('rear-source-replay.json',{evidenceKind:'existing_official_sources_reprocessed',manifestSHA256:hash(fs.readFileSync(work+'/input-manifest.json')),candidates,ms:performance.now()-start,newCloudRequests:0,manualChoiceNotRead:true});

@@ -1,0 +1,1828 @@
+{
+  "base": "b79bfbc6e720d8ad654ecb0f3dc9f43475078f71",
+  "evidenceKind": "real_response_replay_not_new_inference",
+  "photos": [
+    {
+      "name": "pi5-final-response",
+      "inputRecordSHA256": "361e7b8a3395fcf81c0b0d5b2d2def4017bae24b4b9553f1145e4ad106147bc6",
+      "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "newCloudRequests": 0,
+      "baselineMs": 6.595199999999977,
+      "currentMs": 5.656799999999976,
+      "associationsBefore": 3,
+      "associationsAfter": 6,
+      "pixelBackedBefore": 1,
+      "pixelBackedAfter": 4,
+      "originalVisible": 1,
+      "geometryUnchanged": true,
+      "verification": {
+        "schema": "photo-proposal-verification/1",
+        "inputSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+        "width": 1280,
+        "height": 853,
+        "analysis": {
+          "width": 640,
+          "height": 426,
+          "scaleX": 0.5,
+          "scaleY": 0.49941383352872215,
+          "edgeToleranceInOriginalPixels": [
+            4,
+            4.004694835680751
+          ],
+          "basis": "historical component-parallax prepared long side 640; original capture and Gemini input unchanged"
+        },
+        "algorithm": "src/component-parallax/engine.py:visible_region",
+        "policy": "component-parallax-1",
+        "semanticIdentityVerified": false,
+        "cadCoordinatesUsed": false,
+        "components": [
+          {
+            "id": "comp_01",
+            "proposalBox": [
+              408,
+              316,
+              617,
+              480
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9855907780979827,
+              "quadrantEdgeSupport": [
+                0.9397590361445783,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.8375592532795509,
+              "dominantForegroundFractions": [
+                0.9997445395325073,
+                0.9997445395325073
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 267.8598960000045,
+              "displayBox": [
+                356.4178466796875,
+                422,
+                528.6196899414062,
+                604
+              ],
+              "contourPoints": 347,
+              "contourSHA256": "19206097fb25faf082ae62a7004afbfd02e91c526d51fa5c24bccbe9fe3f3323",
+              "displayPolygonPoints": 21,
+              "displayPolygonSHA256": "b3a3ae2d61547d9e69762c58e9321e312d6b33289fca8007335e990cd2904759"
+            }
+          },
+          {
+            "id": "comp_02",
+            "proposalBox": [
+              322,
+              552,
+              452,
+              661
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9961240310077519,
+              "quadrantEdgeSupport": [
+                0.9863013698630136,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 1.1135529778162943,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 223.26081699998213,
+              "displayBox": [
+                244.28639221191406,
+                712,
+                382.4483642578125,
+                842
+              ],
+              "contourPoints": 258,
+              "contourSHA256": "574032968117c00933fd93fd9ad8cd7a7ada1d0de1fb30b47979ebed852481e4",
+              "displayPolygonPoints": 16,
+              "displayPolygonSHA256": "da7cb6aa66937212ca2d9b927bd2aa23311b630082780128510f41942ed44df2"
+            }
+          },
+          {
+            "id": "comp_03",
+            "proposalBox": [
+              261,
+              339,
+              392,
+              464
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 1.009524124465746,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 156.85027800009266,
+              "displayBox": [
+                222.26055908203125,
+                436,
+                336.3943786621094,
+                592
+              ],
+              "contourPoints": 263,
+              "contourSHA256": "240cb513d712d12d328da9f4252eded366a01256dcfca047baf61f48b3f91514",
+              "displayPolygonPoints": 12,
+              "displayPolygonSHA256": "f9e217789523690a045a29ba99f5da53ce34923f0066cc37bf5cae4790873cb2"
+            }
+          },
+          {
+            "id": "comp_04",
+            "proposalBox": [
+              561,
+              188,
+              642,
+              256
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.96,
+              "quadrantEdgeSupport": [
+                1,
+                0.9722222222222222,
+                1,
+                0.8484848484848485
+              ],
+              "areaToTemplateRatio": 0.9156280241452934,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 152.22456399999373,
+              "displayBox": [
+                472.5539855957031,
+                244,
+                560.6572875976562,
+                322
+              ],
+              "contourPoints": 150,
+              "contourSHA256": "f33d18eff6565353715fc2820f8ffe570c030362ed81874ace6e43eb0a67c456",
+              "displayPolygonPoints": 43,
+              "displayPolygonSHA256": "5cd54a9038fda3f4e336c5d7ec7eb07f8d1e1eb76148ec73c20721a5f483f531"
+            }
+          },
+          {
+            "id": "comp_05",
+            "proposalBox": [
+              518,
+              666,
+              723,
+              861
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9948186528497409,
+              "quadrantEdgeSupport": [
+                0.978494623655914,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.8388093845942163,
+              "dominantForegroundFractions": [
+                0.9943441374809658,
+                0.9943441374809658
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 359.1579080000429,
+              "displayBox": [
+                444.5211181640625,
+                870,
+                610.7159423828125,
+                1096
+              ],
+              "contourPoints": 386,
+              "contourSHA256": "ae23fed1e4f1d5bc2d4c845e048c598b5b34856d6409d937c8298f6924a3b3c9",
+              "displayPolygonPoints": 36,
+              "displayPolygonSHA256": "2450ebc9d62a32f06af1b1ccc41c2f6f5d7b87f551d07cab26bcd49d6bab3249"
+            }
+          },
+          {
+            "id": "comp_06",
+            "proposalBox": [
+              97,
+              697,
+              495,
+              857
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "segmentation_reaches_search_limit"
+              ],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.8335684062059239,
+              "quadrantEdgeSupport": [
+                0.9383561643835616,
+                0.9051094890510949,
+                0.8333333333333334,
+                0.7070707070707071
+              ],
+              "areaToTemplateRatio": 1.248839846033598,
+              "dominantForegroundFractions": [
+                0.9909053516749692,
+                0.9909053516749692
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 739.2030539999723,
+              "contourPoints": 709,
+              "contourSHA256": "db8e62b34b34a8db67ca2e9ea16cd457761454874504759f4cc9a039c06eebb9",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          },
+          {
+            "id": "comp_07",
+            "proposalBox": [
+              705,
+              183,
+              805,
+              260
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.7731045643825322,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 68.59970799996518,
+              "displayBox": [
+                602.70654296875,
+                236,
+                676.79345703125,
+                324
+              ],
+              "contourPoints": 157,
+              "contourSHA256": "5273817d2887eaeec79ce5535a3313ee8ce695572580583b69921beff0dacec5",
+              "displayPolygonPoints": 16,
+              "displayPolygonSHA256": "56bdaf625924685b22fda9d124a4257f2d5afb9679d9386b5e4f19145bff278d"
+            }
+          },
+          {
+            "id": "comp_08",
+            "proposalBox": [
+              327,
+              138,
+              450,
+              183
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 0.8427046263345196,
+              "boundaryEdgeSupport": 0.9225352112676056,
+              "quadrantEdgeSupport": [
+                0.9705882352941176,
+                0.875,
+                0.8518518518518519,
+                1
+              ],
+              "areaToTemplateRatio": 0.7845931272494779,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 124.92961500004185,
+              "displayBox": [
+                298.3497619628906,
+                168,
+                404.47418212890625,
+                220
+              ],
+              "contourPoints": 142,
+              "contourSHA256": "33af9e8161d24d8d79246b8ec14662a7e81c89b6fbacd14f623e3201a2bca6e0",
+              "displayPolygonPoints": 27,
+              "displayPolygonSHA256": "454cb0f4cc5c36c781e7d0f68df1b8175c4b2c30e4ebe36e8ee663db7af49afe"
+            }
+          },
+          {
+            "id": "comp_09",
+            "proposalBox": [
+              122,
+              155,
+              210,
+              677
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "segmented_area_incompatible",
+                "segmentation_reaches_search_limit"
+              ],
+              "seedStabilityIoU": 0.9366999015263417,
+              "boundaryEdgeSupport": 0.7622641509433963,
+              "quadrantEdgeSupport": [
+                0.6403940886699507,
+                0.67,
+                0.8960573476702509,
+                0.7777777777777778
+              ],
+              "areaToTemplateRatio": 2.593821779121729,
+              "dominantForegroundFractions": [
+                0.9934554573534359,
+                0.9693747612377436
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 3603.1244490000063,
+              "contourPoints": 1060,
+              "contourSHA256": "7195adab14b4b27a9a2a8e6e7807f62e5b4ddff1498b758d5c7115eb8cde2a9b",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          }
+        ],
+        "totalMs": 5795.875615
+      },
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "SoC",
+          "marking": "BROADCOM 2712ZPKFSB00C1T TN2333 P31 192-17 T3",
+          "box": [
+            408,
+            316,
+            617,
+            480
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_02",
+          "name": "RP1 Chip",
+          "marking": "RP1-C0 P1HG51.00",
+          "box": [
+            322,
+            552,
+            452,
+            661
+          ],
+          "before": null,
+          "after": "rp1",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "rp1"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_03",
+          "name": "SDRAM",
+          "marking": "K4U8E3D SEC 334",
+          "box": [
+            261,
+            339,
+            392,
+            464
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_04",
+          "name": "Power Management IC",
+          "marking": "DA90",
+          "box": [
+            561,
+            188,
+            642,
+            256
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_05",
+          "name": "Ethernet Jack",
+          "marking": "TRXCOM TRJG0926HENL4R",
+          "box": [
+            518,
+            666,
+            723,
+            861
+          ],
+          "before": "ethernet",
+          "after": "ethernet",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "ethernet"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_06",
+          "name": "USB 3.0 Ports",
+          "marking": "MICONN",
+          "box": [
+            97,
+            697,
+            495,
+            857
+          ],
+          "before": "usb3",
+          "after": "usb3",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "usb3"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_07",
+          "name": "USB Type-C Port",
+          "marking": "VALCON",
+          "box": [
+            705,
+            183,
+            805,
+            260
+          ],
+          "before": null,
+          "after": "usb-c-power",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "usb-c-power"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_08",
+          "name": "PCIe Connector",
+          "marking": null,
+          "box": [
+            327,
+            138,
+            450,
+            183
+          ],
+          "before": null,
+          "after": "pcie",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "pcie"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_09",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            122,
+            155,
+            210,
+            677
+          ],
+          "before": "gpio",
+          "after": "gpio",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "gpio"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        }
+      ],
+      "originalEvidence": "docs/jury-evidence/pi5-final-response.json"
+    },
+    {
+      "name": "pi5-public-response",
+      "inputRecordSHA256": "870cebbe8691dffe67c21c5de9cfb04cc1f2a58bc0584b1ce1e20a7b4630fd9e",
+      "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "newCloudRequests": 0,
+      "baselineMs": 2.4026000000000067,
+      "currentMs": 2.206200000000024,
+      "associationsBefore": 3,
+      "associationsAfter": 6,
+      "pixelBackedBefore": 1,
+      "pixelBackedAfter": 4,
+      "originalVisible": 2,
+      "geometryUnchanged": true,
+      "verification": {
+        "schema": "photo-proposal-verification/1",
+        "inputSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+        "width": 1280,
+        "height": 853,
+        "analysis": {
+          "width": 640,
+          "height": 426,
+          "scaleX": 0.5,
+          "scaleY": 0.49941383352872215,
+          "edgeToleranceInOriginalPixels": [
+            4,
+            4.004694835680751
+          ],
+          "basis": "historical component-parallax prepared long side 640; original capture and Gemini input unchanged"
+        },
+        "algorithm": "src/component-parallax/engine.py:visible_region",
+        "policy": "component-parallax-1",
+        "semanticIdentityVerified": false,
+        "cadCoordinatesUsed": false,
+        "components": [
+          {
+            "id": "comp_01",
+            "proposalBox": [
+              485,
+              667,
+              723,
+              857
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9948051948051948,
+              "quadrantEdgeSupport": [
+                0.9764705882352941,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.740706101599433,
+              "dominantForegroundFractions": [
+                0.9952048823016565,
+                0.9952048823016565
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 492.270058000031,
+              "displayBox": [
+                444.5211181640625,
+                872,
+                610.7159423828125,
+                1096
+              ],
+              "contourPoints": 385,
+              "contourSHA256": "95d45ab36e1b84f0cbf313e61b26160c756f22de1a98cd1772c1256a6c2e87f5",
+              "displayPolygonPoints": 35,
+              "displayPolygonSHA256": "fe1c4ef46e6cfd249d7d41bf3ce55a06c4ddafc61f4264b4ccb9c7a47fc6a34c"
+            }
+          },
+          {
+            "id": "comp_02",
+            "proposalBox": [
+              107,
+              695,
+              479,
+              856
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "segmentation_reaches_search_limit"
+              ],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.8258345428156749,
+              "quadrantEdgeSupport": [
+                0.951048951048951,
+                0.9191176470588235,
+                0.8119266055045872,
+                0.6822916666666666
+              ],
+              "areaToTemplateRatio": 1.264869203567465,
+              "dominantForegroundFractions": [
+                0.9904095137623478,
+                0.9904095137623478
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 682.1919500000604,
+              "contourPoints": 689,
+              "contourSHA256": "e9419d2a7b9e27585bcefce4624d0184a928e990757de3d51f4e85674775f8a8",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          },
+          {
+            "id": "comp_03",
+            "proposalBox": [
+              113,
+              185,
+              229,
+              576
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "unstable_with_seed_change",
+                "fragmented_foreground"
+              ],
+              "seedStabilityIoU": 0.37359575023948444,
+              "boundaryEdgeSupport": 0.775811209439528,
+              "quadrantEdgeSupport": [
+                0.5507246376811594,
+                0.6,
+                0.8289473684210527,
+                0.9402985074626866
+              ],
+              "areaToTemplateRatio": 0.3469228827391145,
+              "dominantForegroundFractions": [
+                0.8478260869565217,
+                0.9176856069687525
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 2684.8909430000276,
+              "contourPoints": 339,
+              "contourSHA256": "17fac3e5fbd57150b0fefc6e3e5da4199893c7ad9e7ace6590fa07d7ff2064ef",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          },
+          {
+            "id": "comp_04",
+            "proposalBox": [
+              261,
+              342,
+              392,
+              463
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 1.0199885008045881,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 119.3038810000644,
+              "displayBox": [
+                226.2652587890625,
+                436,
+                336.3943786621094,
+                592
+              ],
+              "contourPoints": 262,
+              "contourSHA256": "df4217c40f7bb7419334b37c7ec922c29902fc06a671c7512e3831504736d186",
+              "displayPolygonPoints": 10,
+              "displayPolygonSHA256": "36d8cdb208f0bb92aeb8679cb24a45c99ddd13a79ae5aeab62479814ef6424ed"
+            }
+          },
+          {
+            "id": "comp_05",
+            "proposalBox": [
+              316,
+              552,
+              457,
+              660
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.996078431372549,
+              "quadrantEdgeSupport": [
+                0.9859154929577465,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 1.0251068601752162,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 223.35626999995384,
+              "displayBox": [
+                244.28639221191406,
+                712,
+                382.4483642578125,
+                842
+              ],
+              "contourPoints": 255,
+              "contourSHA256": "4dbfab632f6c5ee4b6bc8a8be7fa0219491603cef1f346b5cb73b14cc49e8da8",
+              "displayPolygonPoints": 19,
+              "displayPolygonSHA256": "fd52cae2477922a25080c1eb3dddc063afaef78b488b98cbb60190d5da6fb073"
+            }
+          },
+          {
+            "id": "comp_06",
+            "proposalBox": [
+              414,
+              328,
+              610,
+              475
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9852941176470589,
+              "quadrantEdgeSupport": [
+                0.9425287356321839,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.9472582248017296,
+              "dominantForegroundFractions": [
+                0.9997312911460433,
+                0.9997312911460433
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 193.34137099997406,
+              "displayBox": [
+                356.4178466796875,
+                422,
+                520.6103515625,
+                604
+              ],
+              "contourPoints": 340,
+              "contourSHA256": "3ccf3e3bc8a4e42f9704338b969a161c77a23e72d3062c331f0b29c882c924a3",
+              "displayPolygonPoints": 25,
+              "displayPolygonSHA256": "95f127f7edd0542a59505a8ed02fe28b23563eed06dd7809f3e8ccd59566d921"
+            }
+          },
+          {
+            "id": "comp_07",
+            "proposalBox": [
+              706,
+              179,
+              806,
+              258
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.7535327378024699,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 69.97889700005544,
+              "displayBox": [
+                602.70654296875,
+                236,
+                676.79345703125,
+                324
+              ],
+              "contourPoints": 157,
+              "contourSHA256": "5273817d2887eaeec79ce5535a3313ee8ce695572580583b69921beff0dacec5",
+              "displayPolygonPoints": 16,
+              "displayPolygonSHA256": "56bdaf625924685b22fda9d124a4257f2d5afb9679d9386b5e4f19145bff278d"
+            }
+          },
+          {
+            "id": "comp_08",
+            "proposalBox": [
+              573,
+              518,
+              778,
+              555
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 0.998165137614679,
+              "boundaryEdgeSupport": 0.9390862944162437,
+              "quadrantEdgeSupport": [
+                0.8780487804878049,
+                1,
+                1,
+                0.8771929824561403
+              ],
+              "areaToTemplateRatio": 1.0522363444615683,
+              "dominantForegroundFractions": [
+                0.9021558872305141,
+                0.902317880794702
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 255.25478499992005,
+              "displayBox": [
+                516.6056518554688,
+                660,
+                656.7699584960938,
+                726
+              ],
+              "contourPoints": 197,
+              "contourSHA256": "f24122b084fce72c0022e3fe387fda9a9ab277209211295f025714657f82dac0",
+              "displayPolygonPoints": 64,
+              "displayPolygonSHA256": "fefada1e0dc7ee2568a1ff2f9e4c720913d7869fc750cc6b83a427312c7453a4"
+            }
+          }
+        ],
+        "totalMs": 4814.353796999967
+      },
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "Ethernet Jack",
+          "marking": "Trxcom TRJG0926HENL4R China M 2330",
+          "box": [
+            485,
+            667,
+            723,
+            857
+          ],
+          "before": "ethernet",
+          "after": "ethernet",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "ethernet"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_02",
+          "name": "USB 3.0 Ports",
+          "marking": null,
+          "box": [
+            107,
+            695,
+            479,
+            856
+          ],
+          "before": "usb3",
+          "after": "usb3",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "usb3"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_03",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            113,
+            185,
+            229,
+            576
+          ],
+          "before": "gpio",
+          "after": "gpio",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "gpio"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_04",
+          "name": "RAM IC",
+          "marking": "K4U8E3D SEC 334",
+          "box": [
+            261,
+            342,
+            392,
+            463
+          ],
+          "before": null,
+          "after": "ram",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "ram"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_05",
+          "name": "RP1 Chip",
+          "marking": "RP1-C0 P1HG51.00",
+          "box": [
+            316,
+            552,
+            457,
+            660
+          ],
+          "before": null,
+          "after": "rp1",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "rp1"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_06",
+          "name": "Broadcom SoC",
+          "marking": "BROADCOM 2712ZPKFSB00C1T",
+          "box": [
+            414,
+            328,
+            610,
+            475
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_07",
+          "name": "USB Type-C Power Connector",
+          "marking": "VALCON",
+          "box": [
+            706,
+            179,
+            806,
+            258
+          ],
+          "before": null,
+          "after": "usb-c-power",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "usb-c-power"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_08",
+          "name": "Camera/Display Connectors",
+          "marking": "CAM/DISP 1",
+          "box": [
+            573,
+            518,
+            778,
+            555
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        }
+      ],
+      "originalEvidence": "docs/jury-evidence/pi5-public-response.json"
+    },
+    {
+      "name": "pi5-verified-response",
+      "inputRecordSHA256": "221aa3383a285f179b4b31bca50307b422a34e072918cb7630872bcf72996350",
+      "captureSHA256": "65a0d4811e66eda730f066552dcd9f13e09fde507b356e37414334b80378fb17",
+      "newCloudRequests": 0,
+      "baselineMs": 2.189200000000028,
+      "currentMs": 6.14730000000003,
+      "associationsBefore": 4,
+      "associationsAfter": 4,
+      "pixelBackedBefore": 2,
+      "pixelBackedAfter": 2,
+      "originalVisible": 2,
+      "geometryUnchanged": true,
+      "verification": {
+        "schema": "photo-proposal-verification/1",
+        "inputSHA256": "65a0d4811e66eda730f066552dcd9f13e09fde507b356e37414334b80378fb17",
+        "width": 1515,
+        "height": 1240,
+        "analysis": {
+          "width": 640,
+          "height": 524,
+          "scaleX": 0.42244224422442245,
+          "scaleY": 0.42258064516129035,
+          "edgeToleranceInOriginalPixels": [
+            4.734375,
+            4.7328244274809155
+          ],
+          "basis": "historical component-parallax prepared long side 640; original capture and Gemini input unchanged"
+        },
+        "algorithm": "src/component-parallax/engine.py:visible_region",
+        "policy": "component-parallax-1",
+        "semanticIdentityVerified": false,
+        "cadCoordinatesUsed": false,
+        "components": [
+          {
+            "id": "comp_01",
+            "proposalBox": [
+              399,
+              560,
+              497,
+              634
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.9078828761499218,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 115.35636100006741,
+              "displayBox": [
+                496.9465637207031,
+                849.8203125,
+                605.801513671875,
+                958.7109375
+              ],
+              "contourPoints": 183,
+              "contourSHA256": "71b4d667f28ca70b92bcf0533c70bc4566288b4aad8a18d2b783871212a55ee6",
+              "displayPolygonPoints": 5,
+              "displayPolygonSHA256": "ba3c3ac85d3bcb2c8e7fc1e75f1616bf0cd3720911b7f43111426695180bd3a9"
+            }
+          },
+          {
+            "id": "comp_02",
+            "proposalBox": [
+              471,
+              391,
+              603,
+              497
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.8980565719507759,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 92.66669299995556,
+              "displayBox": [
+                589.2366333007812,
+                594.1640625,
+                740.68701171875,
+                745.6640625
+              ],
+              "contourPoints": 255,
+              "contourSHA256": "6939350b01ec0ab874f0f3295a6b4ebfef0c11b81517100fdfe8edc227614102",
+              "displayPolygonPoints": 5,
+              "displayPolygonSHA256": "b3521c82f09aba6c3fa6cb7f6e99660e2dd9148ac211d8dffd3598015946563f"
+            }
+          },
+          {
+            "id": "comp_03",
+            "proposalBox": [
+              566,
+              642,
+              695,
+              779
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.8955906580569595,
+              "dominantForegroundFractions": [
+                0.9984951091045899,
+                0.9984951091045899
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 194.75945300007425,
+              "displayBox": [
+                712.2901000976562,
+                982.3828125,
+                870.8397216796875,
+                1178.859375
+              ],
+              "contourPoints": 290,
+              "contourSHA256": "d65456c66a479f150b734a2e838bd356185e90a7fed99c16f17395c5361f566e",
+              "displayPolygonPoints": 28,
+              "displayPolygonSHA256": "c4b046c7638e76d3935cc159fdc3f80602620832d5d4d4d0d1393c7916c41777"
+            }
+          },
+          {
+            "id": "comp_04",
+            "proposalBox": [
+              334,
+              668,
+              545,
+              782
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.9916012750912424,
+              "dominantForegroundFractions": [
+                0.9995001874297138,
+                0.9995001874297138
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 381.0003120000829,
+              "displayBox": [
+                371.5267028808594,
+                1015.5234375,
+                676.7938842773438,
+                1181.2265625
+              ],
+              "contourPoints": 440,
+              "contourSHA256": "fb443c165ebd6a84af59af0c398935dcac5dff6e180797faa1e9e60954c5401e",
+              "displayPolygonPoints": 94,
+              "displayPolygonSHA256": "018abc1b115929c23b6cafe419c54c009ba8b2f72021ba819fa644566ccfa2b2"
+            }
+          },
+          {
+            "id": "comp_05",
+            "proposalBox": [
+              297,
+              288,
+              340,
+              592
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "fragmented_foreground"
+              ],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9949494949494949,
+              "quadrantEdgeSupport": [
+                0.981651376146789,
+                1,
+                0.9954128440366973,
+                1
+              ],
+              "areaToTemplateRatio": 1.7058161067641238,
+              "dominantForegroundFractions": [
+                0.6270859538784067,
+                0.6270859538784067
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 601.2865089999195,
+              "contourPoints": 594,
+              "contourSHA256": "75bf3c879ae41a02b47505afa82b8fadf9bc9f4930929d285926a50441892c80",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          },
+          {
+            "id": "comp_06",
+            "proposalBox": [
+              624,
+              283,
+              679,
+              338
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "unstable_with_seed_change",
+                "segmented_area_incompatible"
+              ],
+              "seedStabilityIoU": 0.46083788706739526,
+              "boundaryEdgeSupport": 0.875,
+              "quadrantEdgeSupport": [
+                0.6666666666666666,
+                0.75,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.2493928970056238,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 98.35391000001437,
+              "contourPoints": 56,
+              "contourSHA256": "f65313baa5e964920197c7263d24157ba1a6594b162b6a60c67e1d8997d7daab",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          },
+          {
+            "id": "comp_07",
+            "proposalBox": [
+              649,
+              379,
+              715,
+              422
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.9902912621359223,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                0.9666666666666667,
+                1
+              ],
+              "areaToTemplateRatio": 0.7228776085705916,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 31.210454999950343,
+              "displayBox": [
+                811.6793823242188,
+                572.859375,
+                882.6717529296875,
+                634.40625
+              ],
+              "contourPoints": 103,
+              "contourSHA256": "eaea67d87bc7d45bcb58f4ec3e8183bd5bafb5f896f970915fd191dc70687f3c",
+              "displayPolygonPoints": 21,
+              "displayPolygonSHA256": "906620de9615d39b7da80db73289da9427aebaeffeb85902ab96077309ca97cf"
+            }
+          },
+          {
+            "id": "comp_08",
+            "proposalBox": [
+              649,
+              458,
+              715,
+              502
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 1,
+              "quadrantEdgeSupport": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.7793520092609375,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 52.45533200002228,
+              "displayBox": [
+                811.6793823242188,
+                693.5859375,
+                885.0381469726562,
+                757.5
+              ],
+              "contourPoints": 104,
+              "contourSHA256": "34c25272edf5c13c871dd10fb7ea50b8a48c46e28804cb718f67a1b6d8088bcf",
+              "displayPolygonPoints": 28,
+              "displayPolygonSHA256": "ff51a2ee5e444688fc5cee362e11195ac6d21a2c6c1ee10b58ff9bfecfaab247"
+            }
+          },
+          {
+            "id": "comp_09",
+            "proposalBox": [
+              578,
+              528,
+              705,
+              566
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "overlapping_component_proposals"
+              ],
+              "seedStabilityIoU": 1,
+              "boundaryEdgeSupport": 0.8532110091743119,
+              "quadrantEdgeSupport": [
+                0.6739130434782609,
+                0.9696969696969697,
+                0.6666666666666666,
+                0.984375
+              ],
+              "areaToTemplateRatio": 1.3648895994368517,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 123.44093699994119,
+              "displayBox": [
+                721.7557373046875,
+                800.109375,
+                870.8397216796875,
+                890.0625
+              ],
+              "contourPoints": 218,
+              "contourSHA256": "d7acf087878e9fdff2756928d3e6ea8038b3e2ff0b1dcb2c39a6b08cab75f2d3",
+              "displayPolygonPoints": 64,
+              "displayPolygonSHA256": "dfdd3ee9df0fc610a5f14fc7e738ad121e2037e10020e1e9cbf078c628aa6a87"
+            }
+          },
+          {
+            "id": "comp_10",
+            "proposalBox": [
+              578,
+              563,
+              705,
+              603
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "overlapping_component_proposals"
+              ],
+              "seedStabilityIoU": 0.9787878787878788,
+              "boundaryEdgeSupport": 0.9615384615384616,
+              "quadrantEdgeSupport": [
+                0.9696969696969697,
+                0.8928571428571429,
+                0.9538461538461539,
+                1
+              ],
+              "areaToTemplateRatio": 1.137571410554894,
+              "dominantForegroundFractions": [
+                0.9969135802469136,
+                0.9969788519637462
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 180.28746100003445,
+              "displayBox": [
+                721.7557373046875,
+                828.515625,
+                870.8397216796875,
+                923.203125
+              ],
+              "contourPoints": 208,
+              "contourSHA256": "839977562addacf010c60ba7619cee3047725172ea1cb888af24003b963c5f88",
+              "displayPolygonPoints": 57,
+              "displayPolygonSHA256": "0e68c3aa0e49ffa994bafaf36d44b2a258d1ef49ccbd4f16f5f563eafacef777"
+            }
+          },
+          {
+            "id": "comp_11",
+            "proposalBox": [
+              431,
+              252,
+              529,
+              275
+            ],
+            "verification": {
+              "accepted": true,
+              "reasons": [],
+              "seedStabilityIoU": 0.876803551609323,
+              "boundaryEdgeSupport": 0.8307692307692308,
+              "quadrantEdgeSupport": [
+                0.7058823529411765,
+                0.7037037037037037,
+                1,
+                0.8787878787878788
+              ],
+              "areaToTemplateRatio": 1.0451092972520581,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 43.20542300001762,
+              "displayBox": [
+                534.8091430664062,
+                371.6484375,
+                657.8626098632812,
+                414.2578125
+              ],
+              "contourPoints": 130,
+              "contourSHA256": "11cd304f6e66cd8be2e1d912dba186cb38551563f73f0021af702e233aa74fab",
+              "displayPolygonPoints": 18,
+              "displayPolygonSHA256": "e00e3d94d3b082db336a56ebadf1f804226ea185b0c909eaaa09a4ea4c02a837"
+            }
+          },
+          {
+            "id": "comp_12",
+            "proposalBox": [
+              549,
+              292,
+              610,
+              356
+            ],
+            "verification": {
+              "accepted": false,
+              "reasons": [
+                "unstable_with_seed_change"
+              ],
+              "seedStabilityIoU": 0.6423550087873462,
+              "boundaryEdgeSupport": 0.9895833333333334,
+              "quadrantEdgeSupport": [
+                1,
+                0.9230769230769231,
+                1,
+                1
+              ],
+              "areaToTemplateRatio": 0.5583366402603906,
+              "dominantForegroundFractions": [
+                1,
+                1
+              ],
+              "meaning": "visible appearance region; not a measured 3D silhouette or confirmed semantic identity",
+              "timeMs": 126.40399300005356,
+              "contourPoints": 96,
+              "contourSHA256": "ec03a075528f275d68bd0aba881feb02578adadb75b13d9cf1375f308f55e68b",
+              "displayPolygonPoints": 0,
+              "displayPolygonSHA256": null
+            }
+          }
+        ],
+        "totalMs": 2345.002134999959
+      },
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "SoC",
+          "marking": "RP5",
+          "box": [
+            399,
+            560,
+            497,
+            634
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_02",
+          "name": "PMIC",
+          "marking": "BROADCOM 2712",
+          "box": [
+            471,
+            391,
+            603,
+            497
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_03",
+          "name": "Ethernet Jack",
+          "marking": "Trxcom TRJG0926HENL4R",
+          "box": [
+            566,
+            642,
+            695,
+            779
+          ],
+          "before": "ethernet",
+          "after": "ethernet",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "ethernet"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_04",
+          "name": "USB Port",
+          "marking": null,
+          "box": [
+            334,
+            668,
+            545,
+            782
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_05",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            297,
+            288,
+            340,
+            592
+          ],
+          "before": "gpio",
+          "after": "gpio",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "gpio"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_06",
+          "name": "USB-C Power Port",
+          "marking": null,
+          "box": [
+            624,
+            283,
+            679,
+            338
+          ],
+          "before": "usb-c-power",
+          "after": "usb-c-power",
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "usb-c-power"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_07",
+          "name": "Micro HDMI Port",
+          "marking": null,
+          "box": [
+            649,
+            379,
+            715,
+            422
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "ambiguous",
+            "candidates": [
+              "hdmi-0",
+              "hdmi-1"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_08",
+          "name": "Micro HDMI Port",
+          "marking": null,
+          "box": [
+            649,
+            458,
+            715,
+            502
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "ambiguous",
+            "candidates": [
+              "hdmi-0",
+              "hdmi-1"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_09",
+          "name": "Camera/Display Connector",
+          "marking": "CAM/DISP 1",
+          "box": [
+            578,
+            528,
+            705,
+            566
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_10",
+          "name": "Camera/Display Connector",
+          "marking": "CAM/DISP 0",
+          "box": [
+            578,
+            563,
+            705,
+            603
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_11",
+          "name": "PCIe Connector",
+          "marking": "PCIe",
+          "box": [
+            431,
+            252,
+            529,
+            275
+          ],
+          "before": "pcie",
+          "after": "pcie",
+          "pixelAccepted": true,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "document_label_match",
+            "candidates": [
+              "pcie"
+            ],
+            "notIndependentSemanticVerification": true
+          }
+        },
+        {
+          "id": "comp_12",
+          "name": "Power Management IC",
+          "marking": "DA9091",
+          "box": [
+            549,
+            292,
+            610,
+            356
+          ],
+          "before": null,
+          "after": null,
+          "pixelAccepted": false,
+          "binding": {
+            "policy": "document-component-terms/1",
+            "status": "unmatched",
+            "candidates": [],
+            "notIndependentSemanticVerification": true
+          }
+        }
+      ],
+      "originalEvidence": "docs/jury-evidence/pi5-verified-response.json"
+    }
+  ]
+}

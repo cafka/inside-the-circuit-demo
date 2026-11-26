@@ -1,0 +1,31 @@
+{
+  "release": {
+    "passed": 35,
+    "failed": 0
+  },
+  "focused": {
+    "passed": 27,
+    "failed": 0
+  },
+  "photoAndRecovered": {
+    "passed": 11,
+    "failed": 0,
+    "overlapWithFocused": 4
+  },
+  "build": "passed",
+  "publicPackage": {
+    "releasePassed": 35,
+    "focusedPassed": 27,
+    "build": "passed",
+    "photoReplay": "reproduced 1->4, 1->4, 2->2 without private image dossiers",
+    "initialPackagingFailure": "Missing original Pi conversion provenance required by existing partition test; included the provenance, then passed."
+  },
+  "syntheticPython": {
+    "rearAcceptedValidRotations": 8,
+    "rearRejectedNegativeControls": 6,
+    "ecadLayouts": 2,
+    "contradictoryHoldoutControlsRejected": 2,
+    "ambiguousDesignatorControlsRejected": 2
+  },
+  "note": "Overlapping suites are not summed into a unique test count."
+}

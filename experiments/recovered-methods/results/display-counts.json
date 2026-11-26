@@ -1,0 +1,78 @@
+[
+  {
+    "id": "raspberry-pi-5",
+    "before": {
+      "bindings": 16,
+      "educational": 16,
+      "pendingReview": 0,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7"
+    },
+    "after": {
+      "bindings": 16,
+      "educational": 16,
+      "pendingReview": 0,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7"
+    }
+  },
+  {
+    "id": "arduino-nano-esp32",
+    "before": {
+      "bindings": 9,
+      "educational": 9,
+      "pendingReview": 0,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db"
+    },
+    "after": {
+      "bindings": 52,
+      "educational": 52,
+      "pendingReview": 0,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db"
+    }
+  },
+  {
+    "id": "discovered-303d5ef190ffa846",
+    "before": {
+      "bindings": 229,
+      "educational": 9,
+      "pendingReview": 0,
+      "technical": 220,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "ae5fb9077a319a8b379a695ed690315314e6e100904baade487369d0e68482ce"
+    },
+    "after": {
+      "bindings": 229,
+      "educational": 223,
+      "pendingReview": 0,
+      "technical": 6,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "ae5fb9077a319a8b379a695ed690315314e6e100904baade487369d0e68482ce"
+    }
+  },
+  {
+    "id": "discovered-1d4f241a74545d8a",
+    "before": {
+      "bindings": 13,
+      "educational": 13,
+      "pendingReview": 13,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "afe56b2a475a8b30fdc3dab780f3238446881e29465d041f0a08b18b443be2c8"
+    },
+    "after": {
+      "bindings": 13,
+      "educational": 13,
+      "pendingReview": 13,
+      "technical": 0,
+      "duplicateMeshOwners": 0,
+      "modelSHA256": "88cd197a301adb043c6a2323f143853757b51ba2c9cc4bece463bf1f7283a09a"
+    }
+  }
+]

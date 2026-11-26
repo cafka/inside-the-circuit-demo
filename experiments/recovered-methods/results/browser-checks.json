@@ -1,0 +1,37 @@
+{
+  "environment": "Desktop in-app browser 1280x720; not a physical phone",
+  "localURL": "http://127.0.0.1:4212",
+  "checks": [
+    {
+      "board": "Nano ESP32",
+      "newCard": "C2",
+      "fromMenu": true,
+      "directClick": true,
+      "source": "PCB.PcbDoc",
+      "cameraChangeObserved": false
+    },
+    {
+      "board": "Coral Dev Board Micro",
+      "newCard": "R39",
+      "fromMenu": true,
+      "technicalPending": "FB6",
+      "source": "Coral Dev Board Micro.PcbDoc",
+      "englishCardAndEvidenceChecked": true
+    },
+    {
+      "board": "Motor 2040",
+      "backsideVisible": true,
+      "textNotMirrored": true,
+      "userDrag": true,
+      "geometricStatus": "approximate_registration"
+    },
+    {
+      "board": "Raspberry Pi 5",
+      "existingEthernetCardOpens": true,
+      "catalogueCards": 16
+    }
+  ],
+  "physicalCameraTest": false,
+  "all229DirectClicksTested": false,
+  "anonymousGoogleSessionTest": false
+}

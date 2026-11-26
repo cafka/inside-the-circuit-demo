@@ -1,0 +1,160 @@
+{
+  "kind": "synthetic_geometric_controls_not_AI_inference",
+  "layouts": 2,
+  "acceptedRotations": 8,
+  "rejectedControls": 6,
+  "results": [
+    {
+      "rotation": 0,
+      "accepted": true,
+      "ms": 1088.7448000139557,
+      "reason": null,
+      "layout": 0,
+      "holeErrorsMm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "rotation": 90,
+      "accepted": true,
+      "ms": 1028.2214000471868,
+      "reason": null,
+      "layout": 0,
+      "holeErrorsMm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "rotation": 180,
+      "accepted": true,
+      "ms": 1071.6432000044733,
+      "reason": null,
+      "layout": 0,
+      "holeErrorsMm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "rotation": 270,
+      "accepted": true,
+      "ms": 1039.9453999707475,
+      "reason": null,
+      "layout": 0,
+      "holeErrorsMm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layout": 0,
+      "control": "wrong_orientation",
+      "rotation": 180,
+      "accepted": false,
+      "ms": 1043.9370999811217,
+      "reason": "ValueError: back_hole_registration_rejected"
+    },
+    {
+      "layout": 0,
+      "control": "missing_hole",
+      "rotation": 0,
+      "accepted": false,
+      "ms": 1038.186100020539,
+      "reason": "ValueError: back_hole_registration_rejected"
+    },
+    {
+      "layout": 0,
+      "control": "insufficient_features",
+      "rotation": 0,
+      "accepted": false,
+      "ms": 1066.6148000163957,
+      "reason": "ValueError: insufficient_independent_back_features"
+    },
+    {
+      "rotation": 0,
+      "accepted": true,
+      "ms": 1047.6013000006787,
+      "reason": null,
+      "layout": 1,
+      "holeErrorsMm": [
+        1.0662403155947686e-06,
+        1.9073486328125e-06,
+        3.814697265625e-06,
+        0.0
+      ]
+    },
+    {
+      "rotation": 90,
+      "accepted": true,
+      "ms": 1028.3586000441574,
+      "reason": null,
+      "layout": 1,
+      "holeErrorsMm": [
+        1.0662403155947686e-06,
+        1.9073486328125e-06,
+        3.814697265625e-06,
+        0.0
+      ]
+    },
+    {
+      "rotation": 180,
+      "accepted": true,
+      "ms": 1032.7751000295393,
+      "reason": null,
+      "layout": 1,
+      "holeErrorsMm": [
+        1.0662403155947686e-06,
+        1.9073486328125e-06,
+        3.814697265625e-06,
+        0.0
+      ]
+    },
+    {
+      "rotation": 270,
+      "accepted": true,
+      "ms": 1051.4041999704204,
+      "reason": null,
+      "layout": 1,
+      "holeErrorsMm": [
+        1.0662403155947686e-06,
+        1.9073486328125e-06,
+        3.814697265625e-06,
+        0.0
+      ]
+    },
+    {
+      "layout": 1,
+      "control": "wrong_orientation",
+      "rotation": 180,
+      "accepted": false,
+      "ms": 1047.4946000031196,
+      "reason": "ValueError: back_hole_registration_rejected"
+    },
+    {
+      "layout": 1,
+      "control": "missing_hole",
+      "rotation": 0,
+      "accepted": false,
+      "ms": 1003.7351999781094,
+      "reason": "ValueError: back_hole_registration_rejected"
+    },
+    {
+      "layout": 1,
+      "control": "insufficient_features",
+      "rotation": 0,
+      "accepted": false,
+      "ms": 1075.5317999864928,
+      "reason": "ValueError: insufficient_independent_back_features"
+    }
+  ]
+}

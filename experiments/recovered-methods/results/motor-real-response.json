@@ -1,0 +1,84 @@
+{
+  "evidenceKind": "real_firebase_browser",
+  "modelRequested": "gemini-3.5-flash-lite",
+  "requests": 1,
+  "estimatedCostUSD": null,
+  "status": "completed",
+  "startedUTC": "2026-11-26T22:17:36.554Z",
+  "initializationMs": 2476.5,
+  "inferenceMs": 18925.70000001788,
+  "inferenceSource": "in_cloud",
+  "outputLiteral": "{\n  \"status\": \"selected\",\n  \"sourceId\": \"source-4\",\n  \"clockwiseRotationDeg\": 0,\n  \"mirrored\": false,\n  \"faceEvidence\": \"source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.\",\n  \"orientationEvidence\": \"The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.\",\n  \"alternatives\": [],\n  \"reason\": \"source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation.\"\n}",
+  "responseOriginal": {
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"status\": \"selected\",\n  \"sourceId\": \"source-4\",\n  \"clockwiseRotationDeg\": 0,\n  \"mirrored\": false,\n  \"faceEvidence\": \"source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.\",\n  \"orientationEvidence\": \"The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.\",\n  \"alternatives\": [],\n  \"reason\": \"source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation.\"\n}",
+              "type": "text"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7803,
+      "candidatesTokenCount": 176,
+      "totalTokenCount": 7979,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 1281
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 6522
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "inferenceSource": "in_cloud"
+  },
+  "modelVersion": null,
+  "usageMetadata": {
+    "promptTokenCount": 7803,
+    "candidatesTokenCount": 176,
+    "totalTokenCount": 7979,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1281
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 6522
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "parsed": {
+    "status": "selected",
+    "sourceId": "source-4",
+    "clockwiseRotationDeg": 0,
+    "mirrored": false,
+    "faceEvidence": "source-4 shows the reverse side of the PCB, featuring text like 'motor 2040', the Pimoroni logo, cut traces, and jumper pads instead of active components like the RP2040 microcontroller and connectors seen on the front face.",
+    "orientationEvidence": "The mounting holes and edge connector layout match the front orientation, with the USB-C port visible on the right edge corresponding to the left edge when viewed from the back without rotation.",
+    "alternatives": [],
+    "reason": "source-4 is the exact reverse side photograph of the same electronic board with correct vertical orientation."
+  },
+  "totalMs": 21407.30000001192,
+  "requestSHA256": "9b493f7e111a358e0e7880ef8a91e1231e1d865a25459a7ded2f5695bdad4737",
+  "opaqueSignatureOmitted": true,
+  "costEstimate": {
+    "usd": 0.0027809,
+    "inputPerMillionUSD": 0.3,
+    "outputPerMillionUSD": 2.5,
+    "source": "https://ai.google.dev/gemini-api/docs/pricing",
+    "checkedDate": "2026-11-26",
+    "notBillingReceipt": true
+  }
+}

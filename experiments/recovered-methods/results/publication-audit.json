@@ -1,0 +1,193 @@
+{
+  "scope": "public branch additions since deployed f2671bb; audit file excludes itself",
+  "files": 37,
+  "findings": [],
+  "rights": "Only new Pi manufacturer-CAD MIT and Google Coral Apache-2.0 screenshots. Nano/Motor screenshots, photos, GLBs, sessions and private catalogues excluded.",
+  "manifest": [
+    {
+      "path": "deployment/fixtures/official-backside-motor.json",
+      "sha256": "eb1afa585c1ac44f857d7d1598763cd33f3df32464478dc7541a625513f6e261",
+      "bytes": 3648
+    },
+    {
+      "path": "docs/RECOVERED_EVIDENCE_METHODS.md",
+      "sha256": "0babdef6470784561d1ebfb403c1bc6f5c0a4618423ccbd6647548231b9db590",
+      "bytes": 17340
+    },
+    {
+      "path": "experiments/board-library/backside-contract.mjs",
+      "sha256": "8d2e006585f74f5c93992bb2ef096daab61d947ac5f6dff0023e132173f4712b",
+      "bytes": 3212
+    },
+    {
+      "path": "experiments/board-library/backside-selection.mjs",
+      "sha256": "660112a27bbfff14d2f00b3026fff98e1bad076aa75553ab8ededb37cb1f30e9",
+      "bytes": 4235
+    },
+    {
+      "path": "experiments/board-library/catalog-enrichment.mjs",
+      "sha256": "77d191a6314b44c38491fbb4d0314d599cfb3635b08368e71a619570cc49a2ed",
+      "bytes": 2159
+    },
+    {
+      "path": "experiments/board-library/component-terms.mjs",
+      "sha256": "03f32e3914aaf98bcbad3bc8e37371c25e91db8ab4fad844812df19ca5226227",
+      "bytes": 1850
+    },
+    {
+      "path": "experiments/board-library/documented-components.mjs",
+      "sha256": "53e3802af688c328da3fc0d58b99ca7a7cb6f95797ce3cec2b62cd2322ac8f63",
+      "bytes": 1721
+    },
+    {
+      "path": "experiments/board-library/education-rules.json",
+      "sha256": "3654e2a620d4d78ecc767d0628aa546c9b531e70e972df557753068c8bf58ff2",
+      "bytes": 11772
+    },
+    {
+      "path": "experiments/board-library/onboard-name.mjs",
+      "sha256": "5ed4171ef2ce273537bd47edca61226013b0c330f24674e7388982d31f9abffc",
+      "bytes": 16004
+    },
+    {
+      "path": "experiments/board-library/photo-scene.mjs",
+      "sha256": "0f6940da804a5f0388e8b28e6472fc04f4f5b3775829b01a8c1c428cb64e329e",
+      "bytes": 5391
+    },
+    {
+      "path": "experiments/board-library/physical-binding.mjs",
+      "sha256": "4a12dd4df798b91558cc6b98bc15e8c96b906aeb3e28584105f9e6a6383e1414",
+      "bytes": 3697
+    },
+    {
+      "path": "experiments/board-library/pipeline.mjs",
+      "sha256": "6b3e242341d724ee26d67df8365c126d6a1f25ad5ea9c51d5076fbab20c11697",
+      "bytes": 8806
+    },
+    {
+      "path": "experiments/board-library/source-image-captions.mjs",
+      "sha256": "a72c958a4a0b8c9986a70611a8215b02b6a2087233e6fd4cd665b6d98971b751",
+      "bytes": 2799
+    },
+    {
+      "path": "experiments/cad-viewer/public/provenance.json",
+      "sha256": "a89d5006079079d0d94d8c1c9556a4f130e2b85fbc68824108067444567e6eff",
+      "bytes": 1829483
+    },
+    {
+      "path": "experiments/recovered-methods/baseline-photo-scene.mjs",
+      "sha256": "d5e13a811cb41bd5b5c073caffa88de7bc70727d935f3b9195dd70b0b263f6cf",
+      "bytes": 5699
+    },
+    {
+      "path": "experiments/recovered-methods/results/boards.json",
+      "sha256": "55ab8c4b52334513c48f125d5e5071b643a57ebc0a210b8910b7f5ff60eaffa0",
+      "bytes": 22156
+    },
+    {
+      "path": "experiments/recovered-methods/results/browser-checks.json",
+      "sha256": "b5e7a575e85ed5f758fe6e69e0c1eb87770c7cd90db719049a69cb52f9025771",
+      "bytes": 980
+    },
+    {
+      "path": "experiments/recovered-methods/results/coral-pending.jpg",
+      "sha256": "eda7260a56b92aaf34d79f454479a172420447e8d1e780d649222053961b3cb5",
+      "bytes": 62118
+    },
+    {
+      "path": "experiments/recovered-methods/results/coral-resistor.jpg",
+      "sha256": "e3d10d6e80644974704e1c4412743c1962eb23ac336403aeeb83769d9f8ddf3f",
+      "bytes": 81758
+    },
+    {
+      "path": "experiments/recovered-methods/results/display-counts.json",
+      "sha256": "6924dbb86434b967043ddc88243e83f6ebde4766a782cb631fad3bbf4d306b71",
+      "bytes": 2081
+    },
+    {
+      "path": "experiments/recovered-methods/results/geometric-controls.json",
+      "sha256": "3a914c58aeadf449b554b7c9e38498065492a45fb8e424aeae695e27dadc971c",
+      "bytes": 3503
+    },
+    {
+      "path": "experiments/recovered-methods/results/isolation.json",
+      "sha256": "fd9cbddef136d12a662106c66663420aa054afe7eba73e644bb619bfa912e073",
+      "bytes": 185
+    },
+    {
+      "path": "experiments/recovered-methods/results/motor-geometry-preservation.json",
+      "sha256": "a070177b10af7e47dcb0d1f8ae5049d223bfe3a1edc7983877db5be6bff87e6b",
+      "bytes": 343
+    },
+    {
+      "path": "experiments/recovered-methods/results/motor-real-response.json",
+      "sha256": "3f8319311951fc9db274f0de33f4e5390872132e64844dd93de51b159ff99d64",
+      "bytes": 4016
+    },
+    {
+      "path": "experiments/recovered-methods/results/motor-regeneration.json",
+      "sha256": "e0fd0fab5e86615dad9ff32fd46553e6c2c206e1f1c6df076fd210b83f3bb5bd",
+      "bytes": 10713
+    },
+    {
+      "path": "experiments/recovered-methods/results/photo-replay.json",
+      "sha256": "e6e51eb4c7e158d1a9b438403f72c61feeafd15f448fee57485141572c9ec9bf",
+      "bytes": 57198
+    },
+    {
+      "path": "experiments/recovered-methods/results/pi5-preserved.jpg",
+      "sha256": "2e8ff4136f92ed0ccc1b5d74437fddae7aea8b79638dfdd5791c535915b07b52",
+      "bytes": 64953
+    },
+    {
+      "path": "experiments/recovered-methods/results/rear-source-replay.json",
+      "sha256": "cf90ba2ab776011b7d6cd8e354d2f9d733c936bf8e2cc7e7d0345cde927cea4b",
+      "bytes": 253
+    },
+    {
+      "path": "experiments/recovered-methods/results/tests.json",
+      "sha256": "e810304cb53eb32940b167a8f561345bd2563257fb7f0e15e3a40b7913f0fad7",
+      "bytes": 877
+    },
+    {
+      "path": "scripts/measure-recovered-methods.mjs",
+      "sha256": "d6b476e8555d7397e74eaa49092d576273494108ba152e2018aa0975b72653a6",
+      "bytes": 5853
+    },
+    {
+      "path": "tests/automatic-backside.py",
+      "sha256": "fd6745d7e6c2f04ad122f44994ef2b8d1ada38d4d14342b9a812974cab1bb306",
+      "bytes": 3740
+    },
+    {
+      "path": "tests/automatic-backside.test.mjs",
+      "sha256": "4fe9e3ac8498eeef71fa72214e197e4fda8ffce4f3d2d799b0e9d75ff4e13e27",
+      "bytes": 7842
+    },
+    {
+      "path": "tests/catalogue-enrichment.test.mjs",
+      "sha256": "070af53f81df42ca42def6bd208d26a14980f53dee164e517da14f7127042d22",
+      "bytes": 6226
+    },
+    {
+      "path": "tests/general-enrichment.py",
+      "sha256": "d29a80045ab29c21e330c78710907101100b24c868df5988479f96d431beb612",
+      "bytes": 4397
+    },
+    {
+      "path": "tests/general-enrichment.test.mjs",
+      "sha256": "ea66a6c639889607e4246661a62ebb083c32c1a5d9454e019f0d66f2363708a7",
+      "bytes": 3131
+    },
+    {
+      "path": "tests/preserved-enrichment.test.mjs",
+      "sha256": "7f0542ff5bd1261bad4d1948e3650a318254191ab89ee94a0e52a344bb8e6e04",
+      "bytes": 2584
+    },
+    {
+      "path": "tests/recovered-methods.test.mjs",
+      "sha256": "c208ee4e8b80963509bf8f259eda387a285f3f76a21c8d9e315d3ce45c184556",
+      "bytes": 4729
+    }
+  ]
+}
