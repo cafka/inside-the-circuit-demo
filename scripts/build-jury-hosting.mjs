@@ -21,7 +21,9 @@ const bundled=await build({entryPoints:[path.join(DIR,'app.mjs')],nodePaths:[pat
 for(const f of bundled.outputFiles)write(path.basename(f.path),f.contents);
 write('local-worker.js',fs.readFileSync(path.join(DIR,'public/local-worker.js')));
 const runtime=publicRuntimeConfig(JSON.parse(fs.readFileSync(configFile)));
-json('api/runtime-config',{...runtime,hostedCapabilities:{readOnlyCatalog:true,photoVerification:false},deploymentCommit:process.env.ITC_BUILD_SHA||null});
+const verifier=process.env.ITC_VERIFIER_SERVICE||null,region=process.env.ITC_VERIFIER_REGION||'us-central1';
+if(verifier&&!/^[a-z][a-z0-9-]{0,48}$/.test(verifier))throw Error('invalid_service_id');
+json('api/runtime-config',{...runtime,hostedCapabilities:{readOnlyCatalog:true,photoVerification:!!verifier},deploymentCommit:process.env.ITC_BUILD_SHA||null});
 const surface=JSON.parse(fs.readFileSync(path.join(DIR,'surface-markings.json'))),geometry=JSON.parse(fs.readFileSync(path.join(DIR,'presentation-geometry.json')));
 const boards=listBoards().flatMap(b=>{
  const pinned=path.join(ROOT,'release/catalog',b.id,'record.json');
@@ -48,5 +50,5 @@ for(const f of ['LICENSE','THIRD_PARTY_NOTICES.md'])write(f,fs.readFileSync(path
 write('CAD_LICENSE.txt',fs.readFileSync(path.join(ROOT,'experiments/cad-viewer/CAD_LICENSE.txt')));
 for(const b of boards){const seed=path.join(ROOT,'release/catalog',b.id);if(fs.existsSync(seed))for(const f of fs.readdirSync(seed).filter(f=>/license|notice/i.test(f)))write('licenses/'+b.id+'/'+f,fs.readFileSync(path.join(seed,f)));}
 json('build-manifest.json',{schema:'jury-hosting/1',boards:boards.map(b=>b.id),savedCatalogueReadOnly:true,files:hashes.slice()});
-fs.writeFileSync(path.join(path.dirname(dest),'firebase.json'),JSON.stringify({hosting:{site:runtime.firebase.projectId,public:path.basename(dest),ignore:['firebase.json','**/.*','**/node_modules/**'],headers:[{source:'/api/**',headers:[{key:'Content-Type',value:'application/json; charset=utf-8'},{key:'Cache-Control',value:'no-store'}]},{source:'/**',headers:[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'no-referrer'}]},{source:'/models/**',headers:[{key:'Content-Type',value:'model/gltf-binary'}]}],rewrites:[{source:'/library/**',destination:'/index.html'}]}},null,2));
+fs.writeFileSync(path.join(path.dirname(dest),'firebase.json'),JSON.stringify({hosting:{site:runtime.firebase.projectId,public:path.basename(dest),ignore:['firebase.json','**/.*','**/node_modules/**'],headers:[{source:'/api/**',headers:[{key:'Content-Type',value:'application/json; charset=utf-8'},{key:'Cache-Control',value:'no-store'}]},{source:'/**',headers:[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'no-referrer'}]},{source:'/models/**',headers:[{key:'Content-Type',value:'model/gltf-binary'}]}],rewrites:[...(verifier?[{source:'/api/photo/verify',run:{serviceId:verifier,region,pinTag:true}}]:[]),{source:'/library/**',destination:'/index.html'}]}},null,2));
 console.log(JSON.stringify({output:dest,boards:boards.map(b=>b.identity.model),files:hashes.length,bytes:hashes.reduce((n,f)=>n+f.bytes,0)}));

@@ -44,7 +44,12 @@ async function api(url,data){
   if(url!=='/api/photo/verify')throw Error('hosted.preparationPending');
   if(!hostedCapabilities.photoVerification)throw Error('hosted.verificationPending');
  }
- const r=await fetch(url,data===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-ITC-Local':'1'},body:JSON.stringify(data)});
+ const headers={'Content-Type':'application/json','X-ITC-Local':'1'};
+ if(data!==undefined&&url==='/api/photo/verify'&&hostedCapabilities?.photoVerification){
+  const attestation=createFirebaseAdapter(runtimeConfig);
+  try{headers['X-Firebase-AppCheck']=await attestation.appCheckToken();}finally{await attestation.dispose();}
+ }
+ const r=await fetch(url,data===undefined?{}:{method:'POST',headers,body:JSON.stringify(data)});
  const b=await r.json();if(!r.ok)throw Error(b.error);return b;
 }
 function link(source,label){const a=el('a',label||source);if(/^https:\/\//.test(source)){a.href=source;a.target='_blank';a.rel='noopener noreferrer';}return a;}

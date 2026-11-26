@@ -43,6 +43,12 @@ export function createFirebaseAdapter(config,{sdkLoader=loadSDK,hasLanguageModel
   return {
     evidenceKind:'real_firebase',cloudModel:CLOUD_MODEL,preflight:()=>validateConfig(settings),errorCode,
     redact:text=>redactText(text,secrets),
+    async appCheckToken(){
+      const {sdk,check}=await context();
+      const value=await sdk.getToken(check,false);
+      if(!value.token)throw fail('app_check_failed');
+      return value.token;
+    },
     async infer({lane,capture,signal,onTiming=()=>{}}) {
       validateConfig(settings); signal.throwIfAborted();
       // SDK 13.4.0 creates no Chrome adapter when LanguageModel is absent.
