@@ -1,12 +1,12 @@
 {
   "scope": "all objects reachable from all refs, including old blobs and commit metadata",
-  "refs": 1,
+  "refs": 2,
   "objectCounts": {
-    "commit": 1,
-    "tree": 33,
-    "blob": 226
+    "commit": 5,
+    "tree": 50,
+    "blob": 250
   },
-  "bytesScanned": 56058554,
+  "bytesScanned": 56336395,
   "candidateSecrets": [],
   "machinePaths": [],
   "mediaRequiringLicenseReview": [
@@ -101,6 +101,16 @@
       "bytes": 35939
     },
     {
+      "object": "28cf65d7908a32719ea97a472d6669b6593851ec",
+      "path": "release/evidence/coral-v4-https-mobile.jpg",
+      "bytes": 36228
+    },
+    {
+      "object": "2b6761c9c01c17b0dabf0748a31e482d70a0a37e",
+      "path": "release/evidence/coral-v4-https.jpg",
+      "bytes": 64819
+    },
+    {
       "object": "da632d96176b87df21e62259e9d7a421a8c8375b",
       "path": "release/evidence/home-dark.jpg",
       "bytes": 55444
@@ -127,10 +137,11 @@
     }
   ],
   "nonNoreplyEmailFingerprints": [],
-  "durationSeconds": 1.681065499986289,
+  "durationSeconds": 1.747399400017457,
   "limitations": [
     "Pattern scan is not proof of absence of every secret. Candidate hits require classification.",
     "Unreachable/reflog-only objects and remote hidden refs are outside this Git export scope.",
     "Rights require source/license review, not a file extension heuristic."
-  ]
+  ],
+  "auditedCommit": "62bf0fe5554ce0d55188827cf2de401057b5e10e"
 }

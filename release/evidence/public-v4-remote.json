@@ -1,0 +1,15 @@
+{
+  "schema": "public-release-verification/1",
+  "checkedAtUTC": "2026-11-26T02:54:00.4574465Z",
+  "repository": "https://github.com/cafka/inside-the-circuit-demo",
+  "branch": "main",
+  "verifiedContentCommit": "62bf0fe5554ce0d55188827cf2de401057b5e10e",
+  "remoteRefMatched": true,
+  "anonymousRepositoryHttp": 200,
+  "isPrivate": false,
+  "researchRepositoryRemainsPrivate": true,
+  "auditSecretCandidates": 0,
+  "auditMachinePathObjects": 0,
+  "auditPersonalAuthorEmails": 0,
+  "receiptNote": "This later receipt records the independently verified content commit; its own commit is not claimed as self-verified."
+}
