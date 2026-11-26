@@ -1,0 +1,61 @@
+{
+  "softwareTests": [
+    {
+      "suite": "release",
+      "passed": 35,
+      "failed": 0
+    },
+    {
+      "suite": "photo",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "catalogue/backside/enrichment regression",
+      "passed": 27,
+      "failed": 0
+    }
+  ],
+  "build": "passed",
+  "syntheticNegative": {
+    "accepted": false,
+    "semanticGroundTruth": false
+  },
+  "unchangedPolicyFiles": [
+    {
+      "path": "src/component-parallax/engine.py",
+      "sha256": "260770c75bdc0303c4c083eb65f28cfa05a99e0bff760980355e5ad92b1e6c99"
+    },
+    {
+      "path": "experiments/component-parallax/policy.json",
+      "sha256": "92732aebc713250fc9e3e562779630dea922b5d02e32c39d77c0986e986dfed7"
+    },
+    {
+      "path": "experiments/board-library/photo-verification-policy.json",
+      "sha256": "ae625571a6d136568345b3d4d1521aaa447efe3ca270566ba5517b7404917b1b"
+    }
+  ],
+  "liveTests": {
+    "platform": "desktop Chrome Windows",
+    "viewport": [
+      1920,
+      855
+    ],
+    "physicalCamera": false,
+    "handset": false,
+    "authenticatedCloudShellPreview": true,
+    "newCloudCalls": 5,
+    "NanoVersionVerified": false
+  },
+  "remoteExperimentServer": {
+    "pid": 7898,
+    "stopped": true,
+    "verification": "kill followed by ps showed no remaining PID in Cloud Shell UI"
+  },
+  "security": {
+    "credentialsInPublishedArtifacts": false,
+    "privatePhotographsPublished": false,
+    "paidResourcesCreated": false,
+    "publicDeploymentChanged": false
+  }
+}

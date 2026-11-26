@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-26",
+  "no_private_photographs_included": true,
+  "photographs": [
+    {
+      "id": "clear",
+      "source": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5_Board.jpg",
+      "author": "SimonWaldherr",
+      "license": "CC BY-SA 4.0",
+      "sourceSHA256": "29c5e99fe2d9cc29b137301f5540bcbb23a5954ceef7c8e100988d4e0d4da688",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "browserCaptureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "capturePreparation": "Browser canvas JPEG quality 0.94; no inference-side crop; source width 1280 from Wikimedia"
+    },
+    {
+      "id": "oblique",
+      "source": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5_Computer.jpg",
+      "author": "RetroEditor",
+      "license": "CC BY 4.0",
+      "sourceSHA256": "c24588aae2539a13d578735f2374a5cae54e8de0cac98c7b0db4bc4c30ba12ae",
+      "dimensions": [
+        1280,
+        960
+      ],
+      "browserCaptureSHA256": "bf2ccc50dcff05543df4f40aa78ef68407239c4c55edfaa12d1ffb2ded0e1943",
+      "capturePreparation": "Browser canvas JPEG quality 0.94; Wikimedia 1280 download, not byte-identical to previous 3072px photograph"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "docs/photo-evidence-v2/clear-contours.jpg",
+      "sha256": "9f12bc8d5485d32025f5f844d54e2aa4e0284547e8dd92ab10d1faaf779662a5",
+      "modification": "Screenshot of app with overlays; photograph not edited",
+      "photo": "clear"
+    },
+    {
+      "file": "docs/photo-evidence-v2/clear-ethernet-card.jpg",
+      "sha256": "1df557ed3cecde4731e8fdee61b92c29f1fe93bd4d56d7b8d7831da81da25204",
+      "modification": "Screenshot of app with overlays; photograph not edited",
+      "photo": "clear"
+    },
+    {
+      "file": "docs/photo-evidence-v2/final-card.jpg",
+      "sha256": "0c06767c00de936eebd0f1bbb0b0b396f4131b92a4b1886b5be7cc52b30a70a2",
+      "modification": "Screenshot of app with overlays; photograph not edited",
+      "photo": "clear"
+    },
+    {
+      "file": "docs/photo-evidence-v2/oblique-failure.jpg",
+      "sha256": "503d7f6c30484b6d96b7aed44f39891ea6b288d3fb7b36861ea30ee072faa37a",
+      "modification": "Screenshot of app with overlays; photograph not edited",
+      "photo": "oblique"
+    },
+    {
+      "file": "docs/photo-evidence-v2/oblique-guidance.jpg",
+      "sha256": "7a4641d4fe1b9ee89e2ca515d4e4f1bf9391c3e763beac0590f63180ecd866f5",
+      "modification": "Screenshot of app with overlays; photograph not edited",
+      "photo": "oblique"
+    }
+  ],
+  "historicalDecisionScript": {
+    "file": ".local/catalog-visibility-review/build-reviewed-data.py",
+    "sha256": "15f13d959bf1546a59a7f26ce9d1a7fa25d38a95e2b44b0a9a307fcff214ec5b",
+    "inputToDetector": false
+  },
+  "exactVerifierInputArchive": {
+    "location": "authenticated Cloud Shell home: itc-photo-clear-capture.jpg",
+    "sha256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+    "localExportVerified": false,
+    "note": "Cloud Shell reported completed transfer, but local file path was not recovered. A/B replay uses the original public JPEG, not this re-encoded capture."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "sourcePartsChecked": 2728,
+  "trianglesChecked": 1639318,
+  "method": "For every source part: SHA256 of each triangle ordered XYZ float32 in meters, compared as a multiset with GLB batch triangle ranges. Verifies positions, winding, multiplicity and part ownership; normals/colors additionally preserved by converter.",
+  "uniqueSelectableIds": [
+    "bcm2712"
+  ],
+  "glbSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+  "elapsedMs": 21731.1811
+}

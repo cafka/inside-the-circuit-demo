@@ -1,0 +1,68 @@
+{
+  "schema": "post-inference-visual-review/1",
+  "reviewer": "Codex visual inspection",
+  "independentHumanGroundTruth": false,
+  "blinded": false,
+  "usedForFitOrThresholds": false,
+  "independentlyConfirmedIdentityCount": null,
+  "polygonIoUAgainstIndependentAnnotations": null,
+  "images": [
+    {
+      "run": "clear-first-live.json",
+      "physicalRegionsByInspection": 12,
+      "mergedAssemblies": 0,
+      "backgroundOnlyProposals": 0,
+      "observedSemanticErrors": [
+        "comp_1 labels upper black-insert USB stack as 3.0",
+        "comp_2 labels lower blue-insert stack as 2.0"
+      ],
+      "confirmedFalseCardsOpened": 0,
+      "note": "Parser rejected all shapes. These are raw proposals, not accepted detections. Markings/port numbering require independent documentary confirmation."
+    },
+    {
+      "run": "clear-live.json",
+      "physicalRegionsByInspection": 10,
+      "mergedAssemblies": 0,
+      "backgroundOnlyProposals": 0,
+      "cardsOpenedWithVisuallyCorrespondingRegion": [
+        "ethernet",
+        "rp1",
+        "usb-c-power"
+      ],
+      "identityPrecision": null,
+      "note": "Geometric acceptance is not class verification. USB identity remains ambiguous; CAM/DISP0/1 labels are visible at the corresponding connectors."
+    },
+    {
+      "run": "clear-gated-live.json",
+      "physicalSingleAssemblyRegionsByInspection": 4,
+      "mergedAssemblies": 1,
+      "backgroundOnlyProposals": 0,
+      "cardsOpenedWithVisuallyCorrespondingRegion": [
+        "ethernet",
+        "rp1",
+        "usb-c-power"
+      ],
+      "problem": "comp_3 combines two distinct stacked USB assemblies in one region. It is not an additional independently identified component."
+    },
+    {
+      "run": "oblique-live.json",
+      "physicalRegionsByInspection": 6,
+      "backgroundOnlyProposals": 0,
+      "wrongBoardIdentity": true,
+      "observedSemanticErrors": [
+        "Compute Module 4 IO Board is not the photographed Pi 5",
+        "Both USB stacks claimed 3.0; this cannot identify them separately",
+        "Ethernet marking Pulse H5004NL does not match the visible TRxCOM enclosure"
+      ],
+      "cardsOpened": 0
+    },
+    {
+      "run": "oblique-gated-live.json",
+      "rawProposals": 5,
+      "wrongBoardIdentity": true,
+      "displayed": 0,
+      "cardsOpened": 0,
+      "note": "Pi 4 Model B claim rejected because reported literal text does not contain that model. No automatic semantic validation of the five retained proposals."
+    }
+  ]
+}

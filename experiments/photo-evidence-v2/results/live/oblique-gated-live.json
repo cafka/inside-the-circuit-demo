@@ -1,0 +1,427 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "bf2ccc50dcff05543df4f40aa78ef68407239c4c55edfaa12d1ffb2ded0e1943",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T22:51:34.658Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": false,
+    "imageAvailability": "api_not_exposed",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "needs_evidence",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"present\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": \"Raspberry Pi\",\n    \"family\": \"Raspberry Pi\",\n    \"model\": \"Raspberry Pi 4 Model B\",\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"identified\",\n    \"visualEvidence\": [\n      \"Readable Raspberry Pi logo on PCB\",\n      \"Characteristic Raspberry Pi 4 layout with dual micro HDMI ports, USB-C power, and Ethernet/USB configuration\"\n    ],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"Hardware revision marking is obscured or not clearly legible.\"\n    ]\n  },\n  \"identityEvidence\": {\n    \"basis\": \"readable_model_marking\",\n    \"observedText\": \"Raspberry Pi\",\n    \"box\": [\n      237,\n      237,\n      303,\n      314\n    ]\n  },\n  \"components\": [\n    {\n      \"id\": \"comp_ethernet\",\n      \"name\": \"Ethernet Port\",\n      \"marking\": \"TRxCOM J0011D21NL China X 2040 J10\",\n      \"status\": \"proposed\",\n      \"box\": [\n        392,\n        400,\n        815,\n        715\n      ],\n      \"visiblePolygon\": [\n        {\"x\": 400, \"y\": 482},\n        {\"x\": 582, \"y\": 392},\n        {\"x\": 715, \"y\": 643},\n        {\"x\": 605, \"y\": 815},\n        {\"x\": 418, \"y\": 662}\n      ],\n      \"evidence\": \"Large metal shielded RJ45 Ethernet connector with visible text on the top surface.\"\n    },\n    {\n      \"id\": \"comp_usb_dual_1\",\n      \"name\": \"Dual USB 3.0 Port\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        304,\n        597,\n        644,\n        841\n      ],\n      \"visiblePolygon\": [\n        {\"x\": 597, \"y\": 328},\n        {\"x\": 841, \"y\": 304},\n        {\"x\": 911, \"y\": 381},\n        {\"x\": 737, \"y\": 644}\n      ],\n      \"evidence\": \"Stacked dual USB port with blue plastic inserts indicating USB 3.0.\"\n    },\n    {\n      \"id\": \"comp_usb_dual_2\",\n      \"name\": \"Dual USB 2.0 Port\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        238,\n        700,\n        538,\n        913\n      ],\n      \"visiblePolygon\": [\n        {\"x\": 700, \"y\": 255},\n        {\"x\": 913, \"y\": 238},\n        {\"x\": 913, \"y\": 472},\n        {\"x\": 733, \"y\": 538}\n      ],\n      \"evidence\": \"Stacked dual USB port with black plastic inserts.\"\n    },\n    {\n      \"id\": \"comp_gpio\",\n      \"name\": \"GPIO Header\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        131,\n        354,\n        359,\n        664\n      ],\n      \"visiblePolygon\": [\n        {\"x\": 354, \"y\": 147},\n        {\"x\": 664, \"y\": 273},\n        {\"x\": 617, \"y\": 359},\n        {\"x\": 382, \"y\": 200}\n      ],\n      \"evidence\": \"40-pin dual-row male pin header strip along the edge of the board.\"\n    },\n    {\n      \"id\": \"comp_soc_shield\",\n      \"name\": \"SoC EMI Shield\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        264,\n        248,\n        441,\n        430\n      ],\n      \"visiblePolygon\": [\n        {\"x\": 264, \"y\": 307},\n        {\"x\": 425, \"y\": 264},\n        {\"x\": 430, \"y\": 395},\n        {\"x\": 308, \"y\": 441}\n      ],\n      \"evidence\": \"Metallic square shield covering the main SoC.\"\n    }\n  ]\n}",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "identity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 4 Model B",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Readable Raspberry Pi logo on PCB",
+        "Characteristic Raspberry Pi 4 layout with dual micro HDMI ports, USB-C power, and Ethernet/USB configuration"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Hardware revision marking is obscured or not clearly legible."
+      ]
+    },
+    "recovery": null,
+    "boardPresence": "present",
+    "components": [
+      {
+        "id": "comp_ethernet",
+        "name": "Ethernet Port",
+        "marking": "TRxCOM J0011D21NL China X 2040 J10",
+        "status": "proposed",
+        "box": [
+          392,
+          400,
+          815,
+          715
+        ],
+        "visiblePolygon": [
+          [
+            400,
+            482
+          ],
+          [
+            582,
+            392
+          ],
+          [
+            715,
+            643
+          ],
+          [
+            605,
+            815
+          ],
+          [
+            418,
+            662
+          ]
+        ],
+        "evidence": "Large metal shielded RJ45 Ethernet connector with visible text on the top surface."
+      },
+      {
+        "id": "comp_usb_dual_1",
+        "name": "Dual USB 3.0 Port",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          304,
+          597,
+          644,
+          841
+        ],
+        "visiblePolygon": null,
+        "evidence": "Stacked dual USB port with blue plastic inserts indicating USB 3.0."
+      },
+      {
+        "id": "comp_usb_dual_2",
+        "name": "Dual USB 2.0 Port",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          238,
+          700,
+          538,
+          913
+        ],
+        "visiblePolygon": [
+          [
+            700,
+            255
+          ],
+          [
+            913,
+            238
+          ],
+          [
+            913,
+            472
+          ],
+          [
+            733,
+            538
+          ]
+        ],
+        "evidence": "Stacked dual USB port with black plastic inserts."
+      },
+      {
+        "id": "comp_gpio",
+        "name": "GPIO Header",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          131,
+          354,
+          359,
+          664
+        ],
+        "visiblePolygon": [
+          [
+            354,
+            147
+          ],
+          [
+            664,
+            273
+          ],
+          [
+            617,
+            359
+          ],
+          [
+            382,
+            200
+          ]
+        ],
+        "evidence": "40-pin dual-row male pin header strip along the edge of the board."
+      },
+      {
+        "id": "comp_soc_shield",
+        "name": "SoC EMI Shield",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          264,
+          248,
+          441,
+          430
+        ],
+        "visiblePolygon": [
+          [
+            264,
+            307
+          ],
+          [
+            425,
+            264
+          ],
+          [
+            430,
+            395
+          ],
+          [
+            308,
+            441
+          ]
+        ],
+        "evidence": "Metallic square shield covering the main SoC."
+      }
+    ],
+    "warnings": [
+      {
+        "id": "comp_usb_dual_1",
+        "reason": "invalid_visible_polygon_ignored",
+        "rawPolygon": [
+          {
+            "x": 597,
+            "y": 328
+          },
+          {
+            "x": 841,
+            "y": 304
+          },
+          {
+            "x": 911,
+            "y": 381
+          },
+          {
+            "x": 737,
+            "y": 644
+          }
+        ]
+      }
+    ],
+    "identityEvidence": {
+      "basis": "readable_model_marking",
+      "observedText": "Raspberry Pi",
+      "box": [
+        237,
+        237,
+        303,
+        314
+      ]
+    }
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 19.900000005960464,
+    "firebaseMs": 1674,
+    "initializationMs": 1674.8999999761581,
+    "inferenceMs": 4865.4000000059605
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "needs_evidence",
+      "timingsMs": {
+        "firebaseMs": 1674,
+        "initializationMs": 1674.8999999761581,
+        "inferenceMs": 4865.4000000059605
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1895,
+    "candidatesTokenCount": 1179,
+    "totalTokenCount": 3074,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1064
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 831
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [
+    {
+      "id": "comp_ethernet",
+      "name": "Ethernet Port",
+      "marking": "TRxCOM J0011D21NL China X 2040 J10",
+      "status": "proposed",
+      "box": [
+        392,
+        400,
+        815,
+        715
+      ],
+      "visiblePolygon": [
+        [
+          400,
+          482
+        ],
+        [
+          582,
+          392
+        ],
+        [
+          715,
+          643
+        ],
+        [
+          605,
+          815
+        ],
+        [
+          418,
+          662
+        ]
+      ],
+      "evidence": "Large metal shielded RJ45 Ethernet connector with visible text on the top surface."
+    },
+    {
+      "id": "comp_usb_dual_1",
+      "name": "Dual USB 3.0 Port",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        304,
+        597,
+        644,
+        841
+      ],
+      "visiblePolygon": null,
+      "evidence": "Stacked dual USB port with blue plastic inserts indicating USB 3.0."
+    },
+    {
+      "id": "comp_usb_dual_2",
+      "name": "Dual USB 2.0 Port",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        238,
+        700,
+        538,
+        913
+      ],
+      "visiblePolygon": [
+        [
+          700,
+          255
+        ],
+        [
+          913,
+          238
+        ],
+        [
+          913,
+          472
+        ],
+        [
+          733,
+          538
+        ]
+      ],
+      "evidence": "Stacked dual USB port with black plastic inserts."
+    },
+    {
+      "id": "comp_gpio",
+      "name": "GPIO Header",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        131,
+        354,
+        359,
+        664
+      ],
+      "visiblePolygon": [
+        [
+          354,
+          147
+        ],
+        [
+          664,
+          273
+        ],
+        [
+          617,
+          359
+        ],
+        [
+          382,
+          200
+        ]
+      ],
+      "evidence": "40-pin dual-row male pin header strip along the edge of the board."
+    },
+    {
+      "id": "comp_soc_shield",
+      "name": "SoC EMI Shield",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        264,
+        248,
+        441,
+        430
+      ],
+      "visiblePolygon": [
+        [
+          264,
+          307
+        ],
+        [
+          425,
+          264
+        ],
+        [
+          430,
+          395
+        ],
+        [
+          308,
+          441
+        ]
+      ],
+      "evidence": "Metallic square shield covering the main SoC."
+    }
+  ],
+  "identityGate": {
+    "policy": "photo-identity-evidence/1",
+    "allowed": false,
+    "reason": "readable_model_marking_required",
+    "observedText": "Raspberry Pi",
+    "box": [
+      237,
+      237,
+      303,
+      314
+    ],
+    "independentOCRVerification": false,
+    "meaning": "A model-reported layout alone cannot select an exact catalogue entry. Reported text can still be wrong."
+  },
+  "totalMs": 6564.300000011921,
+  "inputKind": "uploaded_photo",
+  "testInput": "saved_photograph_not_live_camera"
+}

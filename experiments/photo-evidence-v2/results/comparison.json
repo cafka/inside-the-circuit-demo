@@ -1,0 +1,955 @@
+{
+  "schema": "photo-evidence-comparison/1",
+  "rows": [
+    {
+      "file": "clear-first-live.json",
+      "artifactSHA256": "031ba62ba7d33943c9a5832e45af898d7c79c356ce5b9c376dc8d083a366ab0b",
+      "evidenceKind": "saved_live_inference_and_recorded_UI_actions",
+      "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "status": "invalid_response",
+      "claimedModel": "Raspberry Pi 5",
+      "rawProposed": 12,
+      "parsedProposed": 0,
+      "identityGate": null,
+      "actualCounts": null,
+      "acceptedPixelIds": [],
+      "timingsMs": {
+        "preparation": 92.69999998807907,
+        "firebaseMs": 2087.899999976158,
+        "initializationMs": 2096.0999999940395,
+        "inferenceMs": 7204.4000000059605
+      },
+      "usageMetadata": {
+        "promptTokenCount": 1791,
+        "candidatesTokenCount": 2129,
+        "totalTokenCount": 3920,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 711
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1080
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": null,
+      "runtimeRoute": "in_cloud",
+      "modelRequested": "gemini-3.5-flash-lite"
+    },
+    {
+      "file": "clear-gated-live.json",
+      "artifactSHA256": "f285d9bb058cf9a0d6799c4a1c227a2976fba5e584fbd79786cc4928d458792a",
+      "evidenceKind": "saved_live_inference_and_recorded_UI_actions",
+      "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "status": "identified",
+      "claimedModel": "Raspberry Pi 5",
+      "rawProposed": 5,
+      "parsedProposed": 5,
+      "identityGate": {
+        "policy": "photo-identity-evidence/1",
+        "allowed": true,
+        "reason": "model_text_proposed_with_image_region",
+        "observedText": "Raspberry Pi 5",
+        "box": [
+          219,
+          334,
+          252,
+          468
+        ],
+        "independentOCRVerification": false,
+        "meaning": "A model-reported layout alone cannot select an exact catalogue entry. Reported text can still be wrong."
+      },
+      "actualCounts": {
+        "proposed": 5,
+        "pixelAccepted": 4,
+        "documentLinked": 3,
+        "cadLinked": 3,
+        "displayed": 3,
+        "opened": 3,
+        "independentlyConfirmedIdentities": null
+      },
+      "acceptedPixelIds": [
+        "comp_1",
+        "comp_2",
+        "comp_4",
+        "comp_5"
+      ],
+      "timingsMs": {
+        "preparation": 16.399999976158142,
+        "firebaseMs": 1254.0999999940395,
+        "initializationMs": 1254.4000000059605,
+        "inferenceMs": 4618.699999988079,
+        "cataloguePreparation": 160.09999999403954,
+        "componentVerification": 2316.5,
+        "captureToRectangles": 10126.200000017881
+      },
+      "usageMetadata": {
+        "promptTokenCount": 1911,
+        "candidatesTokenCount": 1116,
+        "totalTokenCount": 3027,
+        "promptTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1080
+          },
+          {
+            "modality": "TEXT",
+            "tokenCount": 831
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": null,
+      "runtimeRoute": "in_cloud",
+      "modelRequested": "gemini-3.5-flash-lite",
+      "offlineBindingReplay": {
+        "termPolicy": "document-component-terms/2",
+        "kind": "no_new_inference_no_new_pixel_test_no_UI_click",
+        "trace": {
+          "schema": "photo-evidence-trace/1",
+          "rows": [
+            {
+              "id": "comp_1",
+              "name": "SoC",
+              "marking": "BROADCOM 2712ZPKFSBOOC1T",
+              "box": [
+                400,
+                316,
+                617,
+                479
+              ],
+              "visiblePolygon": [
+                [
+                  318,
+                  401
+                ],
+                [
+                  477,
+                  401
+                ],
+                [
+                  477,
+                  615
+                ],
+                [
+                  318,
+                  615
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_2",
+              "name": "Ethernet Jack",
+              "marking": "Trxcom TRJG0926HENL4R",
+              "box": [
+                499,
+                673,
+                727,
+                855
+              ],
+              "visiblePolygon": [
+                [
+                  675,
+                  501
+                ],
+                [
+                  853,
+                  501
+                ],
+                [
+                  853,
+                  725
+                ],
+                [
+                  675,
+                  725
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "ethernet"
+              ],
+              "componentId": "ethernet",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_3",
+              "name": "USB Ports",
+              "marking": "MICONN",
+              "box": [
+                113,
+                699,
+                494,
+                855
+              ],
+              "visiblePolygon": [
+                [
+                  701,
+                  115
+                ],
+                [
+                  853,
+                  115
+                ],
+                [
+                  853,
+                  492
+                ],
+                [
+                  701,
+                  492
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": false,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "segmentation_reaches_search_limit",
+              "reasons": [
+                "segmentation_reaches_search_limit",
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_4",
+              "name": "USB-C Power Port",
+              "marking": "VALCON",
+              "box": [
+                705,
+                179,
+                805,
+                257
+              ],
+              "visiblePolygon": [
+                [
+                  181,
+                  707
+                ],
+                [
+                  255,
+                  707
+                ],
+                [
+                  255,
+                  803
+                ],
+                [
+                  181,
+                  803
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "usb-c-power"
+              ],
+              "componentId": "usb-c-power",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_5",
+              "name": "RP1 Chip",
+              "marking": "RP1-C0",
+              "box": [
+                299,
+                553,
+                438,
+                664
+              ],
+              "visiblePolygon": [
+                [
+                  555,
+                  301
+                ],
+                [
+                  662,
+                  301
+                ],
+                [
+                  662,
+                  436
+                ],
+                [
+                  555,
+                  436
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "rp1"
+              ],
+              "componentId": "rp1",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            }
+          ],
+          "counts": {
+            "proposed": 5,
+            "pixelAccepted": 4,
+            "documentLinked": 3,
+            "cadLinked": 3,
+            "displayed": 3,
+            "opened": 0,
+            "independentlyConfirmedIdentities": null
+          },
+          "planeRegistration": "not_computed",
+          "independentEvaluationRequired": true
+        }
+      },
+      "seedEqualsBox": []
+    },
+    {
+      "file": "clear-live.json",
+      "artifactSHA256": "b40c9cf6344948b3e02a110f3d953e4673375a5c26620e86a1a4500e5082b278",
+      "evidenceKind": "saved_live_inference_and_recorded_UI_actions",
+      "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+      "status": "identified",
+      "claimedModel": "Raspberry Pi 5",
+      "rawProposed": 10,
+      "parsedProposed": 10,
+      "identityGate": null,
+      "actualCounts": {
+        "proposed": 10,
+        "pixelAccepted": 9,
+        "documentLinked": 3,
+        "cadLinked": 3,
+        "displayed": 3,
+        "opened": 3,
+        "independentlyConfirmedIdentities": null
+      },
+      "acceptedPixelIds": [
+        "comp_001",
+        "comp_002",
+        "comp_003",
+        "comp_004",
+        "comp_005",
+        "comp_006",
+        "comp_007",
+        "comp_008",
+        "comp_009"
+      ],
+      "timingsMs": {
+        "preparation": 24.099999994039536,
+        "firebaseMs": 1462.699999988079,
+        "initializationMs": 1463.7999999821186,
+        "inferenceMs": 7672.800000011921,
+        "cataloguePreparation": 162.30000001192093,
+        "componentVerification": 3470.0999999940395,
+        "captureToRectangles": 13321.300000011921
+      },
+      "usageMetadata": {
+        "promptTokenCount": 1800,
+        "candidatesTokenCount": 2087,
+        "totalTokenCount": 3887,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 720
+          },
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1080
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": null,
+      "runtimeRoute": "in_cloud",
+      "modelRequested": "gemini-3.5-flash-lite",
+      "offlineBindingReplay": {
+        "termPolicy": "document-component-terms/2",
+        "kind": "no_new_inference_no_new_pixel_test_no_UI_click",
+        "trace": {
+          "schema": "photo-evidence-trace/1",
+          "rows": [
+            {
+              "id": "comp_001",
+              "name": "Ethernet Jack",
+              "marking": "Trxcom TRJG0926HENL4R China M 2330",
+              "box": [
+                508,
+                667,
+                715,
+                861
+              ],
+              "visiblePolygon": [
+                [
+                  667,
+                  508
+                ],
+                [
+                  861,
+                  508
+                ],
+                [
+                  861,
+                  715
+                ],
+                [
+                  667,
+                  715
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "ethernet"
+              ],
+              "componentId": "ethernet",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_002",
+              "name": "USB Port",
+              "marking": "MICONN",
+              "box": [
+                106,
+                700,
+                299,
+                857
+              ],
+              "visiblePolygon": [
+                [
+                  700,
+                  106
+                ],
+                [
+                  857,
+                  106
+                ],
+                [
+                  857,
+                  299
+                ],
+                [
+                  700,
+                  299
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_003",
+              "name": "USB Port",
+              "marking": "MICONN",
+              "box": [
+                300,
+                704,
+                493,
+                857
+              ],
+              "visiblePolygon": [
+                [
+                  704,
+                  300
+                ],
+                [
+                  857,
+                  300
+                ],
+                [
+                  857,
+                  493
+                ],
+                [
+                  704,
+                  493
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_004",
+              "name": "SoC",
+              "marking": "BROADCOM 2712ZPKFSBOOC1T TN2333 P31 192-17 T3",
+              "box": [
+                414,
+                322,
+                617,
+                476
+              ],
+              "visiblePolygon": [
+                [
+                  322,
+                  414
+                ],
+                [
+                  476,
+                  414
+                ],
+                [
+                  476,
+                  617
+                ],
+                [
+                  322,
+                  617
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_005",
+              "name": "RP1 Chip",
+              "marking": "RP1-C0 23/29 P1HG51.00",
+              "box": [
+                298,
+                551,
+                452,
+                664
+              ],
+              "visiblePolygon": [
+                [
+                  551,
+                  298
+                ],
+                [
+                  664,
+                  298
+                ],
+                [
+                  664,
+                  452
+                ],
+                [
+                  551,
+                  452
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "rp1"
+              ],
+              "componentId": "rp1",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_006",
+              "name": "SDRAM",
+              "marking": "K4U8E3D SEC 334 JM93J39R",
+              "box": [
+                256,
+                339,
+                392,
+                467
+              ],
+              "visiblePolygon": [
+                [
+                  339,
+                  256
+                ],
+                [
+                  467,
+                  256
+                ],
+                [
+                  467,
+                  392
+                ],
+                [
+                  339,
+                  392
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_007",
+              "name": "USB Type-C Port",
+              "marking": "VALCON",
+              "box": [
+                700,
+                181,
+                805,
+                256
+              ],
+              "visiblePolygon": [
+                [
+                  181,
+                  700
+                ],
+                [
+                  256,
+                  700
+                ],
+                [
+                  256,
+                  805
+                ],
+                [
+                  181,
+                  805
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "usb-c-power"
+              ],
+              "componentId": "usb-c-power",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_008",
+              "name": "Power Management IC",
+              "marking": "RENESAS DA90",
+              "box": [
+                561,
+                189,
+                646,
+                251
+              ],
+              "visiblePolygon": [
+                [
+                  189,
+                  561
+                ],
+                [
+                  251,
+                  561
+                ],
+                [
+                  251,
+                  646
+                ],
+                [
+                  189,
+                  646
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [],
+              "componentId": null,
+              "cadAssociation": "none",
+              "cardAvailable": false,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "document_link_unmatched",
+              "reasons": [
+                "document_link_unmatched"
+              ]
+            },
+            {
+              "id": "comp_009",
+              "name": "Camera/Display Connector",
+              "marking": "CAM/DISP 0",
+              "box": [
+                579,
+                565,
+                775,
+                597
+              ],
+              "visiblePolygon": [
+                [
+                  565,
+                  579
+                ],
+                [
+                  597,
+                  579
+                ],
+                [
+                  597,
+                  775
+                ],
+                [
+                  565,
+                  775
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": true,
+              "documentCandidates": [
+                "mipi-0"
+              ],
+              "componentId": "mipi-0",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": true,
+              "cardOpened": false,
+              "firstBlockingStage": null,
+              "reasons": []
+            },
+            {
+              "id": "comp_010",
+              "name": "Camera/Display Connector",
+              "marking": "CAM/DISP 1",
+              "box": [
+                579,
+                518,
+                776,
+                551
+              ],
+              "visiblePolygon": [
+                [
+                  518,
+                  579
+                ],
+                [
+                  551,
+                  579
+                ],
+                [
+                  551,
+                  776
+                ],
+                [
+                  518,
+                  776
+                ]
+              ],
+              "semanticStatus": "model_proposal_not_independently_verified",
+              "pixelAccepted": false,
+              "documentCandidates": [
+                "mipi-1"
+              ],
+              "componentId": "mipi-1",
+              "cadAssociation": "existing_catalogue_link_not_photo_registration",
+              "cardAvailable": true,
+              "displayed": false,
+              "cardOpened": false,
+              "firstBlockingStage": "unstable_with_seed_change",
+              "reasons": [
+                "unstable_with_seed_change"
+              ]
+            }
+          ],
+          "counts": {
+            "proposed": 10,
+            "pixelAccepted": 9,
+            "documentLinked": 5,
+            "cadLinked": 5,
+            "displayed": 4,
+            "opened": 0,
+            "independentlyConfirmedIdentities": null
+          },
+          "planeRegistration": "not_computed",
+          "independentEvaluationRequired": true
+        }
+      },
+      "seedEqualsBox": [
+        "comp_001",
+        "comp_002",
+        "comp_003",
+        "comp_004",
+        "comp_005",
+        "comp_006",
+        "comp_007",
+        "comp_008",
+        "comp_009",
+        "comp_010"
+      ]
+    },
+    {
+      "file": "oblique-gated-live.json",
+      "artifactSHA256": "cde65ddab8d083e08361bf1aa7267adf85ef3d52a070e030a3b2f0b0579953e8",
+      "evidenceKind": "saved_live_inference_and_recorded_UI_actions",
+      "captureSHA256": "bf2ccc50dcff05543df4f40aa78ef68407239c4c55edfaa12d1ffb2ded0e1943",
+      "status": "needs_evidence",
+      "claimedModel": "Raspberry Pi 4 Model B",
+      "rawProposed": 5,
+      "parsedProposed": 5,
+      "identityGate": {
+        "policy": "photo-identity-evidence/1",
+        "allowed": false,
+        "reason": "readable_model_marking_required",
+        "observedText": "Raspberry Pi",
+        "box": [
+          237,
+          237,
+          303,
+          314
+        ],
+        "independentOCRVerification": false,
+        "meaning": "A model-reported layout alone cannot select an exact catalogue entry. Reported text can still be wrong."
+      },
+      "actualCounts": null,
+      "acceptedPixelIds": [],
+      "timingsMs": {
+        "preparation": 19.900000005960464,
+        "firebaseMs": 1674,
+        "initializationMs": 1674.8999999761581,
+        "inferenceMs": 4865.4000000059605
+      },
+      "usageMetadata": {
+        "promptTokenCount": 1895,
+        "candidatesTokenCount": 1179,
+        "totalTokenCount": 3074,
+        "promptTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1064
+          },
+          {
+            "modality": "TEXT",
+            "tokenCount": 831
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": null,
+      "runtimeRoute": "in_cloud",
+      "modelRequested": "gemini-3.5-flash-lite"
+    },
+    {
+      "file": "oblique-live.json",
+      "artifactSHA256": "682cf0027f3df55957cd12b6d7ce3a0951fe1f7a3632f348340b07c6020e7bb3",
+      "evidenceKind": "saved_live_inference_and_recorded_UI_actions",
+      "captureSHA256": "bf2ccc50dcff05543df4f40aa78ef68407239c4c55edfaa12d1ffb2ded0e1943",
+      "status": "identified",
+      "claimedModel": "Compute Module 4 IO Board",
+      "rawProposed": 6,
+      "parsedProposed": 6,
+      "identityGate": null,
+      "actualCounts": {
+        "proposed": 6,
+        "pixelAccepted": 3,
+        "documentLinked": 0,
+        "cadLinked": 0,
+        "displayed": 0,
+        "opened": 0,
+        "independentlyConfirmedIdentities": null
+      },
+      "acceptedPixelIds": [
+        "comp_gpio_header",
+        "comp_conn_cam_display_1",
+        "comp_conn_cam_display_2"
+      ],
+      "timingsMs": {
+        "preparation": 14.700000017881393,
+        "firebaseMs": 1528.0999999940395,
+        "initializationMs": 1528.800000011921,
+        "inferenceMs": 5571.0999999940395,
+        "cataloguePreparation": 3466.5,
+        "componentVerification": 7724.899999976158,
+        "captureToRectangles": 18514.100000023842
+      },
+      "usageMetadata": {
+        "promptTokenCount": 1784,
+        "candidatesTokenCount": 1508,
+        "totalTokenCount": 3292,
+        "promptTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1064
+          },
+          {
+            "modality": "TEXT",
+            "tokenCount": 720
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "modelVersion": null,
+      "runtimeRoute": "in_cloud",
+      "modelRequested": "gemini-3.5-flash-lite"
+    }
+  ],
+  "cost": {
+    "inputTokens": 9181,
+    "outputTokens": 8019,
+    "inputUSDPerMillion": 0.3,
+    "outputUSDPerMillion": 2.5,
+    "estimatedUSD": 0.0228018,
+    "billingConsoleObservedThisRun": false,
+    "pricingSource": "https://ai.google.dev/gemini-api/docs/pricing"
+  },
+  "independentSemanticGroundTruth": false,
+  "expandedFiveBoardTest": "not_started_Pi5_coverage_prerequisite_not_met"
+}

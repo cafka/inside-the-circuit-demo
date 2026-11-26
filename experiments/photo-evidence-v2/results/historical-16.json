@@ -6551,7 +6551,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -6634,7 +6636,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -6760,7 +6764,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -6972,7 +6978,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -7141,7 +7149,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -7310,7 +7320,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -7479,7 +7491,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -7648,7 +7662,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -7774,7 +7790,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -9577,7 +9595,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -9660,7 +9680,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -9829,7 +9851,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -9955,7 +9979,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -10081,7 +10107,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -10207,7 +10235,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",
@@ -10376,7 +10406,9 @@
           ]
         }
       ],
-      "identityDecision": "human_official_photo_and_layout_review",
+      "identityDecision": "assistant_visual_curation_not_programmatic_detection",
+      "independentHumanReviewRecorded": false,
+      "decisionRecordLimit": "Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.",
       "algorithmicSteps": [
         "STEP tessellation",
         "source part triangle provenance",

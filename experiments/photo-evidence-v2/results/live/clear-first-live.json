@@ -1,0 +1,77 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T22:46:25.389Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": false,
+    "imageAvailability": "api_not_exposed",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "invalid_response",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"present\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": \"Raspberry Pi\",\n    \"family\": \"Raspberry Pi\",\n    \"model\": \"Raspberry Pi 5\",\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"identified\",\n    \"visualEvidence\": [\n      \"Board silkscreen clearly reads 'Raspberry Pi 5'\",\n      \"HAT+ GPIO INTERFACE text on silkscreen\",\n      \"Raspberry Pi logo printed on PCB\"\n    ],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"Hardware revision not explicitly visible on top silkscreen.\"\n    ]\n  },\n  \"components\": [\n    {\n      \"id\": \"comp_0\",\n      \"name\": \"Ethernet Jack\",\n      \"marking\": \"Trxcom TRJG0926HENL4R China M 2330\",\n      \"status\": \"proposed\",\n      \"box\": [\n        476,\n        670,\n        723,\n        859\n      ],\n      \"visiblePolygon\": [\n        [690, 680],\n        [490, 680],\n        [495, 845],\n        [710, 845]\n      ],\n      \"evidence\": \"Metal shielded RJ45 connector housing on the right edge with readable part number.\"\n    },\n    {\n      \"id\": \"comp_1\",\n      \"name\": \"USB 3.0 Dual Port\",\n      \"marking\": \"MICONN\",\n      \"status\": \"proposed\",\n      \"box\": [\n        97,\n        700,\n        296,\n        854\n      ],\n      \"visiblePolygon\": [\n        [285, 710],\n        [105, 710],\n        [110, 845],\n        [270, 845]\n      ],\n      \"evidence\": \"Dual stacked USB-A ports with blue inserts located at the top right.\"\n    },\n    {\n      \"id\": \"comp_2\",\n      \"name\": \"USB 2.0 Dual Port\",\n      \"marking\": \"MICONN\",\n      \"status\": \"proposed\",\n      \"box\": [\n        297,\n        704,\n        495,\n        859\n      ],\n      \"visiblePolygon\": [\n        [480, 715],\n        [310, 715],\n        [310, 850],\n        [470, 850]\n      ],\n      \"evidence\": \"Dual stacked USB-A ports with black inserts located below the USB 3.0 ports.\"\n    },\n    {\n      \"id\": \"comp_3\",\n      \"name\": \"SoC (System on Chip)\",\n      \"marking\": \"BROADCOM 2712ZPKFSB00C1T TN2333 P31 192-17 T3\",\n      \"status\": \"proposed\",\n      \"box\": [\n        408,\n        322,\n        617,\n        478\n      ],\n      \"visiblePolygon\": [\n        [598, 332],\n        [422, 332],\n        [420, 468],\n        [600, 468]\n      ],\n      \"evidence\": \"Large integrated circuit with a metallic heat spreader top cover and readable Broadcom markings.\"\n    },\n    {\n      \"id\": \"comp_4\",\n      \"name\": \"SDRAM Memory\",\n      \"marking\": \"K4U8E3D SEC 334 JMS9139R\",\n      \"status\": \"proposed\",\n      \"box\": [\n        260,\n        339,\n        388,\n        467\n      ],\n      \"visiblePolygon\": [\n        [374, 349],\n        [272, 349],\n        [270, 458],\n        [378, 458]\n      ],\n      \"evidence\": \"Black rectangular IC package located centrally above the main SoC.\"\n    },\n    {\n      \"id\": \"comp_5\",\n      \"name\": \"IO Controller / Bridge Chip\",\n      \"marking\": \"RP1-C0 P1HG51.00 23/29\",\n      \"status\": \"proposed\",\n      \"box\": [\n        308,\n        553,\n        438,\n        662\n      ],\n      \"visiblePolygon\": [\n        [425, 563],\n        [319, 563],\n        [317, 652],\n        [425, 652]\n      ],\n      \"evidence\": \"Square BGA package featuring the Raspberry Pi logo and RP1-C0 marking.\"\n    },\n    {\n      \"id\": \"comp_6\",\n      \"name\": \"USB-C Power Connector\",\n      \"marking\": \"VALCON\",\n      \"status\": \"proposed\",\n      \"box\": [\n        697,\n        179,\n        805,\n        256\n      ],\n      \"visiblePolygon\": [\n        [790, 189],\n        [710, 189],\n        [710, 246],\n        [790, 246]\n      ],\n      \"evidence\": \"USB Type-C port on the bottom edge labeled with power indicators nearby.\"\n    },\n    {\n      \"id\": \"comp_7\",\n      \"name\": \"Micro HDMI Port\",\n      \"marking\": \"MICONN\",\n      \"status\": \"proposed\",\n      \"box\": [\n        690,\n        305,\n        806,\n        371\n      ],\n      \"visiblePolygon\": [\n        [790, 315],\n        [700, 315],\n        [700, 361],\n        [790, 361]\n      ],\n      \"evidence\": \"Micro HDMI port labeled HDMI0 near the bottom edge.\"\n    },\n    {\n      \"id\": \"comp_8\",\n      \"name\": \"Micro HDMI Port\",\n      \"marking\": \"MICONN\",\n      \"status\": \"proposed\",\n      \"box\": [\n        692,\n        420,\n        806,\n        483\n      ],\n      \"visiblePolygon\": [\n        [790, 430],\n        [700, 430],\n        [700, 473],\n        [790, 473]\n      ],\n      \"evidence\": \"Micro HDMI port labeled HDMI1 near the bottom edge.\"\n    },\n    {\n      \"id\": \"comp_9\",\n      \"name\": \"PCIe Connector\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        322,\n        138,\n        479,\n        180\n      ],\n      \"visiblePolygon\": [\n        [465, 144],\n        [335, 144],\n        [335, 172],\n        [465, 172]\n      ],\n      \"evidence\": \"Low profile surface mount FPC connector labeled PCIe on the left side of the board.\"\n    },\n    {\n      \"id\": \"comp_10\",\n      \"name\": \"Camera / Display Connector\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        573,\n        518,\n        777,\n        551\n      ],\n      \"visiblePolygon\": [\n        [765, 524],\n        [585, 524],\n        [585, 545],\n        [765, 545]\n      ],\n      \"evidence\": \"Long brown/gold vertical connector labeled CAM/DISP 1.\"\n    },\n    {\n      \"id\": \"comp_11\",\n      \"name\": \"Camera / Display Connector\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        575,\n        565,\n        778,\n        597\n      ],\n      \"visiblePolygon\": [\n        [765, 571],\n        [585, 571],\n        [585, 591],\n        [765, 591]\n      ],\n      \"evidence\": \"Long brown/gold vertical connector labeled CAM/DISP 0.\"\n    }\n  ]\n}",
+  "validation": {
+    "valid": false,
+    "identity": null,
+    "components": [],
+    "errors": [
+      "invalid_visible_polygon"
+    ]
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 92.69999998807907,
+    "firebaseMs": 2087.899999976158,
+    "initializationMs": 2096.0999999940395,
+    "inferenceMs": 7204.4000000059605
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "invalid_response",
+      "timingsMs": {
+        "firebaseMs": 2087.899999976158,
+        "initializationMs": 2096.0999999940395,
+        "inferenceMs": 7204.4000000059605
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1791,
+    "candidatesTokenCount": 2129,
+    "totalTokenCount": 3920,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 711
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1080
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [],
+  "totalMs": 9398.40000000596,
+  "inputKind": "uploaded_photo",
+  "testInput": "saved_photograph_not_live_camera"
+}

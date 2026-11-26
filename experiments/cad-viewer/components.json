@@ -1,0 +1,17 @@
+{
+  "schema": "cad-selectable-components/1",
+  "components": [
+    {
+      "id": "bcm2712",
+      "sourceProduct": "OBJ1927",
+      "stepRepresentation": 234896,
+      "expectedBoundsMm": [[24.65, 14.25, 1.336], [41.65, 31.25, 3.654]],
+      "label": "BCM2712",
+      "kind": "Procesador principal · SoC",
+      "description": "Ejecuta el sistema operativo y las aplicaciones. Integra la CPU y el procesador gráfico de la Raspberry Pi 5.",
+      "specs": ["4 núcleos Arm Cortex-A76", "CPU de 64 bits · 2,4 GHz", "Gráficos VideoCore VII"],
+      "source": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      "binding": "STEP product OBJ1927 → shape representation #234896; nominal 17 × 17 mm package at CAD x=33.15, y=22.75. Reference-photo placement and manufacturer board layout reviewed; CAD product name itself is anonymous. This is a catalog binding, not image recognition."
+    }
+  ]
+}

@@ -307,6 +307,7 @@
       "planeRegistration": "not_computed",
       "independentEvaluationRequired": true
     },
+    "termPolicy": "document-component-terms/2",
     "newManualEvaluation": false,
     "actualCardOpenCountKnown": false,
     "timingsMs": {
@@ -513,6 +514,7 @@
       "planeRegistration": "not_computed",
       "independentEvaluationRequired": true
     },
+    "termPolicy": "document-component-terms/2",
     "newManualEvaluation": false,
     "actualCardOpenCountKnown": false,
     "timingsMs": {
@@ -777,30 +779,31 @@
           "visiblePolygon": null,
           "semanticStatus": "model_proposal_not_independently_verified",
           "pixelAccepted": true,
-          "documentCandidates": [],
-          "componentId": null,
-          "cadAssociation": "none",
-          "cardAvailable": false,
-          "displayed": false,
+          "documentCandidates": [
+            "mipi-1"
+          ],
+          "componentId": "mipi-1",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
           "cardOpened": false,
-          "firstBlockingStage": "document_link_unmatched",
-          "reasons": [
-            "document_link_unmatched"
-          ]
+          "firstBlockingStage": null,
+          "reasons": []
         }
       ],
       "counts": {
         "proposed": 8,
         "pixelAccepted": 6,
-        "documentLinked": 6,
-        "cadLinked": 6,
-        "displayed": 4,
+        "documentLinked": 7,
+        "cadLinked": 7,
+        "displayed": 5,
         "opened": 0,
         "independentlyConfirmedIdentities": null
       },
       "planeRegistration": "not_computed",
       "independentEvaluationRequired": true
     },
+    "termPolicy": "document-component-terms/2",
     "newManualEvaluation": false,
     "actualCardOpenCountKnown": false,
     "timingsMs": {
@@ -1064,18 +1067,15 @@
           "visiblePolygon": null,
           "semanticStatus": "model_proposal_not_independently_verified",
           "pixelAccepted": true,
-          "documentCandidates": [
-            "hdmi-0",
-            "hdmi-1"
-          ],
+          "documentCandidates": [],
           "componentId": null,
           "cadAssociation": "none",
           "cardAvailable": false,
           "displayed": false,
           "cardOpened": false,
-          "firstBlockingStage": "document_link_ambiguous",
+          "firstBlockingStage": "document_link_unmatched",
           "reasons": [
-            "document_link_ambiguous"
+            "document_link_unmatched"
           ]
         },
         {
@@ -1091,18 +1091,15 @@
           "visiblePolygon": null,
           "semanticStatus": "model_proposal_not_independently_verified",
           "pixelAccepted": true,
-          "documentCandidates": [
-            "hdmi-0",
-            "hdmi-1"
-          ],
+          "documentCandidates": [],
           "componentId": null,
           "cadAssociation": "none",
           "cardAvailable": false,
           "displayed": false,
           "cardOpened": false,
-          "firstBlockingStage": "document_link_ambiguous",
+          "firstBlockingStage": "document_link_unmatched",
           "reasons": [
-            "document_link_ambiguous"
+            "document_link_unmatched"
           ]
         },
         {
@@ -1118,16 +1115,17 @@
           "visiblePolygon": null,
           "semanticStatus": "model_proposal_not_independently_verified",
           "pixelAccepted": false,
-          "documentCandidates": [],
-          "componentId": null,
-          "cadAssociation": "none",
-          "cardAvailable": false,
+          "documentCandidates": [
+            "mipi-1"
+          ],
+          "componentId": "mipi-1",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
           "displayed": false,
           "cardOpened": false,
           "firstBlockingStage": "overlapping_component_proposals",
           "reasons": [
-            "overlapping_component_proposals",
-            "document_link_unmatched"
+            "overlapping_component_proposals"
           ]
         },
         {
@@ -1143,16 +1141,17 @@
           "visiblePolygon": null,
           "semanticStatus": "model_proposal_not_independently_verified",
           "pixelAccepted": false,
-          "documentCandidates": [],
-          "componentId": null,
-          "cadAssociation": "none",
-          "cardAvailable": false,
+          "documentCandidates": [
+            "mipi-0"
+          ],
+          "componentId": "mipi-0",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
           "displayed": false,
           "cardOpened": false,
           "firstBlockingStage": "overlapping_component_proposals",
           "reasons": [
-            "overlapping_component_proposals",
-            "document_link_unmatched"
+            "overlapping_component_proposals"
           ]
         },
         {
@@ -1208,8 +1207,8 @@
       "counts": {
         "proposed": 12,
         "pixelAccepted": 7,
-        "documentLinked": 4,
-        "cadLinked": 4,
+        "documentLinked": 6,
+        "cadLinked": 6,
         "displayed": 2,
         "opened": 0,
         "independentlyConfirmedIdentities": null
@@ -1217,6 +1216,7 @@
       "planeRegistration": "not_computed",
       "independentEvaluationRequired": true
     },
+    "termPolicy": "document-component-terms/2",
     "newManualEvaluation": false,
     "actualCardOpenCountKnown": false,
     "timingsMs": {

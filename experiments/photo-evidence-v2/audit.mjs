@@ -5,6 +5,7 @@ import crypto from 'node:crypto';
 import {enrichCatalog} from '../board-library/catalog-enrichment.mjs';
 import {bindPhotoComponents} from '../board-library/photo-scene.mjs';
 import {photoEvidenceTrace} from '../board-library/photo-evidence-trace.mjs';
+import {termPolicy} from '../board-library/component-terms.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const out=path.resolve(process.argv[2]||'experiments/photo-evidence-v2/results');
@@ -22,7 +23,9 @@ const historical=[{id:initial.id,label:initial.label,sourceParts:[{name:initial.
  directClickEvidence:['ram','ethernet','usb3'].includes(c.id)?'docs/review-metrics/catalog-visibility.json (subset UI checks)':'not individually recorded'}))];
 for(const c of historical){
  c.parts=c.sourceParts.map(p=>({name:p.name,boundsMm:p.boundsMm,meshes:provenance.parts.filter(m=>m.name===p.name||m.productPath.includes(p.name)).map(m=>({meshId:m.meshId,triangles:m.triangles,ranges:m.ranges}))}));
- c.identityDecision='human_official_photo_and_layout_review';
+ c.identityDecision='assistant_visual_curation_not_programmatic_detection';
+ c.independentHumanReviewRecorded=false;
+ c.decisionRecordLimit='Saved scripts and catalogue evidence preserve the selected solids and stated rationale; no per-solid contemporaneous reasoning log or independent human review was found.';
  c.algorithmicSteps=['STEP tessellation','source part triangle provenance','hash-pinned catalogue patch','triangle partition','raycast to exact mesh','bilingual card retrieval'];
  c.notDemonstrated=['automatic semantic attribution of anonymous solids','photo detection','independent photographic CAD registration'];
  c.automatableWithoutNewEvidence=['extract solid bounds and hierarchy','preserve and validate mesh ranges','reject overlapping ownership','build review dossier','retrieve existing documentary lesson'];
@@ -37,7 +40,7 @@ for(const file of fs.readdirSync('docs/jury-evidence').filter(f=>/^pi5.*response
  const trace=photoEvidenceTrace(d.proposals||[],d.verification,bindings,record.components,bindings.filter(b=>b.componentId).map(b=>b.id));
  replay.push({file,sha256:hash('docs/jury-evidence/'+file),captureSHA256:d.captureSHA256,kind:'saved_inference_replay_no_new_cloud_call',
   originalIdentity:d.validation?.identity,originalVisibleCount:d.visibleCount??null,originalBindings:d.bindings?.map(b=>({id:b.id,componentId:b.componentId,status:b.binding.status})),
-  trace,newManualEvaluation:false,actualCardOpenCountKnown:false,timingsMs:d.timingsMs});
+  trace,termPolicy,newManualEvaluation:false,actualCardOpenCountKnown:false,timingsMs:d.timingsMs});
 }
 save('historical-losses.json',replay);
 console.log(JSON.stringify({historicalAssociations:historical.length,photographs:replay.length,counts:replay.map(r=>({file:r.file,...r.trace.counts}))},null,2));
