@@ -13,7 +13,7 @@ export function createCameraExperience({onCard,onClear,onLayout,onCapture,onInva
   function clearSelection(){selected=null;for(const p of overlay.querySelectorAll('polygon'))p.classList.remove('selected');for(const b of $('#camera-components').children)b.setAttribute('aria-pressed','false');}
   function stopStream(){stream?.getTracks().forEach(t=>t.stop());stream=null;video.srcObject=null;ready=false;$('#capture-button').disabled=true;}
   function cancel(){epoch++;worker?.terminate();worker=null;pendingCancel?.();pendingCancel=null;busy=false;$('#camera-busy').hidden=true;}
-  function clearResult(){onClear();clearSelection();result=null;photoCards=null;identityObservation=null;observation=null;overlay.replaceChildren();overlay.setAttribute('hidden','');$('#camera-components').replaceChildren();$('#camera-components').hidden=true;}
+  function clearResult(){$('#photo-guidance').hidden=true;onClear();clearSelection();result=null;photoCards=null;identityObservation=null;observation=null;overlay.replaceChildren();overlay.setAttribute('hidden','');$('#camera-components').replaceChildren();$('#camera-components').hidden=true;}
   function suspend(){onInvalidate();const interrupted=busy;cancel();stopStream();if(interrupted)message($('#capture-status'),'camera.interrupted');}
   async function start({fresh=false}={}){
     if(fresh)onInvalidate();

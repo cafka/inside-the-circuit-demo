@@ -6,7 +6,7 @@ WORKDIR /app
 COPY deployment/verification/package*.json deployment/verification/
 RUN cd deployment/verification && npm ci --omit=dev
 COPY deployment/verification/server.mjs deployment/verification/
-COPY experiments/board-library/photo-verification-server.mjs experiments/board-library/verify-photo-proposals.py experiments/board-library/photo-verification-policy.json experiments/board-library/
+COPY experiments/board-library/photo-shape.mjs experiments/board-library/photo-verification-server.mjs experiments/board-library/verify-photo-proposals.py experiments/board-library/photo-verification-policy.json experiments/board-library/
 COPY experiments/component-parallax/policy.json experiments/component-parallax/
 COPY src/component-parallax/engine.py src/component-parallax/
 USER node

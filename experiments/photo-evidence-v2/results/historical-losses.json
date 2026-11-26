@@ -1,0 +1,1232 @@
+[
+  {
+    "file": "pi5-final-response.json",
+    "sha256": "361e7b8a3395fcf81c0b0d5b2d2def4017bae24b4b9553f1145e4ad106147bc6",
+    "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+    "kind": "saved_inference_replay_no_new_cloud_call",
+    "originalIdentity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Board silkscreen clearly reads 'Raspberry Pi 5'",
+        "Raspberry Pi logo printed on the board",
+        "HAT+ GPIO INTERFACE silkscreen marking"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Hardware revision not explicitly printed on the top side"
+      ]
+    },
+    "originalVisibleCount": 1,
+    "originalBindings": [
+      {
+        "id": "comp_01",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_02",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_03",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_04",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_05",
+        "componentId": "ethernet",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_06",
+        "componentId": "usb3",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_07",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_08",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_09",
+        "componentId": "gpio",
+        "status": "document_label_match"
+      }
+    ],
+    "trace": {
+      "schema": "photo-evidence-trace/1",
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "SoC",
+          "marking": "BROADCOM 2712ZPKFSB00C1T TN2333 P31 192-17 T3",
+          "box": [
+            408,
+            316,
+            617,
+            480
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_02",
+          "name": "RP1 Chip",
+          "marking": "RP1-C0 P1HG51.00",
+          "box": [
+            322,
+            552,
+            452,
+            661
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "rp1"
+          ],
+          "componentId": "rp1",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_03",
+          "name": "SDRAM",
+          "marking": "K4U8E3D SEC 334",
+          "box": [
+            261,
+            339,
+            392,
+            464
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_04",
+          "name": "Power Management IC",
+          "marking": "DA90",
+          "box": [
+            561,
+            188,
+            642,
+            256
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_05",
+          "name": "Ethernet Jack",
+          "marking": "TRXCOM TRJG0926HENL4R",
+          "box": [
+            518,
+            666,
+            723,
+            861
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "ethernet"
+          ],
+          "componentId": "ethernet",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_06",
+          "name": "USB 3.0 Ports",
+          "marking": "MICONN",
+          "box": [
+            97,
+            697,
+            495,
+            857
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "usb3"
+          ],
+          "componentId": "usb3",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "segmentation_reaches_search_limit",
+          "reasons": [
+            "segmentation_reaches_search_limit"
+          ]
+        },
+        {
+          "id": "comp_07",
+          "name": "USB Type-C Port",
+          "marking": "VALCON",
+          "box": [
+            705,
+            183,
+            805,
+            260
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "usb-c-power"
+          ],
+          "componentId": "usb-c-power",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_08",
+          "name": "PCIe Connector",
+          "marking": null,
+          "box": [
+            327,
+            138,
+            450,
+            183
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "pcie"
+          ],
+          "componentId": "pcie",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_09",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            122,
+            155,
+            210,
+            677
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "gpio"
+          ],
+          "componentId": "gpio",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "segmented_area_incompatible",
+          "reasons": [
+            "segmented_area_incompatible",
+            "segmentation_reaches_search_limit"
+          ]
+        }
+      ],
+      "counts": {
+        "proposed": 9,
+        "pixelAccepted": 7,
+        "documentLinked": 6,
+        "cadLinked": 6,
+        "displayed": 4,
+        "opened": 0,
+        "independentlyConfirmedIdentities": null
+      },
+      "planeRegistration": "not_computed",
+      "independentEvaluationRequired": true
+    },
+    "newManualEvaluation": false,
+    "actualCardOpenCountKnown": false,
+    "timingsMs": {
+      "preparation": 27.19999998807907,
+      "firebaseMs": 2147.7000000178814,
+      "initializationMs": 2148.800000011921,
+      "inferenceMs": 4855.5999999940395,
+      "cataloguePreparation": 275.2000000178814,
+      "componentVerification": 9700.100000023842,
+      "captureToRectangles": 17327.5
+    }
+  },
+  {
+    "file": "pi5-first-response.json",
+    "sha256": "874cbcd223905e5efa72154e5e2339ebad05ec5d821a7d4bbc5beba9e783338f",
+    "captureSHA256": "ccb0a9b9ee9fbc1851497cb0c7c02ad899e6622150136dc69c41d2f2eceb26f0",
+    "kind": "saved_inference_replay_no_new_cloud_call",
+    "originalIdentity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 4 Model B",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Raspberry Pi logo printed on PCB near the DSI/CSI connectors",
+        "Dual micro-HDMI ports and USB-C power port layout",
+        "Dual USB 3.0 and dual USB 2.0 stacked USB ports next to Ethernet"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Board hardware revision text is obscured or not fully legible from this angle"
+      ]
+    },
+    "originalVisibleCount": null,
+    "trace": {
+      "schema": "photo-evidence-trace/1",
+      "rows": [
+        {
+          "id": "comp_1",
+          "name": "Ethernet Jack",
+          "marking": "Trxcom",
+          "box": [
+            392,
+            403,
+            816,
+            734
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "ethernet"
+          ],
+          "componentId": "ethernet",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated"
+          ]
+        },
+        {
+          "id": "comp_2",
+          "name": "USB 3.0 Ports",
+          "marking": null,
+          "box": [
+            250,
+            596,
+            646,
+            841
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "usb3"
+          ],
+          "componentId": "usb3",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated"
+          ]
+        },
+        {
+          "id": "comp_3",
+          "name": "USB 2.0 Ports",
+          "marking": null,
+          "box": [
+            282,
+            700,
+            542,
+            910
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "usb2"
+          ],
+          "componentId": "usb2",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated"
+          ]
+        },
+        {
+          "id": "comp_4",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            112,
+            372,
+            357,
+            660
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "gpio"
+          ],
+          "componentId": "gpio",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated"
+          ]
+        },
+        {
+          "id": "comp_5",
+          "name": "Camera Connector (CSI)",
+          "marking": "J3",
+          "box": [
+            423,
+            287,
+            600,
+            422
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated",
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_6",
+          "name": "Display Connector (DSI)",
+          "marking": "J4",
+          "box": [
+            383,
+            250,
+            556,
+            396
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "pixels_not_evaluated",
+          "reasons": [
+            "pixels_not_evaluated",
+            "document_link_unmatched"
+          ]
+        }
+      ],
+      "counts": {
+        "proposed": 6,
+        "pixelAccepted": 0,
+        "documentLinked": 4,
+        "cadLinked": 4,
+        "displayed": 0,
+        "opened": 0,
+        "independentlyConfirmedIdentities": null
+      },
+      "planeRegistration": "not_computed",
+      "independentEvaluationRequired": true
+    },
+    "newManualEvaluation": false,
+    "actualCardOpenCountKnown": false,
+    "timingsMs": {
+      "preparation": 69.19999998807907,
+      "firebaseMs": 1693.199999988079,
+      "initializationMs": 1693.4000000059605,
+      "inferenceMs": 5227.0999999940395
+    }
+  },
+  {
+    "file": "pi5-public-response.json",
+    "sha256": "870cebbe8691dffe67c21c5de9cfb04cc1f2a58bc0584b1ce1e20a7b4630fd9e",
+    "captureSHA256": "98436d2d850bee549db7cc0c3a9eae88b5c10202b6b769f524c5fa229a4ff5a0",
+    "kind": "saved_inference_replay_no_new_cloud_call",
+    "originalIdentity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Text 'Raspberry Pi 5' printed on the PCB",
+        "Raspberry Pi logo silk-screened on the PCB",
+        "Text 'HAT+ GPIO INTERFACE' on the PCB"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Hardware revision is not explicitly printed"
+      ]
+    },
+    "originalVisibleCount": 2,
+    "originalBindings": [
+      {
+        "id": "comp_01",
+        "componentId": "ethernet",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_02",
+        "componentId": "usb3",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_03",
+        "componentId": "gpio",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_04",
+        "componentId": "microsd",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_05",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_06",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_07",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_08",
+        "componentId": null,
+        "status": "unmatched"
+      }
+    ],
+    "trace": {
+      "schema": "photo-evidence-trace/1",
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "Ethernet Jack",
+          "marking": "Trxcom TRJG0926HENL4R China M 2330",
+          "box": [
+            485,
+            667,
+            723,
+            857
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "ethernet"
+          ],
+          "componentId": "ethernet",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_02",
+          "name": "USB 3.0 Ports",
+          "marking": null,
+          "box": [
+            107,
+            695,
+            479,
+            856
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "usb3"
+          ],
+          "componentId": "usb3",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "segmentation_reaches_search_limit",
+          "reasons": [
+            "segmentation_reaches_search_limit"
+          ]
+        },
+        {
+          "id": "comp_03",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            113,
+            185,
+            229,
+            576
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "gpio"
+          ],
+          "componentId": "gpio",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "unstable_with_seed_change",
+          "reasons": [
+            "unstable_with_seed_change",
+            "fragmented_foreground"
+          ]
+        },
+        {
+          "id": "comp_04",
+          "name": "RAM IC",
+          "marking": "K4U8E3D SEC 334",
+          "box": [
+            261,
+            342,
+            392,
+            463
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "ram"
+          ],
+          "componentId": "ram",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_05",
+          "name": "RP1 Chip",
+          "marking": "RP1-C0 P1HG51.00",
+          "box": [
+            316,
+            552,
+            457,
+            660
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "rp1"
+          ],
+          "componentId": "rp1",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_06",
+          "name": "Broadcom SoC",
+          "marking": "BROADCOM 2712ZPKFSB00C1T",
+          "box": [
+            414,
+            328,
+            610,
+            475
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_07",
+          "name": "USB Type-C Power Connector",
+          "marking": "VALCON",
+          "box": [
+            706,
+            179,
+            806,
+            258
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "usb-c-power"
+          ],
+          "componentId": "usb-c-power",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_08",
+          "name": "Camera/Display Connectors",
+          "marking": "CAM/DISP 1",
+          "box": [
+            573,
+            518,
+            778,
+            555
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        }
+      ],
+      "counts": {
+        "proposed": 8,
+        "pixelAccepted": 6,
+        "documentLinked": 6,
+        "cadLinked": 6,
+        "displayed": 4,
+        "opened": 0,
+        "independentlyConfirmedIdentities": null
+      },
+      "planeRegistration": "not_computed",
+      "independentEvaluationRequired": true
+    },
+    "newManualEvaluation": false,
+    "actualCardOpenCountKnown": false,
+    "timingsMs": {
+      "preparation": 25.30000001192093,
+      "firebaseMs": 1757.7000000178814,
+      "initializationMs": 1759.1000000238419,
+      "inferenceMs": 5296.899999976158,
+      "cataloguePreparation": 217.90000000596046,
+      "componentVerification": 8389.5,
+      "captureToRectangles": 15964.800000011921
+    }
+  },
+  {
+    "file": "pi5-verified-response.json",
+    "sha256": "221aa3383a285f179b4b31bca50307b422a34e072918cb7630872bcf72996350",
+    "captureSHA256": "65a0d4811e66eda730f066552dcd9f13e09fde507b356e37414334b80378fb17",
+    "kind": "saved_inference_replay_no_new_cloud_call",
+    "originalIdentity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Text printed on PCB reads 'Raspberry Pi 5'",
+        "Raspberry Pi logo printed on PCB",
+        "Distinctive layout with dual camera/display connectors and PCIe connector"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Hardware revision not explicitly visible"
+      ]
+    },
+    "originalVisibleCount": 2,
+    "originalBindings": [
+      {
+        "id": "comp_01",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_02",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_03",
+        "componentId": "ethernet",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_04",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_05",
+        "componentId": "gpio",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_06",
+        "componentId": "usb-c-power",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_07",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_08",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_09",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_10",
+        "componentId": null,
+        "status": "unmatched"
+      },
+      {
+        "id": "comp_11",
+        "componentId": "pcie",
+        "status": "document_label_match"
+      },
+      {
+        "id": "comp_12",
+        "componentId": null,
+        "status": "unmatched"
+      }
+    ],
+    "trace": {
+      "schema": "photo-evidence-trace/1",
+      "rows": [
+        {
+          "id": "comp_01",
+          "name": "SoC",
+          "marking": "RP5",
+          "box": [
+            399,
+            560,
+            497,
+            634
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_02",
+          "name": "PMIC",
+          "marking": "BROADCOM 2712",
+          "box": [
+            471,
+            391,
+            603,
+            497
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_03",
+          "name": "Ethernet Jack",
+          "marking": "Trxcom TRJG0926HENL4R",
+          "box": [
+            566,
+            642,
+            695,
+            779
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "ethernet"
+          ],
+          "componentId": "ethernet",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_04",
+          "name": "USB Port",
+          "marking": null,
+          "box": [
+            334,
+            668,
+            545,
+            782
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_unmatched",
+          "reasons": [
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_05",
+          "name": "GPIO Header",
+          "marking": null,
+          "box": [
+            297,
+            288,
+            340,
+            592
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "gpio"
+          ],
+          "componentId": "gpio",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "fragmented_foreground",
+          "reasons": [
+            "fragmented_foreground"
+          ]
+        },
+        {
+          "id": "comp_06",
+          "name": "USB-C Power Port",
+          "marking": null,
+          "box": [
+            624,
+            283,
+            679,
+            338
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [
+            "usb-c-power"
+          ],
+          "componentId": "usb-c-power",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "unstable_with_seed_change",
+          "reasons": [
+            "unstable_with_seed_change",
+            "segmented_area_incompatible"
+          ]
+        },
+        {
+          "id": "comp_07",
+          "name": "Micro HDMI Port",
+          "marking": null,
+          "box": [
+            649,
+            379,
+            715,
+            422
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "hdmi-0",
+            "hdmi-1"
+          ],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_ambiguous",
+          "reasons": [
+            "document_link_ambiguous"
+          ]
+        },
+        {
+          "id": "comp_08",
+          "name": "Micro HDMI Port",
+          "marking": null,
+          "box": [
+            649,
+            458,
+            715,
+            502
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "hdmi-0",
+            "hdmi-1"
+          ],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "document_link_ambiguous",
+          "reasons": [
+            "document_link_ambiguous"
+          ]
+        },
+        {
+          "id": "comp_09",
+          "name": "Camera/Display Connector",
+          "marking": "CAM/DISP 1",
+          "box": [
+            578,
+            528,
+            705,
+            566
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "overlapping_component_proposals",
+          "reasons": [
+            "overlapping_component_proposals",
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_10",
+          "name": "Camera/Display Connector",
+          "marking": "CAM/DISP 0",
+          "box": [
+            578,
+            563,
+            705,
+            603
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "overlapping_component_proposals",
+          "reasons": [
+            "overlapping_component_proposals",
+            "document_link_unmatched"
+          ]
+        },
+        {
+          "id": "comp_11",
+          "name": "PCIe Connector",
+          "marking": "PCIe",
+          "box": [
+            431,
+            252,
+            529,
+            275
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": true,
+          "documentCandidates": [
+            "pcie"
+          ],
+          "componentId": "pcie",
+          "cadAssociation": "existing_catalogue_link_not_photo_registration",
+          "cardAvailable": true,
+          "displayed": true,
+          "cardOpened": false,
+          "firstBlockingStage": null,
+          "reasons": []
+        },
+        {
+          "id": "comp_12",
+          "name": "Power Management IC",
+          "marking": "DA9091",
+          "box": [
+            549,
+            292,
+            610,
+            356
+          ],
+          "visiblePolygon": null,
+          "semanticStatus": "model_proposal_not_independently_verified",
+          "pixelAccepted": false,
+          "documentCandidates": [],
+          "componentId": null,
+          "cadAssociation": "none",
+          "cardAvailable": false,
+          "displayed": false,
+          "cardOpened": false,
+          "firstBlockingStage": "unstable_with_seed_change",
+          "reasons": [
+            "unstable_with_seed_change",
+            "document_link_unmatched"
+          ]
+        }
+      ],
+      "counts": {
+        "proposed": 12,
+        "pixelAccepted": 7,
+        "documentLinked": 4,
+        "cadLinked": 4,
+        "displayed": 2,
+        "opened": 0,
+        "independentlyConfirmedIdentities": null
+      },
+      "planeRegistration": "not_computed",
+      "independentEvaluationRequired": true
+    },
+    "newManualEvaluation": false,
+    "actualCardOpenCountKnown": false,
+    "timingsMs": {
+      "preparation": 39.70000001788139,
+      "firebaseMs": 1919.7000000178814,
+      "initializationMs": 1920.5,
+      "inferenceMs": 4977.600000023842,
+      "cataloguePreparation": 543.8000000119209,
+      "componentVerification": 7930.5999999940395,
+      "captureToRectangles": 15724.299999982119
+    }
+  }
+]
