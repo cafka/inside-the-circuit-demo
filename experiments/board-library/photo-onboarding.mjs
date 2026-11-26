@@ -1,3 +1,4 @@
+import {photoIdentityEvidence} from './photo-identity-evidence.mjs';
 import {inspectEnvironment} from '../../src/identity/environment.mjs';
 import {createFirebaseAdapter,validateConfig} from '../../src/identity/firebase-adapter.mjs';
 import {createCapture} from '../../src/identity/capture.mjs';
@@ -28,7 +29,7 @@ export async function identifyPhotoAutomatically(file,{config,cloudConsent,cloud
    const answer=await adapter.infer({lane,capture,signal:AbortSignal.timeout(60000),onTiming:(k,v)=>{attempt.timingsMs[k]=v;observation.timingsMs[k]=v;if(k==='inferenceMs')observation.actualGenerationAttempts++;}});
    observation.inferenceSource=answer.inferenceSource;observation.raw=adapter.redact(answer.text);observation.usageMetadata=answer.usageMetadata??null;observation.modelVersion=answer.modelVersion??null;
    if(answer.inferenceSource!==(lane==='nano'?'on_device':'in_cloud'))throw Error('sourceRejected');
-   observation.validation=withComponents?parseScene(answer.text):parseIdentity(answer.text);observation.proposals=observation.validation.components||[];observation.status=observation.validation.valid?observation.validation.identity.status:'invalid_response';attempt.status=observation.status;
+   observation.validation=withComponents?parseScene(answer.text):parseIdentity(answer.text);observation.proposals=observation.validation.components||[];observation.status=observation.validation.valid?observation.validation.identity.status:'invalid_response';if(withComponents&&observation.status==='identified'){observation.identityGate=photoIdentityEvidence(observation.validation.identity,observation.validation.identityEvidence);if(!observation.identityGate.allowed)observation.status='needs_evidence';}attempt.status=observation.status;
    // Do not retry semantic uncertainty in Cloud automatically: only local transport/capability failures.
    break;
   }catch(error){attempt.error=adapter.errorCode?.(error)||error.message;attempt.status='failed';observation.error=attempt.error;observation.status='failed';}

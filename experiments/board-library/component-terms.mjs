@@ -1,9 +1,9 @@
 // Lexical equivalents, not a list of components expected on any board. Geometry
 // and semantic visual confirmation are deliberately outside this module.
-export const termPolicy='document-component-terms/1';
+export const termPolicy='document-component-terms/2';
 export const normalizeTerm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
  .replace(/\btype[ -]?c\b/g,'c').replace(/\bpci[ -]?express\b/g,'pcie')
- .replace(/[^a-z0-9]+/g,' ').trim();
+ .replace(/[^a-z0-9]+/g,' ').trim().replace(/([a-z]) +(?=\d)/g,'$1');
 const withoutSuffix=s=>s.replace(/\s+(?:chip|ic|ports?|connector|jack)$/,'').trim();
 export function documentTerms(component,extra=[]){
  const labels=[component.label,component.id,component.partNumber,component.reference,component.designator,
