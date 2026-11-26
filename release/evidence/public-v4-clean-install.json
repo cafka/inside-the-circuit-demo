@@ -1,0 +1,25 @@
+{
+  "platform": "Windows",
+  "cleanDirectory": true,
+  "npmInstalled": 128,
+  "npmAudited": 129,
+  "knownVulnerabilities": 0,
+  "build": "passed",
+  "tests": {
+    "passed": 33,
+    "failed": 0,
+    "durationMs": 772.2447
+  },
+  "library": {
+    "commit": "3b77d06dcb899d922be0afa0cfad8d95557bd87a",
+    "files": 36,
+    "downloadMs": 3033.6954,
+    "readPageObserved": true,
+    "backObserved": true,
+    "exactReadingTransitionMs": null
+  },
+  "anonymousGitHub": {
+    "http": 200,
+    "private": false
+  }
+}

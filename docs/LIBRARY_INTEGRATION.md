@@ -35,3 +35,7 @@ The final attempt to open the Pi book did not expose the Read page control withi
 The wrapper now consumes `/library-assets/3b77d06dcb899d922be0afa0cfad8d95557bd87a/index.html`, not a mutable live iframe. Run `npm run library:sync`: 36 runtime files are fetched into ignored `.local/library/<commit>`, with Git blob SHA-1 and byte-count verification. Nothing is copied into the application Git tree. Update deliberately with `node scripts/sync-library.mjs --revision <full-reviewed-commit>` and review config/lock changes. The upstream Kiro repositories are unchanged.
 
 Fresh sync: 3,033.70 ms, 36 downloads. The pinned library and its five-chapter registry loaded in Chrome. The Pi book opened, but the animated transition again did not expose reading controls promptly; no new successful reading/simulation result is claimed. English and independent theme remain explicit limitations. The provided Coral-book screenshot represents unpublished development; Coral is absent from this pinned registry.
+
+### Final v4 reading check
+
+After the animated transition settled, Read page opened the complete accessible Lesson 1 text, materials and wiring; Back returned to the book. The previous 10-second timeout was not evidence of a broken reading handler. Exact transition latency was not captured. No book source was changed.

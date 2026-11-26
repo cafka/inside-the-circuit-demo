@@ -12,7 +12,10 @@ const cache=process.env.ITC_RESOURCE_CACHE?path.resolve(process.env.ITC_RESOURCE
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const safe=(base,relative)=>{const p=path.resolve(base,relative.replaceAll('\\','/'));if(!p.startsWith(path.resolve(base)+path.sep))throw Error('unsafe_resource_path');return p;};
 const report={schema:'catalog-restoration/1',cloudCalls:0,boards:[]};
-for(const plan of manifest.boards){
+const selected=process.argv.filter(a=>a.startsWith('--board=')).map(a=>a.slice(8));
+if(selected.some(id=>!manifest.boards.some(b=>b.id===id)))throw Error('unknown_catalogue_board');
+const plans=manifest.boards.filter(p=>(!selected.length||selected.includes(p.id))&&(!process.argv.includes('--bundled')||p.modelCopy));
+for(const plan of plans){
  const start=performance.now(),dest=safe(store,plan.id),seed=safe(root,'release/catalog/'+plan.id),result={id:plan.id,downloads:0,cacheReads:0};
  if(fs.existsSync(path.join(dest,'record.json'))){
   if(sha(fs.readFileSync(path.join(dest,'model.glb')))!==plan.modelSHA256)throw Error('existing_catalog_conflict:'+plan.id);

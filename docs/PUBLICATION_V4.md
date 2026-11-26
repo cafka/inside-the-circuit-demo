@@ -10,7 +10,7 @@ Se preservan los diez diagramas bilingües, la estructura narrativa y las tablas
 
 ## Biblioteca independiente
 
-Publicación fijada: `cafka/interactive-electronics-books@3b77d06dcb899d922be0afa0cfad8d95557bd87a`. `npm run library:sync` verifica 36 archivos por hash Git y tamaño, descargados fuera de Git; no hay una copia manual ni cambios al repositorio Kiro. Actualizar con `node scripts/sync-library.mjs --revision <SHA-completo-revisado>` y revisar el lock. Primera descarga: 3.033,70 ms. Registro: cuatro capítulos Pi y uno ESP32-DevKitC; no Coral ni Nano compatible. La carga y navegación se observaron; la transición animada a lectura no se completó a tiempo en esta sesión. No se declara resuelta esa limitación ni sincronización de idioma/tema.
+Publicación fijada: `cafka/interactive-electronics-books@3b77d06dcb899d922be0afa0cfad8d95557bd87a`. `npm run library:sync` verifica 36 archivos por hash Git y tamaño, descargados fuera de Git; no hay una copia manual ni cambios al repositorio Kiro. Actualizar con `node scripts/sync-library.mjs --revision <SHA-completo-revisado>` y revisar el lock. Primera descarga: 3.033,70 ms. Registro: cuatro capítulos Pi y uno ESP32-DevKitC; no Coral ni Nano compatible. La carga, apertura del libro Pi, lectura accesible de la lección 1 y regreso se comprobaron. La transición demoró más que los 10 s de la prueba anterior; no se midió su latencia exacta. Idioma y tema continúan independientes.
 
 ## Firebase y acceso HTTPS
 
@@ -40,4 +40,8 @@ La exportación por lista explícita excluye historia privada, fotos/videos de i
 
 ## Pendientes explícitos
 
-Confirmar derechos de redistribución del STEP Nano y fotos Motor; verificar lectura completa de biblioteca y uso táctil físico. El laboratorio no tiene VM que reutilizar: medir en Compute Engine requeriría una autorización concreta de recurso pago. Hosting permanente, costes y almacenamiento multiusuario no se resuelven con un enlace temporal. La autora presenta Devpost personalmente.
+Confirmar derechos de redistribución del STEP Nano y fotos Motor; verificar los demás capítulos de la biblioteca y uso táctil físico. El laboratorio no tiene VM que reutilizar: medir en Compute Engine requeriría una autorización concreta de recurso pago. Hosting permanente, costes y almacenamiento multiusuario no se resuelven con un enlace temporal. La autora presenta Devpost personalmente.
+
+## Instalación limpia de la distribución publicada
+
+Windows, directorio nuevo: `npm ci` instaló 128 paquetes, auditó 129 y encontró cero vulnerabilidades conocidas; compilación correcta; 33/33 pruebas, 772,24 ms. Publicación inicial `fde7839da4296efa6854ac1bc35f8c0cb68f3a94`, rama `main` del repositorio público nuevo, verificada con `git ls-remote`. Consulta HTTP anónima a GitHub: 200, `private:false`. No es la rama main del repositorio de investigación.
