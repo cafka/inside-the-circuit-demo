@@ -23,13 +23,14 @@ export function parseScene(raw){
   return {...identity,boardPresence:v.boardPresence,components:v.components};
  }catch(e){return {valid:false,identity:null,components:[],errors:[e.message]};}
 }
-const norm=s=>String(s||'').normalize('NFKD').toLowerCase().replace(/[^a-z0-9]/g,'');
+const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+const phraseContains=(text,phrase)=>phrase.replaceAll(' ','').length>=5&&` ${text} `.includes(` ${phrase} `);
 // Identity matching uses documentation strings only. No CAD/photo coordinates.
 export function bindPhotoComponents(proposals,components,extraLabels={}){
  const result=proposals.map(p=>{
   const labels=[p.name,p.marking].filter(Boolean).map(norm),matches=components.filter(c=>{
    const texts=[c.label,c.id,c.partNumber,c.reference,c.designator,...Object.values(c.translations||{}).map(t=>t.label),...(extraLabels[c.id]||[])].filter(Boolean).map(norm);
-   return labels.some(label=>texts.some(text=>label===text||(label.length>=5&&text.includes(label))||(text.length>=5&&label.includes(text))));
+   return labels.some(label=>texts.some(text=>label===text||phraseContains(text,label)||phraseContains(label,text)));
   });
   return {...p,componentId:matches.length===1&&p.status==='proposed'?matches[0].id:null,binding:{status:matches.length===1?'document_label_match':matches.length?'ambiguous':'unmatched',candidates:matches.map(c=>c.id),notIndependentSemanticVerification:true}};
  });
