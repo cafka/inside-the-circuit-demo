@@ -1,0 +1,14 @@
+[
+ {"pattern":"^probable dedo u oclusión \\(piel en (.+) % del interior\\)$","en":"probable finger or occlusion (skin in {1} % of the interior)"},
+ {"pattern":"^textura confiable y contradictoria: (.+)$","en":"reliable but contradictory texture: {1}"},
+ {"pattern":"^textura contradictoria con calidad baja: (.+)$","en":"contradictory texture with low quality: {1}"},
+ {"pattern":"^una plantilla rival \\((.+)\\) supera a la propia$","en":"a rival template ({1}) outperforms the expected template"},
+ {"pattern":"^textura no evaluable \\((.+)\\)$","en":"texture cannot be evaluated ({1})"},
+ {"pattern":"^un máximo lejano es mejor que el local por (.+)$","en":"a distant peak exceeds the local peak by {1}"},
+ {"pattern":"^margen (.+) frente a (.+)$","en":"margin {1} against {2}"},
+ {"pattern":"^factor de calidad (.+)$","en":"quality factor {1}"},
+ {"pattern":"^NCC local (.+)$","en":"local NCC {1}"},
+ {"pattern":"^reflejo: (.+) % del interior saturado sobre la referencia \\(> (.+) %\\)$","en":"glare: {1} % of the interior is saturated above the reference (> {2} %)"},
+ {"pattern":"^contraste (.+) frente a (.+) en la referencia \\(relativo (.+) < (.+)\\): perdido o invertido$","en":"contrast {1} against {2} in the reference (relative {3} < {4}): lost or inverted"},
+ {"pattern":"^desenfoque: nitidez (.+) < (.+)$","en":"blur: sharpness {1} < {2}"}
+]

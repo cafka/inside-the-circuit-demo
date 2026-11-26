@@ -1,0 +1,13 @@
+{
+  "schema": "release-focused-tests/1",
+  "testCount": 30,
+  "pass": 30,
+  "fail": 0,
+  "durationMs": 832.3551,
+  "command": "npm run test:release",
+  "cloudCalls": 0,
+  "inferenceTests": "controlled doubles, not model execution",
+  "storedAssociationCount": 247,
+  "passCount": 30,
+  "scope": "clean Node candidate with its own node_modules"
+}

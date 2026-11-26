@@ -1,0 +1,138 @@
+{
+  "Ejecuta el sistema operativo y las aplicaciones. Integra la CPU y el procesador gráfico de la Raspberry Pi 5.": {
+    "es": "Ejecuta el sistema operativo y las aplicaciones. Integra la CPU y el procesador gráfico de la Raspberry Pi 5.",
+    "en": "Runs the operating system and applications. Integrates the CPU and graphics processor of the Raspberry Pi 5."
+  },
+  "4 núcleos Arm Cortex-A76": {
+    "es": "4 núcleos Arm Cortex-A76",
+    "en": "4 Arm Cortex-A76 cores"
+  },
+  "CPU de 64 bits · 2,4 GHz": {
+    "es": "CPU de 64 bits · 2,4 GHz",
+    "en": "64-bit CPU · 2.4 GHz"
+  },
+  "Gráficos VideoCore VII": {
+    "es": "Gráficos VideoCore VII",
+    "en": "VideoCore VII graphics"
+  },
+  "Módulo de u-blox que integra el ESP32-S3, Wi-Fi y Bluetooth LE.": {
+    "es": "Módulo de u-blox que integra el ESP32-S3, Wi-Fi y Bluetooth LE.",
+    "en": "u-blox module integrating the ESP32-S3, Wi-Fi and Bluetooth LE."
+  },
+  "Conector USB-C para comunicar y alimentar la placa.": {
+    "es": "Conector USB-C para comunicar y alimentar la placa.",
+    "en": "USB-C connector for board communication and power."
+  },
+  "Convertidor reductor de tensión de la alimentación.": {
+    "es": "Convertidor reductor de tensión de la alimentación.",
+    "en": "Step-down converter for the power supply."
+  },
+  "Memoria flash externa de 128 Mbit, equivalente a 16 MB.": {
+    "es": "Memoria flash externa de 128 Mbit, equivalente a 16 MB.",
+    "en": "External 128 Mbit flash memory, equivalent to 16 MB."
+  },
+  "Modelo mecánico oficial sin gráficos; detalles y advertencias conservados.": {
+    "es": "Modelo mecánico oficial sin gráficos; detalles y advertencias conservados.",
+    "en": "Official mechanical model without graphics; details and caveats preserved."
+  },
+  "Ensamblaje completo suministrado por Arduino; nombres de subpiezas incluyen reutilizaciones de bibliotecas. No es garantía de revisión ni fidelidad de interiores.": {
+    "es": "Ensamblaje completo suministrado por Arduino; nombres de subpiezas incluyen reutilizaciones de bibliotecas. No es garantía de revisión ni fidelidad de interiores.",
+    "en": "Full assembly supplied by Arduino; some subpart names come from reused libraries. It does not guarantee revision identity or internal fidelity."
+  },
+  "Se reutilizó GLB: no se ejecutó conversión STEP.": {
+    "es": "Se reutilizó GLB: no se ejecutó conversión STEP.",
+    "en": "Existing GLB reused: STEP conversion was not run."
+  },
+  "El interior del módulo contiene un nombre CAD ESP32-S2; la documentación identifica el módulo NORA-W106 con ESP32-S3. No se usa ese nombre interno para identificar el SoC.": {
+    "es": "El interior del módulo contiene un nombre CAD ESP32-S2; la documentación identifica el módulo NORA-W106 con ESP32-S3. No se usa ese nombre interno para identificar el SoC.",
+    "en": "The module interior contains an ESP32-S2 CAD name; the documentation identifies the NORA-W106 module with ESP32-S3. That internal name is not used to identify the SoC."
+  },
+  "Los headers usan nombres de biblioteca 1X8; no se identifican sus pines por ese nombre.": {
+    "es": "Los headers usan nombres de biblioteca 1X8; no se identifican sus pines por ese nombre.",
+    "en": "Headers use 1X8 library names; their pins are not identified from that name."
+  },
+  "Materiales inferidos por semántica CAD son provisionales; carcasas con materiales mixtos no se repintan completas.": {
+    "es": "Materiales inferidos por semántica CAD son provisionales; carcasas con materiales mixtos no se repintan completas.",
+    "en": "Materials inferred from CAD semantics are provisional; mixed-material housings are not repainted as a whole."
+  },
+  "No se atribuye al STEP automáticamente la licencia editorial del sitio. Activo conservado localmente; código, hashes y recetas son publicables.": {
+    "es": "No se atribuye al STEP automáticamente la licencia editorial del sitio. Activo conservado localmente; código, hashes y recetas son publicables.",
+    "en": "The site editorial license is not automatically assigned to the STEP. The asset remains local; code, hashes and recipes may be published."
+  },
+  "solo geometría: el GPIO no tiene textura de referencia": {
+    "es": "solo geometría: el GPIO no tiene textura de referencia",
+    "en": "geometry only: GPIO has no reference texture"
+  },
+  "sin geometría suficiente": {
+    "es": "sin geometría suficiente",
+    "en": "insufficient geometry"
+  },
+  "verified": {
+    "es": "verificada",
+    "en": "verified"
+  },
+  "not_embedded_in_STEP_archive": {
+    "es": "no incluida en el archivo STEP",
+    "en": "not embedded in the STEP archive"
+  },
+  "user_declared_unverified": {
+    "es": "declarada por el usuario, sin verificar",
+    "en": "user-declared, unverified"
+  },
+  "Conversión local con OpenCascade. Materiales y asociaciones requieren revisión.": {
+    "es": "Conversión local con OpenCascade. Materiales y asociaciones requieren revisión.",
+    "en": "Local conversion with OpenCascade. Materials and bindings require review."
+  },
+  "Board Topology, ref. M1": {
+    "es": "Topología de la placa, ref. M1",
+    "en": "Board Topology, ref. M1"
+  },
+  "Board Topology, ref. J1": {
+    "es": "Topología de la placa, ref. J1",
+    "en": "Board Topology, ref. J1"
+  },
+  "Board Topology, ref. U2": {
+    "es": "Topología de la placa, ref. U2",
+    "en": "Board Topology, ref. U2"
+  },
+  "Board Topology, ref. U3": {
+    "es": "Topología de la placa, ref. U3",
+    "en": "Board Topology, ref. U3"
+  },
+  "Modelo y catálogo existentes verificados; sin descarga, conversión ni IA.": {
+    "es": "Modelo y catálogo existentes verificados; sin descarga, conversión ni IA.",
+    "en": "Existing model and catalog verified; no download, conversion or AI."
+  },
+  "no hay geometría independiente de la placa (anillos)": {
+    "es": "no hay geometría independiente de la placa (anillos)",
+    "en": "no independent board geometry is available (rings)"
+  },
+  "menos del 50 % de la pieza está en el cuadro": {
+    "es": "menos del 50 % de la pieza está en el cuadro",
+    "en": "less than 50 % of the part is in the frame"
+  },
+  "el interior es uniforme: probable oclusión": {
+    "es": "el interior es uniforme: probable oclusión",
+    "en": "the interior is uniform: probable occlusion"
+  },
+  "posible oclusión parcial: no se confirma": {
+    "es": "posible oclusión parcial: no se confirma",
+    "en": "possible partial occlusion: not confirmed"
+  },
+  "textura coherente con calidad baja": {
+    "es": "textura coherente con calidad baja",
+    "en": "consistent texture with low quality"
+  },
+  "la textura no distingue la pieza de una rival": {
+    "es": "la textura no distingue la pieza de una rival",
+    "en": "the texture does not distinguish this part from a rival"
+  },
+  "evidencia insuficiente": {
+    "es": "evidencia insuficiente",
+    "en": "insufficient evidence"
+  },
+  "sin plantilla": {
+    "es": "sin plantilla",
+    "en": "no template"
+  }
+}

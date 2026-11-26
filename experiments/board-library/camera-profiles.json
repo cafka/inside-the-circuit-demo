@@ -1,0 +1,27 @@
+{
+  "version": "existing-local-recognition-ui/1",
+  "profiles": [
+    {
+      "id": "kiro-p1-mplus",
+      "label": "Raspberry Pi 5 · experimental",
+      "worker": "/local-worker.js",
+      "definition": "app/data/perfiles/rpi5.json",
+      "assets": {
+        "/assets/profile": "app/data/perfiles/rpi5.json",
+        "/assets/map": "app/data/rpi5_map.json",
+        "/assets/reference": "app/data/p1_referencia.json"
+      },
+      "labels": {
+        "soc": "SoC",
+        "ram": "RAM",
+        "rp1": "RP1",
+        "gpio": "GPIO"
+      },
+      "note": "Historical board-specific worker; auto-selected only after identity validation. Not a generic detector.",
+      "identity": {
+        "manufacturer": "Raspberry Pi",
+        "model": "Raspberry Pi 5"
+      }
+    }
+  ]
+}

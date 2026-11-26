@@ -1,0 +1,36 @@
+{
+  "version":"satin-studio/4",
+  "note":"Presentation only. Semantic finishes already assigned by the catalogue; no new component or material identification.",
+  "exposure":0.82,
+  "environmentIntensity":0.65,
+  "keyIntensity":2.1,
+  "fillIntensity":0.75,
+  "hemisphereIntensity":0.42,
+  "shadowMapSize":1024,
+  "metalEnvironmentIntensity":0.9,
+  "metalEnvironment":{
+    "background":0.26,
+    "blurRadians":0.025,
+    "panels":[
+      {"position":[-1,5,0],"size":[5,1.5],"radiance":2.2},
+      {"position":[-4,3,-2],"size":[4,1.2],"radiance":2.8},
+      {"position":[-4,0.5,-2],"size":[5,2],"radiance":0.025},
+      {"position":[1,1.6,4],"size":[4,1.4],"radiance":1.8},
+      {"position":[4,1,-1],"size":[1.5,3],"radiance":2.0},
+      {"position":[-2,0.1,3],"size":[0.7,3],"radiance":0.02}
+    ]
+  },
+  "finishes":{
+    "connector_polished":{"metalness":1,"roughness":0.22,"linearColor":[0.82,0.83,0.84],"environmentIntensity":1.18},
+    "connector_brushed":{"metalness":1,"roughness":0.36,"linearColor":[0.68,0.69,0.70],"environmentIntensity":1.0},
+    "silver_header":{"metalness":1,"roughness":0.23,"linearColor":[0.80,0.82,0.84],"environmentIntensity":1.15},
+    "nickel_satin":{"metalness":1,"roughness":0.23,"linearColor":[0.80,0.81,0.82],"environmentIntensity":1.12},
+    "tin_satin":{"metalness":1,"roughness":0.24,"linearColor":[0.80,0.81,0.82],"environmentIntensity":1.12},
+    "soc_lid":{"metalness":1,"roughness":0.23,"linearColor":[0.82,0.82,0.82],"environmentIntensity":1.12},
+    "gold_contacts":{"metalness":1,"roughness":0.32},
+    "chip_package":{"roughness":0.84},
+    "black_polymer":{"roughness":0.67},
+    "connector_polymer":{"roughness":0.64},
+    "pcb_soldermask":{"metalness":0,"roughness":0.42,"colorScale":0.42,"clearcoat":0.45,"clearcoatRoughness":0.28}
+  }
+}

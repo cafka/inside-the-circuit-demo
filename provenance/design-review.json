@@ -1,0 +1,26 @@
+{
+  "reviewedBeforeSourceCreation": true,
+  "scopeAuthorized": "stage 1 only",
+  "documents": [
+    {
+      "name": "arquitectura_reconocimiento_inside_the_circuit.md",
+      "sha256": "47cbe7ead857a177d307648b19d43d2bf37946b63bf12689044481cd2150be7c"
+    },
+    {
+      "name": "recuperacion_experimentos_kiro.md",
+      "sha256": "227ffaff166c3f3759372f901b904c2238faecc22dd96c8d5b6072b8759e0a11"
+    },
+    {
+      "name": "perfil_generico_placas.md",
+      "sha256": "eeff829542f1215da404ea88deddcb265851c246f212aa3dbbe964fdbf0f549e"
+    },
+    {
+      "name": "plan_validacion_reconocimiento.md",
+      "sha256": "a40fa05ffb556b238dad4c1d52830ab5675f0494be4a923acfb0e2743f0e37a9"
+    },
+    {
+      "name": "plan_mvp_google.md",
+      "sha256": "956e01fcb844e8368d3ff690d222a2d5126a0bfe6ef4a6a49db1e4ab03beab57"
+    }
+  ]
+}

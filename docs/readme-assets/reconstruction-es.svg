@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" role="img" aria-labelledby="title desc"><title id="title">Reconstrucción educativa sin CAD</title><desc id="desc">De las fuentes oficiales a un modelo según la evidencia disponible.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1000" height="1100" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">Reconstrucción educativa sin CAD</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">De las fuentes oficiales a un modelo según la evidencia disponible.</text>
+<rect x="40" y="140" width="920" height="86" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="179.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Fuentes oficiales</text>
+<text x="500.0" y="206.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Fotografías · esquema eléctrico · dibujo dimensional</text>
+<path d="M500 226 V249" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="251" width="920" height="90" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="292.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Gemini: interpretación multimodal</text>
+<text x="500.0" y="319.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Regiones, formas, identidad propuesta y fichas bilingües</text>
+<path d="M500 341 V364" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="366" width="920" height="90" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="407.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Algoritmos propios: geometría</text>
+<text x="500.0" y="434.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Validar polígonos · rectificar · escalar a medidas físicas</text>
+<path d="M500 456 V479" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="170" y="481" width="660" height="78" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="516.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">¿Altura respaldada para esta pieza?</text>
+<text x="500.0" y="543.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Comprobar evidencia independiente</text>
+<path d="M500 559 V583 H260 V610" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="260" y="576" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">Sí</text>
+<path d="M500 583 H740 V610" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="740" y="576" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">No</text>
+<rect x="40" y="612" width="440" height="145" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="260.0" y="658.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Generar volumen</text>
+<text x="260.0" y="685.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Extrusión de envolvente</text>
+<text x="260.0" y="708.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Cotas documentadas o medidas</text>
+<text x="260.0" y="731.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Validación integral pendiente</text>
+<rect x="520" y="612" width="440" height="145" rx="16" fill="#1e3045" stroke="#aa8953" stroke-width="1.5"/>
+<text x="740.0" y="658.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Conservar superficie</text>
+<text x="740.0" y="685.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Textura y región seleccionable</text>
+<text x="740.0" y="708.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Relieve ilustrativo, no medido</text>
+<text x="740.0" y="731.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Motor 2040: 13 regiones</text>
+<path d="M260 757 V782 H500 V808" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 757 V782 H500 V808" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="810" width="920" height="91" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="852.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Generación y persistencia</text>
+<text x="500.0" y="879.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Mallas individuales · texturas · materiales · GLB</text>
+<path d="M500 901 V925" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="927" width="920" height="105" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="964.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Representación educativa interactiva</text>
+<text x="500.0" y="991.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Rotación · zoom manual · selección · fichas ES/EN</text>
+<text x="500.0" y="1014.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Volúmenes y superficies pueden coexistir</text>
+<text x="36" y="1077" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">La reconstrucción educativa no equivale a CAD de fabricación.</text>
+</svg>

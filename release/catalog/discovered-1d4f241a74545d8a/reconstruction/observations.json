@@ -1,0 +1,830 @@
+{
+  "referenceImageId": "source-3",
+  "board": {
+    "corners": [
+      [
+        111,
+        214
+      ],
+      [
+        894,
+        214
+      ],
+      [
+        894,
+        788
+      ],
+      [
+        111,
+        788
+      ]
+    ],
+    "outline": [
+      [
+        111,
+        214
+      ],
+      [
+        894,
+        214
+      ],
+      [
+        894,
+        788
+      ],
+      [
+        111,
+        788
+      ]
+    ],
+    "widthMm": 52,
+    "depthMm": 38,
+    "dimensionsEvidence": {
+      "sourceId": "source-0",
+      "quote": "Measurements: 52mm x 38mm x 7.7mm (L x W x H)",
+      "basis": "documented"
+    },
+    "thicknessMm": null,
+    "thicknessRangeMm": null,
+    "thicknessEvidence": {
+      "basis": "unknown",
+      "sourceId": "source-2",
+      "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+    },
+    "colourSamplePoint": [
+      500,
+      500
+    ],
+    "holes": [
+      {
+        "center": [
+          151,
+          255
+        ],
+        "radius": 17,
+        "evidence": "Visible circular unplated hole in top-left, documented as M2.5."
+      },
+      {
+        "center": [
+          853,
+          255
+        ],
+        "radius": 17,
+        "evidence": "Visible circular unplated hole in top-right, documented as M2.5."
+      },
+      {
+        "center": [
+          151,
+          747
+        ],
+        "radius": 17,
+        "evidence": "Visible circular unplated hole in bottom-left, documented as M2.5."
+      },
+      {
+        "center": [
+          853,
+          747
+        ],
+        "radius": 17,
+        "evidence": "Visible circular unplated hole in bottom-right, documented as M2.5."
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "usb-c-connector",
+      "polygon": [
+        [
+          91,
+          418
+        ],
+        [
+          222,
+          418
+        ],
+        [
+          222,
+          549
+        ],
+        [
+          91,
+          549
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "left",
+      "visualClass": "nickel_satin",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": null,
+      "evidence": "Metallic USB-C port casing, matching silkscreen 'USB-C'.",
+      "sourceIds": [
+        "source-0",
+        "source-3"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector USB-C",
+          "description": "Puerto para alimentación y programación.",
+          "example": "Conectar a una computadora para cargar firmware."
+        },
+        "en": {
+          "label": "USB-C Connector",
+          "description": "Port for power and programming.",
+          "example": "Connect to a computer to upload firmware."
+        }
+      }
+    },
+    {
+      "id": "motor-connector-a",
+      "polygon": [
+        [
+          211,
+          212
+        ],
+        [
+          341,
+          212
+        ],
+        [
+          341,
+          298
+        ],
+        [
+          211,
+          298
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "top",
+      "visualClass": "connector_polymer",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": "MOTOR_1",
+      "partNumber": null,
+      "evidence": "6-pin white JST-SH connector labelled 'A'.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector de Motor A",
+          "description": "Conector JST-SH de 6 pines para motor con encoder.",
+          "example": "Conectar un motor de corriente continua con encoder."
+        },
+        "en": {
+          "label": "Motor Connector A",
+          "description": "6-pin JST-SH connector for motor with encoder.",
+          "example": "Connect a DC motor with encoder."
+        }
+      }
+    },
+    {
+      "id": "motor-connector-b",
+      "polygon": [
+        [
+          361,
+          212
+        ],
+        [
+          491,
+          212
+        ],
+        [
+          491,
+          298
+        ],
+        [
+          361,
+          298
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "top",
+      "visualClass": "connector_polymer",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": "MOTOR_2",
+      "partNumber": null,
+      "evidence": "6-pin white JST-SH connector labelled 'B'.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector de Motor B",
+          "description": "Conector JST-SH de 6 pines para motor con encoder.",
+          "example": "Conectar un motor de corriente continua con encoder."
+        },
+        "en": {
+          "label": "Motor Connector B",
+          "description": "6-pin JST-SH connector for motor with encoder.",
+          "example": "Connect a DC motor with encoder."
+        }
+      }
+    },
+    {
+      "id": "motor-connector-c",
+      "polygon": [
+        [
+          513,
+          212
+        ],
+        [
+          643,
+          212
+        ],
+        [
+          643,
+          298
+        ],
+        [
+          513,
+          298
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "top",
+      "visualClass": "connector_polymer",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": "MOTOR_3",
+      "partNumber": null,
+      "evidence": "6-pin white JST-SH connector labelled 'C'.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector de Motor C",
+          "description": "Conector JST-SH de 6 pines para motor con encoder.",
+          "example": "Conectar un motor de corriente continua con encoder."
+        },
+        "en": {
+          "label": "Motor Connector C",
+          "description": "6-pin JST-SH connector for motor with encoder.",
+          "example": "Connect a DC motor with encoder."
+        }
+      }
+    },
+    {
+      "id": "motor-connector-d",
+      "polygon": [
+        [
+          665,
+          212
+        ],
+        [
+          795,
+          212
+        ],
+        [
+          795,
+          298
+        ],
+        [
+          665,
+          298
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "top",
+      "visualClass": "connector_polymer",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": "MOTOR_4",
+      "partNumber": null,
+      "evidence": "6-pin white JST-SH connector labelled 'D'.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector de Motor D",
+          "description": "Conector JST-SH de 6 pines para motor con encoder.",
+          "example": "Conectar un motor de corriente continua con encoder."
+        },
+        "en": {
+          "label": "Motor Connector D",
+          "description": "6-pin JST-SH connector for motor with encoder.",
+          "example": "Connect a DC motor with encoder."
+        }
+      }
+    },
+    {
+      "id": "rp2040-mcu",
+      "polygon": [
+        [
+          322,
+          483
+        ],
+        [
+          440,
+          483
+        ],
+        [
+          440,
+          600
+        ],
+        [
+          322,
+          600
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "chip_package",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_instance",
+      "designator": "MCU1",
+      "partNumber": "RP2040",
+      "evidence": "QFN package displaying the Raspberry Pi logo and RP2-B2 marking.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Microcontrolador RP2040",
+          "description": "Microcontrolador de doble núcleo ARM Cortex-M0+.",
+          "example": "Ejecuta el programa de control de motores y procesa los encoders."
+        },
+        "en": {
+          "label": "RP2040 Microcontroller",
+          "description": "Dual-core ARM Cortex-M0+ microcontroller.",
+          "example": "Runs the motor control program and processes encoders."
+        }
+      }
+    },
+    {
+      "id": "drv8833-left",
+      "polygon": [
+        [
+          519,
+          442
+        ],
+        [
+          594,
+          442
+        ],
+        [
+          594,
+          555
+        ],
+        [
+          519,
+          555
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "chip_package",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": "DRV8833",
+      "evidence": "IC package visibly marked 'DRV8833', corresponding to dual H-Bridge drivers in schematic.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Controlador de Motor DRV8833",
+          "description": "Controlador de motor de puente H dual.",
+          "example": "Suministra energía a dos de los canales de motor."
+        },
+        "en": {
+          "label": "DRV8833 Motor Driver",
+          "description": "Dual H-Bridge motor driver.",
+          "example": "Provides power to two of the motor channels."
+        }
+      }
+    },
+    {
+      "id": "drv8833-right",
+      "polygon": [
+        [
+          657,
+          442
+        ],
+        [
+          733,
+          442
+        ],
+        [
+          733,
+          555
+        ],
+        [
+          657,
+          555
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "chip_package",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": "DRV8833",
+      "evidence": "IC package visibly marked 'DRV8833', corresponding to dual H-Bridge drivers in schematic.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Controlador de Motor DRV8833",
+          "description": "Controlador de motor de puente H dual.",
+          "example": "Suministra energía a dos de los canales de motor."
+        },
+        "en": {
+          "label": "DRV8833 Motor Driver",
+          "description": "Dual H-Bridge motor driver.",
+          "example": "Provides power to two of the motor channels."
+        }
+      }
+    },
+    {
+      "id": "adc-multiplexer",
+      "polygon": [
+        [
+          362,
+          404
+        ],
+        [
+          418,
+          404
+        ],
+        [
+          418,
+          458
+        ],
+        [
+          362,
+          458
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "chip_package",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_instance",
+      "designator": "U5",
+      "partNumber": "74LV4051BQ",
+      "evidence": "Small IC marked 'LV4051', matched with the ADC multiplexer in schematic.",
+      "sourceIds": [
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Multiplexor ADC",
+          "description": "Permite multiplexar múltiples entradas analógicas a un solo canal del ADC.",
+          "example": "Mide el voltaje de la fuente de alimentación del motor."
+        },
+        "en": {
+          "label": "ADC Multiplexer",
+          "description": "Multiplexes multiple analog inputs to a single ADC channel.",
+          "example": "Measures the motor power supply voltage."
+        }
+      }
+    },
+    {
+      "id": "bulk-capacitor",
+      "polygon": [
+        [
+          576,
+          563
+        ],
+        [
+          676,
+          563
+        ],
+        [
+          676,
+          680
+        ],
+        [
+          576,
+          680
+        ]
+      ],
+      "shape": "cylinder",
+      "openingDirection": null,
+      "visualClass": "tin_satin",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": "270uF 10V",
+      "evidence": "Cylindrical electrolytic capacitor marked 'F1NC 270 10V'.",
+      "sourceIds": [
+        "source-3"
+      ],
+      "translations": {
+        "es": {
+          "label": "Capacitor electrolítico",
+          "description": "Condensador de 270 uF y 10 V para filtrado de suministro.",
+          "example": "Estabiliza el voltaje durante picos de corriente del motor."
+        },
+        "en": {
+          "label": "Electrolytic Capacitor",
+          "description": "270 uF, 10V capacitor for power supply filtering.",
+          "example": "Stabilizes voltage during motor current spikes."
+        }
+      }
+    },
+    {
+      "id": "qwst-connector",
+      "polygon": [
+        [
+          197,
+          672
+        ],
+        [
+          299,
+          672
+        ],
+        [
+          299,
+          757
+        ],
+        [
+          197,
+          757
+        ]
+      ],
+      "shape": "open_connector",
+      "openingDirection": "bottom",
+      "visualClass": "black_polymer",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_instance",
+      "designator": "J1",
+      "partNumber": null,
+      "evidence": "Black 4-pin connector labelled 'QW/ST', matching Qwiic/STEMMA QT port description.",
+      "sourceIds": [
+        "source-0",
+        "source-3",
+        "source-5"
+      ],
+      "translations": {
+        "es": {
+          "label": "Conector QW/ST",
+          "description": "Conector JST-SH de 4 pines compatible con Qwiic/STEMMA QT.",
+          "example": "Conectar un sensor I2C adicional de forma sencilla."
+        },
+        "en": {
+          "label": "QW/ST Connector",
+          "description": "4-pin JST-SH connector compatible with Qwiic/STEMMA QT.",
+          "example": "Easily connect an additional I2C sensor."
+        }
+      }
+    },
+    {
+      "id": "reset-button",
+      "polygon": [
+        [
+          112,
+          303
+        ],
+        [
+          169,
+          303
+        ],
+        [
+          169,
+          381
+        ],
+        [
+          112,
+          381
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "unknown",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": null,
+      "evidence": "Push button physically located near 'RESET' silkscreen.",
+      "sourceIds": [
+        "source-0",
+        "source-3"
+      ],
+      "translations": {
+        "es": {
+          "label": "Botón de Reinicio",
+          "description": "Interruptor táctil para reiniciar la placa.",
+          "example": "Presionar para reiniciar la ejecución del programa."
+        },
+        "en": {
+          "label": "Reset Button",
+          "description": "Tactile switch to restart the board.",
+          "example": "Press to restart program execution."
+        }
+      }
+    },
+    {
+      "id": "boot-button",
+      "polygon": [
+        [
+          112,
+          588
+        ],
+        [
+          169,
+          588
+        ],
+        [
+          169,
+          666
+        ],
+        [
+          112,
+          666
+        ]
+      ],
+      "shape": "box",
+      "openingDirection": null,
+      "visualClass": "unknown",
+      "heightMm": null,
+      "heightRangeMm": null,
+      "heightEvidence": {
+        "basis": "unknown",
+        "sourceId": "source-2",
+        "reason": "Proposed height excluded: no verifiable dimension or pixel measurement."
+      },
+      "identityStatus": "documented_class",
+      "designator": null,
+      "partNumber": null,
+      "evidence": "Push button physically located near 'BOOT/USER' silkscreen.",
+      "sourceIds": [
+        "source-0",
+        "source-3"
+      ],
+      "translations": {
+        "es": {
+          "label": "Botón BOOT/Usuario",
+          "description": "Interruptor táctil de propósito general o para entrar en modo bootloader.",
+          "example": "Mantener pulsado al conectar para flashear un nuevo firmware."
+        },
+        "en": {
+          "label": "BOOT/User Button",
+          "description": "Tactile switch for general purpose use or bootloader entry.",
+          "example": "Hold while connecting to flash new firmware."
+        }
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "polygon": [
+        [
+          314,
+          735
+        ],
+        [
+          881,
+          735
+        ],
+        [
+          881,
+          788
+        ],
+        [
+          314,
+          788
+        ]
+      ],
+      "appearance": "gold",
+      "evidence": "Row of exposed circular plated through-holes on the bottom edge for various I/O and power signals."
+    },
+    {
+      "polygon": [
+        [
+          805,
+          360
+        ],
+        [
+          870,
+          360
+        ],
+        [
+          870,
+          720
+        ],
+        [
+          805,
+          720
+        ]
+      ],
+      "appearance": "gold",
+      "evidence": "Row of exposed circular plated through-holes on the right edge for EXT power and serial communication."
+    }
+  ],
+  "silkscreen": {
+    "status": "visible",
+    "evidence": "Clear white text and graphical markings distinguishing connectors (A, B, C, D), components (USB-C, RESET), and providing pinout labels (VSYS, 3V3, SDA)."
+  },
+  "missingResources": [
+    "Specific component dimensions and heights.",
+    "Physical layout file with coordinate data.",
+    "Direct component datasheets."
+  ],
+  "datasheetLinks": [],
+  "limitations": [
+    "Board substrate thickness is not provided, only overall assembly height is known.",
+    "Component heights are unavailable and cannot be accurately estimated from straight top-down view.",
+    "Designator mapping for identical chips (e.g. the two DRV8833 drivers) is ambiguous without a detailed PCB layout document.",
+    "Height values are approximate and derived from visual perspective in oblique imagery paired with typical component standards.",
+    "No official mechanical 3D model or exact BOM with component heights was provided, so tolerances on estimates are large.",
+    "Assembly height of 7.7mm was used to constrain the tallest component, assuming a standard 1.6mm PCB and a normal ~0.3mm allowance for bottom-side solder joints.",
+    "Proposed heights rejected: no independently checkable dimensional evidence. Surface observations remain selectable; this is not a complete 3D reconstruction."
+  ]
+}

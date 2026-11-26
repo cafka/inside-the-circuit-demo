@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 610" role="img" aria-labelledby="title desc"><title id="title">Three scenarios, one explorer</title><desc id="desc">Geometry adapts to the available evidence without inventing dimensions.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1200" height="610" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">Three scenarios, one explorer</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">Geometry adapts to the available evidence without inventing dimensions.</text>
+<rect x="30" y="145" width="360" height="120" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="47" y="168" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">A · DEMONSTRATED</text>
+<text x="210.0" y="198.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">CAD available</text>
+<text x="210.0" y="225.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Google Coral Dev Board Micro</text>
+<text x="210.0" y="248.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">STEP + electrical design</text>
+<path d="M210 265 V291" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<g transform="translate(98 306)"><path d="M0 48 L152 14 L224 62 L72 96 Z" fill="#397b66" stroke="#a1c5b6" stroke-width="1.5"/>
+<path d="M0 48 V55 L72 103 L224 69 V62 L72 96 Z" fill="#214b41" stroke="#81a89d"/>
+<path d="M45 26 l40 -9 l24 15 l-40 9 Z" fill="#b8c9d9" stroke="#e6e9ed"/>
+<path d="M45 26 v18 l24 15 v-18 Z M69 41 v18 l40 -9 v-18 Z" fill="#344c61" stroke="#a8bfd2"/>
+<path d="M112 12 l34 -9 l22 15 l-34 9 Z" fill="#b8c9d9" stroke="#e6e9ed"/>
+<path d="M112 12 v18 l22 15 v-18 Z M134 27 v18 l34 -9 v-18 Z" fill="#344c61" stroke="#a8bfd2"/>
+<path d="M120 41 l40 -9 l22 15 l-40 9 Z" fill="#b8c9d9" stroke="#e6e9ed"/>
+<path d="M120 41 v18 l22 15 v-18 Z M142 56 v18 l40 -9 v-18 Z" fill="#344c61" stroke="#a8bfd2"/>
+</g>
+<path d="M210 420 V441" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="30" y="443" width="360" height="92" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="210.0" y="485.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Convert and enrich</text>
+<text x="210.0" y="512.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">CAD geometry + cards</text>
+<rect x="420" y="145" width="360" height="120" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="437" y="168" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">B · TO BE VALIDATED</text>
+<text x="600.0" y="198.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">No CAD, with dimensions</text>
+<text x="600.0" y="225.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Illustrative geometry example</text>
+<text x="600.0" y="248.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Regions + supported heights</text>
+<path d="M600 265 V291" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<g transform="translate(488 306)"><path d="M0 48 L152 14 L224 62 L72 96 Z" fill="#397b66" stroke="#a1c5b6" stroke-width="1.5"/>
+<path d="M0 48 V55 L72 103 L224 69 V62 L72 96 Z" fill="#214b41" stroke="#81a89d"/>
+<path d="M45 31 l40 -9 l24 15 l-40 9 Z" fill="#78a9d4" stroke="#e6e9ed"/>
+<path d="M45 31 v13 l24 15 v-13 Z M69 46 v13 l40 -9 v-13 Z" fill="#344c61" stroke="#a8bfd2"/>
+<path d="M112 17 l34 -9 l22 15 l-34 9 Z" fill="#78a9d4" stroke="#e6e9ed"/>
+<path d="M112 17 v13 l22 15 v-13 Z M134 32 v13 l34 -9 v-13 Z" fill="#344c61" stroke="#a8bfd2"/>
+<path d="M120 46 l40 -9 l22 15 l-40 9 Z" fill="#78a9d4" stroke="#e6e9ed"/>
+<path d="M120 46 v13 l22 15 v-13 Z M142 61 v13 l40 -9 v-13 Z" fill="#344c61" stroke="#a8bfd2"/>
+</g>
+<path d="M600 420 V441" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="420" y="443" width="360" height="92" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="600.0" y="485.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Construct volumes</text>
+<text x="600.0" y="512.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Dimensioned envelopes</text>
+<rect x="810" y="145" width="360" height="120" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="827" y="168" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">C · PARTIALLY DEMONSTRATED</text>
+<text x="990.0" y="198.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">No CAD, no heights</text>
+<text x="990.0" y="225.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Pimoroni Motor 2040</text>
+<text x="990.0" y="248.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Photographs + XY dimensions</text>
+<path d="M990 265 V291" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<g transform="translate(878 306)"><path d="M0 48 L152 14 L224 62 L72 96 Z" fill="#397b66" stroke="#a1c5b6" stroke-width="1.5"/>
+<path d="M45 44 l40 -9 l24 15 l-40 9 Z" fill="#c3ad70" stroke="#e6e9ed"/>
+<path d="M112 30 l34 -9 l22 15 l-34 9 Z" fill="#c3ad70" stroke="#e6e9ed"/>
+<path d="M120 59 l40 -9 l22 15 l-40 9 Z" fill="#c3ad70" stroke="#e6e9ed"/>
+</g>
+<path d="M990 420 V441" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="810" y="443" width="360" height="92" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="990.0" y="485.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Interactive surfaces</text>
+<text x="990.0" y="512.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Textures and 13 regions</text>
+<text x="36" y="587" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">Illustrative schematics, not screenshots. Scenario B has no validated real-board example yet.</text>
+</svg>

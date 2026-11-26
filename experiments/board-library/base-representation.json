@@ -1,0 +1,18 @@
+{
+  "version": "base-board-presentation/1",
+  "rule": "Only explicitly reviewed optional accessories may be hidden; an unrecognized CAD hash keeps every mesh visible.",
+  "assets": [
+    {
+      "sha256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "variant": "Nano ESP32, without optional header accessories",
+      "source": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+      "evidence": "Manufacturer variants with/without headers. Nodes 377/378 and 380/381 are optional female header solids. The source STEP substrate has no terminal drills or silkscreen; verified PCB detail is supplied separately by presentation-geometry.json and surface-markings.json. Pin counts come from PCB data and official pinout, not the Header _Fem_1X8 names.",
+      "optionalNodeIds": [
+        "9aa2fc4562b28fdf:node:377",
+        "9aa2fc4562b28fdf:node:378",
+        "9aa2fc4562b28fdf:node:380",
+        "9aa2fc4562b28fdf:node:381"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "clean-install-check/1",
+  "node": "24.14.0",
+  "packagesInstalled": 128,
+  "npmAuditVulnerabilities": 0,
+  "commands": [
+    "npm ci --ignore-scripts --offline",
+    "npm run build",
+    "npm run test:release"
+  ],
+  "build": "passed_after_exporting_shared_metal_modules",
+  "tests": {
+    "pass": 30,
+    "fail": 0,
+    "ms": 832.3551
+  },
+  "historicalIdentityTests": {
+    "pass": 27,
+    "fail": 0,
+    "ms": 331.5903,
+    "evidence": "controlled SDK/controller doubles, not new model calls"
+  },
+  "python": "Restoration tested with already-installed pinned Python runtime; a fresh Python environment installation was not executed",
+  "cloudCalls": 0
+}

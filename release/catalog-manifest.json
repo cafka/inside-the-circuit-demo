@@ -1,0 +1,78 @@
+{
+  "schema": "release-catalog/1",
+  "basis": "Frozen approved catalogue, not a new onboarding trial",
+  "cloudRequests": 0,
+  "boards": [
+    {
+      "id": "arduino-nano-esp32",
+      "modelSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "files": [],
+      "downloads": [
+        {
+          "url": "https://docs.arduino.cc/resources/models/ABX00083-step.zip",
+          "sha256": "c68c2e712e5de4fc8cdfd2d2534af460f7049efac187fd89bc2891c585839381",
+          "file": "source.zip"
+        }
+      ],
+      "generator": "step",
+      "step": {
+        "archive": "source.zip",
+        "member": "NANO_ESP32.step",
+        "sha256": "b1fdadf95323994f7d7698962f2814ba3490cde1fb53701050067fbd5017ce98"
+      }
+    },
+    {
+      "id": "discovered-1d4f241a74545d8a",
+      "modelSHA256": "afe56b2a475a8b30fdc3dab780f3238446881e29465d041f0a08b18b443be2c8",
+      "files": [],
+      "downloads": [
+        {
+          "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-2_0c65f283-391a-4dde-990e-9253e2fca6b0.jpg?crop=center&height=1500&v=1655198615&width=1500",
+          "sha256": "6d0dcc60e1aa07980c7a67eaead27ec616b50dae3b35ebf39a36780d80c0d197",
+          "file": "reconstruction/source-3.png",
+          "decodePNG": true,
+          "decodedSHA256": "e2d93238b4847e98b7fea473b9d4643f647b728a73cbc1cbb62fc692f2a214ff"
+        },
+        {
+          "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+          "sha256": "79b98cf0d91f8b2c5f523af2ab119fe984961ef6ca99fc503fdab0d9f03d8672",
+          "file": "reconstruction/source-4.png",
+          "decodePNG": true,
+          "decodedSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d"
+        }
+      ],
+      "generator": "photo"
+    },
+    {
+      "id": "discovered-303d5ef190ffa846",
+      "modelSHA256": "ae5fb9077a319a8b379a695ed690315314e6e100904baade487369d0e68482ce",
+      "files": [
+        {
+          "file": "surfaces/top-silk.png",
+          "sha256": "0eb07202784c0399c9d4c42463fd6ce124ea556cdc7281cf0ee29fbc5c18ae45"
+        },
+        {
+          "file": "surfaces/top-contacts.png",
+          "sha256": "9c506364a4ac95e3e8182724aceab2f74110a911b6212e3094c59a2add0b96e6"
+        },
+        {
+          "file": "surfaces/bottom-silk.png",
+          "sha256": "850227c547e44206e038d04e0cc7a6bc753eeb8cc3c9d50104057a8ec46c033c"
+        },
+        {
+          "file": "surfaces/bottom-contacts.png",
+          "sha256": "ee7bd63c607337116b4b576b22e81eb8afe13aff7311ac09c380a14acdb6bfd1"
+        }
+      ],
+      "downloads": [],
+      "modelCopy": "release/catalog/discovered-303d5ef190ffa846/model.glb"
+    },
+    {
+      "id": "raspberry-pi-5",
+      "modelSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "files": [],
+      "downloads": [],
+      "modelCopy": "experiments/cad-viewer/public/raspberry-pi-5.glb"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1160 1370" role="img" aria-labelledby="title desc"><title id="title">Architecture and data flow</title><desc id="desc">Hybrid identification, automated onboarding and educational exploration.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1160" height="1370" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">Architecture and data flow</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">Hybrid identification, automated onboarding and educational exploration.</text>
+<rect x="40" y="140" width="520" height="75" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="300.0" y="185.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Camera or photograph</text>
+<rect x="600" y="140" width="520" height="75" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="860.0" y="185.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Board name</text>
+<path d="M300 215 V241" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M860 215 V241" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="243" width="520" height="150" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="300.0" y="291.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Visual identification</text>
+<text x="300.0" y="318.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Firebase AI Logic + App Check</text>
+<text x="300.0" y="341.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Nano if supported; Cloud as fallback</text>
+<text x="300.0" y="364.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Authorized remote processing</text>
+<rect x="600" y="243" width="520" height="150" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="860.0" y="291.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Document-based identification</text>
+<text x="860.0" y="318.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Normalize name and check catalog</text>
+<text x="860.0" y="341.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Search official sources if needed</text>
+<text x="860.0" y="364.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">No mandatory initial AI inference</text>
+<path d="M300 393 V415 H580 V436" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M860 393 V415 H580 V436" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="350" y="438" width="460" height="80" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="580.0" y="474.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Board identity</text>
+<text x="580.0" y="501.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Manufacturer · model · revision if known</text>
+<path d="M580 518 V542" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="350" y="544" width="460" height="74" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="580.0" y="589.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Already in the catalog?</text>
+<path d="M350 581 H175 V650" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="235" y="570" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">Yes</text>
+<path d="M765 618 V650" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="799" y="638" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">No</text>
+<rect x="40" y="652" width="270" height="105" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="175.0" y="689.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Retrieve</text>
+<text x="175.0" y="716.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Model and cards</text>
+<text x="175.0" y="739.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">No regeneration</text>
+<rect x="350" y="652" width="770" height="105" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="735.0" y="701.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Automated onboarding</text>
+<text x="735.0" y="728.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Official sources: CAD, images, schematics and dimensions</text>
+<path d="M735 757 V781 H535 V804" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M735 781 H935 V804" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="350" y="806" width="370" height="133" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="535.0" y="846.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">With CAD</text>
+<text x="535.0" y="873.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">STEP → GLB conversion</text>
+<text x="535.0" y="896.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">ECAD / MCAD registration</text>
+<text x="535.0" y="919.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Materials and associations</text>
+<rect x="750" y="806" width="370" height="133" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="935.0" y="846.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Without CAD</text>
+<text x="935.0" y="873.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Multimodal Gemini</text>
+<text x="935.0" y="896.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Scaling and custom geometry</text>
+<text x="935.0" y="919.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Volumes or surfaces</text>
+<path d="M535 939 V958 H735 V979" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M935 939 V958 H735 V979" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="350" y="981" width="770" height="94" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="735.0" y="1024.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Educational engine and persistence</text>
+<text x="735.0" y="1051.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">ES/EN cards · models · sources · uncertainty</text>
+<path d="M735 1075 V1100" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M175 757 V1148 H348" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="350" y="1102" width="770" height="92" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="735.0" y="1144.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Interactive explorer · Three.js</text>
+<text x="735.0" y="1171.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Rotation, selection, highlighting and cards</text>
+<path d="M40 177 H20 V1248 H38" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+<path d="M350 1148 H327 V1248 H318" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+<rect x="40" y="1204" width="280" height="116" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="180.0" y="1247.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Physical image</text>
+<text x="180.0" y="1274.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Localization and outlines</text>
+<text x="180.0" y="1297.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Experimental visual flow</text>
+<path d="M735 1194 V1221" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+<rect x="350" y="1223" width="770" height="97" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="735.0" y="1268.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Independent educational library</text>
+<text x="735.0" y="1295.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Books and simulations · planned direct access</text>
+<text x="36" y="1347" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">Dashed lines: experimental flows or integration awaiting validation.</text>
+</svg>

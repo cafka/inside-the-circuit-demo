@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc"><title id="title">Despliegue e integración</title><desc id="desc">Arquitectura prevista para pruebas desde el teléfono.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1000" height="650" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">Despliegue e integración</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">Arquitectura prevista para pruebas desde el teléfono.</text>
+<rect x="40" y="140" width="440" height="95" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="260.0" y="184.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Desarrollo privado · Codex</text>
+<text x="260.0" y="211.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">inside-the-circuit</text>
+<rect x="520" y="140" width="440" height="95" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="740.0" y="184.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Desarrollo privado · Kiro</text>
+<text x="740.0" y="211.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">raspberry-pi-interactive-book</text>
+<path d="M260 235 V261" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 235 V261" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="263" width="440" height="95" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="260.0" y="307.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Distribución de la aplicación</text>
+<text x="260.0" y="334.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Código autorizado y recursos de ejecución</text>
+<rect x="520" y="263" width="440" height="95" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="740.0" y="307.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Biblioteca publicada</text>
+<text x="740.0" y="334.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">interactive-electronics-books</text>
+<path d="M260 358 V385 H500 V407" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 358 V385 H500 V407" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="160" y="409" width="680" height="105" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="446.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Frontend HTTPS + backend Cloud</text>
+<text x="500.0" y="473.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Node.js / Python · catálogo · Firebase AI Logic</text>
+<text x="500.0" y="496.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Gemini Cloud cuando Nano no está disponible</text>
+<path d="M500 514 V541" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="250" y="543" width="500" height="64" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="583.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Teléfono · cámara · explorador · biblioteca</text>
+<text x="36" y="627" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">VM temporal para medir rendimiento; infraestructura persistente por definir.</text>
+</svg>

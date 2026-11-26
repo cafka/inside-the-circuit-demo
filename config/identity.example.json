@@ -1,0 +1,11 @@
+{
+  "firebase": {
+    "projectId": "itc-nano-lab-20261121",
+    "apiKey": "REPLACE_WITH_FRESH_RESTRICTED_KEY",
+    "appId": "REPLACE_WITH_REGISTERED_WEB_APP"
+  },
+  "appCheck": {
+    "siteKey": "REPLACE_WITH_REGISTERED_SITE_KEY",
+    "debugToken": "REPLACE_WITH_FRESH_REGISTERED_DEBUG_TOKEN_FOR_LOCALHOST"
+  }
+}

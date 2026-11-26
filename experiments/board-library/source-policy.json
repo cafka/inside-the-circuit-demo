@@ -1,0 +1,5 @@
+{
+  "version":"official-source-registry/1",
+  "allowedHosts":["docs.arduino.cc","docs-content.arduino.cc","pip.raspberrypi.com","pip-assets.raspberrypi.com"],
+  "note":"Reviewed source hosts for the initial registry. A new manufacturer needs source data review, not recognition-engine changes. Arbitrary remote URLs are not fetched from upload requests."
+}

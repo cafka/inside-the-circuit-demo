@@ -1,0 +1,230 @@
+[
+  {
+    "id": "raspberry-pi-5",
+    "profileVersion": 1,
+    "aliases": [
+      "Raspberry Pi 5",
+      "Pi 5"
+    ],
+    "identity": {
+      "manufacturer": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "hardwareRevision": null,
+      "confidence": "catalog_identity",
+      "revisionNote": "El STEP no certifica la revisión de una placa fotografiada."
+    },
+    "source": {
+      "authority": "official",
+      "pageUrl": "https://pip.raspberrypi.com/categories/892-raspberry-pi-5",
+      "url": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-010083-CA-1-rpi-5%203D%20STEP%20-%20No%20Graphics%20small%20file.zip",
+      "license": {
+        "id": "MIT",
+        "status": "verified",
+        "file": "experiments/cad-viewer/CAD_LICENSE.txt"
+      },
+      "coverage": "Modelo mecánico oficial sin gráficos; detalles y advertencias conservados.",
+      "revision": null
+    },
+    "preparedAsset": {
+      "path": "experiments/cad-viewer/public/raspberry-pi-5.glb",
+      "sha256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "report": "experiments/cad-viewer/public/provenance.json",
+      "appearance": "cad-viewer-metal-v2"
+    },
+    "components": [
+      {
+        "id": "bcm2712",
+        "label": "BCM2712",
+        "description": "Ejecuta el sistema operativo y las aplicaciones. Integra la CPU y el procesador grÃ¡fico de la Raspberry Pi 5.",
+        "status": "documented",
+        "selector": {
+          "extrasComponentId": "bcm2712"
+        },
+        "sources": [
+          {
+            "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+            "status": "reviewed_official_document"
+          }
+        ],
+        "facts": [
+          {
+            "text": "4 nÃºcleos Arm Cortex-A76",
+            "status": "documented",
+            "sources": [
+              "https://www.raspberrypi.com/products/raspberry-pi-5/"
+            ]
+          },
+          {
+            "text": "CPU de 64 bits Â· 2,4 GHz",
+            "status": "documented",
+            "sources": [
+              "https://www.raspberrypi.com/products/raspberry-pi-5/"
+            ]
+          },
+          {
+            "text": "GrÃ¡ficos VideoCore VII",
+            "status": "documented",
+            "sources": [
+              "https://www.raspberrypi.com/products/raspberry-pi-5/"
+            ]
+          }
+        ],
+        "bindingEvidence": "STEP product OBJ1927 â†’ shape representation #234896; nominal 17 Ã— 17 mm package at CAD x=33.15, y=22.75. Reference-photo placement and manufacturer board layout reviewed; CAD product name itself is anonymous. This is a catalog binding, not image recognition."
+      }
+    ]
+  },
+  {
+    "id": "arduino-nano-esp32",
+    "profileVersion": 1,
+    "aliases": [
+      "Arduino Nano ESP32",
+      "Nano ESP32",
+      "ABX00083"
+    ],
+    "identity": {
+      "manufacturer": "Arduino",
+      "model": "Nano ESP32",
+      "hardwareRevision": null,
+      "confidence": "catalog_identity",
+      "revisionNote": "SKU ABX00083. Fecha STEP 2023-06-21; revisión electrónica no declarada."
+    },
+    "source": {
+      "authority": "official",
+      "pageUrl": "https://docs.arduino.cc/hardware/nano-esp32/",
+      "url": "https://docs.arduino.cc/resources/models/ABX00083-step.zip",
+      "archiveSHA256": "c68c2e712e5de4fc8cdfd2d2534af460f7049efac187fd89bc2891c585839381",
+      "stepMember": "NANO_ESP32.step",
+      "stepSHA256": "b1fdadf95323994f7d7698962f2814ba3490cde1fb53701050067fbd5017ce98",
+      "license": {
+        "id": null,
+        "status": "not_embedded_in_STEP_archive",
+        "note": "No se atribuye al STEP automáticamente la licencia editorial del sitio. Activo conservado localmente; código, hashes y recetas son publicables."
+      },
+      "coverage": "Ensamblaje completo suministrado por Arduino; nombres de subpiezas incluyen reutilizaciones de bibliotecas. No es garantía de revisión ni fidelidad de interiores.",
+      "revision": null
+    },
+    "components": [
+      {
+        "id": "m1",
+        "label": "NORA-W106-10B",
+        "description": "Módulo de u-blox que integra el ESP32-S3, Wi-Fi y Bluetooth LE.",
+        "selector": {
+          "path": [
+            "PCB",
+            "M1"
+          ]
+        },
+        "status": "documented",
+        "facts": [
+          {
+            "text": "Módulo de u-blox que integra el ESP32-S3, Wi-Fi y Bluetooth LE.",
+            "status": "documented",
+            "sources": [
+              "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+            "locator": "Board Topology, ref. M1",
+            "status": "reviewed_official_document"
+          }
+        ],
+        "bindingEvidence": "Coincidencia exacta del designador CAD con la tabla oficial; no usa posiciones ni color."
+      },
+      {
+        "id": "j1",
+        "label": "CX90B-16P · USB-C",
+        "description": "Conector USB-C para comunicar y alimentar la placa.",
+        "selector": {
+          "path": [
+            "PCB",
+            "J1"
+          ]
+        },
+        "status": "documented",
+        "facts": [
+          {
+            "text": "Conector USB-C para comunicar y alimentar la placa.",
+            "status": "documented",
+            "sources": [
+              "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+            "locator": "Board Topology, ref. J1",
+            "status": "reviewed_official_document"
+          }
+        ],
+        "bindingEvidence": "Coincidencia exacta del designador CAD con la tabla oficial; no usa posiciones ni color."
+      },
+      {
+        "id": "u2",
+        "label": "MP2322GQH",
+        "description": "Convertidor reductor de tensión de la alimentación.",
+        "selector": {
+          "path": [
+            "PCB",
+            "U2"
+          ]
+        },
+        "status": "documented",
+        "facts": [
+          {
+            "text": "Convertidor reductor de tensión de la alimentación.",
+            "status": "documented",
+            "sources": [
+              "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+            "locator": "Board Topology, ref. U2",
+            "status": "reviewed_official_document"
+          }
+        ],
+        "bindingEvidence": "Coincidencia exacta del designador CAD con la tabla oficial; no usa posiciones ni color."
+      },
+      {
+        "id": "u3",
+        "label": "GD25B128EWIGR",
+        "description": "Memoria flash externa de 128 Mbit, equivalente a 16 MB.",
+        "selector": {
+          "path": [
+            "PCB",
+            "U3"
+          ]
+        },
+        "status": "documented",
+        "facts": [
+          {
+            "text": "Memoria flash externa de 128 Mbit, equivalente a 16 MB.",
+            "status": "documented",
+            "sources": [
+              "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+            "locator": "Board Topology, ref. U3",
+            "status": "reviewed_official_document"
+          }
+        ],
+        "bindingEvidence": "Coincidencia exacta del designador CAD con la tabla oficial; no usa posiciones ni color."
+      }
+    ],
+    "limitations": [
+      "El interior del módulo contiene un nombre CAD ESP32-S2; la documentación identifica el módulo NORA-W106 con ESP32-S3. No se usa ese nombre interno para identificar el SoC.",
+      "Los headers usan nombres de biblioteca 1X8; no se identifican sus pines por ese nombre.",
+      "Materiales inferidos por semántica CAD son provisionales; carcasas con materiales mixtos no se repintan completas."
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+Arduino Nano ESP32 PCB artwork and derived substrate/contact geometry.
+Source: https://docs.arduino.cc/static/7ad906834db029723652f0e885968d73/ABX00083-cad-files.zip
+Adaptation: substrate drills, terminal surfaces and rasterized top/bottom silkscreen extracted for Inside the Circuit, 2026-11-25.
+
+This project's hardware is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/deed.en
+
+
+
+Arduino trademarks identify the depicted manufacturer product; no endorsement is implied.

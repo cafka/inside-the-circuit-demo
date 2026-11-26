@@ -1,0 +1,137 @@
+{
+  "catalogCount": 4,
+  "homeStatus": 200,
+  "modelCalls": 0,
+  "models": [
+    {
+      "id": "arduino-nano-esp32",
+      "status": 200,
+      "bytes": null
+    },
+    {
+      "id": "discovered-1d4f241a74545d8a",
+      "status": 200,
+      "bytes": null
+    },
+    {
+      "id": "discovered-303d5ef190ffa846",
+      "status": 200,
+      "bytes": null
+    },
+    {
+      "id": "raspberry-pi-5",
+      "status": 200,
+      "bytes": null
+    }
+  ],
+  "libraryStatus": 200,
+  "runtime": {
+    "firebase": null,
+    "appCheck": null,
+    "cloudEnabled": false,
+    "maxCloudCallsPerSession": 1,
+    "cloudConsentVersion": "photo-upload-v1"
+  },
+  "names": [
+    {
+      "name": "Raspberry Pi 5",
+      "result": {
+        "status": "identified",
+        "confidence": "saved_documentation_identity",
+        "probability": null,
+        "basis": "persistent_catalog",
+        "candidates": [
+          {
+            "id": "raspberry-pi-5",
+            "manufacturer": "Raspberry Pi",
+            "model": "Raspberry Pi 5",
+            "hardwareRevision": null,
+            "confidence": "catalog_identity",
+            "revisionNote": "El STEP no certifica la revisión de una placa fotografiada.",
+            "basis": "registered_name",
+            "probability": null,
+            "saved": true,
+            "modelAvailable": true
+          }
+        ],
+        "limitations": [
+          "Physical hardware revision is not inferred from a name."
+        ]
+      }
+    },
+    {
+      "name": "Arduino Nano ESP32",
+      "result": {
+        "status": "identified",
+        "confidence": "saved_documentation_identity",
+        "probability": null,
+        "basis": "persistent_catalog",
+        "candidates": [
+          {
+            "id": "arduino-nano-esp32",
+            "manufacturer": "Arduino",
+            "model": "Nano ESP32",
+            "hardwareRevision": null,
+            "confidence": "catalog_identity",
+            "revisionNote": "SKU ABX00083. Fecha STEP 2023-06-21; revisión electrónica no declarada.",
+            "basis": "registered_name",
+            "probability": null,
+            "saved": true,
+            "modelAvailable": true
+          }
+        ],
+        "limitations": [
+          "Physical hardware revision is not inferred from a name."
+        ]
+      }
+    },
+    {
+      "name": "Google Coral Dev Board Micro",
+      "result": {
+        "status": "identified",
+        "confidence": "saved_documentation_identity",
+        "probability": null,
+        "basis": "persistent_catalog",
+        "candidates": [
+          {
+            "id": "discovered-303d5ef190ffa846",
+            "model": "Dev Board Micro",
+            "manufacturer": "Coral",
+            "hardwareRevision": null,
+            "basis": "name_matches_document_heading",
+            "probability": null,
+            "saved": true,
+            "modelAvailable": true
+          }
+        ],
+        "limitations": [
+          "Physical hardware revision is not inferred from a name."
+        ]
+      }
+    },
+    {
+      "name": "Pimoroni Motor 2040",
+      "result": {
+        "status": "identified",
+        "confidence": "saved_documentation_identity",
+        "probability": null,
+        "basis": "persistent_catalog",
+        "candidates": [
+          {
+            "id": "discovered-1d4f241a74545d8a",
+            "model": "Motor 2040",
+            "manufacturer": "Pimoroni",
+            "hardwareRevision": null,
+            "basis": "name_matches_document_heading",
+            "probability": null,
+            "saved": true,
+            "modelAvailable": true
+          }
+        ],
+        "limitations": [
+          "Physical hardware revision is not inferred from a name."
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "contract": "Optional manufacturer graphics, verified in the original CAD frame. Unknown assets render without extra inscriptions.",
+  "assets": [
+    {
+      "baseGLBSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "sourceURL": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-010082-CA-1-rpi-5%203D%20STEP%20-%20With%20Graphics%20large%20file.zip",
+      "archiveSHA256": "1b38b554a317411bc60604f066ae004273e6c857778ecf997925ea0b56b44e0b",
+      "stepSHA256": "625683b44669593fbeba2fecb9b3555b7e5a16c846c7fde0eab505c66478b3e0",
+      "license": "MIT; Copyright 2026 Raspberry Pi Ltd",
+      "extraction": {
+        "version": "additive-cad-graphics/1",
+        "oldGLBSHA256": "841508deb9de671cedda932bda38f6c0188f5902f09d362674601f8b9a66e90a",
+        "newGLBSHA256": "7a6c2b1fb3a6dd7339f2174797c208143e7000d786d2b8de8e32a73656cc2288",
+        "physicalMeshesUnchanged": 2728,
+        "additiveMeshes": 778,
+        "maxInkThicknessMm": 0.05,
+        "resolution": 1024,
+        "layers": [
+          {
+            "file": "official-marks-7a6c2b1fb3a6-0.png",
+            "sha256": "6f90c655f4324c87db2418bf6577c2aed9b8d447bef9c415cb0d9b0a23e2042d",
+            "bytes": 104453,
+            "size": [
+              1024,
+              675
+            ],
+            "corners": [
+              [
+                0,
+                -0.0000254,
+                -0.0560000017285347
+              ],
+              [
+                0.08500000089406967,
+                -0.0000254,
+                -0.0560000017285347
+              ],
+              [
+                0.08500000089406967,
+                -0.0000254,
+                0
+              ],
+              [
+                0,
+                -0.0000254,
+                0
+              ]
+            ],
+            "normal": [
+              0,
+              -1,
+              0
+            ],
+            "sourceMeshes": 525,
+            "sourceTriangles": 207996,
+            "support": "OBJ0/OBJ8569/OBJ8571",
+            "supportPlane": 0.00003,
+            "maxProjectionDistanceMeters": 0.000012700000297627554
+          },
+          {
+            "file": "official-marks-7a6c2b1fb3a6-1.png",
+            "sha256": "8b88611d92b28fd231990993d5fe3f2f25a2b256a1d213b54c646fc171198a1f",
+            "bytes": 72953,
+            "size": [
+              1024,
+              675
+            ],
+            "corners": [
+              [
+                0,
+                0.0013614000002976276,
+                -0.0560000017285347
+              ],
+              [
+                0.08500000089406967,
+                0.0013614000002976276,
+                -0.0560000017285347
+              ],
+              [
+                0.08500000089406967,
+                0.0013614000002976276,
+                0
+              ],
+              [
+                0,
+                0.0013614000002976276,
+                0
+              ]
+            ],
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "sourceMeshes": 253,
+            "sourceTriangles": 120356,
+            "support": "OBJ0/OBJ8569/OBJ8571",
+            "supportPlane": 0.0013060000536218286,
+            "maxProjectionDistanceMeters": 0.000012700000297627629
+          }
+        ],
+        "limitations": [
+          "Axis-aligned planar graphics in a shared verified CAD frame only. Other orientations require an explicit frame conversion.",
+          "Raster mipmaps lose detail at distance; no inscription is reconstructed."
+        ]
+      },
+      "layers": [
+        {
+          "file": "official-marks-7a6c2b1fb3a6-0.png",
+          "sha256": "6f90c655f4324c87db2418bf6577c2aed9b8d447bef9c415cb0d9b0a23e2042d",
+          "bytes": 104453,
+          "size": [
+            1024,
+            675
+          ],
+          "corners": [
+            [
+              0,
+              -0.0000254,
+              -0.0560000017285347
+            ],
+            [
+              0.08500000089406967,
+              -0.0000254,
+              -0.0560000017285347
+            ],
+            [
+              0.08500000089406967,
+              -0.0000254,
+              0
+            ],
+            [
+              0,
+              -0.0000254,
+              0
+            ]
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ],
+          "sourceMeshes": 525,
+          "sourceTriangles": 207996,
+          "support": "OBJ0/OBJ8569/OBJ8571",
+          "supportPlane": 0.00003,
+          "maxProjectionDistanceMeters": 0.000012700000297627554
+        },
+        {
+          "file": "official-marks-7a6c2b1fb3a6-1.png",
+          "sha256": "8b88611d92b28fd231990993d5fe3f2f25a2b256a1d213b54c646fc171198a1f",
+          "bytes": 72953,
+          "size": [
+            1024,
+            675
+          ],
+          "corners": [
+            [
+              0,
+              0.0013614000002976276,
+              -0.0560000017285347
+            ],
+            [
+              0.08500000089406967,
+              0.0013614000002976276,
+              -0.0560000017285347
+            ],
+            [
+              0.08500000089406967,
+              0.0013614000002976276,
+              0
+            ],
+            [
+              0,
+              0.0013614000002976276,
+              0
+            ]
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ],
+          "sourceMeshes": 253,
+          "sourceTriangles": 120356,
+          "support": "OBJ0/OBJ8569/OBJ8571",
+          "supportPlane": 0.0013060000536218286,
+          "maxProjectionDistanceMeters": 0.000012700000297627629
+        }
+      ]
+    },
+    {
+      "baseGLBSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "sourceURL": "https://docs.arduino.cc/static/7ad906834db029723652f0e885968d73/ABX00083-cad-files.zip",
+      "archiveSHA256": "99d89d826d59487b2ba9de6c886f3a4419bc79da25faa5cb3d40bd61979b5c5d",
+      "license": "CC-BY-SA-4.0; Arduino hardware CAD; trademarks retained only to identify the depicted board.",
+      "status": "official_pcb_graphics",
+      "labelKey": "marks.pcb",
+      "layers": [
+        {
+          "file": "official-pcb-ee5ce107d40e.png",
+          "sha256": "ee5ce107d40e714bc80064f855cda4a10a925c735fc0c21a30e2ae8bc152d448",
+          "bytes": 18662,
+          "size": [
+            2048,
+            843
+          ],
+          "sourceRegions": 101,
+          "corners": [
+            [
+              0,
+              0.000012,
+              0
+            ],
+            [
+              0.04318,
+              0.000012,
+              0
+            ],
+            [
+              0.04318,
+              0.000012,
+              -0.017779999999999994
+            ],
+            [
+              0,
+              0.000012,
+              -0.017779999999999994
+            ]
+          ],
+          "normal": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "file": "official-pcb-1896abb11f48.png",
+          "sha256": "1896abb11f48fb16d7790a66eab48c09d79dfc721a12ead678ac45a6a34b3d31",
+          "bytes": 25628,
+          "size": [
+            2048,
+            843
+          ],
+          "sourceRegions": 231,
+          "corners": [
+            [
+              0,
+              -0.0016180039000000001,
+              0
+            ],
+            [
+              0.04318,
+              -0.0016180039000000001,
+              0
+            ],
+            [
+              0.04318,
+              -0.0016180039000000001,
+              -0.017779999999999994
+            ],
+            [
+              0,
+              -0.0016180039000000001,
+              -0.017779999999999994
+            ]
+          ],
+          "normal": [
+            0,
+            -1,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}

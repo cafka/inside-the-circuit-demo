@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "sourceURL": "https://docs.arduino.cc/static/7ad906834db029723652f0e885968d73/ABX00083-cad-files.zip",
+  "archive": ".local/finish-v5/sources/nano-cad.zip",
+  "archiveSHA256": "99d89d826d59487b2ba9de6c886f3a4419bc79da25faa5cb3d40bd61979b5c5d",
+  "member": "ABX00083-cad-files/PCB.PcbDoc",
+  "baseGLBSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+  "thicknessMm": 1.6060039,
+  "thicknessSource": "STEP board node 2; unchanged",
+  "terminalDesignators": [
+    "JP1",
+    "JP2"
+  ],
+  "silkLayers": [
+    33,
+    34
+  ],
+  "textureWidth": 2048,
+  "substrateSRGB": [
+    0.025,
+    0.33,
+    0.43
+  ],
+  "terminalSRGB": [
+    0.83,
+    0.63,
+    0.25
+  ],
+  "appearanceEvidence": "Visual approximation from official clean product photograph; not a statement of alloy, plating process or solder-mask composition.",
+  "photoURL": "https://store.arduino.cc/cdn/shop/files/ABX00092_00.default_934x700.jpg?v=1727101612",
+  "license": "CC-BY-SA-4.0; Arduino hardware CAD; trademarks retained only to identify the depicted board.",
+  "replacesNodeIds": [
+    "9aa2fc4562b28fdf:node:2"
+  ],
+  "silkFaces": [
+    "top",
+    "bottom"
+  ],
+  "materials": {
+    "substrate": {
+      "metalness": 0,
+      "roughness": 0.42,
+      "clearcoat": 0.45,
+      "clearcoatRoughness": 0.28
+    },
+    "terminals": {
+      "metalness": 1,
+      "roughness": 0.28
+    }
+  },
+  "pinoutCheck": {
+    "sourceURL": "https://docs.arduino.cc/resources/pinouts/ABX00083-full-pinout.pdf",
+    "sha256": "2418c2a90c9099d20f3425647607ce0b2ba426a0f1ff04ced50416fc789dc47d",
+    "page": 1,
+    "order": "Increasing CAD X; USB at left in top photograph. GND uses solid white ground marking, not literal GND text. B0 and B1 are not renamed RESET.",
+    "rows": [
+      {
+        "designator": "JP1",
+        "labels": [
+          "D13",
+          "3.3V",
+          "B0",
+          "A0",
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "VBUS",
+          "B1",
+          "GND",
+          "VIN"
+        ],
+        "gpio": [
+          48,
+          null,
+          46,
+          1,
+          2,
+          3,
+          4,
+          11,
+          12,
+          13,
+          14,
+          null,
+          0,
+          null,
+          null
+        ],
+        "pins": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      {
+        "designator": "JP2",
+        "labels": [
+          "D12",
+          "D11",
+          "D10",
+          "D9",
+          "D8",
+          "D7",
+          "D6",
+          "D5",
+          "D4",
+          "D3",
+          "D2",
+          "GND",
+          "RST",
+          "RX0",
+          "TX1"
+        ],
+        "gpio": [
+          47,
+          38,
+          21,
+          18,
+          17,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          null,
+          null,
+          44,
+          43
+        ],
+        "pins": [
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      }
+    ]
+  },
+  "materialBindings": {
+    "substrate": "9aa2fc4562b28fdf:node:2"
+  }
+}

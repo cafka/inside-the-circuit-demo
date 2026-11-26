@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "contract": "Hash-bound optional presentation geometry from manufacturer PCB CAD; preserves original component meshes and source GLB. Unknown assets remain unchanged.",
+  "assets": [
+    {
+      "baseGLBSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "file": "pcb-6d7a2cb42f4c.glb",
+      "sha256": "6d7a2cb42f4cdceebfda3d70ef11d186b2e4538bdf877fd42e4aa528b1595c1c",
+      "sourceURL": "https://docs.arduino.cc/static/7ad906834db029723652f0e885968d73/ABX00083-cad-files.zip",
+      "bytes": 794676,
+      "terminals": 30,
+      "drills": 64,
+      "replacesNodeIds": [
+        "9aa2fc4562b28fdf:node:2"
+      ],
+      "materials": {
+        "substrate": {
+          "role": "soldermask",
+          "metalness": 0,
+          "roughness": 0.42,
+          "clearcoat": 0.45,
+          "clearcoatRoughness": 0.28
+        },
+        "terminals": {
+          "metalness": 1,
+          "roughness": 0.28
+        }
+      },
+      "materialBindings": {
+        "substrate": "9aa2fc4562b28fdf:node:2"
+      },
+      "provenance": {
+        "source": "Manufacturer ABX00083-cad-files/PCB.PcbDoc",
+        "pcbSHA256": "e0c66c3df14d6c60b5736368a36c3837b9cb7fc04e4c0a99dcb36e2931aa96d8",
+        "appearance": "Visual approximation from official clean product photograph; not a statement of alloy, plating process or solder-mask composition.",
+        "archiveSHA256": "99d89d826d59487b2ba9de6c886f3a4419bc79da25faa5cb3d40bd61979b5c5d"
+      }
+    }
+  ]
+}

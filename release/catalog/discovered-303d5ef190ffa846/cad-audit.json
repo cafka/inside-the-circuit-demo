@@ -1,0 +1,251 @@
+{
+  "sourceSHA256": "0e13437ab0fd3c8d32667c3e9e04d0bf80d3f27a95418148402a198373e05e33",
+  "cadFaces": 8005,
+  "missingFaces": [
+    {
+      "index": 895,
+      "before": {
+        "validTopology": false,
+        "surface": "GeomAbs_SurfaceType.GeomAbs_Plane",
+        "signedAreaMm2": -2.776246214408528e-15,
+        "faceToleranceMm": 1e-07,
+        "triangles": 0,
+        "edgeCount": 2,
+        "edges": [
+          {
+            "type": "GeomAbs_CurveType.GeomAbs_Line",
+            "degenerated": false,
+            "toleranceMm": 0.005000049999878221,
+            "start": [
+              -2.67791936218717,
+              -31.550521389558302,
+              -1.1700016695122502
+            ],
+            "end": [
+              -2.4999243873438024,
+              -31.550521392705402,
+              -0.9200016695127345
+            ]
+          },
+          {
+            "type": "GeomAbs_CurveType.GeomAbs_Line",
+            "degenerated": false,
+            "toleranceMm": 0.00500005000021218,
+            "start": [
+              -2.67791936218717,
+              -31.550521389558302,
+              -1.1700016695122502
+            ],
+            "end": [
+              -2.4999243873438024,
+              -31.550521392705384,
+              -0.9200016695127347
+            ]
+          }
+        ],
+        "samplePrincipalSpansMm": [
+          0.3068912039620053,
+          2.1316282072803006e-14,
+          8.881784197001252e-16
+        ],
+        "sampleSingularValues": [
+          0.7418741779681536,
+          4.116770624868882e-14,
+          1.4065215349403416e-15
+        ],
+        "allEdgesLinear": true
+      },
+      "repairAttempt": {
+        "method": "ShapeFix_Face on isolated copy; same tessellation parameters",
+        "changed": false,
+        "after": {
+          "validTopology": false,
+          "surface": "GeomAbs_SurfaceType.GeomAbs_Plane",
+          "signedAreaMm2": -2.776246214408528e-15,
+          "faceToleranceMm": 1e-07,
+          "triangles": 0,
+          "edgeCount": 2,
+          "edges": [
+            {
+              "type": "GeomAbs_CurveType.GeomAbs_Line",
+              "degenerated": false,
+              "toleranceMm": 0.005000049999878221,
+              "start": [
+                -2.67791936218717,
+                -31.550521389558302,
+                -1.1700016695122502
+              ],
+              "end": [
+                -2.4999243873438024,
+                -31.550521392705402,
+                -0.9200016695127345
+              ]
+            },
+            {
+              "type": "GeomAbs_CurveType.GeomAbs_Line",
+              "degenerated": false,
+              "toleranceMm": 0.00500005000021218,
+              "start": [
+                -2.67791936218717,
+                -31.550521389558302,
+                -1.1700016695122502
+              ],
+              "end": [
+                -2.4999243873438024,
+                -31.550521392705384,
+                -0.9200016695127347
+              ]
+            }
+          ],
+          "samplePrincipalSpansMm": [
+            0.3068912039620053,
+            2.1316282072803006e-14,
+            8.881784197001252e-16
+          ],
+          "sampleSingularValues": [
+            0.7418741779681536,
+            4.116770624868882e-14,
+            1.4065215349403416e-15
+          ],
+          "allEdgesLinear": true
+        }
+      },
+      "sourceUnchanged": true,
+      "classification": {
+        "policy": "missing-cad-face/1",
+        "status": "collapsed_linear_boundary",
+        "renderExclusionJustified": true,
+        "reason": "All linear boundary segments lie on one line within numerical precision and the source face tolerance; no resolved two-dimensional surface.",
+        "toleranceMm": 1e-07,
+        "numericalCollinearityBoundMm": 2.2737367544323206e-13,
+        "upperPlanarAreaMm2": 6.5417794693162245e-15,
+        "sourceTopologyRemainsInvalid": true
+      }
+    },
+    {
+      "index": 900,
+      "before": {
+        "validTopology": false,
+        "surface": "GeomAbs_SurfaceType.GeomAbs_Plane",
+        "signedAreaMm2": -1.4293831921170745e-15,
+        "faceToleranceMm": 1e-07,
+        "triangles": 0,
+        "edgeCount": 2,
+        "edges": [
+          {
+            "type": "GeomAbs_CurveType.GeomAbs_Line",
+            "degenerated": false,
+            "toleranceMm": 0.005000049999800061,
+            "start": [
+              -1.79992440963715,
+              -31.0405213621077,
+              -0.9200016472205619
+            ],
+            "end": [
+              -1.6219294347940254,
+              -31.040521343399792,
+              -1.170001647219737
+            ]
+          },
+          {
+            "type": "GeomAbs_CurveType.GeomAbs_Line",
+            "degenerated": false,
+            "toleranceMm": 0.005000050000041648,
+            "start": [
+              -1.79992440963715,
+              -31.0405213621077,
+              -0.920001647220562
+            ],
+            "end": [
+              -1.6219294347940254,
+              -31.040521343399803,
+              -1.170001647219737
+            ]
+          }
+        ],
+        "samplePrincipalSpansMm": [
+          0.30689120396158703,
+          1.4210854715202004e-14,
+          4.440892098500626e-16
+        ],
+        "sampleSingularValues": [
+          0.7418741779671432,
+          3.071148499959868e-14,
+          5.469018189154693e-16
+        ],
+        "allEdgesLinear": true
+      },
+      "repairAttempt": {
+        "method": "ShapeFix_Face on isolated copy; same tessellation parameters",
+        "changed": false,
+        "after": {
+          "validTopology": false,
+          "surface": "GeomAbs_SurfaceType.GeomAbs_Plane",
+          "signedAreaMm2": -1.4293831921170745e-15,
+          "faceToleranceMm": 1e-07,
+          "triangles": 0,
+          "edgeCount": 2,
+          "edges": [
+            {
+              "type": "GeomAbs_CurveType.GeomAbs_Line",
+              "degenerated": false,
+              "toleranceMm": 0.005000049999800061,
+              "start": [
+                -1.79992440963715,
+                -31.0405213621077,
+                -0.9200016472205619
+              ],
+              "end": [
+                -1.6219294347940254,
+                -31.040521343399792,
+                -1.170001647219737
+              ]
+            },
+            {
+              "type": "GeomAbs_CurveType.GeomAbs_Line",
+              "degenerated": false,
+              "toleranceMm": 0.005000050000041648,
+              "start": [
+                -1.79992440963715,
+                -31.0405213621077,
+                -0.920001647220562
+              ],
+              "end": [
+                -1.6219294347940254,
+                -31.040521343399803,
+                -1.170001647219737
+              ]
+            }
+          ],
+          "samplePrincipalSpansMm": [
+            0.30689120396158703,
+            1.4210854715202004e-14,
+            4.440892098500626e-16
+          ],
+          "sampleSingularValues": [
+            0.7418741779671432,
+            3.071148499959868e-14,
+            5.469018189154693e-16
+          ],
+          "allEdgesLinear": true
+        }
+      },
+      "sourceUnchanged": true,
+      "classification": {
+        "policy": "missing-cad-face/1",
+        "status": "collapsed_linear_boundary",
+        "renderExclusionJustified": true,
+        "reason": "All linear boundary segments lie on one line within numerical precision and the source face tolerance; no resolved two-dimensional surface.",
+        "toleranceMm": 1e-07,
+        "numericalCollinearityBoundMm": 2.2737367544323206e-13,
+        "upperPlanarAreaMm2": 4.361186312871539e-15,
+        "sourceTopologyRemainsInvalid": true
+      }
+    }
+  ],
+  "totalMs": 11594.896099995822,
+  "sourceModified": false,
+  "policy": "missing-cad-face/1",
+  "justifiedDegenerateFaces": 2,
+  "unresolvedMissingFaces": 0
+}

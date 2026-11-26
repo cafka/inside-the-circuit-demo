@@ -1,0 +1,894 @@
+{
+  "language": {
+    "es": "Idioma",
+    "en": "Language"
+  },
+  "collapse": {
+    "es": "Contraer ficha",
+    "en": "Collapse card"
+  },
+  "searchSaved": {
+    "es": "Buscar por fabricante o modelo",
+    "en": "Search manufacturer or model"
+  },
+  "catalogCount": {
+    "es": "{shown} de {total} placas",
+    "en": "{shown} of {total} boards"
+  },
+  "noSearchResults": {
+    "es": "No hay placas que coincidan con la búsqueda.",
+    "en": "No boards match your search."
+  },
+  "moreBoards": {
+    "es": "Mostrar más",
+    "en": "Show more"
+  },
+  "advanced": {
+    "es": "Herramientas avanzadas de administración",
+    "en": "Advanced administration tools"
+  },
+  "advancedNote": {
+    "es": "Incorporación y revisión del catálogo. Esta separación visual no restringe el acceso.",
+    "en": "Catalog onboarding and review. This visual grouping does not restrict access."
+  },
+  "nameTool": {
+    "es": "Incorporar por nombre",
+    "en": "Add by name"
+  },
+  "descriptionES": {
+    "es": "Descripción · español",
+    "en": "Description · Spanish"
+  },
+  "descriptionEN": {
+    "es": "Descripción · inglés",
+    "en": "Description · English"
+  },
+  "descriptionNote": {
+    "es": "Completá al menos un idioma. La versión faltante se marcará como no disponible; no se traducirá mediante IA.",
+    "en": "Provide at least one language. A missing version will be marked unavailable; AI translation will not be used."
+  },
+  "translationMissing": {
+    "es": "Traducción no disponible. Se conserva el contenido original a continuación.",
+    "en": "Translation unavailable. The original content is preserved below."
+  },
+  "originalContent": {
+    "es": "Contenido original",
+    "en": "Original content"
+  },
+  "technicalSource": {
+    "es": "Fuente técnica ↗",
+    "en": "Technical source ↗"
+  },
+  "documented": {
+    "es": "documentado",
+    "en": "documented"
+  },
+  "provisional": {
+    "es": "provisional",
+    "en": "provisional"
+  },
+  "cadIdentity": {
+    "es": "Identidad respaldada por documentación y asociación CAD. No es detección por cámara.",
+    "en": "Identity supported by documentation and CAD binding. This is not camera recognition."
+  },
+  "manualCard": {
+    "es": "Ficha manual provisional · fuentes pendientes de revisión.",
+    "en": "Provisional manual card · sources awaiting review."
+  },
+  "camera.interrupted": {
+    "es": "Análisis interrumpido. Repetí la captura para analizar de nuevo.",
+    "en": "Analysis interrupted. Retake the photo to analyze again."
+  },
+  "camera.secure": {
+    "es": "Cámara no disponible. Abrí la aplicación en localhost o mediante HTTPS.",
+    "en": "Camera unavailable. Open the application on localhost or via HTTPS."
+  },
+  "camera.denied": {
+    "es": "El permiso de cámara está desactivado. Podés habilitarlo en tu navegador o explorar los modelos 3D.",
+    "en": "Camera permission is disabled. Enable it in your browser or explore the 3D models."
+  },
+  "camera.absent": {
+    "es": "No encontramos una cámara. Podés conectar una o explorar los modelos 3D.",
+    "en": "No camera was found. Connect one or explore the 3D models."
+  },
+  "camera.occupied": {
+    "es": "La cámara está ocupada por otra aplicación. Cerrala y volvé a intentar.",
+    "en": "Another application is using the camera. Close it and try again."
+  },
+  "camera.failed": {
+    "es": "No se pudo iniciar la cámara. Volvé a intentar.",
+    "en": "The camera could not start. Try again."
+  },
+  "camera.frozen": {
+    "es": "Captura congelada",
+    "en": "Capture frozen"
+  },
+  "camera.choose": {
+    "es": "Captura congelada. Elegí el perfil de tu placa para analizar.",
+    "en": "Capture frozen. Choose your board profile to analyze."
+  },
+  "camera.analyzing": {
+    "es": "Perfil elegido manualmente · análisis local",
+    "en": "Manually selected profile · local analysis"
+  },
+  "camera.pose": {
+    "es": "Pose calculada · tocá un contorno para ver su evidencia",
+    "en": "Pose calculated · tap an outline to inspect its evidence"
+  },
+  "camera.noGeometry": {
+    "es": "Geometría insuficiente · no se dibujan contornos",
+    "en": "Insufficient geometry · no outlines displayed"
+  },
+  "camera.missing": {
+    "es": "Faltan los datos locales del perfil. La captura se conserva.",
+    "en": "Local profile data is missing. The capture is preserved."
+  },
+  "camera.analysisFailed": {
+    "es": "No se pudo completar el análisis local.",
+    "en": "Local analysis could not be completed."
+  },
+  "camera.paused": {
+    "es": "Cámara en pausa. Activala para continuar.",
+    "en": "Camera paused. Enable it to continue."
+  },
+  "camera.timeout": {
+    "es": "El análisis local superó el tiempo disponible.",
+    "en": "Local analysis exceeded the available time."
+  },
+  "camera.insufficient": {
+    "es": "∅ Geometría insuficiente",
+    "en": "∅ Insufficient geometry"
+  },
+  "camera.confirmed": {
+    "es": "✓ Confirmado",
+    "en": "✓ Confirmed"
+  },
+  "camera.probable": {
+    "es": "△ Probable",
+    "en": "△ Probable"
+  },
+  "camera.unknown": {
+    "es": "? No determinado",
+    "en": "? Undetermined"
+  },
+  "camera.coherent": {
+    "es": "Geometría y textura coherentes según las reglas del perfil.",
+    "en": "Geometry and texture are consistent under the profile rules."
+  },
+  "camera.caveat": {
+    "es": "El contorno es la proyección del mapa físico. La etiqueta «confirmado» es una decisión experimental, no una garantía de presencia.",
+    "en": "The outline is a projection of the physical map. “Confirmed” is an experimental decision, not a guarantee of presence."
+  },
+  "camera.ncc": {
+    "es": "NCC local: {value} · margen: {margin}",
+    "en": "Local NCC: {value} · margin: {margin}"
+  },
+  "camera.noNcc": {
+    "es": "Sin comparación NCC disponible para esta pieza.",
+    "en": "No NCC comparison is available for this part."
+  },
+  "camera.noData": {
+    "es": "sin dato",
+    "en": "no data"
+  },
+  "camera.cardSource": {
+    "es": "Ficha estática · fuente Raspberry Pi",
+    "en": "Static card · Raspberry Pi source"
+  },
+  "experimental": {
+    "es": "experimental",
+    "en": "experimental"
+  },
+  "manufacturerCAD": {
+    "es": "CAD DEL FABRICANTE",
+    "en": "MANUFACTURER CAD"
+  },
+  "manualCAD": {
+    "es": "IMPORTACIÓN MANUAL · PROCEDENCIA POR REVISAR",
+    "en": "MANUAL IMPORT · SOURCE AWAITING REVIEW"
+  },
+  "loadingSaved": {
+    "es": "Cargando modelo guardado…",
+    "en": "Loading saved model…"
+  },
+  "viewerHelp": {
+    "es": "Arrastrá para girar · acercá con rueda o pellizco · tocá una pieza",
+    "en": "Drag to rotate · scroll or pinch to zoom · tap a part"
+  },
+  "viewerStats": {
+    "es": "Modelo {size} MiB · listo en {time} s · {count} mallas visibles",
+    "en": "Model {size} MiB · ready in {time} s · {count} visible meshes"
+  },
+  "decorative": {
+    "es": "Pistas y vías ilustrativas, sin conexiones eléctricas verificadas.",
+    "en": "Illustrative traces and vias, with no verified electrical connections."
+  },
+  "modelFailed": {
+    "es": "No se pudo abrir el modelo",
+    "en": "The model could not be opened"
+  },
+  "coverage": {
+    "es": "{groups} grupos con ficha. {nodes} nodos CAD sin identidad asignada; un nodo no equivale a un componente.",
+    "en": "{groups} groups with cards. {nodes} CAD nodes without assigned identities; a node is not necessarily a component."
+  },
+  "provenanceIdentity": {
+    "es": "{manufacturer} · {model}. Revisión: {revision}.",
+    "en": "{manufacturer} · {model}. Revision: {revision}."
+  },
+  "undetermined": {
+    "es": "no determinada",
+    "en": "undetermined"
+  },
+  "unknownLicense": {
+    "es": "no determinada para este archivo",
+    "en": "undetermined for this file"
+  },
+  "license": {
+    "es": "Licencia: {id} ({status}).",
+    "en": "License: {id} ({status})."
+  },
+  "materialsReview": {
+    "es": "Materiales por revisar: {provisional} provisionales, {unknown} desconocidos.",
+    "en": "Materials awaiting review: {provisional} provisional, {unknown} unknown."
+  },
+  "sourceModel": {
+    "es": "Modelo de origen ↗",
+    "en": "Source model ↗"
+  },
+  "selectedNode": {
+    "es": "Nodo seleccionado: {id}",
+    "en": "Selected node: {id}"
+  },
+  "savedCards": {
+    "es": "{count} piezas seleccionables · guardada",
+    "en": "{count} selectable parts · saved"
+  },
+  "open": {
+    "es": "Abrir",
+    "en": "Open"
+  },
+  "emptyCatalog": {
+    "es": "Todavía no hay placas guardadas. Incorporá la primera desde la otra pestaña.",
+    "en": "No boards saved yet. Add the first one from the other tab."
+  },
+  "jobSaved": {
+    "es": "Guardado en {time} s{cache}",
+    "en": "Saved in {time} s{cache}"
+  },
+  "cacheVerified": {
+    "es": " · caché verificada",
+    "en": " · verified cache"
+  },
+  "jobFailed": {
+    "es": "Falló: {error}",
+    "en": "Failed: {error}"
+  },
+  "preparing": {
+    "es": "Preparando…",
+    "en": "Preparing…"
+  },
+  "stage.identity": {
+    "es": "Identidad del catálogo",
+    "en": "Catalog identity"
+  },
+  "stage.source": {
+    "es": "Fuente CAD y procedencia",
+    "en": "CAD source and provenance"
+  },
+  "stage.conversion": {
+    "es": "Conversión CAD",
+    "en": "CAD conversion"
+  },
+  "stage.inventory": {
+    "es": "Inventario de geometrías",
+    "en": "Geometry inventory"
+  },
+  "stage.documentation": {
+    "es": "Asociación documental",
+    "en": "Documentation binding"
+  },
+  "stage.store": {
+    "es": "Guardar modelo y catálogo",
+    "en": "Save model and catalog"
+  },
+  "stage.cache": {
+    "es": "Reutilizar catálogo",
+    "en": "Reuse catalog"
+  },
+  "running": {
+    "es": "en curso",
+    "en": "in progress"
+  },
+  "complete": {
+    "es": "listo",
+    "en": "ready"
+  },
+  "progress": {
+    "es": "avance",
+    "en": "progress"
+  },
+  "identifiedName": {
+    "es": "Coincidencia por nombre. Confirmá la placa a preparar.",
+    "en": "Name match. Confirm the board to prepare."
+  },
+  "ambiguousName": {
+    "es": "Hay varias coincidencias. Elegí explícitamente.",
+    "en": "Several matches found. Choose one explicitly."
+  },
+  "unknownName": {
+    "es": "Sin fuente registrada. Podés importar un STEP/GLB manualmente.",
+    "en": "No registered source. You can import STEP/GLB manually."
+  },
+  "prepareModel": {
+    "es": "Preparar {manufacturer} {model}",
+    "en": "Prepare {manufacturer} {model}"
+  },
+  "maxFile": {
+    "es": "Máximo 80 MiB",
+    "en": "Maximum 80 MiB"
+  },
+  "openFirst": {
+    "es": "Primero abrí una placa",
+    "en": "Open a board first"
+  },
+  "reviewSaved": {
+    "es": "Revisión guardada. Los resultados automáticos se conservaron.",
+    "en": "Review saved. Automatic results were preserved."
+  },
+  "photoSize": {
+    "es": "Elegí una foto JPEG/PNG de hasta 8 MiB",
+    "en": "Choose a JPEG/PNG photo up to 8 MiB"
+  },
+  "nanoUnavailable": {
+    "es": "Nano no está disponible en este navegador. No se llamó a Cloud.",
+    "en": "Nano is unavailable in this browser. Cloud was not called."
+  },
+  "nanoNotInstalled": {
+    "es": "El modelo visual local no está instalado y disponible. No se descargará ni se usará Cloud automáticamente.",
+    "en": "The local vision model is not installed and available. It will not be downloaded or replaced with Cloud automatically."
+  },
+  "cloudConsent": {
+    "es": "La llamada Cloud requiere la autorización de esta foto.",
+    "en": "The Cloud call requires authorization for this photo."
+  },
+  "cloudLimit": {
+    "es": "Límite de una llamada Cloud por sesión alcanzado; sin reintentos automáticos.",
+    "en": "The one-call Cloud session limit was reached; no automatic retries."
+  },
+  "inferring": {
+    "es": "Inferencia en curso…",
+    "en": "Inference in progress…"
+  },
+  "sourceRejected": {
+    "es": "Origen de inferencia inesperado; resultado rechazado.",
+    "en": "Unexpected inference source; result rejected."
+  },
+  "inferenceReceived": {
+    "es": "Respuesta real recibida. Confianza categórica; sin porcentaje calibrado. Costo no consultado en facturación.",
+    "en": "Real response received. Categorical confidence; no calibrated percentage. Billing cost was not queried."
+  },
+  "genericError": {
+    "es": "No se pudo completar la operación. Código técnico: {code}",
+    "en": "The operation could not be completed. Technical code: {code}"
+  },
+  "invalidConfiguration": {
+    "es": "La configuración no es JSON válido.",
+    "en": "The configuration is not valid JSON."
+  },
+  "baseVariant": {
+    "es": "Vista base sin accesorios opcionales · {count} mallas ocultas",
+    "en": "Base view without optional accessories · {count} meshes hidden"
+  },
+  "nameEN": {
+    "es": "Nombre en inglés (si cambia)",
+    "en": "English name (if different)"
+  },
+  "education.title": {
+    "es": "Acerca de la placa",
+    "en": "About this board"
+  },
+  "education.explore": {
+    "es": "Conocé tu placa",
+    "en": "Get to know your board"
+  },
+  "education.empty": {
+    "es": "Abrí una placa para consultar su información documentada.",
+    "en": "Open a board to see its documented information."
+  },
+  "education.components": {
+    "es": "Seleccioná una pieza documentada para conocer su función y verla en el modelo.",
+    "en": "Select a documented part to learn what it does and locate it in the model."
+  },
+  "education.provenance": {
+    "es": "Procedencia, exactitud y herramientas administrativas",
+    "en": "Provenance, accuracy and administrative tools"
+  },
+  "education.processor": {
+    "es": "Procesador / microcontrolador",
+    "en": "Processor / microcontroller"
+  },
+  "education.specs": {
+    "es": "Características técnicas",
+    "en": "Technical features"
+  },
+  "education.uses": {
+    "es": "Funcionalidades y aplicaciones",
+    "en": "Capabilities and applications"
+  },
+  "education.sources": {
+    "es": "Documentación oficial",
+    "en": "Official documentation"
+  },
+  "education.unknown": {
+    "es": "El catálogo no incluye todavía una ficha técnica verificada para esta placa.",
+    "en": "The catalogue does not yet include a verified technical overview for this board."
+  },
+  "education.caution": {
+    "es": "El CAD describe la forma mecánica disponible, no certifica la revisión ni todos los detalles de una placa real. Los acabados son una interpretación visual; no se añaden contactos, soldaduras ni conexiones ausentes del archivo.",
+    "en": "The CAD describes the supplied mechanical shape; it does not certify the revision or every detail of a real board. Finishes are a visual interpretation; missing contacts, solder joints and connections are not added."
+  },
+  "education.optional": {
+    "es": "Se muestra la variante base sin los accesorios opcionales documentados en el perfil de visualización. El archivo original se conserva completo.",
+    "en": "The base variant is shown without the optional accessories documented in the display profile. The original file remains complete."
+  },
+  "admin.title": {
+    "es": "Administración",
+    "en": "Administration"
+  },
+  "admin.subtitle": {
+    "es": "Revisión y diagnóstico del modelo",
+    "en": "Model review and diagnostics"
+  },
+  "admin.authentic": {
+    "es": "Geometría del fabricante y capas de presentación con procedencia indicada para cada modelo. Los detalles no documentados permanecen pendientes; las ilustraciones no certifican conexiones eléctricas.",
+    "en": "Manufacturer geometry and presentation layers with provenance listed for each model. Undocumented details remain unresolved; illustrations do not certify electrical connections."
+  },
+  "confidence.identity": {
+    "es": "Confianza de identificación",
+    "en": "Identity confidence"
+  },
+  "confidence.geometry": {
+    "es": "Confianza de asociación geométrica",
+    "en": "Geometry association confidence"
+  },
+  "confidence.undetermined": {
+    "es": "no determinada",
+    "en": "not determined"
+  },
+  "confidence.documented": {
+    "es": "Identidad respaldada por documentación técnica del catálogo.",
+    "en": "Identity supported by catalogue technical documentation."
+  },
+  "confidence.manual": {
+    "es": "Identidad introducida mediante revisión manual; pendiente de validación.",
+    "en": "Identity entered through manual review; validation is pending."
+  },
+  "confidence.binding": {
+    "es": "Asociación CAD respaldada por la evidencia del perfil; no es reconocimiento de una fotografía.",
+    "en": "CAD association supported by profile evidence; this is not recognition in a photograph."
+  },
+  "confidence.bindingUnknown": {
+    "es": "El catálogo no aporta evidencia adicional para esta asociación geométrica.",
+    "en": "The catalogue supplies no additional evidence for this geometry association."
+  },
+  "confidence.cameraIdentity": {
+    "es": "Origen: reconocimiento local experimental.",
+    "en": "Source: experimental local recognition."
+  },
+  "confidence.cameraGeometry": {
+    "es": "Origen geométrico: pose y polígonos del motor local.",
+    "en": "Geometry source: local engine pose and polygons."
+  },
+  "marks.official": {
+    "es": "Serigrafía: capa rasterizada del CAD oficial con gráficos, en su posición original. No se reconstruyó texto ni cableado.",
+    "en": "Silkscreen: raster layer from the official CAD with graphics, in its original position. No text or wiring was reconstructed."
+  },
+  "marks.source": {
+    "es": "Fuente del fabricante y licencia de las inscripciones",
+    "en": "Manufacturer source and artwork licence"
+  },
+  "marks.absent": {
+    "es": "Sin capa adicional de serigrafía verificada para este activo; se conservan las inscripciones ya presentes en su geometría.",
+    "en": "No additional verified silkscreen layer for this asset; inscriptions already present in its geometry are preserved."
+  },
+  "traces.contactIllustration": {
+    "es": "Trazas ilustrativas: sus extremos proceden de contactos existentes del CAD. No representan conexiones eléctricas verificadas ni se añadieron pads o vías.",
+    "en": "Illustrative traces: endpoints come from existing CAD contacts. They are not verified electrical connections; no pads or vias were added."
+  },
+  "traces.insufficientContacts": {
+    "es": "Sin trazas añadidas: no se encontraron pares de contactos visibles con un recorrido libre suficiente en este CAD.",
+    "en": "No added traces: this CAD did not provide visible contact pairs with sufficient clear routing space."
+  },
+  "marks.failed": {
+    "es": "No se pudo cargar o verificar la serigrafía adicional. Se muestra únicamente el CAD original.",
+    "en": "The additional silkscreen could not be loaded or verified. Only the original CAD is shown."
+  },
+  "card.info": {
+    "es": "Origen y confianza de esta identificación",
+    "en": "Source and confidence of this identification"
+  },
+  "card.diagnostic": {
+    "es": "Origen y confianza",
+    "en": "Source and confidence"
+  },
+  "card.uncalibrated": {
+    "es": "No hay porcentajes calibrados para la identificación ni para su asociación geométrica.",
+    "en": "No calibrated percentages are available for identification or geometry association."
+  },
+  "marks.pcb": {
+    "es": "Serigrafía superior e inferior extraída del diseño PCB oficial (CC BY-SA 4.0), conservando sus coordenadas; hileras cotejadas con el pinout.",
+    "en": "Top and bottom silkscreen extracted from official PCB design (CC BY-SA 4.0), preserving coordinates; terminal rows checked against the pinout."
+  },
+  "presentation.pcb": {
+    "es": "Sustrato, taladros y contactos reconstruidos desde el diseño PCB oficial. Color aproximado según la foto oficial; no identifica la composición del material. Los demás componentes conservan su STEP.",
+    "en": "Substrate, drills and contacts reconstructed from official PCB design. Colour approximated from the official photo; it does not identify material composition. Other components retain their STEP geometry."
+  },
+  "presentation.failed": {
+    "es": "No pudo cargarse el detalle PCB documentado; se conserva el STEP simplificado.",
+    "en": "The documented PCB detail could not be loaded; the simplified STEP is retained."
+  },
+  "onboard.linkedCAD": {
+    "es": "CAD enlazado por el editor de la documentación",
+    "en": "CAD linked by the documentation publisher"
+  },
+  "onboard.dossier": {
+    "es": "Documentación guardada · sin modelo 3D",
+    "en": "Saved documentation · no 3D model"
+  },
+  "onboard.dossierSaved": {
+    "es": "Expediente guardado; la preparación sigue incompleta.",
+    "en": "Dossier saved; preparation is still incomplete."
+  },
+  "onboard.searchDocuments": {
+    "es": "Buscar documentación de {name}",
+    "en": "Find documentation for {name}"
+  },
+  "onboard.openSaved": {
+    "es": "Abrir entrada guardada",
+    "en": "Open saved entry"
+  },
+  "onboard.summary": {
+    "es": "Resultado de la incorporación automática",
+    "en": "Automatic onboarding result"
+  },
+  "onboard.partialModel": {
+    "es": "Modelo CAD disponible. Las etapas incompletas se detallan a continuación.",
+    "en": "CAD model available. Incomplete stages are listed below."
+  },
+  "onboard.noModel": {
+    "es": "Esta entrada conserva documentación, pero todavía no dispone de un modelo 3D utilizable.",
+    "en": "This entry retains documentation but does not yet have a usable 3D model."
+  },
+  "onboard.resources": {
+    "es": "Recursos encontrados y descargados",
+    "en": "Discovered and downloaded resources"
+  },
+  "onboard.noPaidServices": {
+    "es": "Esta incorporación no utilizó inferencias ni servicios pagos. Las licencias se registran por recurso.",
+    "en": "This onboarding used no inference or paid services. Licenses are recorded per resource."
+  },
+  "onboard.nameHint": {
+    "es": "Un modelo nuevo busca fuentes públicas. Si falta CAD, usa Gemini solo cuando hay una sesión autorizada. No activa facturación automáticamente.",
+    "en": "A new model searches public sources. If CAD is missing, Gemini is used only with an authorized session. Billing is never activated automatically."
+  },
+  "invalid_board_name": {
+    "es": "Ingresá un nombre de placa de 4 a 140 caracteres.",
+    "en": "Enter a board name of 4 to 140 characters."
+  },
+  "onboard.stage.discovery": {
+    "es": "Identidad y búsqueda documental",
+    "en": "Identity and document discovery"
+  },
+  "onboard.stage.acquisition": {
+    "es": "Descarga e inspección de recursos",
+    "en": "Resource download and inspection"
+  },
+  "onboard.stage.model": {
+    "es": "Conversión del modelo 3D",
+    "en": "3D model conversion"
+  },
+  "onboard.stage.appearance": {
+    "es": "Apariencia y datos del PCB",
+    "en": "Appearance and PCB data"
+  },
+  "onboard.stage.components": {
+    "es": "Asociación de componentes",
+    "en": "Component association"
+  },
+  "onboard.stage.education": {
+    "es": "Fichas educativas bilingües",
+    "en": "Bilingual educational cards"
+  },
+  "onboard.stage.store": {
+    "es": "Catálogo persistente",
+    "en": "Persistent catalog"
+  },
+  "onboard.status.complete": {
+    "es": "Completado",
+    "en": "Complete"
+  },
+  "onboard.status.partial": {
+    "es": "Parcial",
+    "en": "Partial"
+  },
+  "onboard.status.blocked": {
+    "es": "Pendiente",
+    "en": "Blocked"
+  },
+  "onboard.status.failed": {
+    "es": "Falló",
+    "en": "Failed"
+  },
+  "onboard.status.interrupted": {
+    "es": "Interrumpido",
+    "en": "Interrupted"
+  },
+  "onboard.reason.revision_not_determined": {
+    "es": "La revisión física no pudo determinarse a partir del nombre.",
+    "en": "The physical revision could not be determined from the name."
+  },
+  "onboard.reason.license_and_revision_require_per_asset_evidence": {
+    "es": "Fuentes y hashes registrados; la licencia y revisión se comprueban por archivo.",
+    "en": "Sources and hashes recorded; license and revision require file-specific evidence."
+  },
+  "onboard.reason.no_convertible_3d_asset_found": {
+    "es": "No se encontró un STEP o GLB inequívoco de la placa solicitada.",
+    "en": "No unambiguous STEP or GLB for the requested board was found."
+  },
+  "onboard.reason.ambiguous_model_files": {
+    "es": "Hay varios modelos candidatos; no se eligió uno arbitrariamente.",
+    "en": "Multiple models remain; none was selected arbitrarily."
+  },
+  "onboard.reason.publisher_authority_not_correlated": {
+    "es": "La procedencia del editor aún no pudo corroborarse.",
+    "en": "Publisher provenance could not yet be corroborated."
+  },
+  "onboard.reason.original_cad_colors_preserved_no_verified_surface_reconstruction": {
+    "es": "Se conservan los colores del CAD. Faltan correspondencias verificadas para incorporar serigrafía y detalles adicionales.",
+    "en": "CAD colors are preserved. Verified correspondences are missing for additional artwork and details."
+  },
+  "onboard.reason.requires_3d_asset": {
+    "es": "Se necesita un modelo 3D utilizable.",
+    "en": "A usable 3D model is required."
+  },
+  "onboard.reason.exact_designators_only_unresolved_geometry_kept_unknown": {
+    "es": "Solo se vinculan designadores únicos y exactos del CAD y del diseño eléctrico; las demás piezas quedan sin identificar.",
+    "en": "Only unique, exact CAD/electrical designators are linked; remaining parts stay unidentified."
+  },
+  "onboard.reason.requires_3d_asset_and_document_to_cad_correspondences": {
+    "es": "Faltan el modelo o correspondencias verificables entre documentación y geometría.",
+    "en": "The model or verifiable documentation-to-geometry correspondences are missing."
+  },
+  "onboard.reason.no_bilingual_function_and_example_generation_adapter": {
+    "es": "No hay un generador verificado de función y ejemplos bilingües; no se inventaron fichas.",
+    "en": "No verified bilingual function/example generator is available; educational cards were not fabricated."
+  },
+  "onboard.reason.model_and_dossier_saved": {
+    "es": "Modelo y expediente guardados localmente.",
+    "en": "Model and dossier saved locally."
+  },
+  "onboard.reason.dossier_saved_without_fabricated_model": {
+    "es": "Expediente guardado; no se inventó un modelo ausente.",
+    "en": "Dossier saved; no missing model was fabricated."
+  },
+  "onboard.reason.no_documented_identity": {
+    "es": "No se pudo vincular el nombre con documentación suficiente.",
+    "en": "The name could not be linked to sufficient documentation."
+  },
+  "onboard.reason.no_matching_documented_product_page": {
+    "es": "No se encontró una página documental que identifique la placa.",
+    "en": "No documentation page identifying the board was found."
+  },
+  "onboard.reason.search_failed": {
+    "es": "La búsqueda no pudo completarse. Revisá el registro de la etapa.",
+    "en": "Discovery could not complete. See the stage log."
+  },
+  "onboard.reason.search": {
+    "es": "Buscando enlaces públicos",
+    "en": "Finding public links"
+  },
+  "onboard.reason.authority": {
+    "es": "Comprobando identidad y procedencia",
+    "en": "Checking identity and provenance"
+  },
+  "onboard.incompleteGeometry": {
+    "es": "Vista CAD parcial: {count} caras del archivo original no pudieron triangularse. No fueron reconstruidas.",
+    "en": "Partial CAD preview: {count} original faces could not be triangulated. They were not reconstructed."
+  },
+  "onboard.reason.incomplete_cad_preview": {
+    "es": "La geometría disponible se exportó sin reparaciones; algunas caras inválidas del STEP no pudieron triangularse. Modelo incompleto.",
+    "en": "Available geometry was exported without repairs; some invalid STEP faces could not be triangulated. Incomplete model."
+  },
+  "onboard.partialSaved": {
+    "es": "Modelo y expediente guardados en {time} s. La incorporación sigue incompleta.",
+    "en": "Model and dossier saved in {time} s. Onboarding is still incomplete."
+  },
+  "onboard.viewerNoComponents": {
+    "es": "Arrastrá para girar · acercá con rueda o pellizco · todavía no hay componentes vinculados",
+    "en": "Drag to rotate · scroll or pinch to zoom · no components are linked yet"
+  },
+  "photoAuto.policy": {
+    "es": "La foto inicia la identificación y la preparación. Se usa el modelo local instalado o Cloud únicamente si la configuración y el consentimiento lo permiten.",
+    "en": "Uploading starts identification and preparation. It uses an installed local model, or Cloud only when configuration and consent allow it."
+  },
+  "photoAuto.settings": {
+    "es": "Configuración y consentimiento existentes",
+    "en": "Existing configuration and consent"
+  },
+  "photoAuto.blocked": {
+    "es": "No se ejecutó identificación: {reason}. Visión local: {availability}. Podés continuar por nombre.",
+    "en": "Identification did not run: {reason}. Local vision: {availability}. You can continue by name."
+  },
+  "photoAuto.continued": {
+    "es": "Identificada: {model}. Ruta: {route}. Consultando el catálogo y preparando la placa.",
+    "en": "Identified: {model}. Route: {route}. Checking the catalogue and preparing the board."
+  },
+  "photoAuto.missing": {
+    "es": "Falta evidencia para continuar: mostrala completa y con el nombre o revisión legibles.",
+    "en": "More evidence is needed: show the whole board with readable model or revision markings."
+  },
+  "photoAuto.consentMissing": {
+    "es": "No hay consentimiento vigente para enviar esta foto a Cloud.",
+    "en": "There is no current consent to send this image to Cloud."
+  },
+  "configuration_missing": {
+    "es": "Falta la configuración vigente de Firebase y App Check.",
+    "en": "Existing Firebase and App Check configuration is missing."
+  },
+  "onboard.reason.registered_surfaces_partial": {
+    "es": "Diseños eléctrico y mecánico alineados y comprobados. Contactos y textos disponibles; tipografía y acabado son aproximaciones de presentación.",
+    "en": "Electrical and mechanical designs aligned and checked. Contacts and text available; typography and finish are presentation approximations."
+  },
+  "onboard.reason.registered_components_partial": {
+    "es": "Piezas vinculadas por posición, lado y dimensiones del cuerpo. Las asociaciones ambiguas quedan pendientes.",
+    "en": "Parts linked by body position, side and dimensions. Ambiguous associations remain pending."
+  },
+  "onboard.reason.documented_lessons_partial": {
+    "es": "Fichas bilingües para funciones descritas por el fabricante. Las demás explicaciones siguen pendientes.",
+    "en": "Bilingual cards for manufacturer-described functions. Other explanations remain pending."
+  },
+  "photoAuto.coverage": {
+    "es": "Asociaciones geométricas comprobadas: {bound}. Fichas con función documentada en ES/EN: {cards}. Rótulos del diseño eléctrico: {texts}.",
+    "en": "Checked geometric associations: {bound}. Cards with documented function in ES/EN: {cards}. Electrical-design labels: {texts}."
+  },
+  "photoAuto.surfaceCaution": {
+    "es": "El marco del CAD está comprobado. Se recuperan las fuentes incluidas en el diseño; los rótulos de trazo sin fuente usan una sustitución declarada. El color y brillo son aproximaciones visuales, no mediciones de composición. Las caras faltantes se advierten por separado.",
+    "en": "The CAD frame is checked. Fonts embedded in the design are recovered; stroke labels without a font use a declared substitution. Colour and gloss are visual approximations, not composition measurements. Missing faces are warned about separately."
+  },
+  "selection.unbound": {
+    "es": "Esta geometría todavía no tiene una asociación eléctrica verificada. No se le asignó una identidad.",
+    "en": "This geometry has no verified electrical association yet. No identity has been assigned."
+  },
+  "selection.noGeometry": {
+    "es": "La asociación no tiene geometría visible disponible. Revisá la procedencia en Administración.",
+    "en": "This association has no available visible geometry. Review its provenance in Administration."
+  },
+  "cad.degenerateWarning": {
+    "es": "CAD fuente con {count} caras degeneradas sin superficie medible. Exclusión del render justificada; diagnóstico en Administración.",
+    "en": "Source CAD contains {count} degenerate faces with no resolved surface. Render exclusion is justified; diagnostics in Administration."
+  },
+  "cad.degenerateDetails": {
+    "es": "El análisis de los bordes encontró límites lineales coincidentes dentro de la tolerancia del CAD. ShapeFix_Face no recuperó superficie en una copia aislada. Se mantienen la geometría exportada, los hashes y la condición inválida del STEP original; no se inventaron caras. La exclusión solo se justifica para caras con ese diagnóstico.",
+    "en": "Boundary analysis found coincident linear limits within the CAD tolerance. ShapeFix_Face recovered no surface on an isolated copy. Exported geometry, hashes and the original STEP’s invalid condition are retained; no faces were invented. Exclusion is justified only for faces with this diagnosis."
+  },
+  "selection.legend": {
+    "es": "Amarillo continuo: superficie visible. Discontinuo: geometría CAD oculta detrás de otra pieza.",
+    "en": "Solid yellow: visible surface. Dashed: CAD geometry hidden behind another part."
+  },
+  "selection.minimizeCard": {
+    "es": "Minimizar ficha para ver la placa",
+    "en": "Minimise card to see the board"
+  },
+  "selection.restoreCard": {
+    "es": "Mostrar ficha",
+    "en": "Show card"
+  },
+  "selection.nearby": {
+    "es": "Piezas cercanas visibles: elegí cuál consultar",
+    "en": "Nearby visible parts: choose one to explore"
+  },
+  "selection.closeChoices": {
+    "es": "Cerrar opciones cercanas",
+    "en": "Close nearby choices"
+  },
+  "reconstruction.authority": {
+    "es": "Reconstrucción aproximada · fotos y documentación",
+    "en": "Approximate reconstruction · photos and documentation"
+  },
+  "onboard.stage.reconstruction": {
+    "es": "Reconstrucción desde fotografías",
+    "en": "Photo-based reconstruction"
+  },
+  "onboard.reason.photo_document_model_approximate": {
+    "es": "Geometría aproximada; medidas y asociaciones pendientes de revisión.",
+    "en": "Approximate geometry; measurements and associations require review."
+  },
+  "onboard.reason.observed_photo_appearance_uncalibrated": {
+    "es": "Apariencia tomada de la foto oficial, sin calibración de color ni inferencia química.",
+    "en": "Appearance sampled from the official photo, without colour calibration or chemical inference."
+  },
+  "onboard.reason.image_observations_not_verified_electrical_instances": {
+    "es": "Regiones visuales seleccionables; su asociación eléctrica todavía no está verificada.",
+    "en": "Selectable visual regions; electrical associations are not yet verified."
+  },
+  "reconstruction.cloud": {
+    "es": "Gemini Cloud: {calls} llamadas · costo estimado US${cost}. Facturación gestionada fuera de la aplicación.",
+    "en": "Gemini Cloud: {calls} calls · estimated cost US${cost}. Billing managed outside the app."
+  },
+  "reconstruction.warning": {
+    "es": "Modelo educativo aproximado. Las superficies planas indican alturas desconocidas; no representan piezas físicamente planas.",
+    "en": "Approximate educational model. Flat observations indicate unknown heights; they do not represent physically flat parts."
+  },
+  "reconstruction.resume": {
+    "es": "Reintentar preparación pendiente",
+    "en": "Retry pending preparation"
+  },
+  "reconstruction.flatWarning": {
+    "es": "Resultado parcial: superficies seleccionables, sin alturas verificadas. Aún no es una reconstrucción 3D volumétrica.",
+    "en": "Partial result: selectable surfaces, no verified heights. This is not yet a volumetric 3D reconstruction."
+  },
+  "reconstruction.components": {
+    "es": "Regiones e identidades propuestas desde fotografías y documentos. Requieren revisión independiente.",
+    "en": "Regions and identities proposed from photographs and documents. Independent review is pending."
+  },
+  "reconstruction.tap": {
+    "es": "Podés tocar una región propuesta en el visor. Su selección no confirma la identidad.",
+    "en": "You can tap a proposed region in the viewer. Selecting it does not verify its identity."
+  },
+  "release.lightTheme": {
+    "es": "Tema claro",
+    "en": "Light theme"
+  },
+  "release.darkTheme": {
+    "es": "Tema oscuro",
+    "en": "Dark theme"
+  },
+  "release.backToApp": {
+    "es": "Volver a Inside the Circuit",
+    "en": "Back to Inside the Circuit"
+  },
+  "release.openLibraryTab": {
+    "es": "Abrir biblioteca en otra pestaña",
+    "en": "Open library in another tab"
+  },
+  "release.libraryLimits": {
+    "es": "La biblioteca independiente está en inglés y conserva su propio tema. El libro ESP32 utiliza DevKitC V4; su pinout no corresponde a Nano ESP32.",
+    "en": "The independent library is in English and keeps its own theme. Its ESP32 book uses DevKitC V4; that pinout is not the Nano ESP32 pinout."
+  },
+  "release.uploadPhoto": {
+    "es": "Cargar foto",
+    "en": "Upload photo"
+  },
+  "release.exploreModel": {
+    "es": "Explorar modelo",
+    "en": "Explore model"
+  },
+  "release.experiments": {
+    "es": "Experimentos compatibles",
+    "en": "Compatible experiments"
+  },
+  "release.identifying": {
+    "es": "Identificando la placa…",
+    "en": "Identifying the board…"
+  },
+  "release.noPhotoGeometry": {
+    "es": "Placa identificada. La localización de componentes sobre esta foto aún no está disponible para este modelo. Podés explorar su representación guardada.",
+    "en": "Board identified. Component localization on this photo is not yet available for this model. You can explore its saved representation."
+  },
+  "release.photoBlocked": {
+    "es": "La identificación visual no está disponible: {reason}. La foto se conserva en pantalla. Podés continuar por nombre en Placas.",
+    "en": "Visual identification is unavailable: {reason}. The photo remains on screen. You can continue by name in Boards."
+  },
+  "release.photoConsent": {
+    "es": "Permitir enviar esta foto a Gemini Cloud si el análisis local no está disponible. La configuración del servicio está desactivada hasta que la administradora la habilite.",
+    "en": "Allow sending this photo to Gemini Cloud if local analysis is unavailable. Service configuration stays disabled until enabled by the operator."
+  },
+  "release.educationalThickness": {
+    "es": "PCB: {value} mm de espesor educativo. Las piezas tienen un relieve mínimo ilustrativo de 0,6 mm; sus alturas reales siguen indeterminadas.",
+    "en": "PCB: {value} mm educational thickness. Parts have a minimum illustrative relief of 0.6 mm; their actual heights remain unknown."
+  },
+  "release.checkAI": {
+    "es": "Comprobar disponibilidad de IA (sin inferencia)",
+    "en": "Check AI availability (no inference)"
+  }
+}

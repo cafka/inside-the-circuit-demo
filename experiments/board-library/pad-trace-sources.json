@@ -1,0 +1,26 @@
+{
+  "assets": [
+    {
+      "baseGLBSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "native": ".local/cad-viewer/native-full.glb",
+      "nativeSHA256": "841508deb9de671cedda932bda38f6c0188f5902f09d362674601f8b9a66e90a",
+      "provenance": "experiments/cad-viewer/public/provenance.json",
+      "materialProfile": "experiments/cad-viewer/metal-profile.json",
+      "printLayers": [
+        "experiments/board-library/assets/surface-markings/official-marks-7a6c2b1fb3a6-1.png"
+      ]
+    },
+    {
+      "baseGLBSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "native": ".local/board-library/catalog/arduino-nano-esp32/model.glb",
+      "nativeSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "record": ".local/board-library/catalog/arduino-nano-esp32/record.json",
+      "hiddenPaths": [
+        "PCB/JP1/Header _Fem_1X8",
+        "PCB/JP1/Header _Fem_1X8",
+        "PCB/JP2/Header _Fem_1X8",
+        "PCB/JP2/Header _Fem_1X8"
+      ]
+    }
+  ]
+}

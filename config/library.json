@@ -1,0 +1,32 @@
+{
+  "url": "/library-assets/3b77d06dcb899d922be0afa0cfad8d95557bd87a/index.html",
+  "repository": "cafka/interactive-electronics-books",
+  "verifiedCommit": "3b77d06dcb899d922be0afa0cfad8d95557bd87a",
+  "sourceRepository": "cafka/raspberry-pi-interactive-book",
+  "sourceCommit": "e038d667017139122feba32d4e88e72d01244248",
+  "languageSupport": [
+    "en"
+  ],
+  "themeControl": false,
+  "license": "Own code and text: no license chosen; link/embed only, no redistribution",
+  "books": [
+    {
+      "id": "raspberry-pi",
+      "manufacturer": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "chapters": 4,
+      "compatibility": "exact_board_and_40_pin_BCM_mapping",
+      "pinoutSource": "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio"
+    },
+    {
+      "id": "esp32",
+      "manufacturer": "Espressif",
+      "model": "ESP32-DevKitC V4",
+      "module": "ESP32-WROOM-32E",
+      "chapters": 1,
+      "compatibility": "not_Arduino_Nano_ESP32",
+      "pinoutSource": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html"
+    }
+  ],
+  "externalUrl": "https://cafka.github.io/interactive-electronics-books/"
+}

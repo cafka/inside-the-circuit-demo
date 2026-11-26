@@ -1,0 +1,17 @@
+{
+  "version": "photo-document-reconstruction/2",
+  "model": "gemini-3.1-pro-preview",
+  "maxCallsPerSession": 4,
+  "maxOutputTokens": 16384,
+  "maxInputBytes": 18000000,
+  "maxTextCharacters": 60000,
+  "maxImages": 7,
+  "maxPDFs": 3,
+  "maxObjects": 100,
+  "textureLongSide": 1024,
+  "inputPerMillionUSD": 2.0,
+  "outputPerMillionUSD": 12.0,
+  "pricingSource": "https://aistudio.google.com/docs/pricing#gemini-3.1-pro-preview",
+  "pricingChecked": "2026-11-25",
+  "contract": "No CAD, profiles, manual target coordinates or prepared model are read by the reconstruction route. Image measurements and model interpretations are estimates, not calibrated probabilities. Missing heights stay missing. No automatic billing activation."
+}

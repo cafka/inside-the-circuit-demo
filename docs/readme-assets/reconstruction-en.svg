@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" role="img" aria-labelledby="title desc"><title id="title">Educational reconstruction without CAD</title><desc id="desc">From official sources to a model based on available evidence.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1000" height="1100" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">Educational reconstruction without CAD</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">From official sources to a model based on available evidence.</text>
+<rect x="40" y="140" width="920" height="86" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="179.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Official sources</text>
+<text x="500.0" y="206.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Photographs · schematic · dimensional drawing</text>
+<path d="M500 226 V249" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="251" width="920" height="90" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="292.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Gemini: multimodal interpretation</text>
+<text x="500.0" y="319.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Regions, shapes, proposed identity and bilingual cards</text>
+<path d="M500 341 V364" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="366" width="920" height="90" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="407.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Custom algorithms: geometry</text>
+<text x="500.0" y="434.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Validate polygons · rectify · scale to physical dimensions</text>
+<path d="M500 456 V479" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="170" y="481" width="660" height="78" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="516.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Supported height for this part?</text>
+<text x="500.0" y="543.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Check independent evidence</text>
+<path d="M500 559 V583 H260 V610" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="260" y="576" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">Yes</text>
+<path d="M500 583 H740 V610" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<text x="740" y="576" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0">No</text>
+<rect x="40" y="612" width="440" height="145" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="260.0" y="658.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Generate volume</text>
+<text x="260.0" y="685.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Envelope extrusion</text>
+<text x="260.0" y="708.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Documented or measured dimensions</text>
+<text x="260.0" y="731.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">End-to-end validation pending</text>
+<rect x="520" y="612" width="440" height="145" rx="16" fill="#1e3045" stroke="#aa8953" stroke-width="1.5"/>
+<text x="740.0" y="658.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Retain surface</text>
+<text x="740.0" y="685.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Texture and selectable region</text>
+<text x="740.0" y="708.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Illustrative relief, not measured</text>
+<text x="740.0" y="731.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Motor 2040: 13 regions</text>
+<path d="M260 757 V782 H500 V808" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 757 V782 H500 V808" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="810" width="920" height="91" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="852.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Generation and persistence</text>
+<text x="500.0" y="879.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Individual meshes · textures · materials · GLB</text>
+<path d="M500 901 V925" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="927" width="920" height="105" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="964.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Interactive educational representation</text>
+<text x="500.0" y="991.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Rotation · manual zoom · selection · ES/EN cards</text>
+<text x="500.0" y="1014.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Volumes and surfaces can coexist</text>
+<text x="36" y="1077" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">Educational reconstruction is not manufacturing CAD.</text>
+</svg>

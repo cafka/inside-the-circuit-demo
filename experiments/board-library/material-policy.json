@@ -1,0 +1,10 @@
+{
+  "version":"cad-semantic-materials/1",
+  "note":"Names and hierarchy suggest presentation classes, not measured physical materials. No RGB threshold classification. Unknown/mixed regions retain CAD materials until reviewed.",
+  "rules":[
+    {"segment":"^(pins|Pin_Shape|lead|Thermal_Shape)$","finish":"tin_satin","reason":"CAD explicitly names a contact/lead surface"},
+    {"segment":"shield","finish":"tin_satin","reason":"CAD explicitly names a shield; alloy not specified"},
+    {"segment":"^Board$","finish":"pcb_soldermask","reason":"CAD assembly identifies substrate separately"},
+    {"segment":"^body$","ancestor":"^(U[0-9]+|IC_.+)$","finish":"chip_package","reason":"Package body under an IC assembly"}
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "itc-source-lock-1",
+  "upstream": "https://github.com/cafka/rpi5-explorer",
+  "commit": "ae56be650cab47fb5ee2c78659df86d2e1571a9b",
+  "remoteHeadVerified": "2026-11-21",
+  "remoteAdvanced": false,
+  "files": [
+    {
+      "sourcePath": "app/parts/geometry.js",
+      "targetPath": "src/experimental/kiro/geometry.js",
+      "sha256": "eae14a201b1a940c0db4684e10f332811162282454de932ed1636f41974c9900",
+      "gitBlobSha": "6f4eeabe3c21c4de497e15a1120cd0f7a4d4e242",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/calidad.js",
+      "targetPath": "src/experimental/kiro/p1/calidad.js",
+      "sha256": "7d880c0ee5bd35494d6da27b2fee925110c5575a1e46c6a69753e771e87ddfc7",
+      "gitBlobSha": "ee5678640aa371c1470a87d314952aa5e3136877",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/estrategias/anillos_dorados_rpi5.js",
+      "targetPath": "src/experimental/kiro/p1/estrategias/anillos_dorados_rpi5.js",
+      "sha256": "8f817739ea31a03d283f6ef37f526cdc67014134e908c023e0f8470a8751d612",
+      "gitBlobSha": "835f2b62b670c508810ed4a9d9f9f9d70e57ccdb",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/estrategias/registro.js",
+      "targetPath": "src/experimental/kiro/p1/estrategias/registro.js",
+      "sha256": "ff4fe523671e7e851911cbd6b1d05eecf7bddf8e53b7d6a00ecd206fd6330e2a",
+      "gitBlobSha": "75a21282bf02c933ac1418b79c54c124194741ee",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/geometria_independiente.js",
+      "targetPath": "src/experimental/kiro/p1/geometria_independiente.js",
+      "sha256": "9f389c24c536f8029e2965ab7ddde7ce6226f4b8e1dc051858d31b99b8c54d11",
+      "gitBlobSha": "cc0ee74db261326da9859264fedf6b40f27811f3",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/motor.js",
+      "targetPath": "src/experimental/kiro/p1/motor.js",
+      "sha256": "a9816f9800901818c4c74bd09e2cbeaeb06aa9a2f916edffe50803289f6ae1d6",
+      "gitBlobSha": "109010a4a5013d1c6532a6acc8731a3596a6a4ad",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/ncc_local.js",
+      "targetPath": "src/experimental/kiro/p1/ncc_local.js",
+      "sha256": "d3c42df3633d70936b3993cf30870776ddc288375d8ae8cb237c93afb5b1b43a",
+      "gitBlobSha": "76714e90f8a4d64f34152ed2604050b50d7c7b32",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/ncc_macro.js",
+      "targetPath": "src/experimental/kiro/p1/ncc_macro.js",
+      "sha256": "eaf6fc4561e293455af2a34903cf7a65d1d342b9cb218ca11b1b866d8967394e",
+      "gitBlobSha": "5d37adf0bb42410d50e97027e0f53ffac2361383",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/perfil.js",
+      "targetPath": "src/experimental/kiro/p1/perfil.js",
+      "sha256": "90d505a27068941920eeadf62cf67787fbe136e060158ed0270e36510713e2b9",
+      "gitBlobSha": "66cf763ce63653b40de9df819c516ff2d41e019d",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/piel.js",
+      "targetPath": "src/experimental/kiro/p1/piel.js",
+      "sha256": "7fab9839a05f8605a60addedb3e97b84e859f59c64d2a0f73f5f08119ef3046a",
+      "gitBlobSha": "a01c0b757a7b1f83a5422fb40a10f62696624d60",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/preparar.js",
+      "targetPath": "src/experimental/kiro/p1/preparar.js",
+      "sha256": "60d80d77c0c3876e50c5d52abc141213798873dbe66cc05e9a856e5ff77616a2",
+      "gitBlobSha": "8be0d684a78ae2077b76ec4c0a7c2749a40dc8eb",
+      "adaptation": "none; exact Git blob bytes"
+    },
+    {
+      "sourcePath": "app/parts/p1/variante5.js",
+      "targetPath": "src/experimental/kiro/p1/variante5.js",
+      "sha256": "42ef0c76ab0edc7255ef84ce3c8620c9086ec92bc866c85fdd843083be7b9041",
+      "gitBlobSha": "a9583d35bac14d7883b16ef6fda7f59dfb76ba0c",
+      "adaptation": "none; exact Git blob bytes"
+    }
+  ]
+}

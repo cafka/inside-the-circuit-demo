@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 735" role="img" aria-labelledby="title desc"><title id="title">From curiosity to hands-on learning</title><desc id="desc">Two entry points, one connected learning experience.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c2d"/><stop offset="1" stop-color="#203247"/></linearGradient><marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#8aa9c8"/></marker></defs><rect width="1000" height="735" rx="26" fill="url(#bg)"/>
+<text x="36" y="42" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start" letter-spacing="2.1">INSIDE THE CIRCUIT</text>
+<text x="36" y="82" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" letter-spacing="0">From curiosity to hands-on learning</text>
+<text x="36" y="111" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" letter-spacing="0">Two entry points, one connected learning experience.</text>
+<rect x="320" y="142" width="360" height="72" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="500.0" y="186.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Inside the Circuit</text>
+<path d="M500 214 V235 H260 V253" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M500 235 H740 V253" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="255" width="440" height="100" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="57" y="278" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="260.0" y="309.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Discover a board</text>
+<text x="260.0" y="336.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Camera, photo or board name</text>
+<rect x="520" y="255" width="440" height="100" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="537" y="278" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">01</text>
+<text x="740.0" y="309.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Open the library</text>
+<text x="740.0" y="336.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Choose an interactive book</text>
+<path d="M260 355 V380" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 355 V380" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="40" y="382" width="440" height="105" rx="16" fill="#284a70" stroke="#47617e" stroke-width="1.5"/>
+<text x="57" y="405" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="260.0" y="427.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Explore and understand</text>
+<text x="260.0" y="454.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Coral: model, components and cards</text>
+<text x="260.0" y="477.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Rotate, select and consult sources</text>
+<rect x="520" y="382" width="440" height="105" rx="16" fill="#23564f" stroke="#47617e" stroke-width="1.5"/>
+<text x="537" y="405" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">02</text>
+<text x="740.0" y="427.5" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Experiment with Coral</text>
+<text x="740.0" y="454.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">3D book: camera, model and LED</text>
+<text x="740.0" y="477.5" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Educational presence simulation</text>
+<path d="M480 434 H518" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#arr)"/>
+<path d="M260 487 V525 H500 V550" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<path d="M740 487 V525 H500 V550" fill="none" stroke="#8aa9c8" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"  marker-end="url(#arr)"/>
+<rect x="200" y="552" width="600" height="115" rx="16" fill="#1e3045" stroke="#47617e" stroke-width="1.5"/>
+<text x="217" y="575" fill="#eac46e" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" text-anchor="start" letter-spacing="1">03</text>
+<text x="500.0" y="614.0" fill="#f3f7ff" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="0">Create your own projects</text>
+<text x="500.0" y="641.0" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" letter-spacing="0">Understand electronics and apply what you learn</text>
+<text x="36" y="712" fill="#c0d0e3" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" letter-spacing="0">Direct access to the matching book is part of the planned integration.</text>
+</svg>

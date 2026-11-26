@@ -1,0 +1,10 @@
+{
+  "projectId": "itc-nano-lab-20261121",
+  "apiKey": "REPLACE_LOCALLY",
+  "appId": "REPLACE_LOCALLY",
+  "authDomain": "REPLACE_LOCALLY",
+  "appCheckSiteKey": "REPLACE_LOCALLY",
+  "enabled": false,
+  "stage": 1,
+  "note": "Configuration template only. No SDK, model request, service activation or deployment in stage 1."
+}

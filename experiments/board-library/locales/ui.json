@@ -1,0 +1,526 @@
+{
+  "ui.inside_the_circuit_3d_explorer": {
+    "es": "Inside the Circuit · Explorador 3D",
+    "en": "Inside the Circuit · 3D explorer"
+  },
+  "ui.look_beyond_the_surface": {
+    "es": "MIRÁ MÁS ALLÁ DE LA SUPERFICIE",
+    "en": "LOOK BEYOND THE SURFACE"
+  },
+  "ui.electronics": {
+    "es": "La electrónica,",
+    "en": "Electronics,"
+  },
+  "ui.up_close": {
+    "es": "más cerca.",
+    "en": "up close."
+  },
+  "ui.discover_the_parts_and_ideas": {
+    "es": "Descubrí las piezas y las ideas",
+    "en": "Discover the parts and ideas"
+  },
+  "ui.that_bring_a_board_to_life": {
+    "es": "que hacen funcionar una placa.",
+    "en": "that bring a board to life."
+  },
+  "ui.camera": {
+    "es": "Cámara",
+    "en": "Camera"
+  },
+  "ui.explore_your_board_part_by_part": {
+    "es": "Explorá tu placa, pieza a pieza",
+    "en": "Explore your board, part by part"
+  },
+  "ui.library": {
+    "es": "Biblioteca",
+    "en": "Library"
+  },
+  "ui.coming_soon": {
+    "es": "Próximamente",
+    "en": "Coming soon"
+  },
+  "ui.books_and_interactive_experiments": {
+    "es": "Libros y experimentos interactivos",
+    "en": "Books and interactive experiments"
+  },
+  "ui.curiosity_connects": {
+    "es": "Curiosidad que conecta.",
+    "en": "Curiosity connects."
+  },
+  "ui.camera_and_board_capture": {
+    "es": "Cámara y captura de placa",
+    "en": "Camera and board capture"
+  },
+  "ui.calculated_outlines": {
+    "es": "Contornos calculados",
+    "en": "Calculated outlines"
+  },
+  "ui.back_to_home": {
+    "es": "Volver al inicio",
+    "en": "Back to home"
+  },
+  "ui.point_at_your_board": {
+    "es": "Apuntá a tu placa",
+    "en": "Point at your board"
+  },
+  "ui.exploration_options": {
+    "es": "Opciones de exploración",
+    "en": "Exploration options"
+  },
+  "ui.local_profile": {
+    "es": "Perfil local",
+    "en": "Local profile"
+  },
+  "ui.choose_the_known_board": {
+    "es": "Elegí la placa conocida",
+    "en": "Choose the known board"
+  },
+  "ui.your_board_up_close": {
+    "es": "Tu placa, en primer plano.",
+    "en": "Your board, up close."
+  },
+  "ui.allow_camera_access_to_get_started": {
+    "es": "Permití el acceso a la cámara para comenzar.",
+    "en": "Allow camera access to get started."
+  },
+  "ui.enable_camera": {
+    "es": "Activar cámara",
+    "en": "Enable camera"
+  },
+  "ui.analyzing_capture": {
+    "es": "Analizando captura…",
+    "en": "Analyzing capture…"
+  },
+  "ui.captured_components": {
+    "es": "Componentes de la captura",
+    "en": "Captured components"
+  },
+  "ui.retake": {
+    "es": "Repetir",
+    "en": "Retake"
+  },
+  "ui.capture_image": {
+    "es": "Capturar imagen",
+    "en": "Capture image"
+  },
+  "ui.3d_models": {
+    "es": "Modelos 3D",
+    "en": "3D models"
+  },
+  "ui.back_to_camera": {
+    "es": "Volver a cámara",
+    "en": "Back to camera"
+  },
+  "ui.inside_the_circuit_home": {
+    "es": "Inside the Circuit, inicio",
+    "en": "Inside the Circuit, home"
+  },
+  "ui.explorer_tools": {
+    "es": "Herramientas del explorador",
+    "en": "Explorer tools"
+  },
+  "ui.boards": {
+    "es": "Placas",
+    "en": "Boards"
+  },
+  "ui.documented_components": {
+    "es": "Componentes documentados",
+    "en": "Documented components"
+  },
+  "ui.information_and_tools": {
+    "es": "Información de la placa",
+    "en": "Board information"
+  },
+  "ui.board_explorer": {
+    "es": "Explorador de placas",
+    "en": "Board explorer"
+  },
+  "ui.3d_viewer_drag_to_rotate_and_pinch_or_scroll_to_zoom": {
+    "es": "Visor 3D. Arrastrá para girar y pellizcá o usá la rueda para acercar.",
+    "en": "3D viewer. Drag to rotate and pinch or scroll to zoom."
+  },
+  "ui.3d_explorer": {
+    "es": "EXPLORADOR 3D",
+    "en": "3D EXPLORER"
+  },
+  "ui.choose_a_board": {
+    "es": "Elegí una placa",
+    "en": "Choose a board"
+  },
+  "ui.explore_every_detail": {
+    "es": "EXPLORÁ CADA DETALLE",
+    "en": "EXPLORE EVERY DETAIL"
+  },
+  "ui.a_new_perspective": {
+    "es": "Una nueva perspectiva",
+    "en": "A new perspective"
+  },
+  "ui.on_your_board": {
+    "es": "de tu placa.",
+    "en": "on your board."
+  },
+  "ui.rotate_zoom_in_and_discover": {
+    "es": "Girá el modelo, acercate y descubrí",
+    "en": "Rotate, zoom in and discover"
+  },
+  "ui.what_each_component_does": {
+    "es": "qué hace cada componente.",
+    "en": "what each component does."
+  },
+  "ui.explore_catalog": {
+    "es": "Explorar catálogo",
+    "en": "Explore catalog"
+  },
+  "ui.cad_models_technical_sources_interactive_exploration": {
+    "es": "Modelos CAD · fuentes técnicas · exploración interactiva",
+    "en": "CAD models · technical sources · interactive exploration"
+  },
+  "ui.opening_model": {
+    "es": "Abriendo modelo…",
+    "en": "Opening model…"
+  },
+  "ui.preparing_board": {
+    "es": "Preparando placa…",
+    "en": "Preparing board…"
+  },
+  "ui.view_progress": {
+    "es": "Ver progreso",
+    "en": "View progress"
+  },
+  "ui.viewer_controls": {
+    "es": "Controles del visor",
+    "en": "Viewer controls"
+  },
+  "ui.top_view": {
+    "es": "Desde arriba",
+    "en": "Top view"
+  },
+  "ui.reset_view": {
+    "es": "Restablecer vista",
+    "en": "Reset view"
+  },
+  "ui.zoom_out": {
+    "es": "Alejar",
+    "en": "Zoom out"
+  },
+  "ui.zoom_in": {
+    "es": "Acercar",
+    "en": "Zoom in"
+  },
+  "ui.drag_to_rotate_pinch_to_zoom": {
+    "es": "Arrastrá para girar · pellizcá para acercar",
+    "en": "Drag to rotate · pinch to zoom"
+  },
+  "ui.selected_component": {
+    "es": "COMPONENTE SELECCIONADO",
+    "en": "SELECTED COMPONENT"
+  },
+  "ui.expand_card": {
+    "es": "Expandir ficha",
+    "en": "Expand card"
+  },
+  "ui.close_card": {
+    "es": "Cerrar ficha",
+    "en": "Close card"
+  },
+  "ui.technical_sources": {
+    "es": "Fuentes técnicas",
+    "en": "Technical sources"
+  },
+  "ui.your_exploration_space": {
+    "es": "TU ESPACIO DE EXPLORACIÓN",
+    "en": "YOUR EXPLORATION SPACE"
+  },
+  "ui.close_catalog": {
+    "es": "Cerrar catálogo",
+    "en": "Close catalog"
+  },
+  "ui.catalog": {
+    "es": "Catálogo",
+    "en": "Catalog"
+  },
+  "ui.saved": {
+    "es": "Guardadas",
+    "en": "Saved"
+  },
+  "ui.add_a_board": {
+    "es": "Incorporar placa",
+    "en": "Add a board"
+  },
+  "ui.choose_a_board_to_explore_its_3d_model": {
+    "es": "Elegí una placa para explorar su modelo 3D.",
+    "en": "Choose a board to explore its 3D model."
+  },
+  "ui.available_on_this_computer_opening_a_saved_model_does_not_query_a": {
+    "es": "Disponible en este equipo. Abrir un modelo guardado no consulta IA.",
+    "en": "Available on this computer. Opening a saved model does not query AI."
+  },
+  "ui.name_or_model": {
+    "es": "Nombre o modelo",
+    "en": "Name or model"
+  },
+  "ui.find_a_board": {
+    "es": "Buscar una placa",
+    "en": "Find a board"
+  },
+  "ui.search": {
+    "es": "Buscar",
+    "en": "Search"
+  },
+  "ui.identify_from_a_photo": {
+    "es": "Identificar desde una fotografía",
+    "en": "Identify from a photo"
+  },
+  "ui.the_photo_stays_in_memory_only_cloud_sends_it_to_the_provider_whe": {
+    "es": "Al cargar la foto comienza la identificación. Se usa el modelo visual local disponible o Cloud si ya está configurado y autorizado. Solo Cloud envía la foto al proveedor; no se guarda en el catálogo.",
+    "en": "Uploading the photo starts identification. The available local vision model is used, or Cloud when already configured and authorized. Only Cloud sends the photo to the provider; it is not saved in the catalogue."
+  },
+  "ui.photo": {
+    "es": "Fotografía",
+    "en": "Photo"
+  },
+  "ui.engine": {
+    "es": "Motor",
+    "en": "Engine"
+  },
+  "ui.local_nano_requires_actual_availability": {
+    "es": "Nano local · requiere disponibilidad real",
+    "en": "Local Nano · requires actual availability"
+  },
+  "ui.gemini_cloud_one_call_maximum": {
+    "es": "Gemini Cloud · una llamada como máximo",
+    "en": "Gemini Cloud · one call maximum"
+  },
+  "ui.firebase_app_check_configuration_memory_only": {
+    "es": "Configuración Firebase/App Check (solo memoria)",
+    "en": "Firebase/App Check configuration (memory only)"
+  },
+  "ui.paste_your_existing_local_configuration": {
+    "es": "Pegá la configuración local existente",
+    "en": "Paste your existing local configuration"
+  },
+  "ui.authorize_one_cloud_call_for_this_photo": {
+    "es": "Autorizar una llamada Cloud para esta foto",
+    "en": "Authorize one Cloud call for this photo"
+  },
+  "ui.identify_photo": {
+    "es": "Identificar foto",
+    "en": "Identify photo"
+  },
+  "ui.no_inference_has_run_does_not_activate_billing_or_services": {
+    "es": "Sin inferencias ejecutadas. No activa facturación ni servicios.",
+    "en": "No inference has run. Does not activate billing or services."
+  },
+  "ui.import_step_or_glb_manually": {
+    "es": "Importar un STEP o GLB manualmente",
+    "en": "Import STEP or GLB manually"
+  },
+  "ui.catalog_identifier": {
+    "es": "Identificador del catálogo",
+    "en": "Catalog identifier"
+  },
+  "ui.my_board_v1": {
+    "es": "mi-placa-v1",
+    "en": "my-board-v1"
+  },
+  "ui.manufacturer": {
+    "es": "Fabricante",
+    "en": "Manufacturer"
+  },
+  "ui.model": {
+    "es": "Modelo",
+    "en": "Model"
+  },
+  "ui.revision_optional": {
+    "es": "Revisión (opcional)",
+    "en": "Revision (optional)"
+  },
+  "ui.source_url": {
+    "es": "URL de procedencia",
+    "en": "Source URL"
+  },
+  "ui.declared_license": {
+    "es": "Licencia declarada",
+    "en": "Declared license"
+  },
+  "ui.file": {
+    "es": "Archivo",
+    "en": "File"
+  },
+  "ui.import_and_keep": {
+    "es": "Importar y conservar",
+    "en": "Import and keep"
+  },
+  "ui.explore_the_board": {
+    "es": "EXPLORAR LA PLACA",
+    "en": "EXPLORE THE BOARD"
+  },
+  "ui.components": {
+    "es": "Componentes",
+    "en": "Components"
+  },
+  "ui.close_components": {
+    "es": "Cerrar componentes",
+    "en": "Close components"
+  },
+  "ui.you_can_also_tap_a_documented_part_directly_on_the_model": {
+    "es": "También podés tocar una pieza documentada directamente en el modelo.",
+    "en": "You can also tap a documented part directly on the model."
+  },
+  "ui.model_information": {
+    "es": "INFORMACIÓN DEL MODELO",
+    "en": "MODEL INFORMATION"
+  },
+  "ui.details_and_tools": {
+    "es": "Detalles y herramientas",
+    "en": "Details and tools"
+  },
+  "ui.close_tools": {
+    "es": "Cerrar herramientas",
+    "en": "Close tools"
+  },
+  "ui.tools": {
+    "es": "Herramientas",
+    "en": "Tools"
+  },
+  "ui.provenance": {
+    "es": "Procedencia",
+    "en": "Provenance"
+  },
+  "ui.review": {
+    "es": "Revisión",
+    "en": "Review"
+  },
+  "ui.diagnostics": {
+    "es": "Diagnóstico",
+    "en": "Diagnostics"
+  },
+  "ui.open_a_board_to_see_its_sources_license_and_limitations": {
+    "es": "Abrí una placa para consultar sus fuentes, licencia y límites.",
+    "en": "Open a board to see its sources, license and limitations."
+  },
+  "ui.decorative_pcb_traces_are_illustrative_they_do_not_represent_veri": {
+    "es": "Las pistas decorativas del PCB son ilustrativas. No representan conexiones eléctricas verificadas.",
+    "en": "Decorative PCB traces are illustrative. They do not represent verified electrical connections."
+  },
+  "ui.choose_a_part_in_the_tree_or_enable_review_selection_and_close_th": {
+    "es": "Elegí una pieza del árbol o activá selección de revisión y cerrá este panel para pulsar su geometría. Las correcciones se guardan por separado.",
+    "en": "Choose a part in the tree, or enable review selection and close this panel to click its geometry. Corrections are stored separately."
+  },
+  "ui.select_unidentified_geometry": {
+    "es": "Seleccionar geometría sin identificar",
+    "en": "Select unidentified geometry"
+  },
+  "ui.cad_node": {
+    "es": "Nodo CAD",
+    "en": "CAD node"
+  },
+  "ui.finish": {
+    "es": "Acabado",
+    "en": "Finish"
+  },
+  "ui.unknown_keep_cad": {
+    "es": "Desconocido · conservar CAD",
+    "en": "Unknown · keep CAD"
+  },
+  "ui.satin_polished_metal": {
+    "es": "Metal pulido satinado",
+    "en": "Satin polished metal"
+  },
+  "ui.shield_satin_metal": {
+    "es": "Blindaje / metal satinado",
+    "en": "Shield / satin metal"
+  },
+  "ui.pcb": {
+    "es": "PCB",
+    "en": "PCB"
+  },
+  "ui.chip_package": {
+    "es": "Encapsulado de chip",
+    "en": "Chip package"
+  },
+  "ui.black_plastic": {
+    "es": "Plástico negro",
+    "en": "Black plastic"
+  },
+  "ui.other_polymer": {
+    "es": "Otro polímero",
+    "en": "Other polymer"
+  },
+  "ui.reason_and_evidence": {
+    "es": "Motivo y evidencia",
+    "en": "Reason and evidence"
+  },
+  "ui.save_material": {
+    "es": "Guardar material",
+    "en": "Save material"
+  },
+  "ui.associate_geometry_with_a_card": {
+    "es": "Asociar geometría con una ficha",
+    "en": "Associate geometry with a card"
+  },
+  "ui.cad_group_optional": {
+    "es": "Grupo CAD (opcional)",
+    "en": "CAD group (optional)"
+  },
+  "ui.use_selected_node": {
+    "es": "Usar el nodo seleccionado",
+    "en": "Use selected node"
+  },
+  "ui.identifier": {
+    "es": "Identificador",
+    "en": "Identifier"
+  },
+  "ui.name": {
+    "es": "Nombre",
+    "en": "Name"
+  },
+  "ui.description": {
+    "es": "Descripción",
+    "en": "Description"
+  },
+  "ui.technical_source": {
+    "es": "Fuente técnica",
+    "en": "Technical source"
+  },
+  "ui.save_provisional_card": {
+    "es": "Guardar ficha provisional",
+    "en": "Save provisional card"
+  },
+  "ui.viewer": {
+    "es": "Visor",
+    "en": "Viewer"
+  },
+  "ui.no_model_loaded": {
+    "es": "Sin modelo cargado.",
+    "en": "No model loaded."
+  },
+  "ui.preparation": {
+    "es": "Preparación",
+    "en": "Preparation"
+  },
+  "ui.no_preparation_in_progress": {
+    "es": "No hay una preparación en curso.",
+    "en": "No preparation in progress."
+  },
+  "ui.local_preparation_uncertain_identities_and_materials_remain_marke": {
+    "es": "Preparación local. Las identidades y los materiales inciertos permanecen señalados.",
+    "en": "Local preparation. Uncertain identities and materials remain marked."
+  },
+  "ui.a_new_space_to_learn": {
+    "es": "UN NUEVO ESPACIO PARA APRENDER",
+    "en": "A NEW SPACE TO LEARN"
+  },
+  "ui.close_library": {
+    "es": "Cerrar biblioteca",
+    "en": "Close library"
+  },
+  "ui.books_and_interactive_experiments_are_coming_in_a_future_stage": {
+    "es": "Los libros y experimentos interactivos llegarán en una próxima etapa.",
+    "en": "Books and interactive experiments are coming in a future stage."
+  },
+  "ui.this_integration_is_not_available_yet": {
+    "es": "La integración todavía no está disponible.",
+    "en": "This integration is not available yet."
+  }
+}

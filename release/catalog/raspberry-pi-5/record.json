@@ -1,0 +1,670 @@
+{
+  "schema": "board-onboarding/1",
+  "id": "raspberry-pi-5",
+  "identity": {
+    "manufacturer": "Raspberry Pi",
+    "model": "Raspberry Pi 5",
+    "hardwareRevision": null,
+    "confidence": "catalog_identity",
+    "revisionNote": "El STEP no certifica la revisión de una placa fotografiada.",
+    "basis": "registered_name",
+    "probability": null
+  },
+  "source": {
+    "authority": "official",
+    "pageUrl": "https://pip.raspberrypi.com/categories/892-raspberry-pi-5",
+    "url": "https://pip-assets.raspberrypi.com/categories/892-raspberry-pi-5/documents/RP-010083-CA-1-rpi-5%203D%20STEP%20-%20No%20Graphics%20small%20file.zip",
+    "license": {
+      "id": "MIT",
+      "status": "verified",
+      "file": "experiments/cad-viewer/CAD_LICENSE.txt"
+    },
+    "coverage": "Modelo mecánico oficial sin gráficos; detalles y advertencias conservados.",
+    "revision": null,
+    "acquisition": "reused_verified_existing_asset"
+  },
+  "fingerprint": "36659c5d96aaadbbed0b24d9606a56b8f0329085b03443a6090995d4f55b8f02",
+  "preparedAt": "2026-11-24T08:44:56.670Z",
+  "profileVersion": 1,
+  "appearance": "cad-viewer-metal-v2",
+  "inventory": {
+    "sourceHash": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+    "bytes": 47466068,
+    "triangles": 1639318,
+    "nodes": [
+      {
+        "id": "5495fdcdddbe9045:node:0",
+        "index": 0,
+        "name": "Official Raspberry Pi 5 STEP",
+        "path": [
+          "Official Raspberry Pi 5 STEP"
+        ],
+        "chain": [
+          0
+        ],
+        "mesh": null,
+        "primitives": 0,
+        "extras": {}
+      },
+      {
+        "id": "5495fdcdddbe9045:node:1",
+        "index": 1,
+        "name": "CAD batch 0",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 0"
+        ],
+        "chain": [
+          0,
+          1
+        ],
+        "mesh": 0,
+        "primitives": 1,
+        "extras": {
+          "batchId": 0,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:2",
+        "index": 2,
+        "name": "CAD batch 1",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 1"
+        ],
+        "chain": [
+          0,
+          2
+        ],
+        "mesh": 1,
+        "primitives": 1,
+        "extras": {
+          "batchId": 1,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:3",
+        "index": 3,
+        "name": "CAD batch 2",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 2"
+        ],
+        "chain": [
+          0,
+          3
+        ],
+        "mesh": 2,
+        "primitives": 1,
+        "extras": {
+          "batchId": 2,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:4",
+        "index": 4,
+        "name": "CAD batch 3",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 3"
+        ],
+        "chain": [
+          0,
+          4
+        ],
+        "mesh": 3,
+        "primitives": 1,
+        "extras": {
+          "batchId": 3,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:5",
+        "index": 5,
+        "name": "CAD batch 4",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 4"
+        ],
+        "chain": [
+          0,
+          5
+        ],
+        "mesh": 4,
+        "primitives": 1,
+        "extras": {
+          "batchId": 4,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:6",
+        "index": 6,
+        "name": "CAD batch 5",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 5"
+        ],
+        "chain": [
+          0,
+          6
+        ],
+        "mesh": 5,
+        "primitives": 1,
+        "extras": {
+          "batchId": 5,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:7",
+        "index": 7,
+        "name": "CAD batch 6",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 6"
+        ],
+        "chain": [
+          0,
+          7
+        ],
+        "mesh": 6,
+        "primitives": 1,
+        "extras": {
+          "batchId": 6,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:8",
+        "index": 8,
+        "name": "CAD batch 7",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 7"
+        ],
+        "chain": [
+          0,
+          8
+        ],
+        "mesh": 7,
+        "primitives": 1,
+        "extras": {
+          "batchId": 7,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:9",
+        "index": 9,
+        "name": "CAD batch 8",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 8"
+        ],
+        "chain": [
+          0,
+          9
+        ],
+        "mesh": 8,
+        "primitives": 1,
+        "extras": {
+          "batchId": 8,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:10",
+        "index": 10,
+        "name": "CAD batch 9",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 9"
+        ],
+        "chain": [
+          0,
+          10
+        ],
+        "mesh": 9,
+        "primitives": 1,
+        "extras": {
+          "batchId": 9,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:11",
+        "index": 11,
+        "name": "CAD batch 10",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 10"
+        ],
+        "chain": [
+          0,
+          11
+        ],
+        "mesh": 10,
+        "primitives": 1,
+        "extras": {
+          "batchId": 10,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:12",
+        "index": 12,
+        "name": "CAD batch 11",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 11"
+        ],
+        "chain": [
+          0,
+          12
+        ],
+        "mesh": 11,
+        "primitives": 1,
+        "extras": {
+          "batchId": 11,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:13",
+        "index": 13,
+        "name": "CAD batch 12",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 12"
+        ],
+        "chain": [
+          0,
+          13
+        ],
+        "mesh": 12,
+        "primitives": 1,
+        "extras": {
+          "batchId": 12,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:14",
+        "index": 14,
+        "name": "CAD batch 13",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 13"
+        ],
+        "chain": [
+          0,
+          14
+        ],
+        "mesh": 13,
+        "primitives": 1,
+        "extras": {
+          "batchId": 13,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:15",
+        "index": 15,
+        "name": "bcm2712 · CAD batch 14",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "bcm2712 · CAD batch 14"
+        ],
+        "chain": [
+          0,
+          15
+        ],
+        "mesh": 14,
+        "primitives": 1,
+        "extras": {
+          "batchId": 14,
+          "componentId": "bcm2712"
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:16",
+        "index": 16,
+        "name": "bcm2712 · CAD batch 15",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "bcm2712 · CAD batch 15"
+        ],
+        "chain": [
+          0,
+          16
+        ],
+        "mesh": 15,
+        "primitives": 1,
+        "extras": {
+          "batchId": 15,
+          "componentId": "bcm2712"
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:17",
+        "index": 17,
+        "name": "bcm2712 · CAD batch 16",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "bcm2712 · CAD batch 16"
+        ],
+        "chain": [
+          0,
+          17
+        ],
+        "mesh": 16,
+        "primitives": 1,
+        "extras": {
+          "batchId": 16,
+          "componentId": "bcm2712"
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:18",
+        "index": 18,
+        "name": "CAD batch 17",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 17"
+        ],
+        "chain": [
+          0,
+          18
+        ],
+        "mesh": 17,
+        "primitives": 1,
+        "extras": {
+          "batchId": 17,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:19",
+        "index": 19,
+        "name": "CAD batch 18",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 18"
+        ],
+        "chain": [
+          0,
+          19
+        ],
+        "mesh": 18,
+        "primitives": 1,
+        "extras": {
+          "batchId": 18,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:20",
+        "index": 20,
+        "name": "CAD batch 19",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 19"
+        ],
+        "chain": [
+          0,
+          20
+        ],
+        "mesh": 19,
+        "primitives": 1,
+        "extras": {
+          "batchId": 19,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:21",
+        "index": 21,
+        "name": "CAD batch 20",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 20"
+        ],
+        "chain": [
+          0,
+          21
+        ],
+        "mesh": 20,
+        "primitives": 1,
+        "extras": {
+          "batchId": 20,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:22",
+        "index": 22,
+        "name": "CAD batch 21",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 21"
+        ],
+        "chain": [
+          0,
+          22
+        ],
+        "mesh": 21,
+        "primitives": 1,
+        "extras": {
+          "batchId": 21,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:23",
+        "index": 23,
+        "name": "CAD batch 22",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 22"
+        ],
+        "chain": [
+          0,
+          23
+        ],
+        "mesh": 22,
+        "primitives": 1,
+        "extras": {
+          "batchId": 22,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:24",
+        "index": 24,
+        "name": "CAD batch 23",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 23"
+        ],
+        "chain": [
+          0,
+          24
+        ],
+        "mesh": 23,
+        "primitives": 1,
+        "extras": {
+          "batchId": 23,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:25",
+        "index": 25,
+        "name": "CAD batch 24",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 24"
+        ],
+        "chain": [
+          0,
+          25
+        ],
+        "mesh": 24,
+        "primitives": 1,
+        "extras": {
+          "batchId": 24,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:26",
+        "index": 26,
+        "name": "CAD batch 25",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 25"
+        ],
+        "chain": [
+          0,
+          26
+        ],
+        "mesh": 25,
+        "primitives": 1,
+        "extras": {
+          "batchId": 25,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:27",
+        "index": 27,
+        "name": "CAD batch 26",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 26"
+        ],
+        "chain": [
+          0,
+          27
+        ],
+        "mesh": 26,
+        "primitives": 1,
+        "extras": {
+          "batchId": 26,
+          "componentId": null
+        }
+      },
+      {
+        "id": "5495fdcdddbe9045:node:28",
+        "index": 28,
+        "name": "CAD batch 27",
+        "path": [
+          "Official Raspberry Pi 5 STEP",
+          "CAD batch 27"
+        ],
+        "chain": [
+          0,
+          28
+        ],
+        "mesh": 27,
+        "primitives": 1,
+        "extras": {
+          "batchId": 27,
+          "componentId": null
+        }
+      }
+    ],
+    "meshes": 28,
+    "binarySHA256": "27bdfda086e2449ec9c8a34733bfdb28aaf6a3aac0d835cd7e583cec1108a81d",
+    "asset": {
+      "version": "2.0",
+      "generator": "Inside the Circuit / OpenCascade 7.9.3 / cadquery-ocp 7.9.3.1.1 / RWGltf_CafWriter",
+      "copyright": "Raspberry Pi Ltd — MIT; see CAD_LICENSE.txt"
+    }
+  },
+  "components": [
+    {
+      "id": "bcm2712",
+      "label": "BCM2712",
+      "description": "Ejecuta el sistema operativo y las aplicaciones. Integra la CPU y el procesador grÃ¡fico de la Raspberry Pi 5.",
+      "status": "documented",
+      "selector": {
+        "extrasComponentId": "bcm2712"
+      },
+      "sources": [
+        {
+          "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+          "status": "reviewed_official_document"
+        }
+      ],
+      "facts": [
+        {
+          "text": "4 nÃºcleos Arm Cortex-A76",
+          "status": "documented",
+          "sources": [
+            "https://www.raspberrypi.com/products/raspberry-pi-5/"
+          ]
+        },
+        {
+          "text": "CPU de 64 bits Â· 2,4 GHz",
+          "status": "documented",
+          "sources": [
+            "https://www.raspberrypi.com/products/raspberry-pi-5/"
+          ]
+        },
+        {
+          "text": "GrÃ¡ficos VideoCore VII",
+          "status": "documented",
+          "sources": [
+            "https://www.raspberrypi.com/products/raspberry-pi-5/"
+          ]
+        }
+      ],
+      "bindingEvidence": "STEP product OBJ1927 â†’ shape representation #234896; nominal 17 Ã— 17 mm package at CAD x=33.15, y=22.75. Reference-photo placement and manufacturer board layout reviewed; CAD product name itself is anonymous. This is a catalog binding, not image recognition.",
+      "bindingStatus": "bound",
+      "nodeIndices": [
+        15,
+        16,
+        17
+      ],
+      "nodeIds": [
+        "5495fdcdddbe9045:node:15",
+        "5495fdcdddbe9045:node:16",
+        "5495fdcdddbe9045:node:17"
+      ],
+      "confidence": "documented_catalog_binding",
+      "confidenceNote": "Correspondencia CAD/documentación; no es probabilidad ni reconocimiento visual."
+    }
+  ],
+  "materials": [],
+  "conversion": null,
+  "coverage": {
+    "boundComponents": 1,
+    "documentedComponents": 1,
+    "meshNodes": 28,
+    "unassignedMeshNodes": 25,
+    "materialProvisional": 0,
+    "materialUnknown": 0
+  },
+  "limitations": [
+    "Se reutilizó GLB: no se ejecutó conversión STEP."
+  ],
+  "cloud": {
+    "requests": 0,
+    "costUSD": 0
+  },
+  "timingsMs": {
+    "identity": 0.054400000000001114,
+    "source": 214.0829,
+    "conversion": 0.5339999999999918,
+    "inventory": 119.21029999999996,
+    "documentation": 0.5703000000000316,
+    "store": 1442.4083999999998
+  },
+  "totalMs": 1791.6708999999998
+}

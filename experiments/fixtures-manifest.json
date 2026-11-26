@@ -1,0 +1,205 @@
+{
+  "schema": "itc-fixtures-1",
+  "upstreamCommit": "ae56be650cab47fb5ee2c78659df86d2e1571a9b",
+  "expectedResultsSource": {
+    "path": "diagnosticos/experimental/ncc_macro/evaluacion.json",
+    "sha256": "d37f6af7738d9901037e27c826a2cf47a57001f782e857762f74538d9b2aee84",
+    "variant": "M+ σ0,5"
+  },
+  "assets": [
+    {
+      "sourcePath": "app/data/perfiles/rpi5.json",
+      "localPath": "app/data/perfiles/rpi5.json",
+      "sha256": "7eadbc08532eb41e9d565cbce778709529d8e422e8ed9af5d3a177270ca0f670",
+      "bytes": 1425,
+      "kind": "legacy-profile",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "app/data/rpi5_map.json",
+      "localPath": "app/data/rpi5_map.json",
+      "sha256": "5e9de0f7bf64bea1d304e6664032842564003fd2178daafab9a8dd5713f67a6b",
+      "bytes": 8578,
+      "kind": "mixed-provenance-geometry",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "app/data/p1_referencia.json",
+      "localPath": "app/data/p1_referencia.json",
+      "sha256": "ceeec0d1b0bc6dfad1f51d74b98f5bb984ae977e5ac0c8459f4cde850eefb322",
+      "bytes": 397118,
+      "kind": "photo-derived-template-data",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video2_t000692ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video2_t000692ms_prep.jpg",
+      "sha256": "760c75bcb85a2ab7892e7413509d91309e4fc1b6f3d11e36e6e572577c9f4f64",
+      "bytes": 63435,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video2_t004637ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video2_t004637ms_prep.jpg",
+      "sha256": "c792892118d1d5671d0bbb7c1ec2b890da3b57368df2a40f5f81cb3a1b17d92f",
+      "bytes": 65895,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video2_t014498ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video2_t014498ms_prep.jpg",
+      "sha256": "9e9ff300bda76e25058795c8aecccfbfb8cedbbeb0748206f98219271e3e9f94",
+      "bytes": 68753,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video2_t022387ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video2_t022387ms_prep.jpg",
+      "sha256": "87bd84a5d7edae062e3f9f5bc36b84d2678529b588c97a7910945b63e6032c4e",
+      "bytes": 69545,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video3_t000715ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video3_t000715ms_prep.jpg",
+      "sha256": "9c5971f1f52034e933fd729df5c6e251ca6eeb540baa3ffa422f66074f1fa862",
+      "bytes": 89801,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video3_t006825ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video3_t006825ms_prep.jpg",
+      "sha256": "b2c93b60d2a0ce527209a0270d14a5068972f015c785e61e182014f762c37e57",
+      "bytes": 79159,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video3_t012935ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video3_t012935ms_prep.jpg",
+      "sha256": "c5134e5df25956c962471fed58aed7476a6cf5d729d33cc836f4f0159389ffca",
+      "bytes": 95742,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    },
+    {
+      "sourcePath": "diagnosticos/video_frames/preparados/video3_t019045ms_prep.jpg",
+      "localPath": "diagnosticos/video_frames/preparados/video3_t019045ms_prep.jpg",
+      "sha256": "c4824ac6f3ae3352702be1d47367e5c2b628b0db8defd2e40e1d0a52c0124909",
+      "bytes": 73824,
+      "kind": "historical-video-frame",
+      "redistribution": "not-cleared; local-only"
+    }
+  ],
+  "cases": [
+    {
+      "id": "video2_t000692ms",
+      "session": "video2",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video2_t000692ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "probable (textura_no_evaluable)",
+        "rp1": "confirmado",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video2_t004637ms",
+      "session": "video2",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video2_t004637ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "no_determinado (sin_geometria)",
+        "ram": "no_determinado (sin_geometria)",
+        "rp1": "no_determinado (sin_geometria)",
+        "gpio": "no_determinado (sin_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video2_t014498ms",
+      "session": "video2",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video2_t014498ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "no_determinado (sin_geometria)",
+        "ram": "no_determinado (sin_geometria)",
+        "rp1": "no_determinado (sin_geometria)",
+        "gpio": "no_determinado (sin_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video2_t022387ms",
+      "session": "video2",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video2_t022387ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "probable (textura_no_evaluable)",
+        "rp1": "probable (textura_debil)",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video3_t000715ms",
+      "session": "video3",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video3_t000715ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "probable (textura_no_evaluable)",
+        "rp1": "confirmado",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video3_t006825ms",
+      "session": "video3",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video3_t006825ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "probable (textura_ambigua)",
+        "rp1": "confirmado",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video3_t012935ms",
+      "session": "video3",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video3_t012935ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "probable (textura_no_evaluable)",
+        "rp1": "confirmado",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    },
+    {
+      "id": "video3_t019045ms",
+      "session": "video3",
+      "kind": "historical-correlated-frame",
+      "imagePath": "diagnosticos/video_frames/preparados/video3_t019045ms_prep.jpg",
+      "expectedLabels": {
+        "soc": "confirmado",
+        "ram": "confirmado",
+        "rp1": "confirmado",
+        "gpio": "probable (solo_geometria)"
+      },
+      "independentPhysicalTruth": false
+    }
+  ]
+}

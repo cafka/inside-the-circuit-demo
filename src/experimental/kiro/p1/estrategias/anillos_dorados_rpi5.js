@@ -1,0 +1,46 @@
+/**
+ * anillos_dorados_rpi5.js — estrategia de localización PARTICULAR de la Raspberry Pi 5: los anillos dorados de sus
+ * 4 agujeros de montaje (detector de geometria_independiente.js, copia generada; no se modifica).
+ *
+ * El detector tiene sus supuestos dentro del código copiado: agujeros en (3,5; 3,5) (61,5; 3,5) (3,5; 52,5)
+ * (61,5; 52,5) mm, proporción 58 × 49 mm, punto de escala (42,5; 28) mm, color dorado, grilla de orientación de
+ * 0–65 × 0–56 mm frente a la foto oficial. Por eso esta estrategia NO se adapta a otro perfil: compatible() comprueba
+ * que el perfil declare exactamente esas referencias y una imagen de orientación que cubra esa grilla, y si no, se
+ * niega con el motivo. Parámetros, orientación por referencia y requisitos geométricos quedan como estaban.
+ *
+ * Contrato (ver motor.js): localizar({ img, gray, perfil }) →
+ *   { ok: true, H, unidad: "mm", referenciasPx, controles } — H 3×3 por filas: plano del perfil (mm) → píxeles de img
+ *   { ok: false, motivo }
+ */
+import { independentPose } from "../geometria_independiente.js";
+
+/** referencias que asume el detector copiado (MAP_HOLES de geometria_independiente.js, en el orden h1 h2 h3 h4) */
+export const AGUJEROS_DETECTOR = Object.freeze([[3.5, 3.5], [61.5, 3.5], [3.5, 52.5], [61.5, 52.5]]);
+const IDS = ["h1", "h2", "h3", "h4"], ORIENT_MIN = { width: 67, height: 58 };   // globalNcc muestrea u 0–65, v 0–56 (bilineal)
+
+export const estrategiaAnillosRpi5 = {
+  id: "anillos_dorados_rpi5",
+  descripcion: "anillos dorados de los 4 agujeros de montaje de la Raspberry Pi 5 + orientación de 180° por la foto oficial",
+  unidad: "mm",
+  textos: {
+    favorable: "posición predicha por los 4 agujeros de montaje (sin Gemini)",
+    sinLocalizacion: "no hay geometría independiente de la placa (anillos)",
+    consejo: "Mostrá la placa entera con los 4 agujeros dorados visibles.",
+    origenPosicion: "La posición sale de los 4 agujeros de la placa",
+  },
+  /** ¿puede esta estrategia localizar la placa que describe el perfil? */
+  compatible(perfil) {
+    if (perfil?.unidad !== "mm") return { ok: false, motivo: `la estrategia trabaja en mm y el perfil en «${perfil?.unidad}»` };
+    const refs = perfil.referencias || [];
+    const igual = refs.length === 4 && refs.every((r, k) => r.id === IDS[k] && r.c[0] === AGUJEROS_DETECTOR[k][0] && r.c[1] === AGUJEROS_DETECTOR[k][1]);
+    if (!igual) return { ok: false, motivo: "las referencias del perfil no son los 4 agujeros de montaje de la Raspberry Pi 5 que asume este detector" };
+    const o = perfil.orientacion?.gimg;
+    if (!o || o.width < ORIENT_MIN.width || o.height < ORIENT_MIN.height) return { ok: false, motivo: "el perfil no trae la imagen de orientación (grilla de 1 mm de la foto oficial) que necesita este detector" };
+    return { ok: true };
+  },
+  localizar({ img, gray, perfil }) {
+    const ind = independentPose(img, gray, perfil.orientacion);
+    if (!ind.ok) return { ok: false, motivo: ind.motivo };
+    return { ok: true, H: ind.H, unidad: "mm", referenciasPx: ind.agujerosPx, controles: ind.controles };
+  },
+};

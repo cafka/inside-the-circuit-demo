@@ -1,0 +1,16 @@
+{
+  "version": "public-board-discovery/1",
+  "searchProvider": "github-public-repository-readmes",
+  "maxRepositories": 8,
+  "maxCandidatePages": 4,
+  "maxDocumentPages": 6,
+  "maxRepositoryTrees": 4,
+  "maxAssets": 24,
+  "maxRequests": 90,
+  "maxTotalBytes": 209715200,
+  "maxAssetBytes": 67108864,
+  "requestTimeoutMs": 20000,
+  "maxRunMs": 240000,
+  "minimumNameCoverage": 0.7,
+  "note": "No manufacturer/model registry. Public HTTPS only. No cloud inference, billing, credentials, automatic translation, geometry synthesis or automatic license grant. Search coverage is limited to public repository READMEs."
+}

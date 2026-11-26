@@ -1,0 +1,112 @@
+{
+  "version": "reviewed-surface-finishes/1",
+  "contract": "Material-only ranges from immutable CAD provenance. No model-name or coordinate predicates in the engine. Unknown hashes retain existing materials. Explicit manual material reviews take priority.",
+  "assets": [
+    {
+      "glbSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "source": "experiments/cad-viewer/public/provenance.json",
+      "sourceSHA256": "a89d5006079079d0d94d8c1c9556a4f130e2b85fbc68824108067444567e6eff",
+      "surfaces": [
+        {
+          "finish": "connector_polished",
+          "evidence": "Previously reviewed Ethernet metal shell",
+          "sourceParts": [
+            "OBJ4357"
+          ],
+          "ranges": [
+            {
+              "batch": 2,
+              "firstTriangle": 387327,
+              "triangleCount": 2426
+            }
+          ]
+        },
+        {
+          "finish": "connector_brushed",
+          "evidence": "Previously reviewed USB and HDMI metal shells",
+          "sourceParts": [
+            "OBJ3725_1",
+            "OBJ3733_2",
+            "OBJ5053_1",
+            "OBJ5085_1",
+            "OBJ5143"
+          ],
+          "ranges": [
+            {
+              "batch": 2,
+              "firstTriangle": 211488,
+              "triangleCount": 48559
+            },
+            {
+              "batch": 2,
+              "firstTriangle": 398993,
+              "triangleCount": 31716
+            },
+            {
+              "batch": 2,
+              "firstTriangle": 431349,
+              "triangleCount": 836
+            }
+          ]
+        },
+        {
+          "finish": "silver_header",
+          "evidence": "Exposed square header posts in the documented CAD assemblies; requested silver appearance, not a plating assertion",
+          "sourceParts": [
+            "OBJ3745",
+            "OBJ3747",
+            "OBJ3749",
+            "OBJ3751",
+            "OBJ3753",
+            "OBJ3755",
+            "OBJ3757",
+            "OBJ3759",
+            "OBJ3761",
+            "OBJ3763",
+            "OBJ3765",
+            "OBJ3767",
+            "OBJ3769",
+            "OBJ3771",
+            "OBJ3773",
+            "OBJ3775",
+            "OBJ3777",
+            "OBJ3779",
+            "OBJ3781",
+            "OBJ3783",
+            "OBJ3785",
+            "OBJ3787",
+            "OBJ3789",
+            "OBJ3791",
+            "OBJ3793",
+            "OBJ3795",
+            "OBJ3797",
+            "OBJ3799",
+            "OBJ3801",
+            "OBJ3803",
+            "OBJ3805",
+            "OBJ3807",
+            "OBJ3809",
+            "OBJ3811",
+            "OBJ3813",
+            "OBJ3815",
+            "OBJ3817",
+            "OBJ3819",
+            "OBJ3821",
+            "OBJ3823",
+            "OBJ3835",
+            "OBJ3837",
+            "OBJ3839",
+            "OBJ3841"
+          ],
+          "ranges": [
+            {
+              "batch": 7,
+              "firstTriangle": 29644,
+              "triangleCount": 1584
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

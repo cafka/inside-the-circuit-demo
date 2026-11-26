@@ -1,0 +1,8 @@
+{
+  "firebase":null,
+  "appCheck":null,
+  "cloudEnabled":false,
+  "cloudConsentVersion":"photo-upload-v1",
+  "maxCloudCallsPerSession":1,
+  "note":"Operator config, not a user form. Put the real file outside Git and set ITC_RUNTIME_CONFIG. Only Firebase public web config and App Check site key are sent to the browser. No debug tokens in public deployment. Billing is never enabled by this application."
+}

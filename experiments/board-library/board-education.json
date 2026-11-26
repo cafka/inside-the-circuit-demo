@@ -1,0 +1,340 @@
+{
+  "version": 2,
+  "reviewed": "2026-11-25",
+  "scope": "Bilingual educational presentation, bound to existing assets. No inference or CAD generation input.",
+  "boards": [
+    {
+      "id": "raspberry-pi-5",
+      "assetSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "es": {
+        "description": "Computadora de placa única para explorar programación, electrónica y aplicaciones de escritorio con Raspberry Pi OS.",
+        "processor": "Broadcom BCM2712: cuatro núcleos Arm Cortex-A76 de 64 bits a 2,4 GHz; GPU VideoCore VII.",
+        "features": [
+          "Dos puertos USB 3.0, dos USB 2.0 y Ethernet Gigabit.",
+          "Wi-Fi de doble banda y Bluetooth 5.0 / BLE.",
+          "Dos salidas micro HDMI, interfaces MIPI de cámara/pantalla y cabecera GPIO de 40 pines.",
+          "Almacenamiento mediante microSD. La capacidad de RAM depende de la variante; este CAD no la certifica."
+        ],
+        "applications": [
+          "Programación y uso de escritorio con Raspberry Pi OS.",
+          "Experimentación con periféricos, cámaras, pantallas y proyectos de electrónica."
+        ]
+      },
+      "en": {
+        "description": "Single-board computer for exploring programming, electronics and desktop applications with Raspberry Pi OS.",
+        "processor": "Broadcom BCM2712: four 64-bit Arm Cortex-A76 cores at 2.4 GHz; VideoCore VII GPU.",
+        "features": [
+          "Two USB 3.0 ports, two USB 2.0 ports and Gigabit Ethernet.",
+          "Dual-band Wi-Fi and Bluetooth 5.0 / BLE.",
+          "Two micro HDMI outputs, MIPI camera/display interfaces and a 40-pin GPIO header.",
+          "microSD storage. RAM capacity depends on the variant; this CAD does not certify it."
+        ],
+        "applications": [
+          "Programming and desktop use with Raspberry Pi OS.",
+          "Experimenting with peripherals, cameras, displays and electronics projects."
+        ]
+      },
+      "componentHeadings": {
+        "bcm2712": {
+          "es": "Procesador principal · BCM2712",
+          "en": "Main processor · BCM2712"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+          "label": {
+            "es": "Especificaciones oficiales de Raspberry Pi 5",
+            "en": "Official Raspberry Pi 5 specifications"
+          }
+        }
+      ],
+      "componentCards": {
+        "bcm2712": {
+          "es": {
+            "label": "Procesador principal",
+            "description": "El BCM2712 ejecuta el sistema operativo y los programas de tu Raspberry Pi 5. Coordina los cálculos que necesita la computadora.",
+            "example": "Por ejemplo, ejecuta tu programa de Python mientras consultás una página web en Raspberry Pi OS.",
+            "technicalReference": "Referencia técnica: Broadcom BCM2712 · CPU de cuatro núcleos Arm Cortex-A76."
+          },
+          "en": {
+            "label": "Main processor",
+            "description": "The BCM2712 runs the operating system and programs on your Raspberry Pi 5. It performs the calculations the computer needs.",
+            "example": "For example, it runs your Python program while you browse a web page in Raspberry Pi OS.",
+            "technicalReference": "Technical reference: Broadcom BCM2712 · Quad-core Arm Cortex-A76 CPU."
+          },
+          "evidence": {
+            "es": {
+              "identity": "Identificación documentada en el catálogo con las especificaciones oficiales de Raspberry Pi 5.",
+              "association": "Asociación revisada del encapsulado nominal de 17 × 17 mm con el plano y la foto del fabricante. El nodo STEP es anónimo; no contiene el nombre BCM2712."
+            },
+            "en": {
+              "identity": "Catalogue identification documented using the official Raspberry Pi 5 specifications.",
+              "association": "Reviewed binding of the nominal 17 × 17 mm package against the manufacturer layout and photo. The STEP node is anonymous; it does not contain the name BCM2712."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "arduino-nano-esp32",
+      "assetSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "es": {
+        "description": "Placa de desarrollo compacta de Arduino para aprender MicroPython y crear proyectos conectados.",
+        "processor": "ESP32-S3 de Espressif, integrado en el módulo NORA-W106 de u-blox.",
+        "features": [
+          "Conectividad Wi-Fi y Bluetooth LE.",
+          "Conector USB-C y 16 MB (128 Mbit) de memoria flash.",
+          "Compatibilidad con MicroPython y Arduino Cloud.",
+          "Depuración integrada sin hardware adicional. Hay variantes con y sin cabeceras de pines."
+        ],
+        "applications": [
+          "Aprendizaje de programación con MicroPython.",
+          "Proyectos IoT y comunicación inalámbrica con periféricos."
+        ]
+      },
+      "en": {
+        "description": "Compact Arduino development board for learning MicroPython and building connected projects.",
+        "processor": "Espressif ESP32-S3, integrated in the u-blox NORA-W106 module.",
+        "features": [
+          "Wi-Fi and Bluetooth LE connectivity.",
+          "USB-C connector and 16 MB (128 Mbit) flash memory.",
+          "Support for MicroPython and Arduino Cloud.",
+          "Integrated debugging without additional hardware. Variants are available with and without pin headers."
+        ],
+        "applications": [
+          "Learning programming with MicroPython.",
+          "IoT projects and wireless communication with peripherals."
+        ]
+      },
+      "componentHeadings": {
+        "m1": {
+          "es": "Procesador y conexión inalámbrica",
+          "en": "Processor and wireless module"
+        },
+        "j1": {
+          "es": "Puerto USB-C",
+          "en": "USB-C port"
+        },
+        "u2": {
+          "es": "Regulador de alimentación",
+          "en": "Power regulator"
+        },
+        "u3": {
+          "es": "Memoria de programas",
+          "en": "Program storage"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://docs.arduino.cc/hardware/nano-esp32/",
+          "label": {
+            "es": "Documentación oficial de Nano ESP32",
+            "en": "Official Nano ESP32 documentation"
+          }
+        },
+        {
+          "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+          "label": {
+            "es": "Ficha técnica y topología de Arduino",
+            "en": "Arduino datasheet and board topology"
+          }
+        }
+      ],
+      "componentCards": {
+        "j1": {
+          "es": {
+            "label": "Puerto USB-C",
+            "description": "Con un cable USB de datos podés conectar la Nano ESP32 a tu computadora, alimentarla y cargarle un programa.",
+            "example": "Por ejemplo, si tu programa mide la humedad de una planta, podés abrir el monitor serie y leer los valores que envía la placa.",
+            "technicalReference": "Referencia en el esquema de Arduino: J1 · CX90B-16P"
+          },
+          "en": {
+            "label": "USB-C port",
+            "description": "Use a USB data cable to connect the Nano ESP32 to your computer, power it and upload a program.",
+            "example": "For example, if your program measures a plant’s soil moisture, open the Serial Monitor to read the values sent by the board.",
+            "technicalReference": "Reference in the Arduino schematic: J1 · CX90B-16P"
+          },
+          "evidence": {
+            "es": {
+              "identity": "Identificación documentada en el catálogo a partir del esquema y la tabla de componentes de Arduino.",
+              "association": "El designador J1 del STEP coincide con el del esquema; así se vincula esta ficha con su geometría CAD. No proviene de reconocimiento en una foto."
+            },
+            "en": {
+              "identity": "Catalogue identification documented in Arduino’s schematic and component table.",
+              "association": "STEP designator J1 matches the schematic, binding this card to its CAD geometry. This does not come from recognition in a photo."
+            }
+          },
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Esquema oficial de Arduino ↗"
+                },
+                "en": {
+                  "locator": "Official Arduino schematic ↗"
+                }
+              }
+            },
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Manual de la Nano ESP32 ↗"
+                },
+                "en": {
+                  "locator": "Nano ESP32 manual ↗"
+                }
+              }
+            }
+          ]
+        },
+        "m1": {
+          "es": {
+            "label": "Procesador y conexión inalámbrica",
+            "description": "Este módulo reúne el ESP32-S3 y la conectividad Wi-Fi y Bluetooth LE: ejecuta tu programa y permite comunicar la placa sin cables.",
+            "example": "Por ejemplo, puede leer un sensor y enviar sus medidas por Wi-Fi a tu proyecto de Arduino Cloud.",
+            "technicalReference": "Referencia en el esquema de Arduino: M1 · NORA-W106-10B"
+          },
+          "en": {
+            "label": "Processor and wireless module",
+            "description": "This module combines the ESP32-S3 with Wi-Fi and Bluetooth LE: it runs your program and lets the board communicate wirelessly.",
+            "example": "For example, it can read a sensor and send its measurements over Wi-Fi to your Arduino Cloud project.",
+            "technicalReference": "Reference in the Arduino schematic: M1 · NORA-W106-10B"
+          },
+          "evidence": {
+            "es": {
+              "identity": "Identificación documentada en el catálogo a partir del esquema y la tabla de componentes de Arduino.",
+              "association": "El designador M1 del STEP coincide con el del esquema; así se vincula esta ficha con su geometría CAD. No proviene de reconocimiento en una foto."
+            },
+            "en": {
+              "identity": "Catalogue identification documented in Arduino’s schematic and component table.",
+              "association": "STEP designator M1 matches the schematic, binding this card to its CAD geometry. This does not come from recognition in a photo."
+            }
+          },
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Esquema oficial de Arduino ↗"
+                },
+                "en": {
+                  "locator": "Official Arduino schematic ↗"
+                }
+              }
+            },
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Manual de la Nano ESP32 ↗"
+                },
+                "en": {
+                  "locator": "Nano ESP32 manual ↗"
+                }
+              }
+            }
+          ]
+        },
+        "u2": {
+          "es": {
+            "label": "Regulador de alimentación",
+            "description": "Convierte la alimentación de entrada en la tensión de 3,3 V que necesita la electrónica de esta placa. Trabaja automáticamente; no se programa.",
+            "example": "Por ejemplo, al alimentar la Nano por USB, ayuda a suministrar la tensión adecuada al procesador y a los demás circuitos.",
+            "technicalReference": "Referencia en el esquema de Arduino: U2 · MP2322GQH"
+          },
+          "en": {
+            "label": "Power regulator",
+            "description": "Converts the input supply to the 3.3 V needed by the board’s electronics. It works automatically and is not programmed.",
+            "example": "For example, when you power the Nano through USB, it helps supply the correct voltage to the processor and other circuits.",
+            "technicalReference": "Reference in the Arduino schematic: U2 · MP2322GQH"
+          },
+          "evidence": {
+            "es": {
+              "identity": "Identificación documentada en el catálogo a partir del esquema y la tabla de componentes de Arduino.",
+              "association": "El designador U2 del STEP coincide con el del esquema; así se vincula esta ficha con su geometría CAD. No proviene de reconocimiento en una foto."
+            },
+            "en": {
+              "identity": "Catalogue identification documented in Arduino’s schematic and component table.",
+              "association": "STEP designator U2 matches the schematic, binding this card to its CAD geometry. This does not come from recognition in a photo."
+            }
+          },
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Esquema oficial de Arduino ↗"
+                },
+                "en": {
+                  "locator": "Official Arduino schematic ↗"
+                }
+              }
+            },
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Manual de la Nano ESP32 ↗"
+                },
+                "en": {
+                  "locator": "Nano ESP32 manual ↗"
+                }
+              }
+            }
+          ]
+        },
+        "u3": {
+          "es": {
+            "label": "Memoria de programas",
+            "description": "Esta memoria flash de 16 MB conserva el programa y los datos guardados aunque desconectes la alimentación. No es la memoria RAM de trabajo.",
+            "example": "Por ejemplo, tu programa puede guardar aquí una configuración para recuperarla cuando la placa vuelva a encenderse.",
+            "technicalReference": "Referencia en el esquema de Arduino: U3 · GD25B128EWIGR"
+          },
+          "en": {
+            "label": "Program storage",
+            "description": "This 16 MB flash memory retains the program and saved data when power is disconnected. It is separate from working RAM.",
+            "example": "For example, your program can store settings here and retrieve them when the board powers on again.",
+            "technicalReference": "Reference in the Arduino schematic: U3 · GD25B128EWIGR"
+          },
+          "evidence": {
+            "es": {
+              "identity": "Identificación documentada en el catálogo a partir del esquema y la tabla de componentes de Arduino.",
+              "association": "El designador U3 del STEP coincide con el del esquema; así se vincula esta ficha con su geometría CAD. No proviene de reconocimiento en una foto."
+            },
+            "en": {
+              "identity": "Catalogue identification documented in Arduino’s schematic and component table.",
+              "association": "STEP designator U3 matches the schematic, binding this card to its CAD geometry. This does not come from recognition in a photo."
+            }
+          },
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/schematics/ABX00083-schematics.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Esquema oficial de Arduino ↗"
+                },
+                "en": {
+                  "locator": "Official Arduino schematic ↗"
+                }
+              }
+            },
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf",
+              "translations": {
+                "es": {
+                  "locator": "Manual de la Nano ESP32 ↗"
+                },
+                "en": {
+                  "locator": "Nano ESP32 manual ↗"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+// COPIA para el navegador de experimental/verificacion_adaptativa/geometria_independiente.mjs (sha 2f1638439384). Solo cambian las rutas de importación. No editar: regenerar con experimental/p1_navegador/copiar_modulos.mjs
+// geometria_independiente.mjs — pose de la placa SIN Gemini: anillos dorados de los 4 agujeros de montaje.
+// Señal: el mismo color dorado que tools/geom_eval/frame_truth.mjs (por eso la verdad de agujeros NO es una
+// referencia independiente de este detector; ver DISENO.md). No usa cajas de Gemini ni NCC.
+// Pasos: máscara dorada → componentes (8-vecinos, tras dilatar 2 px) → hasta 12 candidatos → cuartetos convexos →
+// 4 rotaciones con la orientación del plano → controles de forma → unicidad del cuarteto → desambiguación de 180°
+// por apariencia global (1 mm) frente a la foto oficial. Centro = centroide del componente dorado completo.
+// Si algo falla, devuelve ok:false con el motivo (la variante trata eso como «sin geometría independiente»).
+import { apply, homographyDLT, localScale, signedArea } from "../geometry.js";
+export const GI = Object.freeze({ radio: 14, minOro: 15, maxCand: 12, ladoLargoCorto: [1.0, 1.45], ladosOpuestos: [0.75, 1.33], escalaPxMM: [3, 12],
+  anilloMM2: 22, anilloRel: [0.15, 1.6], orientMin: 0.3, orientMargen: 0.2 });
+const isGold = (r, g, b) => r > 120 && g > 100 && b < 0.75 * g && r - b > 50;   // copia de frame_truth.mjs
+const MAP_HOLES = [[3.5, 3.5], [61.5, 3.5], [3.5, 52.5], [61.5, 52.5]];       // h1 h2 h3 h4 (rpi5_map.json)
+const CYCLE = [0, 1, 3, 2];                                                       // h1 → h2 → h4 → h3 (recorrido del borde)
+function blobs(img) {
+  const W = img.width, H = img.height, gold = new Uint8Array(W * H);
+  for (let i = 0; i < W * H; i++) { const o = i * img.channels; gold[i] = isGold(img.data[o], img.data[o + 1], img.data[o + 2]) ? 1 : 0; }
+  const dil = new Uint8Array(W * H);   // dilatación 2 px (une trozos de un mismo anillo)
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if (gold[y * W + x]) for (let dy = -2; dy <= 2; dy++) for (let dx = -2; dx <= 2; dx++) { const xx = x + dx, yy = y + dy; if (xx >= 0 && yy >= 0 && xx < W && yy < H) dil[yy * W + xx] = 1; }
+  const lab = new Int32Array(W * H).fill(-1), out = []; let L = 0;
+  for (let s = 0; s < W * H; s++) { if (!dil[s] || lab[s] >= 0) continue; const st = [s]; lab[s] = L; let sx = 0, sy = 0, n = 0, minx = W, maxx = 0, miny = H, maxy = 0;
+    while (st.length) { const i = st.pop(), x = i % W, y = (i / W) | 0; if (gold[i]) { sx += x; sy += y; n++; if (x < minx) minx = x; if (x > maxx) maxx = x; if (y < miny) miny = y; if (y > maxy) maxy = y; }
+      for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= W || yy >= H) continue; const j = yy * W + xx; if (dil[j] && lab[j] < 0) { lab[j] = L; st.push(j); } } }
+    if (n >= GI.minOro) out.push({ c: [sx / n, sy / n], n, bbox: [minx, miny, maxx, maxy] }); L++; }
+  return out.sort((a, b) => b.n - a.n).slice(0, GI.maxCand);
+}
+const d = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]);
+/** img: RGB {width,height,channels,data}; gray: {g,width,height}. Devuelve { ok, H, agujerosPx, controles, motivo, alternativas } */
+export function independentPose(img, gray, ref) {
+  const B = blobs(img), cand = [], mapSign = Math.sign(signedArea(CYCLE.map(k => MAP_HOLES[k])));
+  for (let a = 0; a < B.length; a++) for (let b = a + 1; b < B.length; b++) for (let c = b + 1; c < B.length; c++) for (let e = c + 1; e < B.length; e++) {
+    const pts = [B[a], B[b], B[c], B[e]], cen = [pts.reduce((s, p) => s + p.c[0], 0) / 4, pts.reduce((s, p) => s + p.c[1], 0) / 4];
+    const ord = pts.slice().sort((p, q) => Math.atan2(p.c[1] - cen[1], p.c[0] - cen[0]) - Math.atan2(q.c[1] - cen[1], q.c[0] - cen[0]));
+    if (Math.sign(signedArea(ord.map(p => p.c))) !== mapSign) ord.reverse();
+    for (let r = 0; r < 4; r++) {   // ord[r] = h1, siguiente en el recorrido = h2, luego h4, luego h3
+      const asg = []; for (let k = 0; k < 4; k++) asg[CYCLE[k]] = ord[(r + k) % 4];
+      const P = asg.map(x => x.c), long = (d(P[0], P[1]) + d(P[2], P[3])) / 2, short = (d(P[0], P[2]) + d(P[1], P[3])) / 2;
+      const ratio = (long / 58) / (short / 49), o1 = d(P[0], P[1]) / d(P[2], P[3]), o2 = d(P[0], P[2]) / d(P[1], P[3]);
+      const ctl = { razonLargoCorto: +(long / short).toFixed(3), ladosOpuestos: [+o1.toFixed(3), +o2.toFixed(3)], convexo: true };
+      if (!(long / short >= GI.ladoLargoCorto[0] && long / short <= GI.ladoLargoCorto[1])) continue;
+      if (![o1, o2].every(v => v >= GI.ladosOpuestos[0] && v <= GI.ladosOpuestos[1])) continue;
+      const H = homographyDLT(MAP_HOLES, P), s = localScale(H, [42.5, 28]); ctl.escalaPxMM = +s.toFixed(2); ctl.razonEscalaEjes = +ratio.toFixed(3);
+      if (!(s >= GI.escalaPxMM[0] && s <= GI.escalaPxMM[1])) continue;
+      const rel = asg.map(x => x.n / (GI.anilloMM2 * s * s)); ctl.anilloRel = rel.map(v => +v.toFixed(2));
+      if (!rel.every(v => v >= GI.anilloRel[0] && v <= GI.anilloRel[1])) continue;
+      cand.push({ asg, H, ctl, set: [a, b, c, e].join(",") }); }
+  }
+  if (!cand.length) return { ok: false, motivo: B.length < 4 ? `solo ${B.length} anillos dorados candidatos` : "ningún cuarteto de anillos tiene forma de placa", candidatos: B.length };
+  // Desambiguación de 180°: las dos rotaciones de un mismo cuarteto pasan los controles de forma. Se decide por la
+  // apariencia GLOBAL de la placa frente a la foto oficial, en una grilla gruesa de 1 mm sobre el rectángulo de los
+  // agujeros (0–65 × 0–56 mm). No usa Gemini ni las plantillas de piezas; sí usa la foto oficial (ver DISENO.md).
+  const sets = [...new Set(cand.map(c => c.set))];
+  if (sets.length > 1) return { ok: false, motivo: `${sets.length} cuartetos distintos de anillos tienen forma de placa (ambiguo)`, candidatos: B.length, cuartetos: cand.length };
+  if (!ref) return { ok: false, motivo: "falta la foto de referencia para la orientación" };
+  const scored = cand.map(c => ({ ...c, nccGlobal: globalNcc(gray, c.H, ref) })).filter(c => c.nccGlobal === c.nccGlobal).sort((a, b) => b.nccGlobal - a.nccGlobal);
+  if (!scored.length) return { ok: false, motivo: "la placa no entra en el cuadro para comparar la orientación", candidatos: B.length, cuartetos: cand.length };
+  const best = scored[0], second = scored[1] ?? null, gap = second ? best.nccGlobal - second.nccGlobal : best.nccGlobal;
+  if (best.nccGlobal < GI.orientMin || gap < GI.orientMargen) return { ok: false, motivo: `orientación ambigua (NCC global ${best.nccGlobal.toFixed(2)}, diferencia ${gap.toFixed(2)})`, candidatos: B.length, cuartetos: cand.length };
+  // centro = centroide de TODOS los píxeles dorados del componente (anillo completo; sin ventana de 14 px)
+  const pts = best.asg.map(x => x.c), H = homographyDLT(MAP_HOLES, pts);
+  return { ok: true, H, agujerosPx: pts.map(p => p.map(v => +v.toFixed(1))), controles: { ...best.ctl, nccGlobal: +best.nccGlobal.toFixed(3), nccGlobalOtra: second ? +second.nccGlobal.toFixed(3) : null, oroPorAnillo: best.asg.map(x => x.n) },
+    candidatos: B.length, cuartetos: cand.length, nota: "4 puntos, DLT exacta: sin redundancia para detectar un anillo equivocado por residuo" };
+}
+// NCC de baja resolución (1 mm) entre la foto oficial y el cuadro, sobre el rectángulo de los agujeros
+function globalNcc(gray, H, ref) { const a = [], b = [];
+  for (let u = 0; u <= 65; u += 1) for (let v = 0; v <= 56; v += 1) { const q = apply(H, [u, v]), r = apply(ref.A_mm_to_px, [u, v]);
+    const fb = bil(gray, q[0], q[1]), fa = bil(ref.gimg, r[0], r[1]); if (fa === fa && fb === fb) { a.push(fa); b.push(fb); } }
+  if (a.length < 0.8 * 66 * 57) return NaN;
+  const n = a.length, ma = a.reduce((s, x) => s + x, 0) / n, mb = b.reduce((s, x) => s + x, 0) / n; let sab = 0, saa = 0, sbb = 0;
+  for (let i = 0; i < n; i++) { sab += (a[i] - ma) * (b[i] - mb); saa += (a[i] - ma) ** 2; sbb += (b[i] - mb) ** 2; } return sab / Math.sqrt(saa * sbb); }
+function bil(img, x, y) { if (!(x >= 0 && y >= 0 && x < img.width - 1 && y < img.height - 1)) return NaN; const x0 = Math.floor(x), y0 = Math.floor(y), fx = x - x0, fy = y - y0, w = img.width, g = img.g;
+  return g[y0 * w + x0] * (1 - fx) * (1 - fy) + g[y0 * w + x0 + 1] * fx * (1 - fy) + g[(y0 + 1) * w + x0] * (1 - fx) * fy + g[(y0 + 1) * w + x0 + 1] * fx * fy; }

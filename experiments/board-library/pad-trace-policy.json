@@ -1,0 +1,8 @@
+{
+  "version":"cad-pad-illustration/1",
+  "meaning":"Illustrative routes with both ends on existing CAD contacts. Not electrical connectivity, a netlist or new holes.",
+  "gridMax":512,"textureMax":1024,"maxRoutes":32,"maxPairAttempts":180,"maxSearchCells":16000,
+  "maxContactSpanFraction":0.045,"maxContactAspect":4,"maxSurfaceHeightInPCBThicknesses":0.65,
+  "maximumPairDistanceFraction":0.18,"clearanceCells":1,"lineWidthPixels":1.7,
+  "color":"#8eb29d","opacity":0.78
+}

@@ -1,0 +1,114 @@
+{
+  "schema": "photo-document-reconstruction/2",
+  "sources": [
+    {
+      "id": "source-0",
+      "url": "https://shop.pimoroni.com/products/motor-2040",
+      "sha256": "d803fa1eec62168bcc9774aa235d274eddb07aa3b833e3fe6c61888d16556a93",
+      "mimeType": "text/html",
+      "file": "http/d803fa1eec62168bcc9774aa235d274eddb07aa3b833e3fe6c61888d16556a93.bin"
+    },
+    {
+      "id": "source-1",
+      "url": "https://shop.pimoroni.com/products/motor-2040?variant=39884997853267",
+      "sha256": "47ccedb9e9cb197981aa38a74b66b3ffa671935d15e843155fec10158932d7bb",
+      "mimeType": "text/html",
+      "file": "http/47ccedb9e9cb197981aa38a74b66b3ffa671935d15e843155fec10158932d7bb.bin"
+    },
+    {
+      "id": "source-2",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-1_1ce53b9e-8c9c-4554-8f1b-675027bf632d.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "b7f077d5a83f783dffa52a3a80a3ee31c7757170109b5d685b9be9ab6aa788fa",
+      "decodedSHA256": "d9d31de8f387ba3dbbb4760bfc9cd9256c00138699930c2110a7a6f4a31fc926",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-2.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-3",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-2_0c65f283-391a-4dde-990e-9253e2fca6b0.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "6d0dcc60e1aa07980c7a67eaead27ec616b50dae3b35ebf39a36780d80c0d197",
+      "decodedSHA256": "e2d93238b4847e98b7fea473b9d4643f647b728a73cbc1cbb62fc692f2a214ff",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-3.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-4",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "79b98cf0d91f8b2c5f523af2ab119fe984961ef6ca99fc503fdab0d9f03d8672",
+      "decodedSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-4.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-5",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/motor2040_schematic.pdf?v=1655385574",
+      "sha256": "959725ba3081732a51c9581f140dbd26471ab3c320812a6127bab430bbef7223",
+      "decodedSHA256": "959725ba3081732a51c9581f140dbd26471ab3c320812a6127bab430bbef7223",
+      "mimeType": "application/pdf",
+      "file": "reconstruction/source-5.pdf",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-6",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/motor_2040_drawing.png?v=1655393482",
+      "sha256": "77ebf1f393c53f72b0ba95ce816144e8af1608c2f2f7011f335251e5b7c33314",
+      "decodedSHA256": "f92f36f70236bfa9b3ee8edeb8bc228845056ecb5813d7bea00ccb6ea02ceec4",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-6.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-7",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/motor2040_power_diagram_1_600x600.png?v=1654859595",
+      "sha256": "04ccdd207b861888488ce5b93974b87b5f93c0b7a51c4fe131326dbdcdf524ed",
+      "decodedSHA256": "ae1bfd9d3f74d7acb1d3ed8614f06596800c14e2f06f86d5bdcaa3fcf62ed532",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-7.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-8",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/motor-2040-1_1ce53b9e-8c9c-4554-8f1b-675027bf632d.jpg?v=1655198615",
+      "sha256": "c6a01be7a1a53b6cb3c4561681682687d69bafd4916f203bef76ddcfa54201f1",
+      "decodedSHA256": "8742172fb8d4bb6acb9c5aa8ccd7947fadb24cbc7aa8dfe9fa8647e58ef91060",
+      "mimeType": "image/png",
+      "file": "reconstruction/source-8.png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    }
+  ],
+  "geometryInputs": "raster_and_pdf_only",
+  "cadFilesRead": [],
+  "manualCoordinates": false,
+  "totalBytes": 15195454
+}

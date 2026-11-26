@@ -1,0 +1,13 @@
+{
+  "schema": "library-reading-check/1",
+  "book": "Raspberry Pi 5",
+  "actions": [
+    "Open Library from home",
+    "Select Raspberry Pi 5",
+    "Click Open the book"
+  ],
+  "result": "reading_not_verified",
+  "observed": "Read page control did not become available within 10 seconds; screenshot request also timed out. Navigation back to the local home succeeded.",
+  "scope": "Additional attempt after an earlier successful LED simulation; cause not determined; book source unchanged.",
+  "manualCheckRequired": true
+}

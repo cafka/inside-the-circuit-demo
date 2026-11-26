@@ -1,0 +1,8 @@
+{
+  "version": "shared-visual-materials/1",
+  "contract": "Visual definitions, not chemical composition. Reuse the same definition for equal source colour and finish. Never equate two boards from a similar photograph or infer an alloy from RGB. Explicit manual reviews take precedence.",
+  "finishes": {
+    "soldermask_satin": {"metalness":0,"roughness":0.42,"clearcoat":0.45,"clearcoatRoughness":0.28,"envMapIntensity":1}
+  },
+  "colourPolicy": "Keep the existing source/reviewed linear RGB or the identified official-photo visual approximation. No automatic nearest-green palette snap. Different source colours remain different."
+}

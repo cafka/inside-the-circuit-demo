@@ -1,0 +1,13 @@
+{
+  "version": "educational-relief/2",
+  "allowApproximateSubstrate": true,
+  "approximateThicknessMm": 1.6,
+  "basis": "User-authorized educational representation; not a measurement or manufacturer dimension",
+  "maxThicknessFractionOfAssembly": 0.5,
+  "backgroundDistance": 28,
+  "foregroundOccupancy": 0.7,
+  "maxBackAspectError": 0.05,
+  "maxHoleRegistrationErrorMm": 1.5,
+  "minimumComponentReliefMm": 0.6,
+  "reliefBasis": "User-authorized minimum educational relief. Actual component heights remain unknown."
+}

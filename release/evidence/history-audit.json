@@ -1,0 +1,23 @@
+{
+  "schema": "release-history-audit/1",
+  "auditedCommit": "05575dd77d9acf8c3ae7cf8f0c00883e78ab66f1",
+  "scope": "all objects reachable from all refs, including old blobs and commit metadata",
+  "refs": 94,
+  "objectCounts": {
+    "commit": 141,
+    "tree": 849,
+    "blob": 2213
+  },
+  "bytesScanned": 796327867,
+  "candidateSecretCount": 0,
+  "machinePathObjects": 13,
+  "mediaObjectsNeedingRightsClassification": 199,
+  "nonNoreplyEmailCount": 0,
+  "durationSeconds": 15.406145600019954,
+  "limitations": [
+    "Pattern scan is not proof of absence of every secret. Candidate hits require classification.",
+    "Unreachable/reflog-only objects and remote hidden refs are outside this Git export scope.",
+    "Rights require source/license review, not a file extension heuristic."
+  ],
+  "decision": "Keep research history private; only an approved allowlisted export may be published."
+}

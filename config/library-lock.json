@@ -1,0 +1,187 @@
+{
+  "schema": "independent-library-lock/1",
+  "repository": "cafka/interactive-electronics-books",
+  "commit": "3b77d06dcb899d922be0afa0cfad8d95557bd87a",
+  "files": [
+    {
+      "path": "arduino/door_alarm/door_alarm.ino",
+      "sha": "943fdebc1cb3d32d0b516a7e7d3fef6b7aabb341",
+      "size": 4413
+    },
+    {
+      "path": "index.html",
+      "sha": "74b02f1ea361c4f9796ea2205630e5bc3562fd00",
+      "size": 5345
+    },
+    {
+      "path": "python/led_blink.py",
+      "sha": "f5c5e86b835509b768cf96b62bb89b205190cfc4",
+      "size": 346
+    },
+    {
+      "path": "python/led_button.py",
+      "sha": "c850e924c48fed08eaf0e912ad0ead81696bf6b5",
+      "size": 496
+    },
+    {
+      "path": "python/led_pwm.py",
+      "sha": "bc92889fddd3ec8f133ffd409b35172d8917bd6f",
+      "size": 259
+    },
+    {
+      "path": "python/traffic_light.py",
+      "sha": "892a82e0e3378bd5b282f1c809aa015b54c68225",
+      "size": 1595
+    },
+    {
+      "path": "src/book.js",
+      "sha": "0d68791cb5d16728cd6d8e0e8a657b3b730246a2",
+      "size": 10613
+    },
+    {
+      "path": "src/books/esp32/board.js",
+      "sha": "d30bf2584491145ced9c00c56c110908efd1ac6c",
+      "size": 9709
+    },
+    {
+      "path": "src/books/esp32/chapter1.js",
+      "sha": "b0745dd2872cf35cac6f54e97213d9b669b00e1f",
+      "size": 48284
+    },
+    {
+      "path": "src/books/esp32/cover.js",
+      "sha": "d94fd01399e0abfbc2c849f6936c4ad4e8315854",
+      "size": 4048
+    },
+    {
+      "path": "src/books/esp32/doorAlarm.js",
+      "sha": "e247a4f65dc96646fa55ed8b202bd3e2f5330924",
+      "size": 5728
+    },
+    {
+      "path": "src/books/esp32/index.js",
+      "sha": "0a44430a2f11c68112bba52cbcd9e963ba8ad2f1",
+      "size": 729
+    },
+    {
+      "path": "src/books/esp32/pageContent.js",
+      "sha": "f91afae54dc677769ab7fa6331cb716d4f857717",
+      "size": 5796
+    },
+    {
+      "path": "src/books/esp32/scene.js",
+      "sha": "fa2cf15e312370b08fd5752db7f4e36b0fc4491a",
+      "size": 31679
+    },
+    {
+      "path": "src/books/index.js",
+      "sha": "61639e68db2eeadb4b597f05402e609cb84b8135",
+      "size": 621
+    },
+    {
+      "path": "src/books/raspberry-pi/index.js",
+      "sha": "4fa40f0fb8cee7e697f7163822795325159416bd",
+      "size": 705
+    },
+    {
+      "path": "src/circuit.js",
+      "sha": "19c87a5062bff0fcc03c3c1803e2331602c74d77",
+      "size": 22710
+    },
+    {
+      "path": "src/circuit2.js",
+      "sha": "d74971ad6d58949e2e7eed923d318200e7e94d01",
+      "size": 22151
+    },
+    {
+      "path": "src/circuitTraffic.js",
+      "sha": "21ef34b87b3c1c10892977769ac81771f54325d3",
+      "size": 13604
+    },
+    {
+      "path": "src/lessons/index.js",
+      "sha": "3bf81e22c794c300677f7534070de8d7513a35fc",
+      "size": 486
+    },
+    {
+      "path": "src/lessons/lesson1.js",
+      "sha": "0cf215b231ae329c17adae37f369c2d467141b15",
+      "size": 13068
+    },
+    {
+      "path": "src/lessons/lesson2.js",
+      "sha": "785b3b2bb4401fe457dc22971b82bee75a4d1889",
+      "size": 21576
+    },
+    {
+      "path": "src/lessons/lesson3.js",
+      "sha": "2c4305dae9592b2a795abc0a425a630fb845a441",
+      "size": 21713
+    },
+    {
+      "path": "src/lessons/lesson4.js",
+      "sha": "e1a8bfcf9655feed243d0336074215e061cfb827",
+      "size": 36384
+    },
+    {
+      "path": "src/main.js",
+      "sha": "b44f57c32bca13d1064dffe595bc265349819cc3",
+      "size": 33394
+    },
+    {
+      "path": "src/pageContent.js",
+      "sha": "c4acd8f2f863b3ec9aa935e167320c5faedea496",
+      "size": 17649
+    },
+    {
+      "path": "src/piModel.js",
+      "sha": "dd73028f5f9f121a951ac2eba89d964da34194f0",
+      "size": 12718
+    },
+    {
+      "path": "src/popin.js",
+      "sha": "3ccbc8701c092d9d4deb7b9dd26ad12559e36c8f",
+      "size": 1891
+    },
+    {
+      "path": "src/pwm.js",
+      "sha": "0b7454a67a5c42e91f6329b96e2551b1f6c340ff",
+      "size": 8133
+    },
+    {
+      "path": "src/simulation.js",
+      "sha": "f68bf045e920a74bb1604b62d663448e2389c34b",
+      "size": 3476
+    },
+    {
+      "path": "src/textures.js",
+      "sha": "218556eb5ae17d5a4358ce8969e7beaf45512b25",
+      "size": 21045
+    },
+    {
+      "path": "src/traffic.js",
+      "sha": "bb99ad2206e53db64ee9a1e747e1ecbe1c24dbba",
+      "size": 5170
+    },
+    {
+      "path": "src/ui.js",
+      "sha": "47d87048cae9379fb00874454f96dd5966f6e72f",
+      "size": 8817
+    },
+    {
+      "path": "styles.css",
+      "sha": "239ecc7139e7c6f8a7ff6e3e03d4677bd61c2218",
+      "size": 37520
+    },
+    {
+      "path": "vendor/LICENSE-three.txt",
+      "sha": "b386a66d0a302053ce5485fe21f5152cd6bc4db4",
+      "size": 1166
+    },
+    {
+      "path": "vendor/three.module.js",
+      "sha": "6bc781491ae24ffd29ee22c8f019cdb67c2c61b7",
+      "size": 1314681
+    }
+  ]
+}

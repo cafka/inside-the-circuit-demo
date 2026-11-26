@@ -1,0 +1,14 @@
+{
+ "version":"ecad-mcad-registration/1",
+ "units":"mm",
+ "extentTolerance":0.12,
+ "bodyTolerance":0.08,
+ "alternativeMargin":0.15,
+ "minFitBodies":3,
+ "minIndependentBodies":3,
+ "minAxisCoverage":0.45,
+ "maxRegistrationAlternatives":16,
+ "textureLongSide":2048,
+ "renderOffset":0.012,
+ "note":"Rigid axis correspondences only; no scale fitting or warping. Dimensions, body extents and side come from source files. Rendering offsets are not manufactured thicknesses."
+}

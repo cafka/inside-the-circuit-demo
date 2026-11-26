@@ -1,0 +1,41 @@
+{
+  "version": "cad-metal-finish/1",
+  "glbSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+  "meaning": "Appearance assignments for the existing CAD color batches, reviewed against public/provenance.json. Illustrative finishes, not measured alloy or BRDF specifications. No geometry editing.",
+  "finishes": {
+    "nickel_satin": {"metalness":1,"roughness":0.40,"linearColor":[0.58,0.59,0.60],"grain":true},
+    "tin_satin": {"metalness":1,"roughness":0.46,"linearColor":[0.57,0.58,0.59],"grain":true},
+    "soc_lid": {"metalness":1,"roughness":0.43,"linearColor":[0.60,0.60,0.60],"grain":false},
+    "gold_contacts": {"metalness":1,"roughness":0.42,"grain":false},
+    "chip_package": {"metalness":0,"roughness":0.78,"grain":false},
+    "black_polymer": {"metalness":0,"roughness":0.56,"grain":false},
+    "connector_polymer": {"metalness":0,"roughness":0.60,"grain":false},
+    "pcb_soldermask": {"metalness":0,"roughness":0.65,"grain":false}
+  },
+  "batches": {
+    "0":"chip_package", "2":"nickel_satin", "3":"tin_satin", "5":"black_polymer",
+    "7":"gold_contacts", "8":"tin_satin", "9":"connector_polymer", "10":"tin_satin",
+    "11":"chip_package", "13":"tin_satin", "15":"soc_lid", "17":"connector_polymer",
+    "18":"connector_polymer", "19":"connector_polymer", "20":"tin_satin", "24":"tin_satin",
+    "25":"gold_contacts", "26":"tin_satin", "27":"pcb_soldermask"
+  },
+  "partOverrides": [
+    {"sourceName":"OBJ3733_3","meaning":"Black USB interior, separate from the chip packages sharing CAD gray","batch":0,"firstTriangle":10436,"triangleCount":12519,"finish":"black_polymer"}
+  ],
+  "reviewedSurfaces": [
+    {"sourceName":"OBJ4357","label":"Carcasa Ethernet","batch":2},
+    {"sourceName":"OBJ3725_1","label":"Carcasa USB con interior azul","batch":2},
+    {"sourceName":"OBJ3733_2","label":"Carcasa USB con interior negro","batch":2},
+    {"sourceName":"OBJ5053_1","label":"Carcasa micro HDMI","batch":2},
+    {"sourceName":"OBJ5085_1","label":"Carcasa micro HDMI","batch":2},
+    {"sourceName":"OBJ5143","label":"Carcasa USB-C","batch":2},
+    {"sourceName":"OBJ3957","label":"Blindaje metálico","batch":3},
+    {"sourceName":"OBJ4355","label":"Interior Ethernet, polímero negro","batch":5},
+    {"sourceName":"OBJ3725_2","label":"Interior USB, polímero azul","batch":19},
+    {"sourceName":"OBJ3733_3","label":"Interior USB, polímero negro","batch":0}
+  ],
+  "unassignedBatches": [1,4,6,12,14,16,21,22,23],
+  "unassignedNote": "Small mixed/ambiguous source-colored regions, markings, substrate layers and indicator lenses retain their original finish; no claim of exhaustive material identification.",
+  "grain": {"size":128,"tileMeters":0.002,"roughnessAmplitude":0.025,"toneAmplitude":0.008,"bumpMeters":0.00000035,"maxNormalSlope":0.025,"seed":271205},
+  "environment": {"faceSize":256,"blurRadians":0.035,"intensity":1.0}
+}
