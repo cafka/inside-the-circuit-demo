@@ -5,7 +5,8 @@ import {spawn} from 'node:child_process';
 import {hash,inspectGLB,bindComponents} from './glb.mjs';
 import {DIR,ROOT,STORE,profiles,boardDir,saveJSON,readBoard,classifyMaterials,materialPolicy} from './catalog.mjs';
 import {acquireEnrichmentSources,enrichCAD,enrichmentPolicy} from './enrichment.mjs';
-export const PIPELINE_VERSION='board-onboarding/1';
+import {completeDocumentedComponents} from './documented-components.mjs';
+export const PIPELINE_VERSION='board-onboarding/2';
 export function subprocess(command,args,onLine=()=>{},{timeoutMs=180000}={}) {
   return new Promise((resolve,reject)=>{
     const runtimeCommand=command==='python'&&process.env.ITC_PYTHON?process.env.ITC_PYTHON:command;
@@ -60,13 +61,15 @@ export async function prepareBoard(profile,{onEvent=()=>{},manualFile=null}={}) 
     });
     const inventory=await stage('inventory',()=>inspectGLB(fs.readFileSync(path.join(d,'model.glb'))));
     if(conversion&&inventory.triangles!==conversion.nativeTriangles)throw Error('export_triangle_loss');
-    const components=await stage('documentation',()=>bindComponents(inventory,profile.components||[]));
+    const reviewed=await stage('documentation',()=>bindComponents(inventory,profile.components||[]));
     const acquired=manualFile?{resources:[],errors:['manual_source_authority_unverified']}:await stage('enrichment_sources',()=>acquireEnrichmentSources(d,profile,{pageBytes:sourcePage}));
     const enriched=await stage('appearance',()=>enrichCAD(d,inventory,acquired.resources,{authority:source.authority,onEvent,baseSource:source,baseProvenance:profile.preparedAsset?.report?JSON.parse(fs.readFileSync(path.resolve(ROOT,profile.preparedAsset.report))):null}));
+    const binding=await stage('components',()=>completeDocumentedComponents(inventory,enriched,reviewed));
+    const components=binding.components;saveJSON(path.join(d,'binding-audit.json'),binding);
     const materials=profile.preparedAsset?.appearance?[]:classifyMaterials(inventory);
     const record={schema:PIPELINE_VERSION,id:profile.id,identity,source,fingerprint,preparedAt:new Date().toISOString(),profileVersion:profile.profileVersion,
       appearance:profile.preparedAsset?.appearance||'semantic-pbr',inventory,components,materials,conversion,automaticSurfaces:enriched.surfaces,enrichment:{...enriched.audit,acquisition:acquired},
-      coverage:{boundComponents:components.filter(c=>c.bindingStatus==='bound').length,documentedComponents:components.filter(c=>c.bindingStatus==='bound'&&c.status==='documented').length,
+      coverage:{boundComponents:components.filter(c=>c.bindingStatus==='bound').length,documentedComponents:components.filter(c=>c.bindingStatus==='bound'&&c.status==='documented').length,educationalCards:binding.generatedCards,
         meshNodes:inventory.meshes,unassignedMeshNodes:inventory.nodes.filter(n=>n.mesh!==null&&!components.some(c=>c.nodeIndices.includes(n.index))).length,
         materialProvisional:materials.filter(m=>m.status==='provisional').length,materialUnknown:materials.filter(m=>m.status==='unknown').length},
       limitations:[...(profile.limitations||[]),...notes],cloud:{requests:0,costUSD:0},timingsMs:timings,events};

@@ -1,12 +1,192 @@
 {
- "version":"documented-component-lessons/1",
- "note":"Reusable translations of functions explicitly named in the electrical design. No guessed operating voltages, programming API, firmware role or application-specific wiring. Unmatched descriptions keep a technical record only.",
- "rules":[
-  {"id":"flash","pattern":"MEMORY.*FLASH|FLASH.*MEMORY","es":{"label":"Memoria flash","description":"En esta placa, esta pieza proporciona almacenamiento no volátil: conserva los datos aunque se corte la alimentación. El diseño eléctrico la identifica como memoria flash; no determina qué archivos guarda el firmware.","example":"Por ejemplo, un programa puede usar memoria no volátil para conservar datos entre encendidos, si el firmware permite acceder a ella."},"en":{"label":"Flash memory","description":"On this board, this part provides non-volatile storage: it retains data without power. The electrical design identifies it as flash memory; it does not establish which files the firmware stores there.","example":"For example, software can use non-volatile memory to retain data between power cycles, when firmware provides access."}},
-  {"id":"ram","pattern":"MEMORY.*(?:SDRAM|DRAM|SRAM)","es":{"label":"Memoria de trabajo","description":"El diseño identifica esta pieza como memoria RAM. Aporta almacenamiento temporal para los datos que utiliza la electrónica de la placa; su contenido no se conserva sin alimentación."},"en":{"label":"Working memory","description":"The design identifies this part as RAM. It provides temporary storage for data used by the board electronics; its contents are not retained without power."}},
-  {"id":"crystal","pattern":"^(?:XTAL|CRYSTAL),","es":{"label":"Cristal de reloj","description":"Esta pieza aporta una referencia de frecuencia al circuito de la placa. Ayuda a mantener un ritmo estable para las operaciones de la electrónica; no es un reloj con pantalla."},"en":{"label":"Clock crystal","description":"This part provides a frequency reference to the board circuit. It helps maintain stable timing for electronic operations; it is not a display clock."}},
-  {"id":"led","pattern":"^LED,","es":{"label":"Indicador luminoso LED","description":"Es una fuente de luz de la placa. El diseño la identifica como LED; el significado de cada encendido depende del circuito y del firmware y no se deduce del color."},"en":{"label":"LED indicator","description":"This is a light source on the board. The design identifies it as an LED; the meaning of its illumination depends on circuitry and firmware and cannot be inferred from colour."}},
-  {"id":"usb_controller","pattern":"HOST CTLR.*USB","es":{"label":"Controlador USB","description":"Esta pieza interviene en el control de la conexión USB de la placa, según la descripción del diseño eléctrico. Es un circuito de control, distinto del conector donde se enchufa el cable."},"en":{"label":"USB controller","description":"This part participates in controlling the board’s USB connection, according to the electrical design description. It is a control circuit, separate from the connector where the cable plugs in."}},
-  {"id":"tvs","pattern":"^TVS,","es":{"label":"Protección contra transitorios","description":"El diseño identifica esta pieza como un diodo TVS. Su función es limitar picos breves de tensión en el circuito conectado; no convierte la placa en resistente a cualquier sobretensión."},"en":{"label":"Transient protection","description":"The design identifies this part as a TVS diode. It limits brief voltage spikes in the connected circuit; this does not make the board resistant to every overvoltage."}}
- ]
+  "version": "documented-component-lessons/2",
+  "note": "Bilingual teaching of component classes explicitly recorded in the source electrical design. It does not infer net connectivity, application-specific use, pin functions, operating limits or physical geometry. Multiple matching classes abstain.",
+  "rules": [
+    {
+      "id": "flash",
+      "pattern": "^(?:IC[, ]+)?(?:MEMORY\\b.*\\bFLASH\\b|FLASH\\b)",
+      "es": {
+        "label": "Memoria flash",
+        "description": "En esta placa, esta pieza proporciona almacenamiento no volátil: conserva los datos aunque se corte la alimentación. El diseño eléctrico la identifica como memoria flash; no determina qué archivos guarda el firmware.",
+        "example": "Por ejemplo, un programa puede usar memoria no volátil para conservar datos entre encendidos, si el firmware permite acceder a ella."
+      },
+      "en": {
+        "label": "Flash memory",
+        "description": "On this board, this part provides non-volatile storage: it retains data without power. The electrical design identifies it as flash memory; it does not establish which files the firmware stores there.",
+        "example": "For example, software can use non-volatile memory to retain data between power cycles, when firmware provides access."
+      }
+    },
+    {
+      "id": "ram",
+      "pattern": "MEMORY.*(?:SDRAM|DRAM|SRAM)",
+      "es": {
+        "label": "Memoria de trabajo",
+        "description": "El diseño identifica esta pieza como memoria RAM. Aporta almacenamiento temporal para los datos que utiliza la electrónica de la placa; su contenido no se conserva sin alimentación."
+      },
+      "en": {
+        "label": "Working memory",
+        "description": "The design identifies this part as RAM. It provides temporary storage for data used by the board electronics; its contents are not retained without power."
+      }
+    },
+    {
+      "id": "crystal",
+      "pattern": "^(?:XTAL|CRYSTAL)\\b",
+      "es": {
+        "label": "Cristal de reloj",
+        "description": "Esta pieza aporta una referencia de frecuencia al circuito de la placa. Ayuda a mantener un ritmo estable para las operaciones de la electrónica; no es un reloj con pantalla."
+      },
+      "en": {
+        "label": "Clock crystal",
+        "description": "This part provides a frequency reference to the board circuit. It helps maintain stable timing for electronic operations; it is not a display clock."
+      }
+    },
+    {
+      "id": "led",
+      "pattern": "^LED\\b",
+      "es": {
+        "label": "Indicador luminoso LED",
+        "description": "Es una fuente de luz de la placa. El diseño la identifica como LED; el significado de cada encendido depende del circuito y del firmware y no se deduce del color."
+      },
+      "en": {
+        "label": "LED indicator",
+        "description": "This is a light source on the board. The design identifies it as an LED; the meaning of its illumination depends on circuitry and firmware and cannot be inferred from colour."
+      }
+    },
+    {
+      "id": "usb_controller",
+      "pattern": "HOST CTLR.*USB",
+      "es": {
+        "label": "Controlador USB",
+        "description": "Esta pieza interviene en el control de la conexión USB de la placa, según la descripción del diseño eléctrico. Es un circuito de control, distinto del conector donde se enchufa el cable."
+      },
+      "en": {
+        "label": "USB controller",
+        "description": "This part participates in controlling the board’s USB connection, according to the electrical design description. It is a control circuit, separate from the connector where the cable plugs in."
+      }
+    },
+    {
+      "id": "tvs",
+      "pattern": "^(?:TVS\\b|DIODE[, ]+TVS\\b)",
+      "es": {
+        "label": "Protección contra transitorios",
+        "description": "El diseño identifica esta pieza como un diodo TVS. Su función es limitar picos breves de tensión en el circuito conectado; no convierte la placa en resistente a cualquier sobretensión."
+      },
+      "en": {
+        "label": "Transient protection",
+        "description": "The design identifies this part as a TVS diode. It limits brief voltage spikes in the connected circuit; this does not make the board resistant to every overvoltage."
+      }
+    },
+    {
+      "id": "resistor",
+      "pattern": "^(?:RES|RESISTOR)\\b",
+      "es": {
+        "label": "Resistencia",
+        "description": "El diseño eléctrico identifica esta pieza como una resistencia. Su valor determina la oposición al paso de corriente; una resistencia de cero ohmios se usa como puente. El registro de la pieza por sí solo no determina qué señal o alimentación conecta.",
+        "example": "Por ejemplo, una resistencia puede limitar corriente o formar un divisor de tensión. Para saber cuál de esas funciones cumple aquí, hay que consultar sus conexiones en el esquema."
+      },
+      "en": {
+        "label": "Resistor",
+        "description": "The electrical design identifies this part as a resistor. Its value determines opposition to current; a zero-ohm resistor acts as a jumper. The part record alone does not establish which signal or supply it connects to.",
+        "example": "For example, a resistor can limit current or form a voltage divider. Its schematic connections are needed to establish its role here."
+      }
+    },
+    {
+      "id": "capacitor",
+      "pattern": "^(?:CAP|CAPACITOR)\\b",
+      "es": {
+        "label": "Condensador",
+        "description": "El diseño eléctrico identifica esta pieza como un condensador, que almacena energía en un campo eléctrico. La descripción de la pieza no basta para atribuirle un filtro o una línea de alimentación concretos.",
+        "example": "Por ejemplo, puede ayudar a reducir variaciones de tensión. Su conexión y sus límites deben comprobarse en el esquema antes de intervenir la placa."
+      },
+      "en": {
+        "label": "Capacitor",
+        "description": "The electrical design identifies this part as a capacitor, which stores energy in an electric field. The part description alone does not identify a particular filter or supply rail.",
+        "example": "For example, it can help reduce voltage variations. Check its connections and ratings in the schematic before modifying the board."
+      }
+    },
+    {
+      "id": "inductor",
+      "pattern": "^(?:IND|INDUCTOR)\\b",
+      "es": {
+        "label": "Inductor",
+        "description": "El diseño eléctrico identifica esta pieza como un inductor. Almacena energía en un campo magnético; su aplicación concreta depende de las conexiones del circuito.",
+        "example": "Por ejemplo, puede formar parte de una fuente conmutada o de un filtro; el registro de la pieza no distingue por sí solo entre esos usos."
+      },
+      "en": {
+        "label": "Inductor",
+        "description": "The electrical design identifies this part as an inductor. It stores energy in a magnetic field; its specific application depends on circuit connections.",
+        "example": "For example, it can belong to a switching supply or a filter; the part record alone does not distinguish these uses."
+      }
+    },
+    {
+      "id": "mosfet",
+      "pattern": "^MOSFET\\b",
+      "es": {
+        "label": "Transistor MOSFET",
+        "description": "El fabricante documenta un transistor MOSFET. Una señal en su puerta controla la conducción entre sus otros terminales; este registro no determina qué carga controla en la placa.",
+        "example": "Por ejemplo, puede funcionar como interruptor electrónico. No conectes una carga sin comprobar el circuito y las especificaciones del dispositivo."
+      },
+      "en": {
+        "label": "MOSFET transistor",
+        "description": "The manufacturer documents a MOSFET transistor. A gate signal controls conduction between its other terminals; this record does not establish which load it controls on the board.",
+        "example": "For example, it can act as an electronic switch. Check the circuit and device specifications before connecting a load."
+      }
+    },
+    {
+      "id": "schottky",
+      "pattern": "^DIODE[, ]+SCHOTTKY\\b",
+      "es": {
+        "label": "Diodo Schottky",
+        "description": "El diseño identifica un diodo Schottky. Permite conducción preferente en un sentido; sus conexiones determinan su función concreta en esta placa.",
+        "example": "Por ejemplo, puede usarse en rectificación o protección. Ese uso debe verificarse en el esquema, no por su posición o aspecto."
+      },
+      "en": {
+        "label": "Schottky diode",
+        "description": "The design identifies a Schottky diode. It primarily conducts in one direction; its connections determine its specific role on this board.",
+        "example": "For example, it may be used for rectification or protection. Verify that use in the schematic, not from its position or appearance."
+      }
+    },
+    {
+      "id": "usb_connector",
+      "pattern": "^CONN\\b.*\\b(?:USB|TYPEC)\\b",
+      "es": {
+        "label": "Conector USB",
+        "description": "El diseño eléctrico identifica este conector como USB. Su formato físico y su referencia están documentados; la alimentación, el modo de datos y la programación admitidos dependen del circuito y del firmware de la placa.",
+        "example": "Por ejemplo, un cable compatible puede enlazar la placa con otro equipo cuando el diseño lo permita. Consultá el manual antes de asumir que permite cargar programas."
+      },
+      "en": {
+        "label": "USB connector",
+        "description": "The electrical design identifies this connector as USB. Its physical format and reference are documented; supported power, data and programming modes depend on the board circuit and firmware.",
+        "example": "For example, a compatible cable can connect the board to another device when supported by the design. Check the manual before assuming it supports uploading programs."
+      }
+    },
+    {
+      "id": "switch",
+      "pattern": "^(?:PUSHBUTTON\\b|SW[, ]+(?:TACT|SLIDE)\\b)",
+      "es": {
+        "label": "Pulsador o interruptor",
+        "description": "El diseño identifica una pieza que cambia una conexión eléctrica al accionarla. Este registro no demuestra si reinicia la placa, selecciona un modo o entrega una entrada al programa.",
+        "example": "Por ejemplo, el programa puede responder a un pulsador si está conectado a una entrada accesible; hay que comprobar ese recorrido en el esquema."
+      },
+      "en": {
+        "label": "Button or switch",
+        "description": "The design identifies a part that changes an electrical connection when operated. This record does not establish whether it resets the board, selects a mode or supplies program input.",
+        "example": "For example, software can respond to a button if it connects to an accessible input; verify that path in the schematic."
+      }
+    },
+    {
+      "id": "microphone",
+      "pattern": "^AUDIO[, ]+MIC\\b",
+      "es": {
+        "label": "Micrófono",
+        "description": "El diseño documenta un micrófono: transforma sonido en una señal eléctrica. La interfaz de adquisición y el acceso desde el programa dependen del circuito y del software.",
+        "example": "Por ejemplo, puede permitir una actividad de medición de sonido cuando exista soporte de adquisición en el firmware."
+      },
+      "en": {
+        "label": "Microphone",
+        "description": "The design documents a microphone: it converts sound into an electrical signal. Its acquisition interface and software access depend on the circuit and software.",
+        "example": "For example, it may support a sound-measurement activity when the firmware provides acquisition support."
+      }
+    }
+  ]
 }

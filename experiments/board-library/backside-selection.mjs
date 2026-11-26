@@ -4,24 +4,25 @@ import {Schema} from 'firebase/ai';
 import {hash} from './glb.mjs';
 import {analyseReconstruction} from './reconstruction-gemini.mjs';
 import {backsidePolicy,backsidePrompt,backsideSchema,validateBacksideProposal} from './backside-contract.mjs';
+import {linkedImageCaptions,explicitRearCaption} from './source-image-captions.mjs';
 
 // Only explicit captions attached to the exact image in downloaded authoritative pages.
 // Filename suffixes, gallery order and a generic page mentioning "back" are not evidence.
 export function sourceBacksideCandidates(work,sources,frontId){
  const candidates=[];
  for(const s of sources.filter(s=>s.mimeType==='image/png'&&s.id!==frontId)){
-  const evidence=[];
+  const evidence=[];let contradicted=false;
   for(const page of sources.filter(p=>p.mimeType==='text/html')){
    const file=path.resolve(work,'..',page.file),bytes=fs.readFileSync(file);if(hash(bytes)!==page.sha256)throw Error('backside_document_changed');
-   for(const tag of bytes.toString().matchAll(/<img\b[^>]*>/gi)){
-    const attrs=Object.fromEntries([...tag[0].matchAll(/([\w-]+)\s*=\s*["']([^"']*)["']/g)].map(m=>[m[1].toLowerCase(),m[2].replaceAll('&amp;','&')]));
-    let url;try{url=new URL(attrs.src,page.url).href;}catch{continue;}
-    if(url!==s.url)continue;
-    const label=attrs.alt||attrs.title||'';
-    if(/\b(rear|back|bottom|underside|reverso|dorso|cara inferior)\b/i.test(label)&&! /\b(front|top|frente|anverso|schematic|pinout|diagram|drawing|esquema|not|no|other)\b/i.test(label))evidence.push({pageURL:page.url,pageSHA256:page.sha256,imageURL:s.url,caption:label});
+   const linked=linkedImageCaptions(bytes.toString(),page.url).filter(item=>item.url===s.url);
+   // Conflicting captions on the same image do not become a rear-face assertion.
+   const conflict=linked.some(item=>/\b(front|top|frente|anverso)\b/i.test(item.caption));
+   contradicted ||= conflict;
+   for(const item of linked){
+    if(!conflict&&explicitRearCaption(item.caption))evidence.push({pageURL:page.url,pageSHA256:page.sha256,imageURL:s.url,caption:item.caption,method:item.method});
    }
   }
-  if(evidence.length)candidates.push({source:s,evidence});
+  if(evidence.length&&!contradicted)candidates.push({source:s,evidence});
  }
  return candidates;
 }

@@ -6,8 +6,7 @@ import {hash,inspectGLB} from './glb.mjs';
 import {subprocess} from './pipeline.mjs';
 import {discoverByName,discoveryPolicy,normalizeName,assetKind,repositoryResources,resourceRole} from './discovery.mjs';
 import {createPublicFetcher} from './public-fetch.mjs';
-import {bindDocumentedDesignators} from './document-binding.mjs';
-import {bindRegisteredBodies} from './physical-binding.mjs';
+import {completeDocumentedComponents} from './documented-components.mjs';
 import {reconstructPhoto} from './reconstruct-photo.mjs';
 import {enrichCAD} from './enrichment.mjs';
 
@@ -93,7 +92,7 @@ export async function onboardName(name,{onEvent=()=>{},fetcherFactory=createPubl
    return {status:model?'partial':'blocked',reason:surfaces?.registration?.status==='verified'?'registered_surfaces_partial':model?'original_cad_colors_preserved_no_verified_surface_reconstruction':'requires_3d_asset',ecadObjects:ecad.reduce((n,e)=>n+e.data.components.length,0),contacts:surfaces?.files?.some(f=>f.kind==='contacts')?'documented_ecad_surfaces':model?'only_original_step_geometry':'not_available',silkscreen:surfaces?.details?.sourceTextLabels??(surfaces?.sourceType==='step_graphics'?'source_CAD_artwork':'not_reconstructed'),composition:'undetermined'};
  });
  await stage('components',async()=>{
-   if(model&&!model.reconstruction)binding=surfaces?.registration?.status==='verified'&&surfaces.registration.bindings?.length?bindRegisteredBodies(model.inventory,physicalData,surfaces,ecad[0].asset):bindDocumentedDesignators(model.inventory,ecad);
+   if(model&&!model.reconstruction)binding=completeDocumentedComponents(model.inventory,{surfaces,physicalData,ecad});
    saveJSON(path.join(directory,'binding-audit.json'),binding);
    return {status:binding.components.length?'partial':'blocked',reason:model?.reconstruction?'image_observations_not_verified_electrical_instances':surfaces?.registration?.status==='verified'?'registered_components_partial':model?'exact_designators_only_unresolved_geometry_kept_unknown':'requires_3d_asset_and_document_to_cad_correspondences',documentedObjects:ecad.reduce((n,e)=>n+e.data.components.length,0),bound:binding.components.filter(c=>c.bindingStatus==='bound').length,error:binding.error||null};
  });

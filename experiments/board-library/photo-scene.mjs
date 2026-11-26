@@ -1,4 +1,5 @@
 import {JSON_SCHEMA,parseIdentity,firebaseResponseSchema} from '../../src/identity/schema.mjs';
+import {normalizeTerm,documentTerms,matchesDocumentTerm,termPolicy} from './component-terms.mjs';
 export const SCENE_SCHEMA={
  type:'object',additionalProperties:false,required:['boardPresence','identity','components'],properties:{
   boardPresence:{type:'string',enum:['present','absent','uncertain']},
@@ -23,16 +24,14 @@ export function parseScene(raw){
   return {...identity,boardPresence:v.boardPresence,components:v.components};
  }catch(e){return {valid:false,identity:null,components:[],errors:[e.message]};}
 }
-const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
-const phraseContains=(text,phrase)=>phrase.replaceAll(' ','').length>=5&&` ${text} `.includes(` ${phrase} `);
 // Identity matching uses documentation strings only. No CAD/photo coordinates.
 export function bindPhotoComponents(proposals,components,extraLabels={}){
  const result=proposals.map(p=>{
-  const labels=[p.name,p.marking].filter(Boolean).map(norm),matches=components.filter(c=>{
-   const texts=[c.label,c.id,c.partNumber,c.reference,c.designator,...Object.values(c.translations||{}).map(t=>t.label),...(extraLabels[c.id]||[])].filter(Boolean).map(norm);
-   return labels.some(label=>texts.some(text=>label===text||phraseContains(text,label)||phraseContains(label,text)));
+  const labels=[p.name,p.marking].filter(Boolean).map(normalizeTerm),matches=components.filter(c=>{
+   const texts=documentTerms(c,extraLabels[c.id]||[]);
+   return labels.some(label=>texts.some(text=>matchesDocumentTerm(label,text)));
   });
-  return {...p,componentId:matches.length===1&&p.status==='proposed'?matches[0].id:null,binding:{status:matches.length===1?'document_label_match':matches.length?'ambiguous':'unmatched',candidates:matches.map(c=>c.id),notIndependentSemanticVerification:true}};
+  return {...p,componentId:matches.length===1&&p.status==='proposed'?matches[0].id:null,binding:{policy:termPolicy,status:matches.length===1?'document_label_match':matches.length?'ambiguous':'unmatched',candidates:matches.map(c=>c.id),notIndependentSemanticVerification:true}};
  });
  for(const p of result)if(p.componentId&&result.some(q=>q!==p&&q.componentId===p.componentId)){const id=p.componentId;for(const q of result)if(q.componentId===id){q.componentId=null;q.binding.status='duplicate_identity';}}
  return result;
