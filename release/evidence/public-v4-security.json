@@ -1,0 +1,136 @@
+{
+  "scope": "all objects reachable from all refs, including old blobs and commit metadata",
+  "refs": 1,
+  "objectCounts": {
+    "commit": 1,
+    "tree": 33,
+    "blob": 226
+  },
+  "bytesScanned": 56058554,
+  "candidateSecrets": [],
+  "machinePaths": [],
+  "mediaRequiringLicenseReview": [
+    {
+      "object": "4190b02a54a3d30c708ac9e54999e0893b276357",
+      "path": "docs/readme-assets/coral-book.jpg",
+      "bytes": 189789
+    },
+    {
+      "object": "dae348d1a016983e1eae69f484b892621fd40cd0",
+      "path": "docs/readme-assets/coral-explorer.jpg",
+      "bytes": 26712
+    },
+    {
+      "object": "eb1de02bfc9c90d735667687bd3068b141be2cb3",
+      "path": "docs/readme-assets/pi5-explorer.jpg",
+      "bytes": 94404
+    },
+    {
+      "object": "981228f2fa4e5558a4dbbbb19deb7fb5171d0124",
+      "path": "experiments/board-library/assets/presentation-geometry/pcb-6d7a2cb42f4c.glb",
+      "bytes": 794676
+    },
+    {
+      "object": "9b0f14165e44ad80256062baf0e55c163dfbe96b",
+      "path": "experiments/board-library/assets/roboto-latin.woff2",
+      "bytes": 43136
+    },
+    {
+      "object": "1f55214a8062ece72b5553f46c14c45cfae131cb",
+      "path": "experiments/board-library/assets/surface-markings/official-marks-7a6c2b1fb3a6-0.png",
+      "bytes": 104453
+    },
+    {
+      "object": "faed9f0ea9f5e81d9bbaf6c8c44b492b81e30051",
+      "path": "experiments/board-library/assets/surface-markings/official-marks-7a6c2b1fb3a6-1.png",
+      "bytes": 72953
+    },
+    {
+      "object": "b3e4438a337c1669d6fefbd2fcce165392fe1eca",
+      "path": "experiments/board-library/assets/surface-markings/official-pcb-1896abb11f48.png",
+      "bytes": 25628
+    },
+    {
+      "object": "fba80cb24ea4cc64d2d54597877e6c4e302ac48b",
+      "path": "experiments/board-library/assets/surface-markings/official-pcb-ee5ce107d40e.png",
+      "bytes": 18662
+    },
+    {
+      "object": "c48ff3d6277143c058fdce2b2c090ba98253c30c",
+      "path": "experiments/cad-viewer/public/raspberry-pi-5.glb",
+      "bytes": 47466068
+    },
+    {
+      "object": "5f7f45dd2dad905b95c6ba54927ebb9c1a428898",
+      "path": "release/catalog/discovered-303d5ef190ffa846/model.glb",
+      "bytes": 3593520
+    },
+    {
+      "object": "04636f025c466f3f64f03259580ba6fb6236786f",
+      "path": "release/catalog/discovered-303d5ef190ffa846/surfaces/bottom-contacts.png",
+      "bytes": 21677
+    },
+    {
+      "object": "74a8a25ba947565f22367e72173c1b8b728ac505",
+      "path": "release/catalog/discovered-303d5ef190ffa846/surfaces/bottom-silk.png",
+      "bytes": 62494
+    },
+    {
+      "object": "13ce18c8a345e899e01b2fcd0d532a8add8a992f",
+      "path": "release/catalog/discovered-303d5ef190ffa846/surfaces/top-contacts.png",
+      "bytes": 19901
+    },
+    {
+      "object": "0263340dd8a1fd402cd92d58ab067bc96d5c76dc",
+      "path": "release/catalog/discovered-303d5ef190ffa846/surfaces/top-silk.png",
+      "bytes": 95993
+    },
+    {
+      "object": "02399959312e6ecbab430fd7a9683414eecea8cb",
+      "path": "release/evidence/camera-mobile-360.jpg",
+      "bytes": 22592
+    },
+    {
+      "object": "83c2943c514200e1eb4278f22b2c974f6b9e88ac",
+      "path": "release/evidence/coral-mobile-crystal.jpg",
+      "bytes": 36218
+    },
+    {
+      "object": "3999a72355e8f29d895b95cc48b92bc13351e297",
+      "path": "release/evidence/coral-mobile-usb-controller.jpg",
+      "bytes": 35939
+    },
+    {
+      "object": "da632d96176b87df21e62259e9d7a421a8c8375b",
+      "path": "release/evidence/home-dark.jpg",
+      "bytes": 55444
+    },
+    {
+      "object": "387e4afa1c5aba4c3db8515bc642899a8e521917",
+      "path": "release/evidence/home-light.jpg",
+      "bytes": 54627
+    },
+    {
+      "object": "bea83a00a4143d1250b1fa86a6b8b929e90f1db5",
+      "path": "release/evidence/home-mobile-dark-360.jpg",
+      "bytes": 33785
+    },
+    {
+      "object": "c72cb456e95fbc410fb68fc8cd02e0739c9b105c",
+      "path": "release/evidence/home-mobile-dark-390.jpg",
+      "bytes": 35764
+    },
+    {
+      "object": "757b1b3de34321b4da6ca68023beee165f00a54d",
+      "path": "release/evidence/pi5-card.jpg",
+      "bytes": 77069
+    }
+  ],
+  "nonNoreplyEmailFingerprints": [],
+  "durationSeconds": 1.681065499986289,
+  "limitations": [
+    "Pattern scan is not proof of absence of every secret. Candidate hits require classification.",
+    "Unreachable/reflog-only objects and remote hidden refs are outside this Git export scope.",
+    "Rights require source/license review, not a file extension heuristic."
+  ]
+}
