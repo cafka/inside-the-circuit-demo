@@ -1,0 +1,78 @@
+{
+  "evidenceKind": "real_firebase_browser",
+  "modelRequested": "gemini-3.5-flash-lite",
+  "requests": 1,
+  "estimatedCostUSD": null,
+  "status": "completed",
+  "startedUTC": "2026-11-26T21:23:04.503Z",
+  "initializationMs": 1818.2999999821186,
+  "inferenceMs": 18731,
+  "inferenceSource": "in_cloud",
+  "outputLiteral": "{\n  \"status\": \"selected\",\n  \"sourceId\": \"source-4\",\n  \"clockwiseRotationDeg\": 0,\n  \"mirrored\": false,\n  \"faceEvidence\": \"source-4 shows the reverse side of the PCB, featuring silkscreen text 'motor 2040', the Pimoroni logo, cut-trace jumpers for LEDs and power rails, and missing components/connectors compared to the front face shown in source-3.\",\n  \"orientationEvidence\": \"The outline of the board, mounting holes, and edge pinout labels match the front view in source-3 directly when viewed from the back without rotation (0 degrees), keeping the USB port on the right side of the reverse face.\",\n  \"alternatives\": [\"source-2\", \"source-8\"],\n  \"reason\": \"source-4 is the only clean product photograph displaying the reverse side of the Motor 2040 board in the correct upright orientation matching the front reference.\"\n}",
+  "responseOriginal": {
+    "candidates": [
+      {
+        "index": 0,
+        "content": {
+          "parts": [
+            {
+              "text": "{\n  \"status\": \"selected\",\n  \"sourceId\": \"source-4\",\n  \"clockwiseRotationDeg\": 0,\n  \"mirrored\": false,\n  \"faceEvidence\": \"source-4 shows the reverse side of the PCB, featuring silkscreen text 'motor 2040', the Pimoroni logo, cut-trace jumpers for LEDs and power rails, and missing components/connectors compared to the front face shown in source-3.\",\n  \"orientationEvidence\": \"The outline of the board, mounting holes, and edge pinout labels match the front view in source-3 directly when viewed from the back without rotation (0 degrees), keeping the USB port on the right side of the reverse face.\",\n  \"alternatives\": [\"source-2\", \"source-8\"],\n  \"reason\": \"source-4 is the only clean product photograph displaying the reverse side of the Motor 2040 board in the correct upright orientation matching the front reference.\"\n}",
+              "type": "text"
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP"
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7763,
+      "candidatesTokenCount": 211,
+      "totalTokenCount": 7974,
+      "promptTokensDetails": [
+        {
+          "modality": "IMAGE",
+          "tokenCount": 6522
+        },
+        {
+          "modality": "TEXT",
+          "tokenCount": 1241
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "inferenceSource": "in_cloud"
+  },
+  "modelVersion": null,
+  "usageMetadata": {
+    "promptTokenCount": 7763,
+    "candidatesTokenCount": 211,
+    "totalTokenCount": 7974,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 6522
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 1241
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "parsed": {
+    "status": "selected",
+    "sourceId": "source-4",
+    "clockwiseRotationDeg": 0,
+    "mirrored": false,
+    "faceEvidence": "source-4 shows the reverse side of the PCB, featuring silkscreen text 'motor 2040', the Pimoroni logo, cut-trace jumpers for LEDs and power rails, and missing components/connectors compared to the front face shown in source-3.",
+    "orientationEvidence": "The outline of the board, mounting holes, and edge pinout labels match the front view in source-3 directly when viewed from the back without rotation (0 degrees), keeping the USB port on the right side of the reverse face.",
+    "alternatives": [
+      "source-2",
+      "source-8"
+    ],
+    "reason": "source-4 is the only clean product photograph displaying the reverse side of the Motor 2040 board in the correct upright orientation matching the front reference."
+  },
+  "totalMs": 20551.09999999404,
+  "requestSHA256": "ac852e95cca91e52717ae1f8c8a13aea338b43bec4f10979e381bd0c9793d28a"
+}

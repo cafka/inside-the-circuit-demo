@@ -1,0 +1,89 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "0591e9945ecbf80f91e2e961f48988309100d35eb66255736ebafa34c5650a03",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T20:46:48.099Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": true,
+    "imageAvailability": "unavailable",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "unknown",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"absent\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": null,\n    \"family\": null,\n    \"model\": null,\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"unknown\",\n    \"visualEvidence\": [],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"No electronic board is present in the image.\"\n    ]\n  },\n  \"components\": []\n}",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "identity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": null,
+      "family": null,
+      "model": null,
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "unknown",
+      "visualEvidence": [],
+      "alternatives": [],
+      "limitations": [
+        "No electronic board is present in the image."
+      ]
+    },
+    "recovery": null,
+    "boardPresence": "absent",
+    "components": []
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 31.80000001192093,
+    "firebaseMs": 2359.5999999940395,
+    "initializationMs": 2360.5999999940395,
+    "inferenceMs": 3552
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "unknown",
+      "timingsMs": {
+        "firebaseMs": 2359.5999999940395,
+        "initializationMs": 2360.5999999940395,
+        "inferenceMs": 3552
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1657,
+    "candidatesTokenCount": 129,
+    "totalTokenCount": 1786,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 577
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1080
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [],
+  "totalMs": 5946.699999988079,
+  "inputKind": "uploaded_photo"
+}

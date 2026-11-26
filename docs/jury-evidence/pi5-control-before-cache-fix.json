@@ -1,0 +1,258 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "65a0d4811e66eda730f066552dcd9f13e09fde507b356e37414334b80378fb17",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T21:29:43.088Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": true,
+    "imageAvailability": "unavailable",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "identified",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"present\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": \"Raspberry Pi\",\n    \"family\": \"Raspberry Pi\",\n    \"model\": \"Raspberry Pi 5\",\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"identified\",\n    \"visualEvidence\": [\n      \"Text on PCB reads 'Raspberry Pi 5'\",\n      \"Raspberry Pi logo printed on board\",\n      \"Text reads 'HAT+ GPIO INTERFACE'\"\n    ],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"Hardware revision is not explicitly visible on the top side\"\n    ]\n  },\n  \"components\": [\n    {\n      \"id\": \"comp_001\",\n      \"name\": \"USB 3.0 Ports\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [326, 672, 547, 782],\n      \"evidence\": \"Dual stacked USB Type-A ports on the right edge of the board\"\n    },\n    {\n      \"id\": \"comp_002\",\n      \"name\": \"Ethernet Port\",\n      \"marking\": \"Trxcom TRJG0926HENL4R\",\n      \"status\": \"proposed\",\n      \"box\": [566, 644, 696, 781],\n      \"evidence\": \"RJ45 Ethernet connector with visible Trxcom branding on the lower right edge\"\n    },\n    {\n      \"id\": \"comp_003\",\n      \"name\": \"GPIO Header\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [296, 273, 342, 592],\n      \"evidence\": \"40-pin dual row header located at the top edge of the board\"\n    },\n    {\n      \"id\": \"comp_004\",\n      \"name\": \"SoC\",\n      \"marking\": \"RP C0 22/44\",\n      \"status\": \"proposed\",\n      \"box\": [402, 560, 492, 636],\n      \"evidence\": \"Large square integrated circuit package with Raspberry Pi logo\"\n    },\n    {\n      \"id\": \"comp_005\",\n      \"name\": \"PMIC\",\n      \"marking\": \"DA9091\",\n      \"status\": \"proposed\",\n      \"box\": [561, 290, 608, 357],\n      \"evidence\": \"IC package located near the lower left with visible Dialog branding\"\n    },\n    {\n      \"id\": \"comp_006\",\n      \"name\": \"USB Type-C Power Port\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [648, 282, 715, 339],\n      \"evidence\": \"USB Type-C connector at the bottom left edge labeled for power\"\n    }\n  ]\n}",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "identity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 5",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Text on PCB reads 'Raspberry Pi 5'",
+        "Raspberry Pi logo printed on board",
+        "Text reads 'HAT+ GPIO INTERFACE'"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Hardware revision is not explicitly visible on the top side"
+      ]
+    },
+    "recovery": null,
+    "boardPresence": "present",
+    "components": [
+      {
+        "id": "comp_001",
+        "name": "USB 3.0 Ports",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          326,
+          672,
+          547,
+          782
+        ],
+        "evidence": "Dual stacked USB Type-A ports on the right edge of the board"
+      },
+      {
+        "id": "comp_002",
+        "name": "Ethernet Port",
+        "marking": "Trxcom TRJG0926HENL4R",
+        "status": "proposed",
+        "box": [
+          566,
+          644,
+          696,
+          781
+        ],
+        "evidence": "RJ45 Ethernet connector with visible Trxcom branding on the lower right edge"
+      },
+      {
+        "id": "comp_003",
+        "name": "GPIO Header",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          296,
+          273,
+          342,
+          592
+        ],
+        "evidence": "40-pin dual row header located at the top edge of the board"
+      },
+      {
+        "id": "comp_004",
+        "name": "SoC",
+        "marking": "RP C0 22/44",
+        "status": "proposed",
+        "box": [
+          402,
+          560,
+          492,
+          636
+        ],
+        "evidence": "Large square integrated circuit package with Raspberry Pi logo"
+      },
+      {
+        "id": "comp_005",
+        "name": "PMIC",
+        "marking": "DA9091",
+        "status": "proposed",
+        "box": [
+          561,
+          290,
+          608,
+          357
+        ],
+        "evidence": "IC package located near the lower left with visible Dialog branding"
+      },
+      {
+        "id": "comp_006",
+        "name": "USB Type-C Power Port",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          648,
+          282,
+          715,
+          339
+        ],
+        "evidence": "USB Type-C connector at the bottom left edge labeled for power"
+      }
+    ]
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 39.599999994039536,
+    "firebaseMs": 22821.90000000596,
+    "initializationMs": 22823.70000001788,
+    "inferenceMs": 6497,
+    "cataloguePreparation": 774.6999999880791
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "identified",
+      "timingsMs": {
+        "firebaseMs": 22821.90000000596,
+        "initializationMs": 22823.70000001788,
+        "inferenceMs": 6497
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1657,
+    "candidatesTokenCount": 742,
+    "totalTokenCount": 2399,
+    "promptTokensDetails": [
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1080
+      },
+      {
+        "modality": "TEXT",
+        "tokenCount": 577
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [
+    {
+      "id": "comp_001",
+      "name": "USB 3.0 Ports",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        326,
+        672,
+        547,
+        782
+      ],
+      "evidence": "Dual stacked USB Type-A ports on the right edge of the board"
+    },
+    {
+      "id": "comp_002",
+      "name": "Ethernet Port",
+      "marking": "Trxcom TRJG0926HENL4R",
+      "status": "proposed",
+      "box": [
+        566,
+        644,
+        696,
+        781
+      ],
+      "evidence": "RJ45 Ethernet connector with visible Trxcom branding on the lower right edge"
+    },
+    {
+      "id": "comp_003",
+      "name": "GPIO Header",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        296,
+        273,
+        342,
+        592
+      ],
+      "evidence": "40-pin dual row header located at the top edge of the board"
+    },
+    {
+      "id": "comp_004",
+      "name": "SoC",
+      "marking": "RP C0 22/44",
+      "status": "proposed",
+      "box": [
+        402,
+        560,
+        492,
+        636
+      ],
+      "evidence": "Large square integrated circuit package with Raspberry Pi logo"
+    },
+    {
+      "id": "comp_005",
+      "name": "PMIC",
+      "marking": "DA9091",
+      "status": "proposed",
+      "box": [
+        561,
+        290,
+        608,
+        357
+      ],
+      "evidence": "IC package located near the lower left with visible Dialog branding"
+    },
+    {
+      "id": "comp_006",
+      "name": "USB Type-C Power Port",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        648,
+        282,
+        715,
+        339
+      ],
+      "evidence": "USB Type-C connector at the bottom left edge labeled for power"
+    }
+  ],
+  "totalMs": 29364.79999998212,
+  "inputKind": "uploaded_photo",
+  "catalogue": {
+    "status": "cache",
+    "id": "raspberry-pi-5"
+  },
+  "savedBoardId": "raspberry-pi-5",
+  "flowError": "app_check_required"
+}

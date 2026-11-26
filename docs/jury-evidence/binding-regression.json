@@ -1,0 +1,87 @@
+{
+  "mode": "replay_of_actual_response_not_new_inference",
+  "before": [
+    {
+      "id": "comp_01",
+      "name": "Ethernet Jack",
+      "componentId": "ethernet"
+    },
+    {
+      "id": "comp_02",
+      "name": "USB 3.0 Ports",
+      "componentId": "usb3"
+    },
+    {
+      "id": "comp_03",
+      "name": "GPIO Header",
+      "componentId": "gpio"
+    },
+    {
+      "id": "comp_04",
+      "name": "RAM IC",
+      "componentId": "microsd"
+    },
+    {
+      "id": "comp_05",
+      "name": "RP1 Chip",
+      "componentId": null
+    },
+    {
+      "id": "comp_06",
+      "name": "Broadcom SoC",
+      "componentId": null
+    },
+    {
+      "id": "comp_07",
+      "name": "USB Type-C Power Connector",
+      "componentId": null
+    },
+    {
+      "id": "comp_08",
+      "name": "Camera/Display Connectors",
+      "componentId": null
+    }
+  ],
+  "after": [
+    {
+      "id": "comp_01",
+      "name": "Ethernet Jack",
+      "componentId": "ethernet"
+    },
+    {
+      "id": "comp_02",
+      "name": "USB 3.0 Ports",
+      "componentId": "usb3"
+    },
+    {
+      "id": "comp_03",
+      "name": "GPIO Header",
+      "componentId": "gpio"
+    },
+    {
+      "id": "comp_04",
+      "name": "RAM IC",
+      "componentId": null
+    },
+    {
+      "id": "comp_05",
+      "name": "RP1 Chip",
+      "componentId": null
+    },
+    {
+      "id": "comp_06",
+      "name": "Broadcom SoC",
+      "componentId": null
+    },
+    {
+      "id": "comp_07",
+      "name": "USB Type-C Power Connector",
+      "componentId": null
+    },
+    {
+      "id": "comp_08",
+      "name": "Camera/Display Connectors",
+      "componentId": null
+    }
+  ]
+}

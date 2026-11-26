@@ -1,0 +1,247 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "a0d3c12acc3c01345981b61a98a260598fa4b0c364cff435fa45c6860b1943d2",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T21:21:14.264Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": true,
+    "imageAvailability": "unavailable",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "unknown",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"present\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": null,\n    \"family\": null,\n    \"model\": null,\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"unknown\",\n    \"visualEvidence\": [],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"Homemade or generic prototyping perfboard with assembled components lacking any identifying manufacturer markings or model numbers.\"\n    ]\n  },\n  \"components\": [\n    {\n      \"id\": \"comp_1\",\n      \"name\": \"Push Button\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        119,\n        377,\n        280,\n        518\n      ],\n      \"evidence\": \"Round red cap on top of a black tactile switch body mounted on the perfboard.\"\n    },\n    {\n      \"id\": \"comp_2\",\n      \"name\": \"Electrolytic Capacitor\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        414,\n        415,\n        537,\n        506\n      ],\n      \"evidence\": \"Cylindrical radial electrolytic capacitor with silver top cross marking.\"\n    },\n    {\n      \"id\": \"comp_3\",\n      \"name\": \"Resistor\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        138,\n        316,\n        242,\n        375\n      ],\n      \"evidence\": \"Axial leaded component with colored bands indicating a resistor.\"\n    },\n    {\n      \"id\": \"comp_4\",\n      \"name\": \"Resistor\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        233,\n        485,\n        342,\n        535\n      ],\n      \"evidence\": \"Axial leaded component with colored bands indicating a resistor.\"\n    },\n    {\n      \"id\": \"comp_5\",\n      \"name\": \"Resistor\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        308,\n        438,\n        435,\n        521\n      ],\n      \"evidence\": \"Axial leaded component positioned diagonally with colored resistance bands.\"\n    },\n    {\n      \"id\": \"comp_6\",\n      \"name\": \"Integrated Circuit Socket\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        292,\n        690,\n        431,\n        815\n      ],\n      \"evidence\": \"Black DIP IC socket soldered into the perfboard holes.\"\n    }\n  ]\n}",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "identity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": null,
+      "family": null,
+      "model": null,
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "unknown",
+      "visualEvidence": [],
+      "alternatives": [],
+      "limitations": [
+        "Homemade or generic prototyping perfboard with assembled components lacking any identifying manufacturer markings or model numbers."
+      ]
+    },
+    "recovery": null,
+    "boardPresence": "present",
+    "components": [
+      {
+        "id": "comp_1",
+        "name": "Push Button",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          119,
+          377,
+          280,
+          518
+        ],
+        "evidence": "Round red cap on top of a black tactile switch body mounted on the perfboard."
+      },
+      {
+        "id": "comp_2",
+        "name": "Electrolytic Capacitor",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          414,
+          415,
+          537,
+          506
+        ],
+        "evidence": "Cylindrical radial electrolytic capacitor with silver top cross marking."
+      },
+      {
+        "id": "comp_3",
+        "name": "Resistor",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          138,
+          316,
+          242,
+          375
+        ],
+        "evidence": "Axial leaded component with colored bands indicating a resistor."
+      },
+      {
+        "id": "comp_4",
+        "name": "Resistor",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          233,
+          485,
+          342,
+          535
+        ],
+        "evidence": "Axial leaded component with colored bands indicating a resistor."
+      },
+      {
+        "id": "comp_5",
+        "name": "Resistor",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          308,
+          438,
+          435,
+          521
+        ],
+        "evidence": "Axial leaded component positioned diagonally with colored resistance bands."
+      },
+      {
+        "id": "comp_6",
+        "name": "Integrated Circuit Socket",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          292,
+          690,
+          431,
+          815
+        ],
+        "evidence": "Black DIP IC socket soldered into the perfboard holes."
+      }
+    ]
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 25.30000001192093,
+    "firebaseMs": 2388.399999976158,
+    "initializationMs": 2390.0999999940395,
+    "inferenceMs": 3903.7999999821186
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "unknown",
+      "timingsMs": {
+        "firebaseMs": 2388.399999976158,
+        "initializationMs": 2390.0999999940395,
+        "inferenceMs": 3903.7999999821186
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1665,
+    "candidatesTokenCount": 687,
+    "totalTokenCount": 2352,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 577
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1088
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [
+    {
+      "id": "comp_1",
+      "name": "Push Button",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        119,
+        377,
+        280,
+        518
+      ],
+      "evidence": "Round red cap on top of a black tactile switch body mounted on the perfboard."
+    },
+    {
+      "id": "comp_2",
+      "name": "Electrolytic Capacitor",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        414,
+        415,
+        537,
+        506
+      ],
+      "evidence": "Cylindrical radial electrolytic capacitor with silver top cross marking."
+    },
+    {
+      "id": "comp_3",
+      "name": "Resistor",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        138,
+        316,
+        242,
+        375
+      ],
+      "evidence": "Axial leaded component with colored bands indicating a resistor."
+    },
+    {
+      "id": "comp_4",
+      "name": "Resistor",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        233,
+        485,
+        342,
+        535
+      ],
+      "evidence": "Axial leaded component with colored bands indicating a resistor."
+    },
+    {
+      "id": "comp_5",
+      "name": "Resistor",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        308,
+        438,
+        435,
+        521
+      ],
+      "evidence": "Axial leaded component positioned diagonally with colored resistance bands."
+    },
+    {
+      "id": "comp_6",
+      "name": "Integrated Circuit Socket",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        292,
+        690,
+        431,
+        815
+      ],
+      "evidence": "Black DIP IC socket soldered into the perfboard holes."
+    }
+  ],
+  "totalMs": 6322,
+  "inputKind": "uploaded_photo"
+}

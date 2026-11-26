@@ -1,46 +1,74 @@
-# Verificador permanente preparado, todavía no desplegado
+# Verificador HTTPS desplegado — 26/11/2026
 
-El proyecto actual está en Spark, billingEnabled=false; Cloud Run no está habilitado.
-Este servicio ejecuta el verificador de píxeles existente. No hace inferencias ni
-genera CAD. No expone importaciones, archivos personales, revisiones o altas.
-Recibe fotos consentidas, exige App Check válido para la app configurada, limita
-el tamaño, ejecuta una sola verificación a la vez y elimina el archivo temporal.
+Autorizado dentro del presupuesto acumulado de USD 20. Proyecto
+`itc-nano-lab-20261121`, región `us-central1`, servicio `itc-photo-verifier`.
+Frontend: https://itc-nano-lab-20261121.web.app/
 
-Configuración propuesta: us-central1, una vCPU, 1 GiB, concurrencia 1, mínimo 0,
-máximo 1 instancia, facturación por solicitud, tiempo de solicitud 65 s.
-Dockerfile usa únicamente el cierre de dependencias del verificador.
-La cuenta de servicio no necesita acceso al catálogo ni claves descargadas.
+Cloud Run ejecuta el verificador de píxeles existente. No hace inferencias ni
+genera CAD. No expone importaciones ni el servidor administrativo. Exige App Check
+válido para la aplicación y el origen configurados. Elimina las fotos temporales.
+La identificación Cloud se solicita desde el navegador por Firebase AI Logic,
+con consentimiento; no usa la cuenta personal del servidor.
 
-Antes de ejecutar se requiere autorización para habilitar facturación y estos
-servicios nuevos: Cloud Run, Artifact Registry y Cloud Build. El despliegue público
-de Hosting sí está autorizado y ya usa el plan gratuito.
+## Recursos y reproducción
 
-Precios consultados 26/11/2026:
-- Cloud Run: USD 0.000024/vCPU-s + 0.0000025/GiB-s activos. Con esta configuración,
-  USD 0.0954 por hora activa antes de franquicias. Cien verificaciones de 5 s:
-  aproximadamente USD 0.01325 de cómputo; cien de 60 s: USD 0.159.
-- Cloud Build e2-medium: USD 0.003/min; 10 min = USD 0.03.
-- Artifact Registry: primeros 0.5 GiB/mes sin costo; exceso ~USD 0.10/GiB-mes.
-- Red saliente y Hosting pueden facturar si se exceden sus franquicias. No hay
-  disco persistente, GPU ni dirección IPv4 reservada.
-- Al vincular facturación, Gemini puede pasar a tarifa de pago: Flash-Lite
-  USD 0.30/M tokens de entrada y USD 2.50/M de salida. No se agregan llamadas
-  automáticas ni se cambia el modelo.
+Una vCPU, 1 GiB, concurrencia 1, mínimo 0, máximo 1, timeout 65 s, facturación por
+solicitud, sin startup CPU boost. Cuenta de servicio propia sin roles de proyecto.
+Sin VM, GPU, disco persistente ni IP reservada. Endpoint público protegido por App Check.
 
-Una sesión técnica breve de hasta 100 verificaciones debería quedar por debajo
-de USD 1, con reserva para red/almacenamiento. Esto no es un tope garantizado ni
-una estimación de visitas ilimitadas. El presupuesto histórico total no se reinicia.
-Alertas, max-instances y límites por navegador NO son límites duros de gasto.
-Antes de exposición pagada se deben verificar gasto acumulado, cuota de AI Logic
-y un spend cap con margen; los spend caps también tienen demora.
+```sh
+node scripts/prepare-verifier-context.mjs /tmp/itc-verifier-build
+gcloud builds submit /tmp/itc-verifier-build \
+  --config=deployment/verification/cloudbuild.yaml \
+  --substitutions=_IMAGE=REGION-docker.pkg.dev/PROJECT/REPOSITORY/photo-verifier:TAG \
+  --project=PROJECT
+gcloud run deploy itc-photo-verifier --image=IMAGE --region=us-central1 \
+  --project=PROJECT --service-account=VERIFIER_SERVICE_ACCOUNT \
+  --cpu=1 --memory=1Gi --concurrency=1 --timeout=65 --min=0 --max=1 \
+  --no-cpu-boost --cpu-throttling --allow-unauthenticated \
+  --set-env-vars=GOOGLE_CLOUD_PROJECT=PROJECT,ITC_FIREBASE_APP_ID=APP_ID,ITC_PUBLIC_ORIGIN=ORIGIN
+ITC_VERIFIER_SERVICE=itc-photo-verifier ITC_BUILD_SHA=SOURCE_COMMIT \
+  node scripts/build-jury-hosting.mjs NEW_OUTPUT/public PUBLIC_RUNTIME_CONFIG
+cd NEW_OUTPUT
+firebase deploy --only hosting --project PROJECT
+```
 
-Fuentes:
-https://cloud.google.com/run/pricing
-https://cloud.google.com/build/pricing
-https://cloud.google.com/artifact-registry/pricing
-https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite
-https://firebase.google.com/docs/projects/billing/spend-caps
+Usar gcloud y Firebase CLI autenticados en el proyecto autorizado, sin claves
+descargadas. El exportador lee el catálogo y copia solo activos redistribuibles.
+No enviar el checkout completo a Cloud Build: el contexto permitido son diez archivos.
 
-La reconstrucción automática de nuevas placas sigue siendo otro servicio
-pendiente: la sesión de depuración caducada no es una identidad de producción.
-No se expone el servidor administrativo local para fingir que ese punto está resuelto.
+Build real `fcd2e48b-7c8a-4a5a-9595-524db80910eb`: SUCCESS, 77,34 s.
+Imagen `sha256:b96b92c0d59041da1b985a9d168b607612efff9b02d15765aeb1496b6ad29770`.
+Código del contenedor: commit público `d8acd53`. Firebase Admin 14.5.1.
+
+## Gasto y límites
+
+Consola del proyecto: USD 0,52 antes y después del ensayo. Los cargos nuevos aún
+no figuraban; no equivale a costo cero. Se conserva el presupuesto acumulado USD 20.
+Spend caps de USD 2 para Gemini y USD 2 para Cloud Run devolvieron CONFIGURED.
+No son límites duros: pueden demorarse y se reinician mensualmente. No equivalen
+a un presupuesto acumulado ni autorizan otro gasto al cambiar de mes. Las alertas
+originales de USD 20 tampoco cortan automáticamente el consumo.
+
+Precios consultados: Run USD 0.000024/vCPU-s + 0.0000025/GiB-s activos
+(USD 0.0954/h activa); Build e2-medium USD 0.003/min; Artifact Registry primeros
+0.5 GiB-mes gratuitos, exceso aproximadamente USD 0.10/GiB-mes. Flash-Lite:
+USD 0.30/M tokens de entrada y USD 2.50/M de salida. El informe separa estimación
+y facturación. Con mínimo 0 no hay instancia caliente obligatoria; almacenamiento
+de imágenes, Hosting y transferencia pueden seguir cobrando. El servidor temporal
+de Motor quedó detenido; la demo no depende de él. Revisar el acumulado durante
+la entrega y antes del reinicio mensual de caps.
+
+Si un operador necesita suspender los servicios pagos del laboratorio:
+`gcloud billing projects unlink PROJECT`. Interrumpe el flujo Cloud y no es el
+estado actual. No borrar catálogos originales ni recursos de otros proyectos.
+
+Fuentes: [Run](https://cloud.google.com/run/pricing),
+[Build](https://cloud.google.com/build/pricing),
+[Artifact Registry](https://cloud.google.com/artifact-registry/pricing),
+[Gemini](https://aistudio.google.com/docs/pricing#gemini-3.5-flash-lite),
+[spend caps](https://firebase.google.com/docs/projects/billing/spend-caps).
+
+La reconstrucción permanente de placas nuevas sigue pendiente: la antigua sesión
+de depuración caducada no se convirtió en una identidad de producción. Esta demo
+reutiliza Pi 5 y Coral guardadas y avisa cuando una placa no está disponible.

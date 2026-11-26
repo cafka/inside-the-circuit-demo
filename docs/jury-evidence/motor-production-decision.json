@@ -1,0 +1,73 @@
+{
+  "mode": "normal_no_cad_generator_with_verified_historical_AI_evidence",
+  "savedGLBRead": false,
+  "savedPresentationRead": false,
+  "newCloudRequests": 0,
+  "elapsedMs": 6456.3728,
+  "modelSHA256": "8374ddfa8c9b8b471b71c3b7ee98d553d42130594631ad5ff75d86295199e289",
+  "dimensions": {
+    "valueMm": 1.6,
+    "basis": "User-authorized educational representation; not a measurement or manufacturer dimension",
+    "policy": "educational-relief/2",
+    "assemblyMaxMm": 7.7,
+    "componentHeightsInferred": false
+  },
+  "reliefCount": 13,
+  "meshNodes": 31,
+  "triangles": 714,
+  "backside": "not_observed_no_artwork",
+  "backsideAudit": {
+    "policy": "backside-selection/1",
+    "status": "pending",
+    "automaticFaceIdentification": false,
+    "attempts": [],
+    "sourceCandidates": [],
+    "sourceReason": "no_explicit_source_backside_caption",
+    "inference": {
+      "modelRequested": "gemini-3.5-flash-lite",
+      "modelVersion": null,
+      "inferenceSource": "in_cloud",
+      "newRequests": 0,
+      "requests": 1,
+      "reused": true,
+      "inferenceMs": 18731,
+      "totalMs": 20551.09999999404,
+      "usageMetadata": {
+        "promptTokenCount": 7763,
+        "candidatesTokenCount": 211,
+        "totalTokenCount": 7974,
+        "promptTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 6522
+          },
+          {
+            "modality": "TEXT",
+            "tokenCount": 1241
+          }
+        ],
+        "serviceTier": "standard"
+      },
+      "estimatedCostUSD": null,
+      "requestSHA256": "ac852e95cca91e52717ae1f8c8a13aea338b43bec4f10979e381bd0c9793d28a",
+      "responseFile": "gemini-backside.json",
+      "evidenceKind": "real_firebase_browser"
+    },
+    "proposal": {
+      "status": "selected",
+      "sourceId": "source-4",
+      "clockwiseRotationDeg": 0,
+      "mirrored": false,
+      "faceEvidence": "source-4 shows the reverse side of the PCB, featuring silkscreen text 'motor 2040', the Pimoroni logo, cut-trace jumpers for LEDs and power rails, and missing components/connectors compared to the front face shown in source-3.",
+      "orientationEvidence": "The outline of the board, mounting holes, and edge pinout labels match the front view in source-3 directly when viewed from the back without rotation (0 degrees), keeping the USB port on the right side of the reverse face.",
+      "alternatives": [
+        "source-2",
+        "source-8"
+      ],
+      "reason": "source-4 is the only clean product photograph displaying the reverse side of the Motor 2040 board in the correct upright orientation matching the front reference."
+    },
+    "selectionOrigin": "gemini_proposal",
+    "reason": "backside_ambiguous_or_unsupported_choice",
+    "totalMs": 221.69540000000006
+  }
+}

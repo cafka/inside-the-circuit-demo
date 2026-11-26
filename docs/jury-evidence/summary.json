@@ -1,0 +1,187 @@
+{
+  "observedDate": "2026-11-26",
+  "tests": [
+    {
+      "case": "table-response",
+      "status": "unknown",
+      "identity": null,
+      "presence": "absent",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 0,
+      "pixelAccepted": 0,
+      "displayed": 0,
+      "flowError": null,
+      "timings": {
+        "preparation": 31.80000001192093,
+        "firebaseMs": 2359.5999999940395,
+        "initializationMs": 2360.5999999940395,
+        "inferenceMs": 3552
+      },
+      "tokens": 1786,
+      "estimatedListPriceUSD": 0.0008195999999999999
+    },
+    {
+      "case": "homemade-response",
+      "status": "unknown",
+      "identity": null,
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 6,
+      "pixelAccepted": 0,
+      "displayed": 0,
+      "flowError": null,
+      "timings": {
+        "preparation": 25.30000001192093,
+        "firebaseMs": 2388.399999976158,
+        "initializationMs": 2390.0999999940395,
+        "inferenceMs": 3903.7999999821186
+      },
+      "tokens": 2352,
+      "estimatedListPriceUSD": 0.002217
+    },
+    {
+      "case": "pi5-first-response",
+      "status": "identified",
+      "identity": "Raspberry Pi 4 Model B",
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 6,
+      "pixelAccepted": 0,
+      "displayed": 0,
+      "flowError": "hosted.preparationPending",
+      "timings": {
+        "preparation": 69.19999998807907,
+        "firebaseMs": 1693.199999988079,
+        "initializationMs": 1693.4000000059605,
+        "inferenceMs": 5227.0999999940395
+      },
+      "tokens": 2453,
+      "estimatedListPriceUSD": 0.0025223000000000003
+    },
+    {
+      "case": "pi5-control-before-cache-fix",
+      "status": "identified",
+      "identity": "Raspberry Pi 5",
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 6,
+      "pixelAccepted": 0,
+      "displayed": 0,
+      "flowError": "app_check_required",
+      "timings": {
+        "preparation": 39.599999994039536,
+        "firebaseMs": 22821.90000000596,
+        "initializationMs": 22823.70000001788,
+        "inferenceMs": 6497,
+        "cataloguePreparation": 774.6999999880791
+      },
+      "tokens": 2399,
+      "estimatedListPriceUSD": 0.0023520999999999998
+    },
+    {
+      "case": "pi5-verified-response",
+      "status": "identified",
+      "identity": "Raspberry Pi 5",
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 12,
+      "pixelAccepted": 7,
+      "displayed": 2,
+      "flowError": null,
+      "timings": {
+        "preparation": 39.70000001788139,
+        "firebaseMs": 1919.7000000178814,
+        "initializationMs": 1920.5,
+        "inferenceMs": 4977.600000023842,
+        "cataloguePreparation": 543.8000000119209,
+        "componentVerification": 7930.5999999940395,
+        "captureToRectangles": 15724.299999982119
+      },
+      "tokens": 2873,
+      "estimatedListPriceUSD": 0.0035371
+    },
+    {
+      "case": "pi5-public-response",
+      "status": "identified",
+      "identity": "Raspberry Pi 5",
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 8,
+      "pixelAccepted": 6,
+      "displayed": 2,
+      "flowError": null,
+      "timings": {
+        "preparation": 25.30000001192093,
+        "firebaseMs": 1757.7000000178814,
+        "initializationMs": 1759.1000000238419,
+        "inferenceMs": 5296.899999976158,
+        "cataloguePreparation": 217.90000000596046,
+        "componentVerification": 8389.5,
+        "captureToRectangles": 15964.800000011921
+      },
+      "tokens": 2645,
+      "estimatedListPriceUSD": 0.0029671
+    },
+    {
+      "case": "pi5-final-response",
+      "status": "identified",
+      "identity": "Raspberry Pi 5",
+      "presence": "present",
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 9,
+      "pixelAccepted": 7,
+      "displayed": 1,
+      "flowError": null,
+      "timings": {
+        "preparation": 27.19999998807907,
+        "firebaseMs": 2147.7000000178814,
+        "initializationMs": 2148.800000011921,
+        "inferenceMs": 4855.5999999940395,
+        "cataloguePreparation": 275.2000000178814,
+        "componentVerification": 9700.100000023842,
+        "captureToRectangles": 17327.5
+      },
+      "tokens": 2771,
+      "estimatedListPriceUSD": 0.0032821
+    },
+    {
+      "case": "gemini-backside",
+      "status": "completed",
+      "identity": null,
+      "presence": null,
+      "source": "in_cloud",
+      "modelVersion": null,
+      "proposals": 0,
+      "pixelAccepted": 0,
+      "displayed": 0,
+      "flowError": null,
+      "timings": {
+        "initialization": 1818.2999999821186,
+        "inference": 18731,
+        "total": 20551.09999999404
+      },
+      "tokens": 7974,
+      "estimatedListPriceUSD": 0.0028564000000000003
+    }
+  ],
+  "estimatedInferenceTotalUSD": 0.0205537,
+  "billingConsoleUSD": 0.52,
+  "billingDelay": true,
+  "cloudBuildSeconds": 77.337057,
+  "cloudBuildListPriceUSD": 0.00386685285,
+  "anonymousHttp": {
+    "homepage": 200,
+    "runtime": 200,
+    "health": 200,
+    "missingAppCheck": 401
+  },
+  "anonymousBrowser": "pending: available browser shares Google session",
+  "physicalPhone": "not_tested"
+}

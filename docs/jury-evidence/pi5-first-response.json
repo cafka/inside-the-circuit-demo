@@ -1,0 +1,252 @@
+{
+  "schema": "automatic-photo-onboarding/1",
+  "captureSHA256": "ccb0a9b9ee9fbc1851497cb0c7c02ad899e6622150136dc69c41d2f2eceb26f0",
+  "captureMimeType": "image/jpeg",
+  "inputFileNameSent": false,
+  "environment": {
+    "schemaVersion": "itc-identity-environment/1.0.0",
+    "evidenceKind": "real_environment_no_inference",
+    "observedAtUTC": "2026-11-26T21:24:06.029Z",
+    "secureContext": true,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "logicalCPU": 8,
+    "reportedDeviceMemoryGiB": 4,
+    "promptAPIPresent": true,
+    "imageAvailability": "unavailable",
+    "nanoGeneration": "UNVERIFIED",
+    "modelCalls": 0,
+    "modelDownloadsStarted": 0
+  },
+  "route": {
+    "lane": "cloud",
+    "reason": "configured_cloud_with_existing_consent"
+  },
+  "status": "identified",
+  "inferenceSource": "in_cloud",
+  "raw": "{\n  \"boardPresence\": \"present\",\n  \"identity\": {\n    \"schemaVersion\": \"itc-board-identity/1.0.0\",\n    \"manufacturer\": \"Raspberry Pi\",\n    \"family\": \"Raspberry Pi\",\n    \"model\": \"Raspberry Pi 4 Model B\",\n    \"hardwareRevision\": null,\n    \"boardId\": null,\n    \"status\": \"identified\",\n    \"visualEvidence\": [\n      \"Raspberry Pi logo printed on PCB near the DSI/CSI connectors\",\n      \"Dual micro-HDMI ports and USB-C power port layout\",\n      \"Dual USB 3.0 and dual USB 2.0 stacked USB ports next to Ethernet\"\n    ],\n    \"alternatives\": [],\n    \"limitations\": [\n      \"Board hardware revision text is obscured or not fully legible from this angle\"\n    ]\n  },\n  \"components\": [\n    {\n      \"id\": \"comp_1\",\n      \"name\": \"Ethernet Jack\",\n      \"marking\": \"Trxcom\",\n      \"status\": \"proposed\",\n      \"box\": [\n        392,\n        403,\n        816,\n        734\n      ],\n      \"evidence\": \"Metal-shielded RJ45 Ethernet port housing with visible printed markings on the top shield.\"\n    },\n    {\n      \"id\": \"comp_2\",\n      \"name\": \"USB 3.0 Ports\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        250,\n        596,\n        646,\n        841\n      ],\n      \"evidence\": \"Stacked dual USB ports with blue internal plastic inserts indicating USB 3.0.\"\n    },\n    {\n      \"id\": \"comp_3\",\n      \"name\": \"USB 2.0 Ports\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        282,\n        700,\n        542,\n        910\n      ],\n      \"evidence\": \"Stacked dual USB ports with black internal plastic inserts.\"\n    },\n    {\n      \"id\": \"comp_4\",\n      \"name\": \"GPIO Header\",\n      \"marking\": null,\n      \"status\": \"proposed\",\n      \"box\": [\n        112,\n        372,\n        357,\n        660\n      ],\n      \"evidence\": \"Long 40-pin dual-row male pin header strip running along the edge of the board.\"\n    },\n    {\n      \"id\": \"comp_5\",\n      \"name\": \"Camera Connector (CSI)\",\n      \"marking\": \"J3\",\n      \"status\": \"proposed\",\n      \"box\": [\n        423,\n        287,\n        600,\n        422\n      ],\n      \"evidence\": \"White flat-flexible-cable (FFC) locking connector with visible J3 designator nearby on the PCB.\"\n    },\n    {\n      \"id\": \"comp_6\",\n      \"name\": \"Display Connector (DSI)\",\n      \"marking\": \"J4\",\n      \"status\": \"proposed\",\n      \"box\": [\n        383,\n        250,\n        556,\n        396\n      ],\n      \"evidence\": \"White flat-flexible-cable (FFC) locking connector with visible J4 designator nearby on the PCB.\"\n    }\n  ]\n}",
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "identity": {
+      "schemaVersion": "itc-board-identity/1.0.0",
+      "manufacturer": "Raspberry Pi",
+      "family": "Raspberry Pi",
+      "model": "Raspberry Pi 4 Model B",
+      "hardwareRevision": null,
+      "boardId": null,
+      "status": "identified",
+      "visualEvidence": [
+        "Raspberry Pi logo printed on PCB near the DSI/CSI connectors",
+        "Dual micro-HDMI ports and USB-C power port layout",
+        "Dual USB 3.0 and dual USB 2.0 stacked USB ports next to Ethernet"
+      ],
+      "alternatives": [],
+      "limitations": [
+        "Board hardware revision text is obscured or not fully legible from this angle"
+      ]
+    },
+    "recovery": null,
+    "boardPresence": "present",
+    "components": [
+      {
+        "id": "comp_1",
+        "name": "Ethernet Jack",
+        "marking": "Trxcom",
+        "status": "proposed",
+        "box": [
+          392,
+          403,
+          816,
+          734
+        ],
+        "evidence": "Metal-shielded RJ45 Ethernet port housing with visible printed markings on the top shield."
+      },
+      {
+        "id": "comp_2",
+        "name": "USB 3.0 Ports",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          250,
+          596,
+          646,
+          841
+        ],
+        "evidence": "Stacked dual USB ports with blue internal plastic inserts indicating USB 3.0."
+      },
+      {
+        "id": "comp_3",
+        "name": "USB 2.0 Ports",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          282,
+          700,
+          542,
+          910
+        ],
+        "evidence": "Stacked dual USB ports with black internal plastic inserts."
+      },
+      {
+        "id": "comp_4",
+        "name": "GPIO Header",
+        "marking": null,
+        "status": "proposed",
+        "box": [
+          112,
+          372,
+          357,
+          660
+        ],
+        "evidence": "Long 40-pin dual-row male pin header strip running along the edge of the board."
+      },
+      {
+        "id": "comp_5",
+        "name": "Camera Connector (CSI)",
+        "marking": "J3",
+        "status": "proposed",
+        "box": [
+          423,
+          287,
+          600,
+          422
+        ],
+        "evidence": "White flat-flexible-cable (FFC) locking connector with visible J3 designator nearby on the PCB."
+      },
+      {
+        "id": "comp_6",
+        "name": "Display Connector (DSI)",
+        "marking": "J4",
+        "status": "proposed",
+        "box": [
+          383,
+          250,
+          556,
+          396
+        ],
+        "evidence": "White flat-flexible-cable (FFC) locking connector with visible J4 designator nearby on the PCB."
+      }
+    ]
+  },
+  "modelCalls": 1,
+  "timingsMs": {
+    "preparation": 69.19999998807907,
+    "firebaseMs": 1693.199999988079,
+    "initializationMs": 1693.4000000059605,
+    "inferenceMs": 5227.0999999940395
+  },
+  "costUSD": null,
+  "attempts": [
+    {
+      "lane": "cloud",
+      "status": "identified",
+      "timingsMs": {
+        "firebaseMs": 1693.199999988079,
+        "initializationMs": 1693.4000000059605,
+        "inferenceMs": 5227.0999999940395
+      }
+    }
+  ],
+  "actualGenerationAttempts": 1,
+  "requestedCloudModel": "gemini-3.5-flash-lite",
+  "usageMetadata": {
+    "promptTokenCount": 1641,
+    "candidatesTokenCount": 812,
+    "totalTokenCount": 2453,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 577
+      },
+      {
+        "modality": "IMAGE",
+        "tokenCount": 1064
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": null,
+  "proposals": [
+    {
+      "id": "comp_1",
+      "name": "Ethernet Jack",
+      "marking": "Trxcom",
+      "status": "proposed",
+      "box": [
+        392,
+        403,
+        816,
+        734
+      ],
+      "evidence": "Metal-shielded RJ45 Ethernet port housing with visible printed markings on the top shield."
+    },
+    {
+      "id": "comp_2",
+      "name": "USB 3.0 Ports",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        250,
+        596,
+        646,
+        841
+      ],
+      "evidence": "Stacked dual USB ports with blue internal plastic inserts indicating USB 3.0."
+    },
+    {
+      "id": "comp_3",
+      "name": "USB 2.0 Ports",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        282,
+        700,
+        542,
+        910
+      ],
+      "evidence": "Stacked dual USB ports with black internal plastic inserts."
+    },
+    {
+      "id": "comp_4",
+      "name": "GPIO Header",
+      "marking": null,
+      "status": "proposed",
+      "box": [
+        112,
+        372,
+        357,
+        660
+      ],
+      "evidence": "Long 40-pin dual-row male pin header strip running along the edge of the board."
+    },
+    {
+      "id": "comp_5",
+      "name": "Camera Connector (CSI)",
+      "marking": "J3",
+      "status": "proposed",
+      "box": [
+        423,
+        287,
+        600,
+        422
+      ],
+      "evidence": "White flat-flexible-cable (FFC) locking connector with visible J3 designator nearby on the PCB."
+    },
+    {
+      "id": "comp_6",
+      "name": "Display Connector (DSI)",
+      "marking": "J4",
+      "status": "proposed",
+      "box": [
+        383,
+        250,
+        556,
+        396
+      ],
+      "evidence": "White flat-flexible-cable (FFC) locking connector with visible J4 designator nearby on the PCB."
+    }
+  ],
+  "totalMs": 6990.9000000059605,
+  "inputKind": "uploaded_photo",
+  "flowError": "hosted.preparationPending"
+}
