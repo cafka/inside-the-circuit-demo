@@ -40,7 +40,7 @@ const server=http.createServer(async(req,res)=>{
     if(req.method==='POST'){
       if(req.headers['x-itc-local']!=='1'||!access.acceptsOrigin(req.headers.origin))return json(res,403,{error:'same_origin_required'});
       const b=await body(req);
-      if(url.pathname==='/api/photo/verify')return json(res,200,await verifyPhotoProposals(b,{root:ROOT,store:STORE}));
+      if(url.pathname==='/api/photo/verify')return json(res,200,await verifyPhotoProposals(b,{root:ROOT,store:STORE,evidenceDirectory:privatePhotoTest?path.join(STORE,'_photo-evidence'):null}));
       if(url.pathname==='/api/identify')return json(res,200,identifyName(b.name));
       if(url.pathname==='/api/onboard'){
         if(typeof b.name!=='string'||b.name.trim().length<4||b.name.length>140||/[<>\r\n]/.test(b.name))throw Error('invalid_board_name');
