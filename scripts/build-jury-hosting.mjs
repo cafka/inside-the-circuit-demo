@@ -15,10 +15,12 @@ const clean=value=>{
  return value;
 };
 const json=(p,v)=>write(p,JSON.stringify(clean(v)));
-for(const name of ['index.html','style.css','experience.css','themes.css'])write(name,fs.readFileSync(path.join(DIR,name)));
+for(const name of ['style.css','experience.css','themes.css'])write(name,fs.readFileSync(path.join(DIR,name)));
 for(const name of ['roboto-latin.woff2','Roboto-OFL.txt'])write(name,fs.readFileSync(path.join(DIR,'assets',name)));
 const bundled=await build({entryPoints:[path.join(DIR,'app.mjs')],nodePaths:[path.join(ROOT,'experiments/cad-viewer/node_modules')],bundle:true,format:'esm',minify:true,legalComments:'linked',target:['es2022'],outfile:'app.js',write:false});
 for(const f of bundled.outputFiles)write(path.basename(f.path),f.contents);
+const bundleHash=sha(bundled.outputFiles.find(f=>f.path.endsWith('app.js')).contents).slice(0,20);
+write('index.html',fs.readFileSync(path.join(DIR,'index.html'),'utf8').replace('src="/app.js"',`src="/app.js?v=${bundleHash}"`));
 write('local-worker.js',fs.readFileSync(path.join(DIR,'public/local-worker.js')));
 const runtime=publicRuntimeConfig(JSON.parse(fs.readFileSync(configFile)));
 const verifier=process.env.ITC_VERIFIER_SERVICE||null,region=process.env.ITC_VERIFIER_REGION||'us-central1';
