@@ -55,3 +55,5 @@ body:not([data-screen=explorer]) #minimize-card{display:none}
 #explore-dialog{width:min(430px,calc(100vw - 24px));max-height:calc(100dvh - 32px)}
 .explore-options{display:grid;gap:12px;padding:16px}
 .explore-options button{display:flex;align-items:center;gap:14px;min-height:54px;text-align:left;font:inherit}
+
+#photo-guidance{position:absolute;z-index:8;left:16px;bottom:110px;width:min(340px,calc(100% - 32px));padding:10px 14px;border-radius:12px;background:var(--surface);color:var(--text);max-height:45%;overflow:auto}#photo-guidance svg{width:90px;display:block;margin:auto}#photo-guidance p{font-size:14px;line-height:1.45}

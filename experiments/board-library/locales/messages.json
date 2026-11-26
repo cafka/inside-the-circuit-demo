@@ -1078,5 +1078,13 @@
   "hosted.verificationPending": {
     "es": "Placa identificada. La verificación de componentes aún requiere el backend; no se muestran cajas sin verificar.",
     "en": "Board identified. Component verification still requires the backend; unverified boxes are not shown."
+  },
+  "photo.guideTitle": {
+    "es": "Cómo tomar otra foto",
+    "en": "How to retake the photo"
+  },
+  "photo.guideText": {
+    "es": "Fotografiá la placa completa desde arriba, enfocada y con luz uniforme. Evitá reflejos y dedos sobre las piezas. Acercate lo suficiente para que el nombre del modelo y las inscripciones sean legibles. Usá Repetir o Cargar foto. Si falta esa evidencia, la identidad queda sin confirmar.",
+    "en": "Photograph the whole board from above, in focus and evenly lit. Avoid glare and fingers covering parts. Get close enough to read the model name and markings. Use Retake or Upload photo. Without this evidence, identity remains unconfirmed."
   }
 }

@@ -21,6 +21,8 @@ sx,sy=aw/w,ah/h
 rows=[]
 for p in request['proposals']:
  y0,x0,y1,x1=p['box'];quad=np.array([[x0*w/1000,y0*h/1000],[x1*w/1000,y0*h/1000],[x1*w/1000,y1*h/1000],[x0*w/1000,y1*h/1000]])
+ if p.get('visiblePolygon') is not None:
+  quad=np.asarray(p['visiblePolygon'],dtype=float)*np.array([w/1000,h/1000])
  if p['status']!='proposed':region={'accepted':False,'reasons':['semantic_proposal_ambiguous']}
  else:
   region=engine.visible_region(analysis,quad*np.array([sx,sy]),policy)
@@ -29,7 +31,7 @@ for p in request['proposals']:
   polygon=cv2.approxPolyDP(np.float32(region['contour']),1.0,True).reshape(-1,2)
   lo=polygon.min(0);hi=polygon.max(0)
   region['displayPolygon']=polygon.tolist();region['displayBox']=[float(lo[1]),float(lo[0]),float(hi[1]),float(hi[0])]
- rows.append({'id':p['id'],'proposalBox':p['box'],'verification':region})
+ rows.append({'id':p['id'],'proposalBox':p['box'],'seedSource':'gemini_visible_polygon' if p.get('visiblePolygon') is not None else 'gemini_axis_aligned_box','verification':region})
 # Competing proposals may seed the same physical silhouette. Do not pick an identity by order.
 for i,a in enumerate(rows):
  for b in rows[i+1:]:

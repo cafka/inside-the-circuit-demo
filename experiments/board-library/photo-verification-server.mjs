@@ -1,3 +1,4 @@
+import {validVisiblePolygon} from './photo-shape.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -6,7 +7,7 @@ let running=false;
 export async function verifyPhotoProposals(body,{root,store}){
  if(running)throw Error('local_verification_busy');
  if(!['image/jpeg','image/png'].includes(body.mimeType)||typeof body.base64!=='string'||body.base64.length>12*1024*1024||!Array.isArray(body.proposals)||body.proposals.length>24)throw Error('invalid_photo_verification');
- for(const p of body.proposals)if(typeof p.id!=='string'||p.id.length>80||!['proposed','ambiguous'].includes(p.status)||!Array.isArray(p.box)||p.box.length!==4||p.box.some(n=>!Number.isFinite(n)||n<0||n>1000)||p.box[0]>=p.box[2]||p.box[1]>=p.box[3])throw Error('invalid_proposal');
+ for(const p of body.proposals)if(typeof p.id!=='string'||p.id.length>80||!['proposed','ambiguous'].includes(p.status)||!Array.isArray(p.box)||p.box.length!==4||p.box.some(n=>!Number.isFinite(n)||n<0||n>1000)||p.box[0]>=p.box[2]||p.box[1]>=p.box[3]||!validVisiblePolygon(p.visiblePolygon,p.box))throw Error('invalid_proposal');
  const bytes=Buffer.from(body.base64,'base64');if(bytes.length>8*1024*1024||!bytes.length)throw Error('photo_size');
  const sha=crypto.createHash('sha256').update(bytes).digest('hex');if(sha!==body.sha256)throw Error('capture_hash_mismatch');
  const workRoot=path.resolve(store,'_photo-work'),directory=path.join(workRoot,crypto.randomUUID());
