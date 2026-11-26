@@ -1,10 +1,13 @@
 import {t,locale,componentText} from './i18n.mjs';
 import content from './board-education.json';
 import {renderOnboarding} from './onboarding-ui.mjs';
+import {componentAvailability} from './component-availability.mjs';
+import {educationProfileMatches} from './education-profile.mjs';
 
 // Presentation data only: no influence on identification, CAD import or bindings.
 const node=(tag,text)=>{const e=document.createElement(tag);e.textContent=text;return e;};
-function profile(record){return content.boards.find(b=>b.id===record.id&&b.assetSHA256===record.inventory.sourceHash);}
+function profile(record){return content.boards.find(b=>educationProfileMatches(record,b));}
+export function componentInfo(record,c){return componentAvailability(c,{profileCard:!!profile(record)?.componentCards?.[c.id],manual:record.review.components.some(m=>m.id===c.id)});}
 export function componentHeading(record,c){return profile(record)?.componentHeadings?.[c.id]?.[locale()]||componentText(c).label;}
 export function educationalCard(record,c){
  const entry=profile(record)?.componentCards?.[c.id];

@@ -10,12 +10,13 @@ export const reconstructionPolicy=JSON.parse(fs.readFileSync(path.join(DIR,'reco
 const clean=e=>String(e.message).replace(/key=[^&\s)]+/g,'key=[REDACTED]').replace(/AIza[\w-]+/g,'[REDACTED]');
 
 // Consent/configuration is provisioned outside the app. This adapter can never enable billing.
-export async function analyseReconstruction(parts,directory,{name="gemini-reconstruction",schema=reconstructionSchema}={}){
+export async function analyseReconstruction(parts,directory,{name="gemini-reconstruction",schema=reconstructionSchema,model=reconstructionPolicy.model,maxOutputTokens=reconstructionPolicy.maxOutputTokens}={}){
  const output=path.join(directory,name+".json"),requestSHA256=hash(JSON.stringify(parts));
- if(fs.existsSync(output)){const cached=JSON.parse(fs.readFileSync(output));if(cached.status==="completed"&&cached.requestSHA256===requestSHA256&&cached.modelRequested===reconstructionPolicy.model)return {...cached,reused:true};}
+ if(fs.existsSync(output)){const cached=JSON.parse(fs.readFileSync(output));if(cached.status==="completed"&&cached.requestSHA256===requestSHA256&&cached.modelRequested===model&&cached.inferenceSource==='in_cloud')return {...cached,reused:true};}
  const file=process.env.ITC_RECONSTRUCTION_SESSION;
  if(!file)throw Error('reconstruction_gemini_session_not_configured');
- const session=JSON.parse(fs.readFileSync(file)),p=reconstructionPolicy;
+ const session=JSON.parse(fs.readFileSync(file)),p={...reconstructionPolicy,model,maxOutputTokens};
+ if(model!==reconstructionPolicy.model){p.inputPerMillionUSD=null;p.outputPerMillionUSD=null;}
  if(session.projectId!=='itc-nano-lab-20261121'||session.consent!==true||Date.now()>=Date.parse(session.expiresUTC))throw Error('reconstruction_session_not_authorized_or_expired');
  if(session.budgetTotalUSD!==20||session.historicalReserveUSD+session.delayedReserveUSD+session.executionReserveUSD>=20)throw Error('reconstruction_budget_guard');
  if(Buffer.byteLength(JSON.stringify(parts))>p.maxInputBytes*1.4)throw Error('reconstruction_input_size_limit');
@@ -40,12 +41,12 @@ export async function analyseReconstruction(parts,directory,{name="gemini-recons
    const r=await originalFetch(`https://firebaseappcheck.googleapis.com/v1/${cfg.appCheckParent}:exchangeDebugToken?key=${cfg.firebaseConfig.apiKey}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({debugToken:cfg.debugToken}),signal:AbortSignal.timeout(30000)});
    if(!r.ok)throw Error('AppCheck HTTP '+r.status);const v=await r.json();return{token:v.token,expireTimeMillis:Date.now()+parseFloat(v.ttl)*1000};
   }})});await getToken(check,true);
-  const ai=getAI(app,{backend:new GoogleAIBackend()}),model=getGenerativeModel(ai,{mode:InferenceMode.ONLY_IN_CLOUD,inCloudParams:{model:p.model,generationConfig:{maxOutputTokens:p.maxOutputTokens,responseMimeType:'application/json',responseSchema:schema}}},{timeout:300000});
-  result.initializationMs=performance.now()-start;const at=performance.now(),response=(await model.generateContent(parts)).response;
+  const ai=getAI(app,{backend:new GoogleAIBackend()}),generativeModel=getGenerativeModel(ai,{mode:InferenceMode.ONLY_IN_CLOUD,inCloudParams:{model:p.model,generationConfig:{maxOutputTokens:p.maxOutputTokens,responseMimeType:'application/json',responseSchema:schema}}},{timeout:300000});
+  result.initializationMs=performance.now()-start;const at=performance.now(),response=(await generativeModel.generateContent(parts)).response;
   result.inferenceMs=performance.now()-at;result.inferenceSource=response.inferenceSource;result.outputLiteral=response.text();result.responseOriginal=JSON.parse(JSON.stringify(response));
   result.usageMetadata=response.usageMetadata??result.transport.body.usageMetadata;result.modelVersion=response.modelVersion??result.transport.body.modelVersion;
-  const u=result.usageMetadata;result.estimatedCostUSD=u?((u.promptTokenCount||0)*p.inputPerMillionUSD+((u.candidatesTokenCount||0)+(u.thoughtsTokenCount||0))*p.outputPerMillionUSD)/1e6:null;
+  const u=result.usageMetadata;result.estimatedCostUSD=u&&p.model===reconstructionPolicy.model?((u.promptTokenCount||0)*p.inputPerMillionUSD+((u.candidatesTokenCount||0)+(u.thoughtsTokenCount||0))*p.outputPerMillionUSD)/1e6:null;
   persist();result.parsed=JSON.parse(result.outputLiteral);if(result.inferenceSource!=='in_cloud')throw Error('unexpected_inference_source');result.status='completed';
  }catch(e){result.status='failed';result.error=clean(e);}finally{globalThis.fetch=originalFetch;if(app)await deleteApp(app);result.totalMs=performance.now()-start;persist();}
- if(result.status!=='completed')throw Error(result.error);return result;
+ if(result.status!=='completed')throw Object.assign(Error(result.error),{inferenceRecord:result});return result;
 }

@@ -4,6 +4,9 @@ import {DIR} from './catalog.mjs';
 export const discoveryPolicy=JSON.parse(fs.readFileSync(path.join(DIR,'discovery-policy.json')));
 export const normalizeName=s=>String(s).normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const words=s=>normalizeName(s).split(' ').filter(Boolean);
+// Coverage alone accepts a longer, incompatible product variant. Every heading
+// token must belong to the requested identity; omitted manufacturer is allowed.
+export const compatibleProductHeading=(name,heading)=>{const requested=new Set(words(name)),actual=words(heading.replace(/\s+(?:data\s*sheet|technical specifications|technical reference)\s*$/i,''));return actual.length>=2&&actual.every(w=>requested.has(w));};
 export const coverage=(name,text)=>{const tokens=words(name),hay=new Set(words(text));return tokens.filter(t=>hay.has(t)).length/tokens.length;};
 export function matchedModel(name,heading){
   const tokens=name.trim().split(/\s+/),h=' '+normalizeName(heading)+' ';
@@ -57,12 +60,21 @@ export async function discoverByName(name,client,onProgress=()=>{}){
   }
   const unique=[...new Map(seeds.sort((a,b)=>b.score-a.score).map(x=>[x.url,x])).values()].filter(x=>x.score>=.5).slice(0,discoveryPolicy.maxCandidatePages);
   onProgress('authority');
-  for(const seed of unique){
+  const pendingPages=[...unique],visited=new Set();let linkedIdentityPages=0;
+  for(const seed of pendingPages){
+    if(visited.has(seed.url))continue;visited.add(seed.url);
     const page=await request(seed.url);if(!page)continue;const html=page.bytes.toString(),title=plain(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||''),h1=plain(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||'');
     const score=coverage(name,title+' '+h1),ls=links(html,page.url);
     const candidate={...seed,url:page.url,title,h1,nameCoverage:score,sha256:page.sha256,file:page.file,hasProductResources:ls.some(l=>assetKind(l.url)||/schematic|datasheet/i.test(l.text)),html,links:ls};
     evidence.candidates.push({...candidate,html:undefined,links:undefined});
-    if(score>=discoveryPolicy.minimumNameCoverage&&candidate.hasProductResources&&!evidence.pages.some(p=>p.url===candidate.url))evidence.pages.push(candidate);
+    // Follow observed publisher links to a precise datasheet within a fixed
+    // budget. Candidate ranking uses the full requested identity; variants
+    // still need the strict product-heading check below.
+    for(const l of ls.filter(l=>l.type==='a'&&new URL(l.url).origin===new URL(page.url).origin&&!assetKind(l.url)&&/datasheet|specifications/i.test(l.url+' '+l.text)&&coverage(name,decodeURIComponent(l.url)+' '+l.text)>=.5).sort((a,b)=>coverage(name,decodeURIComponent(b.url)+' '+b.text)-coverage(name,decodeURIComponent(a.url)+' '+a.text))){
+      if(linkedIdentityPages>=(discoveryPolicy.maxLinkedIdentityPages||0))break;
+      if(!pendingPages.some(p=>p.url===l.url)){pendingPages.push({...l,via:page.url,parentSHA256:page.sha256});linkedIdentityPages++;}
+    }
+    if(score>=discoveryPolicy.minimumNameCoverage&&compatibleProductHeading(name,h1)&&candidate.hasProductResources&&!evidence.pages.some(p=>p.url===candidate.url))evidence.pages.push(candidate);
   }
   // Prefer the product page over tutorials, without making the first search result authoritative.
   evidence.pages.sort((a,b)=>Number(/\/products?\/|\/hardware\//i.test(b.url))-Number(/\/products?\/|\/hardware\//i.test(a.url))||b.nameCoverage-a.nameCoverage);
@@ -77,11 +89,14 @@ export async function discoverByName(name,client,onProgress=()=>{}){
   const more=page.links.filter(l=>new URL(l.url).origin===origin&&!assetKind(l.url)&&scope&&new URL(l.url).pathname.split('/').includes(scope)&&!/add.on|accessor/i.test(l.text)&&/doc|spec|design|download|started/i.test(l.url+' '+l.text)).sort((a,b)=>Number(/datasheet|design|schematic/i.test(b.url+' '+b.text))-Number(/datasheet|design|schematic/i.test(a.url+' '+a.text))).slice(0,discoveryPolicy.maxDocumentPages);
   for(const link of more){if(evidence.pages.some(p=>p.url===link.url))continue;const p=await request(link.url);if(!p||evidence.pages.some(v=>v.url===p.url))continue;const html=p.bytes.toString();evidence.pages.push({url:p.url,title:plain(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||''),sha256:p.sha256,file:p.file,html,links:links(html,p.url)});}
   const allLinks=evidence.pages.flatMap(p=>p.links.map(l=>({...l,parent:p.url,parentSHA256:p.sha256})));
-  candidateRepoLinks.push(...allLinks.filter(l=>repoURL(l.url)&&/schematic|layout|mechanic|design|hardware|electrical/i.test(l.text+' '+l.url)));
+  candidateRepoLinks.push(...allLinks.filter(l=>repoURL(l.url)&&/schematic|layout|mechanic|design|hardware|electrical|cad/i.test(l.text+' '+l.url)));
   evidence.selectedPage=page.url;
   allLinks.push(...await repositoryResources(evidence,client,candidateRepoLinks));
-  const relevant=allLinks.filter(l=>l.kind==='license'||assetKind(l.url));
+  const productImages=new Set([product?.image].flat().filter(Boolean).map(i=>typeof i==='string'?i:i.url).filter(Boolean));
+  const relevant=allLinks.filter(l=>l.kind==='license'||assetKind(l.url)).filter(l=>assetKind(l.url,l.text)!=='image'||productImages.has(l.url)||coverage(name,l.text)>=discoveryPolicy.minimumNameCoverage);
   evidence.resources=[...new Map(relevant.map(l=>[l.url,{...l,kind:l.kind||assetKind(l.url,l.text),license:{id:l.repositoryLicense==='NOASSERTION'?null:l.repositoryLicense||null,status:l.repositoryLicense&&l.repositoryLicense!=='NOASSERTION'?'repository_declaration':'undetermined',redistributionAuthorized:false}}])).values()];
+  // Hardware files and documents precede gallery images within the download cap.
+  evidence.resources.sort((a,b)=>Number(a.kind==='image')-Number(b.kind==='image'));
   evidence.selectedPage=page.url;
   evidence.pages=evidence.pages.map(({html,links,...p})=>p);
   return evidence;
@@ -99,7 +114,7 @@ export async function repositoryResources(evidence,client,incoming){
     const treeResponse=await request(`https://api.github.com/repos/${key}/git/trees/${commit}?recursive=1`);if(!treeResponse)continue;const tree=JSON.parse(treeResponse.bytes);
     const repository={name:key,via:link.url,linkedFrom:link.parent||evidence.selectedPage,defaultBranch:meta.default_branch,requestedRef,commit,treeResponseSHA:tree.sha,license:meta.license,treeTruncated:!!tree.truncated,treeSHA256:treeResponse.sha256,files:tree.tree.filter(x=>x.type==='blob').map(x=>({path:x.path,sha:x.sha,size:x.size}))};
     evidence.repositories.push(repository);
-    const ownerResponse=await request(`https://api.github.com/users/${r.owner}`);if(ownerResponse){const owner=JSON.parse(ownerResponse.bytes),blog=owner.blog?.replace(/\/$/,'');if(blog){const blogURL=blog.startsWith('http')?blog.replace(/^http:/,'https:'):'https://'+blog,orgHome=await request(blogURL);const sourceHost=new URL(evidence.selectedPage).hostname;const redirectedSource=client.log.some(row=>new URL(row.url).hostname===new URL(blogURL).hostname&&row.redirect===evidence.selectedPage);if(owner.type==='Organization'&&orgHome&&(new URL(orgHome.url).hostname===sourceHost||redirectedSource||links(orgHome.bytes.toString(),orgHome.url).some(l=>new URL(l.url).hostname===sourceHost)||[...orgHome.bytes.toString().matchAll(/(?:document|window)\.location\s*=\s*["'](https?:\/\/[^"']+)["']/g)].some(m=>new URL(m[1]).hostname===sourceHost))){evidence.authority={status:'reciprocal_publisher_links',publisher:owner.name||owner.login,organization:owner.html_url,homepage:orgHome.url,organizationSHA256:ownerResponse.sha256,note:'Document links repository; organization links source domain, including recorded publisher redirects. Provenance evidence, not a universal authenticity certificate.'};}}}
+    const ownerResponse=await request(`https://api.github.com/users/${r.owner}`);if(ownerResponse){const owner=JSON.parse(ownerResponse.bytes),blog=owner.blog?.replace(/\/$/,'');if(blog){const blogURL=blog.startsWith('http')?blog.replace(/^http:/,'https:'):'https://'+blog,orgHome=await request(blogURL);const sourceHost=new URL(evidence.selectedPage).hostname;const redirectedSource=client.log.some(row=>new URL(row.url).hostname===new URL(blogURL).hostname&&(row.redirect===evidence.selectedPage||evidence.candidates.some(c=>c.url===row.redirect&&c.nameCoverage>=discoveryPolicy.minimumNameCoverage&&new URL(c.url).hostname===sourceHost)));if(owner.type==='Organization'&&orgHome&&(new URL(orgHome.url).hostname===sourceHost||redirectedSource||links(orgHome.bytes.toString(),orgHome.url).some(l=>new URL(l.url).hostname===sourceHost)||[...orgHome.bytes.toString().matchAll(/(?:document|window)\.location\s*=\s*["'](https?:\/\/[^"']+)["']/g)].some(m=>new URL(m[1]).hostname===sourceHost))){evidence.authority={status:'reciprocal_publisher_links',publisher:owner.name||owner.login,organization:owner.html_url,homepage:orgHome.url,organizationSHA256:ownerResponse.sha256,note:'Document links repository; organization links source domain, including recorded publisher redirects. Provenance evidence, not a universal authenticity certificate.'};}}}
     const folder=r.path;
     const files=repository.files.filter(x=>assetKind('https://placeholder.example/'+x.path)&&(folder?(x.path===folder||x.path.startsWith(folder+'/')):coverage(evidence.identity.model,x.path)>=.5));
     for(const file of files)allLinks.push({url:`https://raw.githubusercontent.com/${key}/${commit}/${file.path}`,text:file.path,parent:link.url,parentContext:link.context||link.text,parentSHA256:treeResponse.sha256,repository:key,commit,repositoryLicense:meta.license?.spdx_id||null,gitBlob:file.sha});

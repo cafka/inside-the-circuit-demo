@@ -1,0 +1,8 @@
+{
+  "version": "photo-verification-adapter/1",
+  "maximumAnalysisLongSide": 640,
+  "maximumProposals": 24,
+  "maximumOverlappingMaskIoU": 0.5,
+  "timeoutMs": 60000,
+  "basis": "Reuse component-parallax-1 at the historical 640-pixel analysis size. Full-resolution capture and Gemini input are retained. This verifies visible boundaries, not semantic identity or a PCB pose."
+}

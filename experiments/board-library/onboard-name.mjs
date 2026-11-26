@@ -9,12 +9,14 @@ import {createPublicFetcher} from './public-fetch.mjs';
 import {bindDocumentedDesignators} from './document-binding.mjs';
 import {bindRegisteredBodies} from './physical-binding.mjs';
 import {reconstructPhoto} from './reconstruct-photo.mjs';
+import {enrichCAD} from './enrichment.mjs';
 
 export const onboardingVersion='name-onboarding/1';
 export const nameID=name=>'discovered-'+hash(normalizeName(name)).slice(0,16);
 export async function onboardName(name,{onEvent=()=>{},fetcherFactory=createPublicFetcher,refresh=false}={}){
  if(typeof name!=='string'||name.trim().length<4||name.length>140||/[<>\r\n]/.test(name))throw Error('invalid_board_name');
  const cacheStarted=performance.now(),id=nameID(name),directory=boardDir(id),recordFile=path.join(directory,'record.json');
+ if(!refresh&&fs.existsSync(recordFile)){const saved=readBoard(id);if(saved.modelAvailable===false&&saved.onboarding?.policyVersion!==discoveryPolicy.version)refresh=true;}
  // Explicit name submission can resume a blocked dossier only with a configured session.
  if(!refresh&&process.env.ITC_RECONSTRUCTION_SESSION&&fs.existsSync(recordFile)&&readBoard(id).modelAvailable===false)refresh=true;
  if(fs.existsSync(recordFile)&&!refresh){const r=readBoard(id);if(normalizeName(r.onboarding?.input)!==normalizeName(name))throw Error('name_catalog_conflict');
@@ -30,7 +32,7 @@ export async function onboardName(name,{onEvent=()=>{},fetcherFactory=createPubl
  fs.mkdirSync(directory,{recursive:true});const client=fetcherFactory(directory,discoveryPolicy),start=performance.now(),stages=[],events=[];
  const emit=(stage,status,detail)=>{const e={stage,status,detail,elapsedMs:performance.now()-start};events.push(e);onEvent(e);};
  async function stage(name,fn){emit(name,'running');const at=performance.now();let result;try{result=await fn();}catch(error){result={status:'blocked',reason:error.message};}stages.push({name,...result,ms:performance.now()-at});emit(name,result.status,result.reason);return result;}
- let discovery={resources:[],repositories:[],pages:[],errors:[]},assets=[],model=null,documents=[],ecad=[],surfaces=null,physicalData=null,binding={components:[],audit:[]};
+ let discovery={resources:[],repositories:[],pages:[],errors:[]},assets=[],model=null,documents=[],ecad=[],surfaces=null,physicalData=null,enrichment=null,binding={components:[],audit:[]};
  const discoveryStage=await stage('discovery',async()=>{discovery=await discoverByName(name,client,s=>emit('discovery','progress',s));return {status:discovery.identity?'partial':'blocked',reason:discovery.identity?'revision_not_determined':discovery.reason||'search_failed'};});
  await stage('acquisition',async()=>{
    if(!discovery.identity)return {status:'blocked',reason:'no_documented_identity'};
@@ -87,20 +89,11 @@ export async function onboardName(name,{onEvent=()=>{},fetcherFactory=createPubl
  });
  await stage('appearance',async()=>{
    if(model?.reconstruction)return {status:'partial',reason:'observed_photo_appearance_uncalibrated',composition:'undetermined'};
-   for(const a of assets.filter(a=>a.status==='downloaded'&&a.role==='requested_board'&&a.inspection)){
-     const inspection=JSON.parse(fs.readFileSync(path.join(directory,a.inspection)));if(!inspection.members?.some(m=>/\.pcbdoc$/i.test(m.name)))continue;
-     try{const target=path.join(directory,'ecad-'+a.sha256+'.json');await subprocess('python',[path.join(DIR,'inspect-ecad.py'),path.join(directory,a.file),target]);ecad.push({asset:a,data:JSON.parse(fs.readFileSync(target))});}catch(error){discovery.errors.push({url:a.url,error:error.message});}
-   }
-   if(model&&ecad.length===1){
-     const surfaceDir=path.join(directory,'surfaces'),imageFile=path.join(directory,'appearance-images.json');
-     saveJSON(imageFile,assets.filter(a=>a.kind==='image'&&a.status==='downloaded').map(a=>({url:a.url,path:path.join(directory,a.file),sha256:a.sha256})));
-     try{await subprocess('python',[path.join(DIR,'prepare-board-surfaces.py'),path.join(directory,ecad[0].asset.file),path.join(directory,'model.glb'),surfaceDir,imageFile]);surfaces=JSON.parse(fs.readFileSync(path.join(surfaceDir,'surfaces.json')));surfaces.sourceURL=ecad[0].asset.url;physicalData=JSON.parse(fs.readFileSync(path.join(surfaceDir,'ecad-geometry.json')));}
-     catch(error){discovery.errors.push({stage:'appearance',error:error.message});}
-   }
-   return {status:model?'partial':'blocked',reason:surfaces?.registration?.status==='verified'?'registered_surfaces_partial':model?'original_cad_colors_preserved_no_verified_surface_reconstruction':'requires_3d_asset',ecadObjects:ecad.reduce((n,e)=>n+e.data.components.length,0),contacts:surfaces?.files?.length?'documented_ecad_surfaces':model?'only_original_step_geometry':'not_available',silkscreen:surfaces?.details?.sourceTextLabels||'not_reconstructed',composition:'undetermined'};
+   if(model){const result=await enrichCAD(directory,model.inventory,assets,{authority:discovery.authority?.status==='reciprocal_publisher_links'?'linked_publisher':'unverified',onEvent,baseSource:model.source});surfaces=result.surfaces;ecad=result.ecad;physicalData=result.physicalData;enrichment=result.audit;}
+   return {status:model?'partial':'blocked',reason:surfaces?.registration?.status==='verified'?'registered_surfaces_partial':model?'original_cad_colors_preserved_no_verified_surface_reconstruction':'requires_3d_asset',ecadObjects:ecad.reduce((n,e)=>n+e.data.components.length,0),contacts:surfaces?.files?.some(f=>f.kind==='contacts')?'documented_ecad_surfaces':model?'only_original_step_geometry':'not_available',silkscreen:surfaces?.details?.sourceTextLabels??(surfaces?.sourceType==='step_graphics'?'source_CAD_artwork':'not_reconstructed'),composition:'undetermined'};
  });
  await stage('components',async()=>{
-   if(model&&!model.reconstruction)binding=surfaces?.registration?.status==='verified'?bindRegisteredBodies(model.inventory,physicalData,surfaces,ecad[0].asset):bindDocumentedDesignators(model.inventory,ecad);
+   if(model&&!model.reconstruction)binding=surfaces?.registration?.status==='verified'&&surfaces.registration.bindings?.length?bindRegisteredBodies(model.inventory,physicalData,surfaces,ecad[0].asset):bindDocumentedDesignators(model.inventory,ecad);
    saveJSON(path.join(directory,'binding-audit.json'),binding);
    return {status:binding.components.length?'partial':'blocked',reason:model?.reconstruction?'image_observations_not_verified_electrical_instances':surfaces?.registration?.status==='verified'?'registered_components_partial':model?'exact_designators_only_unresolved_geometry_kept_unknown':'requires_3d_asset_and_document_to_cad_correspondences',documentedObjects:ecad.reduce((n,e)=>n+e.data.components.length,0),bound:binding.components.filter(c=>c.bindingStatus==='bound').length,error:binding.error||null};
  });
@@ -113,7 +106,7 @@ export async function onboardName(name,{onEvent=()=>{},fetcherFactory=createPubl
    limitations:stages.filter(s=>s.status!=='complete').map(s=>s.name+': '+s.reason),onboarding:{version:onboardingVersion,input:name.trim(),policyVersion:discoveryPolicy.version,stages,resources:assets,discovery,network:client.stats()},cloud:{requests:0,costUSD:0},events,timingsMs:Object.fromEntries(stages.map(s=>[s.name,s.ms]))};
  const aiResult=path.join(directory,'reconstruction','gemini-reconstruction.json');
  if(fs.existsSync(aiResult)){const a=JSON.parse(fs.readFileSync(aiResult));record.cloud={requests:a.requests,costUSD:a.estimatedCostUSD??null,model:a.modelVersion??a.modelRequested,inferenceMs:a.inferenceMs??null,status:a.status};}
- record.automaticSurfaces=surfaces;record.coverage.educationalCards=binding.generatedCards||0;
+ record.automaticSurfaces=surfaces;record.enrichment=enrichment||(model?.reconstruction?{version:'evidence-driven-enrichment/1',route:'photo_document_representation',sourceGeometryChanged:false,applied:{surfaceLayers:0,physicalDetails:'approximate_observation_envelopes',colour:'source_photo_uncalibrated',registration:'image_observation_not_metric_validation'},dimensions:{substrate:model.reconstruction.educationalThickness,objects:model.reconstruction.objects.map(o=>({id:o.id,status:o.status,displayHeightMm:o.displayHeightMm,displayHeightBasis:o.displayHeightBasis,measuredHeightMm:o.sizeMm?.[2]??null}))},backside:model.reconstruction.backside}:null);record.coverage.educationalCards=binding.generatedCards||0;
  if(model?.reconstruction){record.reconstruction=model.reconstruction;record.cloud=model.cloud;record.source.kind='photo_document_reconstruction';record.source.coverage='Reconstrucción educativa aproximada desde fotografías y documentos. No es CAD del fabricante. Alturas y detalles desconocidos permanecen pendientes.';record.coverage.documentedComponents=0;record.coverage.verifiedElectricalAssociations=0;}
  record.coverage.materialProvisional=record.materials.filter(m=>m.status==='provisional').length;record.coverage.materialUnknown=record.materials.filter(m=>m.status==='unknown').length;
  await stage('store',async()=>{if(model)fs.writeFileSync(path.join(directory,'model.glb.gz'),zlib.gzipSync(fs.readFileSync(path.join(directory,'model.glb'))));saveJSON(path.join(directory,'http-log.json'),client.log);return {status:'complete',reason:model?'model_and_dossier_saved':'dossier_saved_without_fabricated_model'};});

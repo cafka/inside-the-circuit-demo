@@ -1,4 +1,4 @@
-// Consume a pinned publication artifact. Never modify or fork the book source.
+// Consume a pinned publication artifact. Optional integration patches are served separately; downloads stay pristine.
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -8,6 +8,8 @@ const configFile=path.join(root,'config/library.json'),lockFile=path.join(root,'
 const config=JSON.parse(fs.readFileSync(configFile)),revision=process.argv.includes('--revision')?process.argv[process.argv.indexOf('--revision')+1]:null;
 const gitHash=bytes=>crypto.createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
 const get=async url=>{const r=await fetch(url,{signal:AbortSignal.timeout(45000)});if(!r.ok)throw Error(`library_http_${r.status}`);return Buffer.from(await r.arrayBuffer());};
+const integrationPatch=config.localPatch?JSON.parse(fs.readFileSync(path.join(root,config.localPatch))):null;
+if(revision&&integrationPatch&&integrationPatch.baseCommit!==revision)throw Error('update_or_remove_library_patch_before_changing_revision');
 let lock;
 if(revision){
  if(!/^[a-f0-9]{40}$/.test(revision))throw Error('full_commit_required');
@@ -27,7 +29,8 @@ for(let i=0;i<lock.files.length;i+=5)await Promise.all(lock.files.slice(i,i+5).m
 }));
 if(revision){
  fs.writeFileSync(lockFile,JSON.stringify(lock,null,2)+'\n');
- config.verifiedCommit=revision;config.externalUrl=config.externalUrl||config.url;config.url=`/library-assets/${revision}/index.html`;
+ config.verifiedCommit=revision;config.externalUrl=config.externalUrl||config.url;
+ config.url=`/library-assets/${integrationPatch?.variant||revision}/index.html`;
  fs.writeFileSync(configFile,JSON.stringify(config,null,2)+'\n');
 }
 const receipt={commit:lock.commit,files:lock.files.length,downloaded,reused,ms:performance.now()-start,sourceModified:false,manualFork:false};

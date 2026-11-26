@@ -1,0 +1,2599 @@
+{
+  "version": "reviewed-catalogue-lessons/2026-11-26",
+  "assets": [
+    {
+      "assetSHA256": "5495fdcdddbe90459c0423d3c80407e51c6d42ed390cdca852318f02849f0ce7",
+      "reviewSource": {
+        "provenance": "experiments/cad-viewer/public/provenance.json",
+        "sha256": "a89d5006079079d0d94d8c1c9556a4f130e2b85fbc68824108067444567e6eff",
+        "method": "Original STEP part ranges; reviewed against official board photograph and published interface layout. Catalogue review, not automated image recognition."
+      },
+      "components": [
+        {
+          "id": "ram",
+          "label": "Memoria RAM",
+          "description": "Guarda temporalmente los datos que usan los programas mientras la placa está encendida.",
+          "translations": {
+            "es": {
+              "label": "Memoria RAM",
+              "description": "Guarda temporalmente los datos que usan los programas mientras la placa está encendida.",
+              "example": "Por ejemplo, mantiene en memoria las imágenes que está procesando una aplicación.",
+              "technicalReference": "LPDDR4X · capacidad dependiente de la variante / capacity varies by board variant"
+            },
+            "en": {
+              "label": "RAM",
+              "description": "Temporarily holds data used by running programs while the board is powered.",
+              "example": "For example, it holds images being processed by an application.",
+              "technicalReference": "LPDDR4X · capacidad dependiente de la variante / capacity varies by board variant"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ11. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:1",
+              "batch": 0,
+              "firstTriangle": 0,
+              "triangleCount": 180,
+              "part": "OBJ11"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ11",
+              "boundsMm": [
+                [
+                  25.900000208616255,
+                  34.20000011175871,
+                  1.6160000074785177
+                ],
+                [
+                  40.39999979138374,
+                  44.199999888241294,
+                  2.336000047497449
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "rp1",
+          "label": "Controlador de entrada y salida",
+          "description": "El chip RP1 gestiona interfaces que comunican el procesador con periféricos.",
+          "translations": {
+            "es": {
+              "label": "Controlador de entrada y salida",
+              "description": "El chip RP1 gestiona interfaces que comunican el procesador con periféricos.",
+              "example": "Por ejemplo, interviene en la comunicación con dispositivos USB.",
+              "technicalReference": "RP1"
+            },
+            "en": {
+              "label": "Input/output controller",
+              "description": "The RP1 chip handles interfaces between the processor and peripherals.",
+              "example": "For example, it participates in communication with USB devices.",
+              "technicalReference": "RP1"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ4365, OBJ4369. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:1",
+              "batch": 0,
+              "firstTriangle": 24431,
+              "triangleCount": 6126,
+              "part": "OBJ4365"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:2",
+              "batch": 1,
+              "firstTriangle": 2686,
+              "triangleCount": 5778,
+              "part": "OBJ4369"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ4365",
+              "boundsMm": [
+                [
+                  52.499999947845936,
+                  29.099999947845934,
+                  1.5459999983329302
+                ],
+                [
+                  64.50000005215406,
+                  41.100000052154066,
+                  2.53600005699694
+                ]
+              ]
+            },
+            {
+              "name": "OBJ4369",
+              "boundsMm": [
+                [
+                  54.9980271179229,
+                  30.600004850327966,
+                  2.5160000211223936
+                ],
+                [
+                  62.00190419703722,
+                  39.600001668930055,
+                  2.525999980852006
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "ethernet",
+          "label": "Puerto de red Ethernet",
+          "description": "Conecta la placa a una red mediante un cable Ethernet.",
+          "translations": {
+            "es": {
+              "label": "Puerto de red Ethernet",
+              "description": "Conecta la placa a una red mediante un cable Ethernet.",
+              "example": "Por ejemplo, permite enviar las mediciones de una estación a otra computadora.",
+              "technicalReference": "Gigabit Ethernet"
+            },
+            "en": {
+              "label": "Ethernet network port",
+              "description": "Connects the board to a network with an Ethernet cable.",
+              "example": "For example, it can send station measurements to another computer.",
+              "technicalReference": "Gigabit Ethernet"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ4351, OBJ4353, OBJ4355, OBJ4357. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:23",
+              "batch": 22,
+              "firstTriangle": 0,
+              "triangleCount": 334,
+              "part": "OBJ4351"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:24",
+              "batch": 23,
+              "firstTriangle": 0,
+              "triangleCount": 334,
+              "part": "OBJ4353"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 800,
+              "triangleCount": 1124,
+              "part": "OBJ4355"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 387327,
+              "triangleCount": 2426,
+              "part": "OBJ4357"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ4351",
+              "boundsMm": [
+                [
+                  87.14999994635582,
+                  13.849999909847977,
+                  2.6360000035390247
+                ],
+                [
+                  88.05000028014183,
+                  17.05000006183982,
+                  4.2359999631196255
+                ]
+              ]
+            },
+            {
+              "name": "OBJ4353",
+              "boundsMm": [
+                [
+                  87.14999994635582,
+                  3.4499999098479743,
+                  2.636000003539025
+                ],
+                [
+                  88.05000028014183,
+                  6.650000061839819,
+                  4.235999963119626
+                ]
+              ]
+            },
+            {
+              "name": "OBJ4355",
+              "boundsMm": [
+                [
+                  66.6300001591444,
+                  2.4650000929832454,
+                  -0.16400001303851697
+                ],
+                [
+                  87.8699998408556,
+                  18.034999907016758,
+                  14.456000250637532
+                ]
+              ]
+            },
+            {
+              "name": "OBJ4357",
+              "boundsMm": [
+                [
+                  66.44999971985817,
+                  2.2849996536970125,
+                  -0.6622664380222568
+                ],
+                [
+                  88.05000028014183,
+                  18.21500034630299,
+                  14.635999758601189
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "usb3",
+          "label": "Puertos USB 3.0",
+          "description": "Conectan periféricos USB a la placa. Esta pieza contiene dos puertos apilados.",
+          "translations": {
+            "es": {
+              "label": "Puertos USB 3.0",
+              "description": "Conectan periféricos USB a la placa. Esta pieza contiene dos puertos apilados.",
+              "example": "Por ejemplo, conectá un teclado o un dispositivo de almacenamiento compatible.",
+              "technicalReference": "USB 3.0 · 2 puertos / ports"
+            },
+            "en": {
+              "label": "USB 3.0 ports",
+              "description": "Connect USB peripherals to the board. This assembly contains two stacked ports.",
+              "example": "For example, connect a keyboard or a compatible storage device.",
+              "technicalReference": "USB 3.0 · 2 puertos / ports"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3725_1, OBJ3725_2, OBJ3725_3. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 211488,
+              "triangleCount": 23292,
+              "part": "OBJ3725_1"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:20",
+              "batch": 19,
+              "firstTriangle": 0,
+              "triangleCount": 21772,
+              "part": "OBJ3725_2"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 21904,
+              "triangleCount": 6612,
+              "part": "OBJ3725_3"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3725_1",
+              "boundsMm": [
+                [
+                  70.47000011354685,
+                  21.75010520861625,
+                  -0.16399979406595336
+                ],
+                [
+                  87.99999995082617,
+                  36.25010479138374,
+                  17.525999864548442
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3725_2",
+              "boundsMm": [
+                [
+                  70.75999999344349,
+                  22.450104950826173,
+                  1.3360004518032047
+                ],
+                [
+                  87.80000029057264,
+                  35.55010504917384,
+                  16.52600016629696
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3725_3",
+              "boundsMm": [
+                [
+                  71.95999981760978,
+                  24.14010478080392,
+                  4.785580618292093
+                ],
+                [
+                  87.3099998190999,
+                  33.860105219196086,
+                  15.290999842792749
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "usb2",
+          "label": "Puertos USB 2.0",
+          "description": "Conectan periféricos USB a la placa. Esta pieza contiene dos puertos apilados.",
+          "translations": {
+            "es": {
+              "label": "Puertos USB 2.0",
+              "description": "Conectan periféricos USB a la placa. Esta pieza contiene dos puertos apilados.",
+              "example": "Por ejemplo, conectá un teclado o un dispositivo de almacenamiento compatible.",
+              "technicalReference": "USB 2.0 · 2 puertos / ports"
+            },
+            "en": {
+              "label": "USB 2.0 ports",
+              "description": "Connect USB peripherals to the board. This assembly contains two stacked ports.",
+              "example": "For example, connect a keyboard or a compatible storage device.",
+              "technicalReference": "USB 2.0 · 2 puertos / ports"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3733_1, OBJ3733_2, OBJ3733_3. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 28516,
+              "triangleCount": 1128,
+              "part": "OBJ3733_1"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 234780,
+              "triangleCount": 25267,
+              "part": "OBJ3733_2"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:1",
+              "batch": 0,
+              "firstTriangle": 10436,
+              "triangleCount": 12519,
+              "part": "OBJ3733_3"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3733_1",
+              "boundsMm": [
+                [
+                  78.9268892528925,
+                  43.02468047100305,
+                  4.744020714518783
+                ],
+                [
+                  85.286131621382,
+                  50.97468093591928,
+                  14.70100037297344
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3733_2",
+              "boundsMm": [
+                [
+                  70.32999957822895,
+                  39.74968091207742,
+                  -0.16597918691003608
+                ],
+                [
+                  87.77999927201009,
+                  54.24968049484491,
+                  17.361001069751737
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3733_3",
+              "boundsMm": [
+                [
+                  70.729998898736,
+                  40.69968069526553,
+                  1.3360008179221123
+                ],
+                [
+                  87.2799991900537,
+                  53.299680711656805,
+                  16.486001159158704
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "hdmi-0",
+          "label": "Salida micro-HDMI 0",
+          "description": "Envía imagen y audio a una pantalla mediante un cable micro-HDMI compatible.",
+          "translations": {
+            "es": {
+              "label": "Salida micro-HDMI 0",
+              "description": "Envía imagen y audio a una pantalla mediante un cable micro-HDMI compatible.",
+              "example": "Por ejemplo, usala para ver el escritorio de la placa en un monitor.",
+              "technicalReference": "HDMI0"
+            },
+            "en": {
+              "label": "Micro-HDMI 0 output",
+              "description": "Sends video and audio to a display using a compatible micro-HDMI cable.",
+              "example": "For example, use it to show the board desktop on a monitor.",
+              "technicalReference": "HDMI0"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ5085_1, OBJ5085_2, OBJ5085_3. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 414851,
+              "triangleCount": 15858,
+              "part": "OBJ5085_1"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 5952,
+              "triangleCount": 3764,
+              "part": "OBJ5085_2"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 40670,
+              "triangleCount": 418,
+              "part": "OBJ5085_3"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ5085_1",
+              "boundsMm": [
+                [
+                  22.20355329029262,
+                  -1.6303499775491654,
+                  0.2354999728649853
+                ],
+                [
+                  29.39644670970738,
+                  6.869649960517884,
+                  4.681946635633708
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5085_2",
+              "boundsMm": [
+                [
+                  22.579999928548933,
+                  0.669650015279651,
+                  0.5855000768005859
+                ],
+                [
+                  29.02000007145107,
+                  6.519650089412928,
+                  4.305499997377398
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5085_3",
+              "boundsMm": [
+                [
+                  23.890000008232892,
+                  0.719650046758354,
+                  2.56549999040179
+                ],
+                [
+                  27.70999999176711,
+                  3.5196500633358956,
+                  3.205500003337862
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "hdmi-1",
+          "label": "Salida micro-HDMI 1",
+          "description": "Envía imagen y audio a una pantalla mediante un cable micro-HDMI compatible.",
+          "translations": {
+            "es": {
+              "label": "Salida micro-HDMI 1",
+              "description": "Envía imagen y audio a una pantalla mediante un cable micro-HDMI compatible.",
+              "example": "Por ejemplo, usala para ver el escritorio de la placa en un monitor.",
+              "technicalReference": "HDMI1"
+            },
+            "en": {
+              "label": "Micro-HDMI 1 output",
+              "description": "Sends video and audio to a display using a compatible micro-HDMI cable.",
+              "example": "For example, use it to show the board desktop on a monitor.",
+              "technicalReference": "HDMI1"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ5053_1, OBJ5053_2, OBJ5053_3. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 398993,
+              "triangleCount": 15858,
+              "part": "OBJ5053_1"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 2013,
+              "triangleCount": 3764,
+              "part": "OBJ5053_2"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 40252,
+              "triangleCount": 418,
+              "part": "OBJ5053_3"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ5053_1",
+              "boundsMm": [
+                [
+                  35.60355329029262,
+                  -1.6303499775491654,
+                  0.2354999728649853
+                ],
+                [
+                  42.79644670970738,
+                  6.869649960517884,
+                  4.681946635633708
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5053_2",
+              "boundsMm": [
+                [
+                  35.979999928548935,
+                  0.669650015279651,
+                  0.5855000768005859
+                ],
+                [
+                  42.42000007145107,
+                  6.519650089412928,
+                  4.305499997377398
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5053_3",
+              "boundsMm": [
+                [
+                  37.290000008232894,
+                  0.719650046758354,
+                  2.56549999040179
+                ],
+                [
+                  41.10999999176711,
+                  3.5196500633358956,
+                  3.205500003337862
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "usb-c-power",
+          "label": "Entrada de alimentación USB-C",
+          "description": "Recibe la energía para alimentar la Raspberry Pi 5.",
+          "translations": {
+            "es": {
+              "label": "Entrada de alimentación USB-C",
+              "description": "Recibe la energía para alimentar la Raspberry Pi 5.",
+              "example": "Por ejemplo, conectá la fuente de alimentación compatible antes de iniciar el sistema.",
+              "technicalReference": "USB-C · alimentación / power"
+            },
+            "en": {
+              "label": "USB-C power input",
+              "description": "Receives the power that runs the Raspberry Pi 5.",
+              "example": "For example, connect a compatible power supply before starting the system.",
+              "technicalReference": "USB-C · alimentación / power"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ5141, OBJ5143. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 9802,
+              "triangleCount": 1264,
+              "part": "OBJ5141"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 431349,
+              "triangleCount": 836,
+              "part": "OBJ5143"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ5141",
+              "boundsMm": [
+                [
+                  7.050000064820051,
+                  -0.30000002253800634,
+                  0.4360000154599547
+                ],
+                [
+                  15.349999935179948,
+                  6.149999847263098,
+                  4.265999958723784
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5143",
+              "boundsMm": [
+                [
+                  6.7299999564886095,
+                  -1.2000000070780517,
+                  0.33599995250254866
+                ],
+                [
+                  15.670000043511392,
+                  6.120000084489584,
+                  4.595999910369516
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "gpio",
+          "label": "Conector GPIO",
+          "description": "Expone alimentación, tierra y señales para comunicar la placa con circuitos externos.",
+          "translations": {
+            "es": {
+              "label": "Conector GPIO",
+              "description": "Expone alimentación, tierra y señales para comunicar la placa con circuitos externos.",
+              "example": "Por ejemplo, conectá un sensor respetando el pinout y sus niveles eléctricos.",
+              "technicalReference": "GPIO · 40 contactos / contacts"
+            },
+            "en": {
+              "label": "GPIO header",
+              "description": "Exposes power, ground and signals for communicating with external circuits.",
+              "example": "For example, connect a sensor according to the pinout and its electrical levels.",
+              "technicalReference": "GPIO · 40 contactos / contacts"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3741, OBJ3745, OBJ3747, OBJ3749, OBJ3751, OBJ3753, OBJ3755, OBJ3757, OBJ3759, OBJ3761, OBJ3763, OBJ3765, OBJ3767, OBJ3769, OBJ3771, OBJ3773, OBJ3775, OBJ3777, OBJ3779, OBJ3781, OBJ3783, OBJ3785, OBJ3787, OBJ3789, OBJ3791, OBJ3793, OBJ3795, OBJ3797, OBJ3799, OBJ3801, OBJ3803, OBJ3805, OBJ3807, OBJ3809, OBJ3811, OBJ3813, OBJ3815, OBJ3817, OBJ3819, OBJ3821, OBJ3823. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 504,
+              "triangleCount": 244,
+              "part": "OBJ3741"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29644,
+              "triangleCount": 36,
+              "part": "OBJ3745"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29680,
+              "triangleCount": 36,
+              "part": "OBJ3747"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29716,
+              "triangleCount": 36,
+              "part": "OBJ3749"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29752,
+              "triangleCount": 36,
+              "part": "OBJ3751"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29788,
+              "triangleCount": 36,
+              "part": "OBJ3753"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29824,
+              "triangleCount": 36,
+              "part": "OBJ3755"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29860,
+              "triangleCount": 36,
+              "part": "OBJ3757"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29896,
+              "triangleCount": 36,
+              "part": "OBJ3759"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29932,
+              "triangleCount": 36,
+              "part": "OBJ3761"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 29968,
+              "triangleCount": 36,
+              "part": "OBJ3763"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30004,
+              "triangleCount": 36,
+              "part": "OBJ3765"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30040,
+              "triangleCount": 36,
+              "part": "OBJ3767"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30076,
+              "triangleCount": 36,
+              "part": "OBJ3769"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30112,
+              "triangleCount": 36,
+              "part": "OBJ3771"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30148,
+              "triangleCount": 36,
+              "part": "OBJ3773"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30184,
+              "triangleCount": 36,
+              "part": "OBJ3775"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30220,
+              "triangleCount": 36,
+              "part": "OBJ3777"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30256,
+              "triangleCount": 36,
+              "part": "OBJ3779"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30292,
+              "triangleCount": 36,
+              "part": "OBJ3781"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30328,
+              "triangleCount": 36,
+              "part": "OBJ3783"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30364,
+              "triangleCount": 36,
+              "part": "OBJ3785"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30400,
+              "triangleCount": 36,
+              "part": "OBJ3787"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30436,
+              "triangleCount": 36,
+              "part": "OBJ3789"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30472,
+              "triangleCount": 36,
+              "part": "OBJ3791"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30508,
+              "triangleCount": 36,
+              "part": "OBJ3793"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30544,
+              "triangleCount": 36,
+              "part": "OBJ3795"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30580,
+              "triangleCount": 36,
+              "part": "OBJ3797"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30616,
+              "triangleCount": 36,
+              "part": "OBJ3799"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30652,
+              "triangleCount": 36,
+              "part": "OBJ3801"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30688,
+              "triangleCount": 36,
+              "part": "OBJ3803"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30724,
+              "triangleCount": 36,
+              "part": "OBJ3805"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30760,
+              "triangleCount": 36,
+              "part": "OBJ3807"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30796,
+              "triangleCount": 36,
+              "part": "OBJ3809"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30832,
+              "triangleCount": 36,
+              "part": "OBJ3811"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30868,
+              "triangleCount": 36,
+              "part": "OBJ3813"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30904,
+              "triangleCount": 36,
+              "part": "OBJ3815"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30940,
+              "triangleCount": 36,
+              "part": "OBJ3817"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 30976,
+              "triangleCount": 36,
+              "part": "OBJ3819"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 31012,
+              "triangleCount": 36,
+              "part": "OBJ3821"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 31048,
+              "triangleCount": 36,
+              "part": "OBJ3823"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3741",
+              "boundsMm": [
+                [
+                  7.1000003069639215,
+                  49.959999984130256,
+                  1.3359999999999967
+                ],
+                [
+                  57.89999969303608,
+                  55.040000015869744,
+                  3.8760000158697334
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3745",
+              "boundsMm": [
+                [
+                  53.76999944448471,
+                  50.91000000014902,
+                  -0.5640000320374996
+                ],
+                [
+                  54.41000059247017,
+                  51.54999998398126,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3747",
+              "boundsMm": [
+                [
+                  51.22999966144562,
+                  50.91000000014902,
+                  -0.5640000320374996
+                ],
+                [
+                  51.870000809431076,
+                  51.54999998398126,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3749",
+              "boundsMm": [
+                [
+                  48.689999878406525,
+                  50.91000000014902,
+                  -0.5640000320374996
+                ],
+                [
+                  49.329999163746834,
+                  51.54999998398126,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3751",
+              "boundsMm": [
+                [
+                  46.15000009536743,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  46.790000312030315,
+                  51.54999998398126,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3753",
+              "boundsMm": [
+                [
+                  43.61000031232834,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  44.24999959766865,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3755",
+              "boundsMm": [
+                [
+                  41.06999959796667,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  41.709999814629555,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3757",
+              "boundsMm": [
+                [
+                  38.52999981492758,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  39.17000003159046,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3759",
+              "boundsMm": [
+                [
+                  35.990000031888485,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  36.62999978289008,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3761",
+              "boundsMm": [
+                [
+                  33.45000001601875,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  34.08999999985099,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3763",
+              "boundsMm": [
+                [
+                  30.91000000014901,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  31.54999998398125,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3765",
+              "boundsMm": [
+                [
+                  28.37000021710992,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  29.009999968111515,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3767",
+              "boundsMm": [
+                [
+                  25.82999996840954,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  26.470000185072422,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3769",
+              "boundsMm": [
+                [
+                  23.290000185370445,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  23.93000040203333,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3771",
+              "boundsMm": [
+                [
+                  20.750000402331352,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  21.38999968767166,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3773",
+              "boundsMm": [
+                [
+                  18.209999687969685,
+                  50.91000000014901,
+                  -0.5640000320374996
+                ],
+                [
+                  18.84999990463257,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3775",
+              "boundsMm": [
+                [
+                  15.670000836253168,
+                  50.910000000149005,
+                  -0.5640000320374996
+                ],
+                [
+                  16.310000121593475,
+                  51.54999998398125,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3777",
+              "boundsMm": [
+                [
+                  13.129999190568926,
+                  50.910000000149005,
+                  -0.5640000320374996
+                ],
+                [
+                  13.770000338554384,
+                  51.549999983981245,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3779",
+              "boundsMm": [
+                [
+                  10.589999407529833,
+                  50.910000000149005,
+                  -0.5640000320374996
+                ],
+                [
+                  11.230000555515291,
+                  51.549999983981245,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3781",
+              "boundsMm": [
+                [
+                  8.04999962449074,
+                  50.910000000149005,
+                  -0.5640000320374996
+                ],
+                [
+                  8.690000772476198,
+                  51.549999983981245,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3783",
+              "boundsMm": [
+                [
+                  56.309999227523804,
+                  53.450000016018755,
+                  -0.5640000320374996
+                ],
+                [
+                  56.95000037550926,
+                  54.089999999850995,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3785",
+              "boundsMm": [
+                [
+                  53.76999944448471,
+                  53.450000016018755,
+                  -0.5640000320374996
+                ],
+                [
+                  54.41000059247017,
+                  54.089999999850995,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3787",
+              "boundsMm": [
+                [
+                  51.22999966144562,
+                  53.450000016018755,
+                  -0.5640000320374996
+                ],
+                [
+                  51.870000809431076,
+                  54.089999999850995,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3789",
+              "boundsMm": [
+                [
+                  48.689999878406525,
+                  53.450000016018755,
+                  -0.5640000320374996
+                ],
+                [
+                  49.329999163746834,
+                  54.089999999850995,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3791",
+              "boundsMm": [
+                [
+                  46.15000009536743,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  46.790000312030315,
+                  54.089999999850995,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3793",
+              "boundsMm": [
+                [
+                  43.61000031232834,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  44.24999959766865,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3795",
+              "boundsMm": [
+                [
+                  41.06999959796667,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  41.709999814629555,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3797",
+              "boundsMm": [
+                [
+                  38.52999981492758,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  39.17000003159046,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3799",
+              "boundsMm": [
+                [
+                  35.990000031888485,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  36.62999978289008,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3801",
+              "boundsMm": [
+                [
+                  33.45000001601875,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  34.08999999985099,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3803",
+              "boundsMm": [
+                [
+                  30.91000000014901,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  31.54999998398125,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3805",
+              "boundsMm": [
+                [
+                  28.37000021710992,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  29.009999968111515,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3807",
+              "boundsMm": [
+                [
+                  25.82999996840954,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  26.470000185072422,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3809",
+              "boundsMm": [
+                [
+                  23.290000185370445,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  23.93000040203333,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3811",
+              "boundsMm": [
+                [
+                  20.750000402331352,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  21.38999968767166,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3813",
+              "boundsMm": [
+                [
+                  18.209999687969685,
+                  53.45000001601875,
+                  -0.5640000320374996
+                ],
+                [
+                  18.84999990463257,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3815",
+              "boundsMm": [
+                [
+                  15.670000836253168,
+                  53.45000001601874,
+                  -0.5640000320374996
+                ],
+                [
+                  16.310000121593475,
+                  54.08999999985099,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3817",
+              "boundsMm": [
+                [
+                  13.129999190568926,
+                  53.45000001601874,
+                  -0.5640000320374996
+                ],
+                [
+                  13.770000338554384,
+                  54.08999999985098,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3819",
+              "boundsMm": [
+                [
+                  10.589999407529833,
+                  53.45000001601874,
+                  -0.5640000320374996
+                ],
+                [
+                  11.230000555515291,
+                  54.08999999985098,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3821",
+              "boundsMm": [
+                [
+                  8.04999962449074,
+                  53.45000001601874,
+                  -0.5640000320374996
+                ],
+                [
+                  8.690000772476198,
+                  54.08999999985098,
+                  9.875999835193154
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3823",
+              "boundsMm": [
+                [
+                  56.309999227523804,
+                  50.91000000014902,
+                  -0.5640000320374996
+                ],
+                [
+                  56.95000037550926,
+                  51.54999998398126,
+                  9.875999835193154
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "wireless-shield",
+          "label": "Radio Wi-Fi y Bluetooth",
+          "description": "Este blindaje cubre la sección de comunicaciones inalámbricas. El metal visible es una cubierta, no el chip de radio.",
+          "translations": {
+            "es": {
+              "label": "Radio Wi-Fi y Bluetooth",
+              "description": "Este blindaje cubre la sección de comunicaciones inalámbricas. El metal visible es una cubierta, no el chip de radio.",
+              "example": "Por ejemplo, Wi-Fi permite intercambiar datos sin un cable de red.",
+              "technicalReference": "Blindaje del módulo inalámbrico / wireless section shield"
+            },
+            "en": {
+              "label": "Wi-Fi and Bluetooth radio",
+              "description": "This shield covers the wireless communications section. The visible metal is a cover, not the radio chip.",
+              "example": "For example, Wi-Fi allows data exchange without a network cable.",
+              "technicalReference": "Blindaje del módulo inalámbrico / wireless section shield"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3957. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:4",
+              "batch": 3,
+              "firstTriangle": 90464,
+              "triangleCount": 156,
+              "part": "OBJ3957"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3957",
+              "boundsMm": [
+                [
+                  6.899999859929085,
+                  36.19999986588955,
+                  1.3359999999999972
+                ],
+                [
+                  17.700000140070912,
+                  49.200000134110454,
+                  3.036000022538004
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "microsd",
+          "label": "Ranura microSD",
+          "description": "Aloja una tarjeta microSD para almacenar el sistema y archivos. Está en la cara inferior.",
+          "translations": {
+            "es": {
+              "label": "Ranura microSD",
+              "description": "Aloja una tarjeta microSD para almacenar el sistema y archivos. Está en la cara inferior.",
+              "example": "Por ejemplo, insertá una tarjeta preparada con Raspberry Pi OS antes de arrancar.",
+              "technicalReference": "microSD"
+            },
+            "en": {
+              "label": "microSD slot",
+              "description": "Holds a microSD card for the operating system and files. It is on the underside.",
+              "example": "For example, insert a card prepared with Raspberry Pi OS before booting.",
+              "technicalReference": "microSD"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ8531, OBJ8533, OBJ8535. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:8",
+              "batch": 7,
+              "firstTriangle": 44840,
+              "triangleCount": 12,
+              "part": "OBJ8531"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:6",
+              "batch": 5,
+              "firstTriangle": 11846,
+              "triangleCount": 1276,
+              "part": "OBJ8533"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:3",
+              "batch": 2,
+              "firstTriangle": 433405,
+              "triangleCount": 6268,
+              "part": "OBJ8535"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ8531",
+              "boundsMm": [
+                [
+                  10.549999870359898,
+                  32.458084135800604,
+                  -1.2000000226649428
+                ],
+                [
+                  12.749999858438969,
+                  33.051915898472075,
+                  -0.859999936666616
+                ]
+              ]
+            },
+            {
+              "name": "OBJ8533",
+              "boundsMm": [
+                [
+                  3.2500000474974504,
+                  22.25999996393919,
+                  -1.2699999736028702
+                ],
+                [
+                  13.500000447034836,
+                  33.91000019714237,
+                  3.4332002671340566e-08
+                ]
+              ]
+            },
+            {
+              "name": "OBJ8535",
+              "boundsMm": [
+                [
+                  2.249999999999999,
+                  22.11000021874905,
+                  -1.4199999516236574
+                ],
+                [
+                  13.65000019222498,
+                  34.05999994233251,
+                  3.433199998644274e-08
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "mipi-0",
+          "label": "Conector de cámara o pantalla 0",
+          "description": "Conecta una cámara o pantalla compatible mediante un cable flexible MIPI.",
+          "translations": {
+            "es": {
+              "label": "Conector de cámara o pantalla 0",
+              "description": "Conecta una cámara o pantalla compatible mediante un cable flexible MIPI.",
+              "example": "Por ejemplo, una cámara puede capturar imágenes para un proyecto de visión.",
+              "technicalReference": "CAM/DISP0 · MIPI"
+            },
+            "en": {
+              "label": "Camera or display connector 0",
+              "description": "Connects a compatible camera or display using a MIPI ribbon cable.",
+              "example": "For example, a camera can capture images for a vision project.",
+              "technicalReference": "CAM/DISP0 · MIPI"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3633, OBJ3639. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:18",
+              "batch": 17,
+              "firstTriangle": 2732,
+              "triangleCount": 2732,
+              "part": "OBJ3633"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:19",
+              "batch": 18,
+              "firstTriangle": 452,
+              "triangleCount": 452,
+              "part": "OBJ3639"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3633",
+              "boundsMm": [
+                [
+                  47.85499997448177,
+                  0.49999953806400405,
+                  1.436000010430812
+                ],
+                [
+                  50.15500002551825,
+                  16.499999832361937,
+                  5.285999989569188
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3639",
+              "boundsMm": [
+                [
+                  47.10499998696149,
+                  0.14500013262033762,
+                  1.6359999569728962
+                ],
+                [
+                  50.10500001303852,
+                  16.844999703466897,
+                  5.286000043027103
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "mipi-1",
+          "label": "Conector de cámara o pantalla 1",
+          "description": "Conecta una cámara o pantalla compatible mediante un cable flexible MIPI.",
+          "translations": {
+            "es": {
+              "label": "Conector de cámara o pantalla 1",
+              "description": "Conecta una cámara o pantalla compatible mediante un cable flexible MIPI.",
+              "example": "Por ejemplo, una cámara puede capturar imágenes para un proyecto de visión.",
+              "technicalReference": "CAM/DISP1 · MIPI"
+            },
+            "en": {
+              "label": "Camera or display connector 1",
+              "description": "Connects a compatible camera or display using a MIPI ribbon cable.",
+              "example": "For example, a camera can capture images for a vision project.",
+              "technicalReference": "CAM/DISP1 · MIPI"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ3525, OBJ3531. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:18",
+              "batch": 17,
+              "firstTriangle": 0,
+              "triangleCount": 2732,
+              "part": "OBJ3525"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:19",
+              "batch": 18,
+              "firstTriangle": 0,
+              "triangleCount": 452,
+              "part": "OBJ3531"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ3525",
+              "boundsMm": [
+                [
+                  54.054999974481774,
+                  0.49999953806400405,
+                  1.436000010430812
+                ],
+                [
+                  56.35500002551825,
+                  16.499999832361937,
+                  5.285999989569188
+                ]
+              ]
+            },
+            {
+              "name": "OBJ3531",
+              "boundsMm": [
+                [
+                  53.30499998696149,
+                  0.14500013262033762,
+                  1.6359999569728962
+                ],
+                [
+                  56.30500001303852,
+                  16.844999703466897,
+                  5.286000043027103
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "pcie",
+          "label": "Conector PCI Express",
+          "description": "Expone la interfaz PCIe para conectar periféricos mediante un adaptador compatible.",
+          "translations": {
+            "es": {
+              "label": "Conector PCI Express",
+              "description": "Expone la interfaz PCIe para conectar periféricos mediante un adaptador compatible.",
+              "example": "Por ejemplo, un adaptador M.2 permite utilizar almacenamiento compatible.",
+              "technicalReference": "PCIe 2.0 x1"
+            },
+            "en": {
+              "label": "PCI Express connector",
+              "description": "Exposes the PCIe interface for peripherals through a compatible adapter.",
+              "example": "For example, an M.2 adapter can connect compatible storage.",
+              "technicalReference": "PCIe 2.0 x1"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ5005, OBJ5009. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:18",
+              "batch": 17,
+              "firstTriangle": 5464,
+              "triangleCount": 2184,
+              "part": "OBJ5005"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:19",
+              "batch": 18,
+              "firstTriangle": 904,
+              "triangleCount": 452,
+              "part": "OBJ5009"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ5005",
+              "boundsMm": [
+                [
+                  1.85499997448176,
+                  23.499999538064003,
+                  1.4360000104308106
+                ],
+                [
+                  4.155000025518241,
+                  36.499999806284904,
+                  5.285999989569186
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5009",
+              "boundsMm": [
+                [
+                  1.1049999869614828,
+                  23.145000132620336,
+                  1.6359999569728947
+                ],
+                [
+                  4.105000013038517,
+                  36.84500014305115,
+                  5.2860000430271015
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        },
+        {
+          "id": "power-button",
+          "label": "Botón de encendido",
+          "description": "Permite controlar el encendido y solicitar un apagado al sistema.",
+          "translations": {
+            "es": {
+              "label": "Botón de encendido",
+              "description": "Permite controlar el encendido y solicitar un apagado al sistema.",
+              "example": "Por ejemplo, usalo para encender de nuevo una placa alimentada que está apagada.",
+              "technicalReference": "Pulsador de alimentación / power button"
+            },
+            "en": {
+              "label": "Power button",
+              "description": "Controls power-on and can request an operating-system shutdown.",
+              "example": "For example, use it to restart a powered board that is shut down.",
+              "technicalReference": "Pulsador de alimentación / power button"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Reviewed official photograph/layout and original CAD solids: OBJ5147_1, OBJ5147_2, OBJ5147_3. The CAD labels are anonymous: this is a documented catalogue association, not a semantic STEP label or photo inference.",
+          "sources": [
+            {
+              "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+              "locator": "Official specifications and board photograph",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "geometryRanges": [
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:26",
+              "batch": 25,
+              "firstTriangle": 0,
+              "triangleCount": 400,
+              "part": "OBJ5147_1"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:7",
+              "batch": 6,
+              "firstTriangle": 2292,
+              "triangleCount": 106,
+              "part": "OBJ5147_2"
+            },
+            {
+              "sourceNodeId": "5495fdcdddbe9045:node:27",
+              "batch": 26,
+              "firstTriangle": 0,
+              "triangleCount": 66,
+              "part": "OBJ5147_3"
+            }
+          ],
+          "sourceParts": [
+            {
+              "name": "OBJ5147_1",
+              "boundsMm": [
+                [
+                  1.1600000060629096,
+                  11.7000000404194,
+                  1.3359999999999992
+                ],
+                [
+                  1.6399999939370902,
+                  14.899999959580601,
+                  2.3360000474974507
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5147_2",
+              "boundsMm": [
+                [
+                  0.1599999876692893,
+                  12.29999995250255,
+                  1.3487000002976266
+                ],
+                [
+                  1.17999999828171,
+                  14.300000047497452,
+                  2.323299950793385
+                ]
+              ]
+            },
+            {
+              "name": "OBJ5147_3",
+              "boundsMm": [
+                [
+                  1.1799999982817095,
+                  11.7000000404194,
+                  1.3359999999999992
+                ],
+                [
+                  1.6200000017182903,
+                  14.899999959580601,
+                  2.3360000474974507
+                ]
+              ]
+            }
+          ],
+          "evidence": {
+            "es": {
+              "identity": "Función documentada por Raspberry Pi; pieza cotejada con su fotografía oficial.",
+              "association": "Sólidos originales del STEP, delimitados por los rangos de triángulos del conversor. Asociación revisada del catálogo; no reconocimiento por foto."
+            },
+            "en": {
+              "identity": "Function documented by Raspberry Pi; part checked against its official photograph.",
+              "association": "Original STEP solids, delimited by the converter triangle ranges. Reviewed catalogue association, not photo recognition."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "assetSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+      "reviewSource": {
+        "method": "Exact STEP designator plus official Arduino topology table and reset description; no position inference."
+      },
+      "components": [
+        {
+          "id": "dl1",
+          "label": "LED RGB",
+          "description": "Emite luz roja, verde y azul controlable por el programa.",
+          "translations": {
+            "es": {
+              "label": "LED RGB",
+              "description": "Emite luz roja, verde y azul controlable por el programa.",
+              "example": "Por ejemplo, mostrala verde cuando una medición está dentro del intervalo esperado.",
+              "technicalReference": "DL1 · LED RGB"
+            },
+            "en": {
+              "label": "RGB LED",
+              "description": "Emits red, green and blue light controlled by the program.",
+              "example": "For example, show green when a reading is within the expected range.",
+              "technicalReference": "DL1 · LED RGB"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Exact CAD product path PCB/DL1 matches the official topology table or reset definition.",
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+              "locator": "Board topology / resets · DL1",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "selector": {
+            "path": [
+              "PCB",
+              "DL1"
+            ]
+          }
+        },
+        {
+          "id": "dl2",
+          "label": "LED de señal SCK",
+          "description": "Es el indicador vinculado a la señal de reloj serie SCK de la placa.",
+          "translations": {
+            "es": {
+              "label": "LED de señal SCK",
+              "description": "Es el indicador vinculado a la señal de reloj serie SCK de la placa.",
+              "example": "Por ejemplo, sirve para observar actividad de la señal; no es el indicador de alimentación.",
+              "technicalReference": "DL2 · LED SCK"
+            },
+            "en": {
+              "label": "SCK signal LED",
+              "description": "This indicator is connected to the board serial clock signal SCK.",
+              "example": "For example, it can show signal activity; it is not the power indicator.",
+              "technicalReference": "DL2 · LED SCK"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Exact CAD product path PCB/DL2 matches the official topology table or reset definition.",
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+              "locator": "Board topology / resets · DL2",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "selector": {
+            "path": [
+              "PCB",
+              "DL2"
+            ]
+          }
+        },
+        {
+          "id": "dl3",
+          "label": "LED de alimentación",
+          "description": "La luz verde indica presencia de alimentación en la placa.",
+          "translations": {
+            "es": {
+              "label": "LED de alimentación",
+              "description": "La luz verde indica presencia de alimentación en la placa.",
+              "example": "Por ejemplo, es una primera comprobación al conectar el cable USB.",
+              "technicalReference": "DL3 · Power LED (green)"
+            },
+            "en": {
+              "label": "Power LED",
+              "description": "The green light indicates board power.",
+              "example": "For example, check it when connecting the USB cable.",
+              "technicalReference": "DL3 · Power LED (green)"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Exact CAD product path PCB/DL3 matches the official topology table or reset definition.",
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+              "locator": "Board topology / resets · DL3",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "selector": {
+            "path": [
+              "PCB",
+              "DL3"
+            ]
+          }
+        },
+        {
+          "id": "d2",
+          "label": "Diodo Schottky",
+          "description": "Es un diodo de la red de alimentación: deja pasar corriente principalmente en un sentido.",
+          "translations": {
+            "es": {
+              "label": "Diodo Schottky",
+              "description": "Es un diodo de la red de alimentación: deja pasar corriente principalmente en un sentido.",
+              "example": "Por ejemplo, ayuda a comprender por qué las rutas de alimentación no equivalen a un cable directo.",
+              "technicalReference": "D2 · PMEG6020AELRX"
+            },
+            "en": {
+              "label": "Schottky diode",
+              "description": "This diode is part of the power network and mainly conducts current in one direction.",
+              "example": "For example, it illustrates why power paths are not equivalent to a direct wire.",
+              "technicalReference": "D2 · PMEG6020AELRX"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Exact CAD product path PCB/D2 matches the official topology table or reset definition.",
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=7",
+              "locator": "Board topology / resets · D2",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "selector": {
+            "path": [
+              "PCB",
+              "D2"
+            ]
+          }
+        },
+        {
+          "id": "pb1",
+          "label": "Botón de reinicio",
+          "description": "Reinicia el hardware de la placa para volver a ejecutar el programa.",
+          "translations": {
+            "es": {
+              "label": "Botón de reinicio",
+              "description": "Reinicia el hardware de la placa para volver a ejecutar el programa.",
+              "example": "Por ejemplo, pulsalo para comenzar otra vez una medición desde el inicio.",
+              "technicalReference": "PB1 · Reset"
+            },
+            "en": {
+              "label": "Reset button",
+              "description": "Resets the board hardware so the program starts again.",
+              "example": "For example, press it to restart a measurement from the beginning.",
+              "technicalReference": "PB1 · Reset"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "Exact CAD product path PCB/PB1 matches the official topology table or reset definition.",
+          "sources": [
+            {
+              "url": "https://docs.arduino.cc/resources/datasheets/ABX00083-datasheet.pdf#page=9",
+              "locator": "Board topology / resets · PB1",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": [],
+          "selector": {
+            "path": [
+              "PCB",
+              "PB1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "assetSHA256": "ae5fb9077a319a8b379a695ed690315314e6e100904baade487369d0e68482ce",
+      "reviewSource": {
+        "method": "Existing independently checked ECAD/MCAD association; function read in official schematic page 14."
+      },
+      "components": [
+        {
+          "id": "ecad-u21",
+          "label": "Interruptor de alimentación del acelerador",
+          "description": "Activa o interrumpe la alimentación de la sección TPU mediante la señal TPU_POW_EN.",
+          "translations": {
+            "es": {
+              "label": "Interruptor de alimentación del acelerador",
+              "description": "Activa o interrumpe la alimentación de la sección TPU mediante la señal TPU_POW_EN.",
+              "example": "Por ejemplo, el firmware puede controlar cuándo alimentar el acelerador.",
+              "technicalReference": "U21 · SIP32408DNP-T1-GE4"
+            },
+            "en": {
+              "label": "Accelerator power switch",
+              "description": "Enables or disconnects the TPU section supply using TPU_POW_EN.",
+              "example": "For example, firmware can control when the accelerator is powered.",
+              "technicalReference": "U21 · SIP32408DNP-T1-GE4"
+            }
+          },
+          "status": "documented",
+          "educationStatus": "documented_function_bilingual",
+          "educationPolicy": "reviewed-catalogue-lessons/2026-11-26",
+          "bindingStatus": "bound",
+          "bindingEvidence": "ECAD/MCAD frame verified; body extent residual 0.000001 mm; 110 held-out bodies",
+          "sources": [
+            {
+              "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/Coral-Dev-Board-Micro-Altium.zip",
+              "locator": "PCB/Coral Dev Board Micro.PcbDoc Â· U21",
+              "status": "publisher_ecad_registered_geometry",
+              "sha256": "0d0d0564973f11c943dc64d685fc64ff6db95e7578f9e8bdd9065c461fc84c58"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/google-coral/electricals/7250d49a08a296fb9aaabb2415b6c0e73355914a/dev_board_micro/Coral-Dev-Board-Micro-schematic.pdf#page=14",
+              "locator": "14 TPU.SchDoc · TPU Power Enable Load Switch",
+              "status": "reviewed_official_document"
+            }
+          ],
+          "facts": []
+        }
+      ]
+    }
+  ]
+}

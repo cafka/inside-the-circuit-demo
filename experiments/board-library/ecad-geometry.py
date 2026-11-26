@@ -76,19 +76,23 @@ def read_glb(file):
  def accessor(index):
   a=g['accessors'][index];v=g['bufferViews'][a['bufferView']];dtype={5126:'<f4',5125:'<u4',5123:'<u2',5121:'u1'}[a['componentType']];dims={'SCALAR':1,'VEC3':3,'VEC2':2,'VEC4':4}[a['type']];stride=v.get('byteStride',np.dtype(dtype).itemsize*dims)
   return np.ndarray((a['count'],dims),dtype=dtype,buffer=binary,offset=v.get('byteOffset',0)+a.get('byteOffset',0),strides=(stride,np.dtype(dtype).itemsize)).copy()
- def visit(index,parent):
+ def visit(index,parent,ancestors=()):
   node=g['nodes'][index];matrix=np.array(node.get('matrix',np.eye(4).T.flatten())).reshape(4,4).T
-  if 'rotation' in node:raise ValueError('unsupported_glb_quaternion_use_cad_matrix')
+  if 'rotation' in node:
+   if 'matrix' in node:raise ValueError('ambiguous_glb_matrix_and_trs')
+   x,y,z,w=node['rotation'];length=math.sqrt(x*x+y*y+z*z+w*w)
+   if abs(length-1)>1e-5:raise ValueError('invalid_glb_unit_quaternion')
+   matrix[:3,:3]=[[1-2*(y*y+z*z),2*(x*y-z*w),2*(x*z+y*w)],[2*(x*y+z*w),1-2*(x*x+z*z),2*(y*z-x*w)],[2*(x*z-y*w),2*(y*z+x*w),1-2*(x*x+y*y)]]
   if 'translation' in node:matrix[:3,3]=node['translation']
   if 'scale' in node:matrix[:3,:3]@=np.diag(node['scale'])
-  matrix=parent@matrix
+  matrix=parent@matrix;chain=ancestors+((index,node.get('name')),)
   if 'mesh' in node:
    points=[];triangles=[];offset=0
    for p in g['meshes'][node['mesh']]['primitives']:
     a=accessor(p['attributes']['POSITION']);world=(np.c_[a,np.ones(len(a))]@matrix.T)[:,:3]*1000
     idx=accessor(p['indices']).reshape(-1,3) if 'indices' in p else np.arange(len(a)).reshape(-1,3)
     points.extend(world.tolist());triangles.extend((idx+offset).tolist());offset+=len(a)
-   points=np.array(points);nodes.append(dict(index=index,name=node.get('name'),min=points.min(0).tolist(),max=points.max(0).tolist(),points=points,triangles=np.array(triangles)))
-  for c in node.get('children',[]):visit(c,matrix)
+   points=np.array(points);nodes.append(dict(index=index,name=node.get('name'),chain=chain,min=points.min(0).tolist(),max=points.max(0).tolist(),points=points,triangles=np.array(triangles)))
+  for c in node.get('children',[]):visit(c,matrix,chain)
  for index in g['scenes'][g.get('scene',0)]['nodes']:visit(index,np.eye(4))
  return nodes

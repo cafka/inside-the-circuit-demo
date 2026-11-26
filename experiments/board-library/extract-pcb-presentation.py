@@ -130,26 +130,31 @@ def build(config, data, out):
     footprint=polygon_face(data['outlineMm'][:-1],0)
     base=BRepPrimAPI_MakePrism(footprint,gp_Vec(0,0,-thickness)).Shape()
     # Only configured, reviewed terminal families + free mounting drills.
-    pads=[p for p in data['pads'] if p['component'] in config['terminalDesignators']]
-    holes=[p for p in data['pads'] if p['hole']>0 and (p['component'] in config['terminalDesignators'] or p['component'] is None)]
+    if config.get('selection')=='documented_through_drills':
+        holes=[p for p in data['pads'] if p['hole']>0 and p['layer']==74]
+        pads=[p for p in holes if p['plated'] and p['shape'] in (1,2)]
+    else:
+        pads=[p for p in data['pads'] if p['component'] in config['terminalDesignators']]
+        holes=[p for p in data['pads'] if p['hole']>0 and (p['component'] in config['terminalDesignators'] or p['component'] is None)]
     cutters=compound()
     for p in holes:builder.Add(cutters,cylinder(*p['xy'],p['hole']/2))
     substrate=BRepAlgoAPI_Cut(base,cutters).Shape();contacts=compound()
     for p in pads:
         # The small edge drill pads have no annular ring (diameter < drill).
         if min(p['size'])<=p['hole']:continue
-        assert p['shape']==1,'Only round/oblong terminals supported by this adapter'
+        assert p['shape'] in (1,2),'Unsupported terminal shape'
         w,h=p['size'];r=min(w,h)/2;half=abs(w-h)/2
         # Circular/oblong face assembled from rectangular centre + round ends.
         points=[[-half,-r],[half,-r],[half,r],[-half,r]]
         face=polygon_face(points,0) if half>1e-9 else None
         from OCP.BRepBuilderAPI import BRepBuilderAPI_MakeEdge,BRepBuilderAPI_MakeWire
         from OCP.gp import gp_Circ
-        for cx in sorted(set([-half,half])):
+        for cx in sorted(set([-half,half])) if p['shape']==1 else []:
             circle=gp_Circ(gp_Ax2(gp_Pnt(cx,0,0),gp_Dir(0,0,1)),r)
             disk=BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeWire(BRepBuilderAPI_MakeEdge(circle).Edge()).Wire()).Face()
             face=BRepAlgoAPI_Fuse(face,disk).Shape() if face is not None else disk
-        tr=gp_Trsf();tr.SetRotation(gp_Ax1(gp_Pnt(0,0,0),gp_Dir(0,0,1)),math.radians(p['rotation']+(90 if h>w else 0)))
+        if p['shape']==2:face=polygon_face([[-w/2,-h/2],[w/2,-h/2],[w/2,h/2],[-w/2,h/2]],0)
+        tr=gp_Trsf();tr.SetRotation(gp_Ax1(gp_Pnt(0,0,0),gp_Dir(0,0,1)),math.radians(p['rotation']+(90 if h>w and p['shape']==1 else 0)))
         face=BRepBuilderAPI_Transform(face,tr).Shape();tr=gp_Trsf();tr.SetTranslation(gp_Vec(*p['xy'],0));face=BRepBuilderAPI_Transform(face,tr).Shape()
         face=BRepAlgoAPI_Common(face,footprint).Shape();face=BRepAlgoAPI_Cut(face,cutters).Shape()
         for z in [0.008,-thickness-0.008]: # render separation only, not plating thickness

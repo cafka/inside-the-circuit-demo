@@ -1,8 +1,9 @@
 {
-  "version": "public-board-discovery/1",
+  "version": "public-board-discovery/3",
   "searchProvider": "github-public-repository-readmes",
   "maxRepositories": 8,
   "maxCandidatePages": 4,
+  "maxLinkedIdentityPages": 2,
   "maxDocumentPages": 6,
   "maxRepositoryTrees": 4,
   "maxAssets": 24,

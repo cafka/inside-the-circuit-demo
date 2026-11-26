@@ -21,7 +21,7 @@ body .language-switch button,body:not([data-screen=home]) .language-switch butto
 .language-switch button[aria-pressed=true]{color:#fff}
 #theme-toggle{font-size:17px;border-left:1px solid var(--ui-line);border-radius:0 14px 14px 0}
 .google-credit{font-size:10px;opacity:.8;display:block;margin-top:5px;color:var(--ui-muted)}
-/* The 3D stage background, renderer lights and physical materials remain identical. */
+/* Theme is presentation-only; renderer lighting and model materials are unchanged. */
 #camera-stage{background:var(--ui-bg)}
 .camera-top b,.camera-top .icon-button{color:var(--ui-text)}
 #library-screen{position:fixed;inset:0;z-index:5;background:var(--ui-bg);display:flex;flex-direction:column}
@@ -44,3 +44,136 @@ body[data-screen=explorer] .app-bar{background:var(--ui-surface);color:var(--ui-
 
 #photo-consent{position:absolute;left:14px;bottom:118px;z-index:4;max-width:300px;padding:8px 12px;background:var(--ui-proximity);border:1px solid var(--ui-line);border-radius:12px;font-size:12px}
 #photo-consent[hidden]{display:none}
+#photo-consent,#photo-consent label{color:var(--ui-text)}
+#photo-consent .check span{color:var(--ui-text)}
+
+/* Match the specificity of legacy button.catalog-item rules in experience.css. */
+#catalog button.catalog-item{background:var(--ui-raised);color:var(--ui-text);border-color:var(--ui-line)}
+#catalog button.catalog-item:hover{background:var(--ui-surface);border-color:var(--ui-accent)}
+#catalog button.catalog-item:active,#catalog button.catalog-item[aria-current=true]{background:var(--primary-soft);border-color:var(--ui-accent)}
+#catalog .catalog-symbol{background:var(--primary-soft);color:var(--ui-accent)}
+#catalog .catalog-arrow{color:var(--ui-accent)}
+#catalog .catalog-copy>span{color:var(--ui-muted)}
+#catalog button:focus-visible,#saved-search:focus-visible{outline:3px solid var(--ui-accent);outline-offset:3px;border-color:var(--ui-accent)}
+#saved-search{background:var(--ui-raised);color:var(--ui-text);border:1px solid var(--ui-line);caret-color:var(--ui-accent)}
+#saved-search::placeholder{color:var(--ui-muted);opacity:1}
+#component-list button:hover{background:var(--ui-surface);outline:1px solid var(--ui-accent)}
+#component-list button{flex-direction:column;align-items:flex-start;gap:5px}
+#component-list .component-availability{font-size:12px;color:var(--ui-muted);font-weight:400}
+.availability-note{color:var(--ui-text);border-left:3px solid var(--ui-accent);padding-left:9px;font-weight:500}
+#card.component-card[data-information-kind=technical]:not(.minimized) #component-reference{display:block;overflow-wrap:anywhere}
+
+/* Viewer options are transient; discovery outlines remain unobtrusive. */
+.view-controls{z-index:2}
+#viewer-options{position:relative;border:0;margin:0;padding:0;color:#edf3fc}
+#viewer-options summary{display:flex;list-style:none;margin:0;align-items:center;justify-content:center}
+#viewer-options summary::-webkit-details-marker{display:none}
+#viewer-options>div{position:absolute;bottom:54px;left:0;width:250px;max-width:calc(100vw - 32px);padding:12px 14px;border-radius:14px;background:#1d2b3deb;border:1px solid #bcd1e33d;box-shadow:0 8px 24px #0005;backdrop-filter:blur(10px)}
+#viewer-options label{display:flex;gap:10px;align-items:center;color:inherit;margin:0;font-size:13px;line-height:1.4;min-height:32px;cursor:pointer}
+#viewer-options input{width:18px;height:18px;min-height:0;margin:0;accent-color:#91c9ff;flex:none}
+#component-hover{position:absolute;z-index:6;pointer-events:none;max-width:min(270px,calc(100% - 16px));padding:7px 10px;border-radius:9px;background:#142335ed;color:#edf5ff;border:1px solid #9fc8ec80;box-shadow:0 3px 12px #0004;font-size:13px;line-height:1.35}
+#add-panel .advanced-tools-heading{background:var(--ui-raised);color:var(--ui-text);border:1px solid var(--ui-line)}
+#add-panel .advanced-tools-heading p{color:var(--ui-muted)}
+#add-panel .admin-entry{background:var(--ui-raised);color:var(--ui-text);border:1px solid var(--ui-line)}
+#add-panel :is(button,summary,input):focus-visible{outline:3px solid var(--ui-accent);outline-offset:2px}
+.tabs button:hover,.tabs button[aria-selected=true]{background:var(--ui-raised);color:var(--ui-text)}
+.tabs button[aria-selected=true]{border-bottom-color:var(--ui-accent)}
+.tabs button:focus-visible{outline:2px solid var(--ui-accent);outline-offset:-4px}
+#add-panel input::placeholder{color:var(--ui-muted);opacity:1}
+@media(max-width:600px){.model-warning{bottom:100px}}
+
+/* Shared app surfaces, including the transparent WebGL canvas backdrop.
+   No changes to scene.environment, renderer exposure, model materials or camera pixels. */
+:root,[data-theme=dark]{--ui-stage:radial-gradient(ellipse at 50% 40%,#3a4650 0%,#222d38 55%,#161e28 100%);--ui-control:rgba(29,43,61,.9);--ui-warning:#ffde8a;--ui-warning-bg:rgba(56,42,13,.94);--ui-error:#ffb4b0;--ui-shadow:0 5px 28px #0003}
+[data-theme=light]{--ui-stage:radial-gradient(ellipse at 50% 40%,#fff 0%,#edf2f8 60%,#dfe8f1 100%);--ui-control:rgba(248,250,255,.94);--ui-warning:#634500;--ui-warning-bg:#fff2ce;--ui-error:#a82728;--ui-shadow:0 5px 28px #20375118}
+body[data-screen=explorer]{background:var(--ui-bg)}
+#stage{background:var(--ui-stage)}
+.explorer-brand .brand,.board-heading h1,#empty-state,#camera-empty,.camera-top b{color:var(--ui-text)}
+.board-heading .eyebrow,#empty-state>p:not(.eyebrow),#empty-state .eyebrow,.empty-note,#viewer-message,#camera-empty p,#camera-instruction{color:var(--ui-muted)}
+.app-bar .tonal{background:var(--primary-soft);color:var(--ui-accent)}
+.app-bar .icon-button{color:var(--ui-text)}
+.app-bar .icon-button:hover,.component-card .icon-button:hover{background:var(--ui-raised)}
+#camera-screen{background:var(--ui-bg);color:var(--ui-text)}
+.view-controls,#viewer-options>div,#component-hover,#loading-state,#preparation-status,#capture-status,#camera-busy{background:var(--ui-control);color:var(--ui-text);border-color:var(--ui-line);box-shadow:var(--ui-shadow)}
+#viewer-options,.view-controls .icon-button{color:var(--ui-text)}
+.view-controls .separator{background:var(--ui-line)}
+.view-controls .icon-button:hover,.icon-button:hover,.camera-secondary:hover{background:var(--ui-raised)}
+.empty-camera-icon{background:var(--ui-raised);color:var(--ui-accent);border-color:var(--ui-line)}
+.camera-top .icon-button{background:var(--ui-surface);border-color:var(--ui-line);color:var(--ui-text)}
+.camera-top>div{text-shadow:none}
+.camera-secondary{background:var(--ui-control);color:var(--ui-text);border:1px solid var(--ui-line);border-radius:16px}
+.capture-controls:before{background:linear-gradient(transparent,var(--ui-bg))}
+#capture-button{border-color:var(--ui-accent);background:var(--ui-control)}
+#capture-button span{background:var(--ui-accent)}
+#camera-empty button{background:var(--primary);color:#fff}
+.model-warning,.accuracy-note{background:var(--ui-warning-bg);color:var(--ui-warning);border-color:var(--ui-warning)}
+#error,.panel-error{color:var(--ui-error)}
+#component-diagnostic,#confidence-basis,.confidence-summary p{color:var(--ui-text)}
+.component-card .card-scroll{scrollbar-color:var(--ui-muted) transparent}
+input::placeholder,textarea::placeholder{color:var(--ui-muted);opacity:1}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--ui-accent);outline-offset:2px}
+/* Preferences participate in header layout instead of floating over titles. */
+body:not([data-screen=home]) .preferences-slot .language-switch{position:static;inset:auto;background:var(--ui-raised);border:1px solid var(--ui-line);padding:3px;flex-shrink:0}
+body:not([data-screen=home]) .preferences-slot .language-switch button{min-height:30px;min-width:30px;font-size:11px;padding:5px;color:var(--ui-text)}
+body .language-switch button[aria-pressed=true]{color:#fff}
+.preferences-slot{display:flex;align-items:center;justify-content:flex-end}
+body[data-screen=explorer] .app-bar{display:grid;grid-template-columns:auto 1fr auto;gap:12px;padding-left:14px;padding-right:14px}
+body[data-screen=explorer] .explorer-brand{height:auto;gap:3px;min-width:0}
+body[data-screen=explorer] .explorer-brand .brand{align-self:center;margin:0;white-space:nowrap}
+.app-bar nav{justify-self:end;display:flex;gap:5px;align-items:center}
+.home-button{flex-shrink:0}
+.dialog-header>div:first-child{flex:1;min-width:0}
+.dialog-header>.home-button{margin-left:auto}
+.board-title-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.board-title-row h1{min-width:0}
+#board-experiments{pointer-events:auto;display:inline-flex;align-items:center;gap:5px;padding:5px 8px;min-height:36px;border-radius:12px;background:var(--ui-control);color:var(--ui-accent);border:1px solid var(--ui-line);font-size:12px}
+#board-experiments .icon{width:18px;height:18px}
+.camera-top{padding:6px;border-radius:16px;display:grid;grid-template-columns:auto 1fr auto auto;gap:8px}
+.camera-top .camera-navigation{display:flex;gap:3px;flex:none}
+.camera-top .camera-label{text-align:left;min-width:0}
+.camera-top .preferences-slot{visibility:visible}
+.camera-top span{color:var(--ui-muted)}
+.library-header{padding-right:12px;gap:8px}
+.library-header .preferences-slot{margin-left:auto}
+.library-header a{margin-left:auto}
+@media(max-width:700px){
+ :root{--bar:108px}
+ body[data-screen=explorer] .app-bar{grid-template-columns:auto 1fr;grid-template-rows:48px 48px;gap:0 8px;padding:4px 10px}
+ .app-bar .explorer-brand{grid-column:1/-1;grid-row:1}
+ .app-bar nav{grid-column:2;grid-row:2;gap:2px}
+ .app-bar>.preferences-slot{grid-column:1;grid-row:2;justify-content:flex-start}
+ .app-bar .tonal{padding:8px;gap:5px;font-size:12px}
+ .app-bar #catalog-toggle .small{display:none}
+ .app-bar #explorer-library .icon{display:none}
+ .app-bar nav>.icon-button{width:36px;min-height:40px;padding:7px}
+ body[data-screen=explorer] .explorer-brand .brand{font-size:15px}
+ .board-title-row{gap:4px 9px}
+ .board-heading{max-width:calc(100% - 32px)}
+ .camera-top{grid-template-columns:auto 1fr auto;gap:5px;left:10px;right:10px}
+ .camera-top .preferences-slot{grid-column:1/-1;justify-content:flex-end}
+ .camera-top .camera-label{visibility:visible}
+ .camera-top .camera-navigation{visibility:visible}
+ .camera-top .camera-label span{font-size:11px;line-height:1.3}
+ .camera-upload{top:132px}
+ #capture-status{top:178px}
+ .library-header{gap:4px;padding:8px}
+ .library-header .icon-button{width:36px;min-height:40px;padding:7px}
+ .library-header a{display:none}
+ .library-header strong{font-size:14px}
+}
+@media(max-height:500px) and (min-width:701px){
+ .capture-controls:before{background:linear-gradient(90deg,transparent,var(--ui-bg))}
+ .camera-top .camera-label,.camera-top .camera-navigation{visibility:visible}
+ .camera-upload{top:90px}
+}
+
+/* Only the component menu gets a translucent background; contents stay opaque. */
+:root,[data-theme=dark]{--ui-components-menu:rgba(49,68,90,.88)}
+[data-theme=light]{--ui-components-menu:rgba(249,252,255,.88)}
+#components-dialog{background:var(--ui-components-menu);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+#components-dialog .dialog-header{background:transparent}
+#components-dialog #component-list button{background:transparent;color:var(--ui-text)}
+#components-dialog #component-list button:hover,#components-dialog #component-list button:focus-visible{background:var(--ui-raised)}
+
+/* Explicit recovery from ambiguous identity; never an automatic recognition result. */
+#photo-manual{position:absolute;right:16px;bottom:165px;z-index:4;max-width:45%;font-size:12px}

@@ -1,0 +1,27 @@
+--- a/src/main.js
++++ b/src/main.js
+@@ -1182,7 +1182,9 @@
+ resize();
+
+ /* ------------------------------------------------------------------ debug / test shortcuts (see README) */
+-const opened = params.has('open');
++// Explicit integration entry: keep the selected lesson, but wait for a user tap.
++const coverEntry = params.get('entry') === 'cover';
++const opened = !coverEntry && params.has('open');
+ setView(opened ? params.get('view') || ENTRY_VIEW : 'closed', opened);
+ if (!opened) {
+   rig.r = 55; // fly-in on first load
+@@ -1200,11 +1202,11 @@
+   if (params.get('left') === '1') enterLeftPage();
+ }
+ shell.setBusy(false, current, N);
+-libraryOpen = !opened && !params.has('book');
++libraryOpen = !coverEntry && !opened && !params.has('book');
+ libraryEl.hidden = !libraryOpen;
+ syncChrome();
+ // a link to a book (?book=...) goes straight to its open book, like choosing it in the library
+-if (!opened && params.has('book')) openBook();
++if (!coverEntry && !opened && params.has('book')) openBook();
+
+ /* ------------------------------------------------------------------ main loop */
+ const FLIP_SECONDS = 1.6;

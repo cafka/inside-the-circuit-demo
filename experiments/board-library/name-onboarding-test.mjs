@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {publicAddress,publicURL} from './public-fetch.mjs';
-import {resourceRole,links,matchedModel,discoverByName,repositoryResources} from './discovery.mjs';
+import {resourceRole,links,matchedModel,discoverByName,repositoryResources,compatibleProductHeading} from './discovery.mjs';
 import {bindDocumentedDesignators} from './document-binding.mjs';
 import {ROOT,profiles} from './catalog.mjs';
 import {hash} from './glb.mjs';
@@ -30,6 +30,11 @@ test('Generic model selection excludes enclosures, accessories and library parts
 test('Tutorial titles are not mistaken for model names',()=>{
  assert.equal(matchedModel('Example Labs Vector M8','Get started with Vector M8'),'Vector M8');
  assert.equal(matchedModel('Example Labs Vector M8','An unrelated board'),null);
+});
+test('Document identity rejects added variant tokens even with complete query coverage',()=>{
+ assert.equal(compatibleProductHeading('Example Vector M8','Vector M8'),true);
+ assert.equal(compatibleProductHeading('Example Vector M8','Example Vector M8 Display'),false);
+ assert.equal(compatibleProductHeading('Example Vector M8','Vector M9'),false);
 });
 test('Name-only search does not need a prepared manufacturer profile',async()=>{
  const requested=[];const responses=new Map();

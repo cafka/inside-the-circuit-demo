@@ -1,0 +1,18 @@
+{
+  "version": "evidence-driven-enrichment/2",
+  "maxGraphicsCandidates": 2,
+  "graphicsConversionTimeoutMs": 360000,
+  "maxExpandedSTEPBytes": 268435456,
+  "graphicsMaxInkMm": 0.05,
+  "graphicsResolution": 1024,
+  "float32RoundtripULPs": 8,
+  "maxLinkedAssets": 8,
+  "maxECADCandidates": 2,
+  "colourMinimumExtentFraction": 0.5,
+  "maxAssetBytes": 33554432,
+  "maxTotalBytes": 100663296,
+  "maxRequests": 12,
+  "maxRunMs": 120000,
+  "requestTimeoutMs": 30000,
+  "contract": "Capabilities depend on actual source format and verified frames, never board identity. Presentation finishes do not certify material chemistry. No component heights are invented for authentic CAD. Educational relief is only available on explicitly approximate reconstructions."
+}

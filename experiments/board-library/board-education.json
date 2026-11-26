@@ -78,6 +78,7 @@
     },
     {
       "id": "arduino-nano-esp32",
+      "stepSHA256": "b1fdadf95323994f7d7698962f2814ba3490cde1fb53701050067fbd5017ce98",
       "assetSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
       "es": {
         "description": "Placa de desarrollo compacta de Arduino para aprender MicroPython y crear proyectos conectados.",

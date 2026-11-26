@@ -7,12 +7,17 @@ import {serverOrigins} from './server-origin.mjs';
 import {DIR,ROOT,STORE,profiles,safeId,boardDir,saveJSON,readBoard,listBoards,identifyName,saveReview} from './catalog.mjs';
 import {prepareBoard} from './pipeline.mjs';
 import {onboardName,nameID} from './onboard-name.mjs';
+import {applyLibraryPatch} from './library-patch.mjs';
+import {verifyPhotoProposals} from './photo-verification-server.mjs';
 const surfaceRegistry=JSON.parse(fs.readFileSync(path.join(DIR,'surface-markings.json'))),surfaceFiles=new Set(surfaceRegistry.assets.flatMap(a=>a.layers.map(l=>l.file)));
 const geometryRegistry=JSON.parse(fs.readFileSync(path.join(DIR,'presentation-geometry.json'))),geometryFiles=new Set(geometryRegistry.assets.map(a=>a.file));
 const port=Number(process.env.PORT||4188),origin=`http://127.0.0.1:${port}`,jobs=new Map();let active=null;
 const access=serverOrigins(port,process.env.ITC_TRUSTED_PROXY_ORIGIN||'');
 const libraryLock=JSON.parse(fs.readFileSync(path.join(ROOT,'config/library-lock.json')));
 const libraryRoot=path.join(ROOT,'.local/library',libraryLock.commit);
+const libraryConfig=JSON.parse(fs.readFileSync(path.join(ROOT,'config/library.json')));
+const libraryPatch=libraryConfig.localPatch?JSON.parse(fs.readFileSync(path.join(ROOT,libraryConfig.localPatch))):null;
+if(libraryPatch&&libraryPatch.baseCommit!==libraryLock.commit)throw Error('library_patch_revision_mismatch');
 const cameraProfiles=JSON.parse(fs.readFileSync(path.join(DIR,'camera-profiles.json'))),cameraAssets=Object.assign({},...cameraProfiles.profiles.map(p=>p.assets));
 const fixtureManifest=JSON.parse(fs.readFileSync(path.join(ROOT,'experiments/fixtures-manifest.json')));
 const jobsDir=path.join(STORE,'_jobs');fs.mkdirSync(jobsDir,{recursive:true});
@@ -27,6 +32,7 @@ function launch(profile,options={}){
 }
 const runtime=process.env.ITC_RUNTIME_CONFIG?JSON.parse(fs.readFileSync(process.env.ITC_RUNTIME_CONFIG)):{};
 const publicRuntime=publicRuntimeConfig(runtime);
+const privatePhotoTest=!!process.env.ITC_TEST_PHOTO&&(!process.env.ITC_TRUSTED_PROXY_ORIGIN||(process.env.ITC_AUTHENTICATED_PREVIEW==='1'&&/^https:\/\/\d+-cs-[a-z0-9.-]+\.cloudshell\.dev$/.test(process.env.ITC_TRUSTED_PROXY_ORIGIN)));
 const server=http.createServer(async(req,res)=>{
   try{
     if(!access.acceptsHost(req.headers.host))return json(res,403,{error:'invalid_host'});
@@ -34,6 +40,7 @@ const server=http.createServer(async(req,res)=>{
     if(req.method==='POST'){
       if(req.headers['x-itc-local']!=='1'||!access.acceptsOrigin(req.headers.origin))return json(res,403,{error:'same_origin_required'});
       const b=await body(req);
+      if(url.pathname==='/api/photo/verify')return json(res,200,await verifyPhotoProposals(b,{root:ROOT,store:STORE}));
       if(url.pathname==='/api/identify')return json(res,200,identifyName(b.name));
       if(url.pathname==='/api/onboard'){
         if(typeof b.name!=='string'||b.name.trim().length<4||b.name.length>140||/[<>\r\n]/.test(b.name))throw Error('invalid_board_name');
@@ -56,7 +63,8 @@ const server=http.createServer(async(req,res)=>{
       return json(res,404,{error:'not_found'});
     }
     if(!['GET','HEAD'].includes(req.method))return json(res,405,{error:'method_not_allowed'});
-    if(url.pathname==='/api/runtime-config')return json(res,200,publicRuntime);
+    if(url.pathname==='/api/runtime-config')return json(res,200,{...publicRuntime,testPhotoAvailable:privatePhotoTest,deploymentCommit:/^[a-f0-9]{40}$/.test(process.env.ITC_BUILD_SHA||'')?process.env.ITC_BUILD_SHA:null});
+    if(url.pathname==='/api/test-photo'&&privatePhotoTest){const bytes=fs.readFileSync(process.env.ITC_TEST_PHOTO);res.writeHead(200,{'Content-Type':'image/jpeg','Cache-Control':'no-store'});res.end(bytes);return;}
     if(url.pathname==='/api/catalog')return json(res,200,{boards:listBoards(),registeredSources:profiles.map(p=>({id:p.id,identity:p.identity})),cloud:{billingActivation:false,reconstructionSessionConfigured:!!process.env.ITC_RECONSTRUCTION_SESSION,usageLocation:'per-board record.cloud and private session ledger'},activeJob:active});
     if(parts[0]==='api'&&parts[1]==='jobs')return json(res,jobs.has(parts[2])?200:404,jobs.get(parts[2])||{error:'job_not_found'});
     if(parts[0]==='api'&&parts[1]==='boards'&&parts.length===3)return json(res,200,readBoard(parts[2]));
@@ -66,14 +74,15 @@ const server=http.createServer(async(req,res)=>{
     if(checks[url.pathname]){const [relative,type]=checks[url.pathname];res.writeHead(200,{'Content-Type':type,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});fs.createReadStream(path.join(ROOT,relative)).pipe(res);return;}
     if(parts[0]==='library-assets'){
       const relative=parts.slice(2).join('/'),entry=libraryLock.files.find(f=>f.path===relative);
-      if(parts[1]!==libraryLock.commit||!entry)return json(res,404,{error:'unknown_library_asset'});
+      if(![libraryLock.commit,libraryPatch?.variant].includes(parts[1])||!entry)return json(res,404,{error:'unknown_library_asset'});
       const target=path.resolve(libraryRoot,relative);if(!target.startsWith(libraryRoot+path.sep))return json(res,403,{error:'invalid_library_path'});
       if(!fs.existsSync(target))return json(res,503,{error:'run_npm_library_sync'});
-      const bytes=fs.readFileSync(target),hash=crypto.createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
+      let bytes=fs.readFileSync(target);const hash=crypto.createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
       if(hash!==entry.sha)return json(res,503,{error:'library_integrity_failed'});
+      if(parts[1]===libraryPatch?.variant&&relative===libraryPatch.path)bytes=applyLibraryPatch(bytes,libraryPatch,libraryLock.commit);
       res.writeHead(200,{'Content-Type':({'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}[path.extname(target)]||'text/plain; charset=utf-8'),'Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff','Content-Length':bytes.length});res.end(req.method==='HEAD'?undefined:bytes);return;
     }
-    if(parts[0]==='board-assets'&&parts.length===3&&safeId(parts[1])&&/^(top|bottom)-(silk|contacts)\.png$/.test(parts[2])){const r=readBoard(parts[1]),asset=r.automaticSurfaces?.files.find(a=>a.file===parts[2]);if(!asset)throw Error('unknown_board_asset');file=path.join(boardDir(parts[1]),'surfaces',asset.file);if(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')!==asset.sha256)throw Error('board_asset_hash_mismatch');contentType='image/png';}
+    if(parts[0]==='board-assets'&&parts.length===3&&safeId(parts[1])&&/^(?:(top|bottom)-(silk|contacts)\.png|official-marks-[a-f0-9]{12}-[0-9]+\.png|pcb-details\.glb)$/.test(parts[2])){const r=readBoard(parts[1]),a=r.automaticSurfaces,asset=[...(a?.files||[]),a?.presentationGeometry].find(a=>a?.file===parts[2]);if(!asset)throw Error('unknown_board_asset');file=path.join(boardDir(parts[1]),'surfaces',asset.file);if(crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex')!==asset.sha256)throw Error('board_asset_hash_mismatch');contentType=parts[2].endsWith('.glb')?'model/gltf-binary':'image/png';}
     else if(parts[0]==='surface-markings'&&parts.length===2&&surfaceFiles.has(parts[1])){file=path.join(DIR,'assets/surface-markings',parts[1]);contentType='image/png';}
     else if(parts[0]==='presentation-geometry'&&parts.length===2&&geometryFiles.has(parts[1])){file=path.join(DIR,'assets/presentation-geometry',parts[1]);contentType='model/gltf-binary';}
     else if(parts[0]==='models'&&parts.length===2&&safeId(parts[1])){file=path.join(boardDir(parts[1]),'model.glb');contentType='model/gltf-binary';if(/\bgzip\b/.test(req.headers['accept-encoding']||'')&&fs.existsSync(file+'.gz')){file+='.gz';gzip=true;}}

@@ -2,6 +2,7 @@
   "version": "photo-document-reconstruction/2",
   "model": "gemini-3.1-pro-preview",
   "maxCallsPerSession": 4,
+  "requestAdditionalHeightAnalysis": false,
   "maxOutputTokens": 16384,
   "maxInputBytes": 18000000,
   "maxTextCharacters": 60000,

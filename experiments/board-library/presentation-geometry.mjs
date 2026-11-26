@@ -6,11 +6,13 @@ import {sharedSoldermask} from './material-library.mjs';
 // Optional catalogue assets in the unchanged CAD world frame. No board names,
 // guessed coordinates, colour recognition, or changes to the original GLB.
 export async function loadPresentationGeometry(record,meshes,environment){
- const entry=registry.assets.find(a=>a.baseGLBSHA256===record.inventory.sourceHash);
+ const automatic=record.automaticSurfaces?.presentationGeometry;
+ const useAutomatic=automatic?.status==='source_ecad_supplement'&&record.automaticSurfaces.registration.status==='verified'&&automatic.baseGLBSHA256===record.inventory.sourceHash;
+ const entry=useAutomatic?{...automatic,sourceURL:record.automaticSurfaces.sourceURL}:registry.assets.find(a=>a.baseGLBSHA256===record.inventory.sourceHash);
  if(!entry)return null;
  const replaced=entry.replacesNodeIds.map(id=>meshes.filter(m=>m.userData.catalogNodeId===id)).flat();
  if(replaced.length!==entry.replacesNodeIds.length)throw Error('presentation_target_mismatch');
- const response=await fetch('/presentation-geometry/'+entry.file);if(!response.ok)throw Error('presentation_geometry_unavailable');
+ const response=await fetch(useAutomatic?`/board-assets/${record.id}/${entry.file}`:'/presentation-geometry/'+entry.file);if(!response.ok)throw Error('presentation_geometry_unavailable');
  const bytes=await response.arrayBuffer(),hash=await crypto.subtle.digest('SHA-256',bytes);
  if([...new Uint8Array(hash)].map(n=>n.toString(16).padStart(2,'0')).join('')!==entry.sha256)throw Error('presentation_geometry_hash_mismatch');
  const gltf=await new GLTFLoader().parseAsync(bytes,''),object=gltf.scene;

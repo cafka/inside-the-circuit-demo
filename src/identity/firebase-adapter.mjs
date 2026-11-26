@@ -24,7 +24,7 @@ async function loadSDK() {
   const [app,appCheck,ai]=await Promise.all([import('firebase/app'),import('firebase/app-check'),import('firebase/ai')]);
   return {...app,...appCheck,...ai};
 }
-export function createFirebaseAdapter(config,{sdkLoader=loadSDK,hasLanguageModel=()=>typeof globalThis.LanguageModel!=='undefined',prompt=PROMPT}={}) {
+export function createFirebaseAdapter(config,{sdkLoader=loadSDK,hasLanguageModel=()=>typeof globalThis.LanguageModel!=='undefined',prompt=PROMPT,responseSchema=firebaseResponseSchema,jsonSchema=JSON_SCHEMA,maxOutputTokens=1400}={}) {
   // Capture settings in memory, not localStorage or exported evidence.
   const settings=config ? structuredClone(config) : null;
   let contextPromise=null; const busy=new Set();
@@ -54,14 +54,14 @@ export function createFirebaseAdapter(config,{sdkLoader=loadSDK,hasLanguageModel
       try {
         const initStart=performance.now(), {sdk,check,ai}=await context(); signal.throwIfAborted();
         try {const attestation=await sdk.getToken(check,false);if(!attestation.token)throw fail('app_check_failed');}
-        catch {throw fail('app_check_failed');}
+        catch (error) {onTiming('appCheckErrorCode',errorCode(error));throw fail('app_check_failed');}
         signal.throwIfAborted();
         onTiming('firebaseMs',performance.now()-initStart);
         const params={mode:lane==='nano'?sdk.InferenceMode.ONLY_ON_DEVICE:sdk.InferenceMode.ONLY_IN_CLOUD,
-          inCloudParams:{model:CLOUD_MODEL,generationConfig:{responseMimeType:'application/json',responseSchema:firebaseResponseSchema(sdk.Schema),maxOutputTokens:1400,temperature:0}}};
+          inCloudParams:{model:CLOUD_MODEL,generationConfig:{responseMimeType:'application/json',responseSchema:responseSchema(sdk.Schema),maxOutputTokens,temperature:0}}};
         if(lane==='nano')params.onDeviceParams={
           createOptions:{signal,expectedInputs:[{type:'text',languages:['en']},{type:'image'}],expectedOutputs:[{type:'text',languages:['en']}]},
-          promptOptions:{responseConstraint:JSON_SCHEMA}};
+          promptOptions:{responseConstraint:jsonSchema}};
         const model=sdk.getGenerativeModel(ai,params,{timeout:45000});
         if(lane==='nano'){
           let first=null,last=null;

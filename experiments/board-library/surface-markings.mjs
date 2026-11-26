@@ -5,7 +5,7 @@ import registry from './surface-markings.json';
 // guessed inscriptions, expected connector locations or recognition inputs.
 export async function loadSurfaceMarkings(record,renderer){
  const automatic=record.automaticSurfaces?.registration?.status==='verified'&&record.automaticSurfaces.baseGLBSHA256===record.inventory.sourceHash?record.automaticSurfaces:null;
- const entry=automatic?{...automatic,layers:automatic.files,status:'verified_ecad_frame_approximate_font',labelKey:'marks.official'}:registry.assets.find(a=>a.baseGLBSHA256===record.inventory.sourceHash);
+ const entry=automatic?{...automatic,layers:automatic.files,status:automatic.sourceType==='step_graphics'?'verified_additive_cad_graphics':'verified_ecad_frame_approximate_font',labelKey:'marks.official'}:registry.assets.find(a=>a.baseGLBSHA256===record.inventory.sourceHash);
  if(!entry)return null;
  const object=new THREE.Group();object.name='official-surface-markings';
  const resources=[];

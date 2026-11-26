@@ -82,9 +82,13 @@ def main(work,output):
  if not triangles:raise ValueError('no_valid_substrate_triangles')
  # x/z clockwise gives +Y normals when vertex order is reversed.
  top=[xyz(p,thickness) for t in triangles for p in t[::-1]];uv=[(float(p[0])/tw,float(p[1])/th) for t in triangles for p in t[::-1]]
- boardmat=material('observed_substrate',rgb,'pcb_soldermask',texture(Image.fromarray(surface)));mesh('Observed PCB surface',top,boardmat,{'finish':'pcb_soldermask','role':'substrate','thicknessStatus':b['thicknessEvidence']['basis']},uv)
+ dimensionEvidence={'displayThicknessMm':thickness,'measuredThicknessMm':b['thicknessMm'],'status':'illustrative' if educational else b['thicknessEvidence']['basis'],'policy':rules['version'],'sourceEvidence':b['thicknessEvidence']}
+ gltf['asset']['extras']['dimensionEvidence']=dimensionEvidence
+ boardmat=material('observed_substrate',rgb,'pcb_soldermask',texture(Image.fromarray(surface)));mesh('Observed PCB surface',top,boardmat,{'finish':'pcb_soldermask','role':'substrate','thicknessStatus':dimensionEvidence['status'],'dimensionEvidence':dimensionEvidence},uv)
  back=presentation.get('backside');backtex=None
  if back:
+  if back.get('observationsSHA256') and back['observationsSHA256']!=hashlib.sha256((work/'observations.json').read_bytes()).hexdigest():raise ValueError('backside_registration_stale')
+  if hashlib.sha256((work.parent/back['file']).read_bytes()).hexdigest()!=back['sourceSHA256']:raise ValueError('backside_image_changed')
   backim=np.array(Image.open(work.parent/back['file']).convert('RGB'));BH=cv2.getPerspectiveTransform(np.array(back['cornersPixels'],np.float32),np.array([[0,0],[tw,0],[tw,th],[0,th]],np.float32));backim=cv2.warpPerspective(backim,BH,(tw,th));Image.fromarray(backim).save(work/'rectified-back.png');backtex=texture(Image.fromarray(backim))
  bottommat=material('observed_backside' if back else 'unknown_backside',rgb,'pcb_soldermask',backtex)
  mesh('Observed PCB underside' if back else 'Unobserved PCB underside',[xyz(p,0) for t in triangles for p in t],bottommat,{'finish':'pcb_soldermask','role':'observed_backside' if back else 'unknown_backside'},[(float(p[0])/tw,float(p[1])/th) for t in triangles for p in t] if back else None)

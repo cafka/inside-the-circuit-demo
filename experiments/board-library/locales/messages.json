@@ -1,4 +1,28 @@
 {
+  "stage.enrichment_sources": {
+    "es": "Recursos de acabado y detalle",
+    "en": "Appearance and detail sources"
+  },
+  "enrichment.title": {
+    "es": "Enriquecimiento del modelo",
+    "en": "Model enrichment"
+  },
+  "enrichment.visual": {
+    "es": "Iluminación y acabados visuales compartidos. El aspecto no certifica la composición del material.",
+    "en": "Shared lighting and visual finishes. Appearance does not certify material composition."
+  },
+  "enrichment.details": {
+    "es": "Capas de detalle generadas: {layers}. Taladros del diseño eléctrico incorporados: {drills}.",
+    "en": "Generated detail layers: {layers}. Electrical-design drills incorporated: {drills}."
+  },
+  "enrichment.evidence": {
+    "es": "Los detalles físicos requieren fuentes y una alineación comprobada. Las alturas ilustrativas de una reconstrucción son representaciones educativas, no medidas reales.",
+    "en": "Physical details require sources and checked alignment. Illustrative reconstruction heights are educational representations, not real measurements."
+  },
+  "unknown": {
+    "es": "No determinado",
+    "en": "Undetermined"
+  },
   "language": {
     "es": "Idioma",
     "en": "Language"
@@ -424,8 +448,8 @@
     "en": "The catalogue does not yet include a verified technical overview for this board."
   },
   "education.caution": {
-    "es": "El CAD describe la forma mecánica disponible, no certifica la revisión ni todos los detalles de una placa real. Los acabados son una interpretación visual; no se añaden contactos, soldaduras ni conexiones ausentes del archivo.",
-    "en": "The CAD describes the supplied mechanical shape; it does not certify the revision or every detail of a real board. Finishes are a visual interpretation; missing contacts, solder joints and connections are not added."
+    "es": "El CAD describe la forma mecánica disponible, no certifica la revisión ni todos los detalles de una placa real. Los acabados son una interpretación visual; los detalles añadidos requieren fuentes y alineación verificadas; no se inventan soldaduras ni conexiones.",
+    "en": "The CAD describes the supplied mechanical shape; it does not certify the revision or every detail of a real board. Finishes are a visual interpretation; added details require verified sources and alignment; solder joints and connections are not invented."
   },
   "education.optional": {
     "es": "Se muestra la variante base sin los accesorios opcionales documentados en el perfil de visualización. El archivo original se conserva completo.",
@@ -772,8 +796,8 @@
     "en": "Boundary analysis found coincident linear limits within the CAD tolerance. ShapeFix_Face recovered no surface on an isolated copy. Exported geometry, hashes and the original STEP’s invalid condition are retained; no faces were invented. Exclusion is justified only for faces with this diagnosis."
   },
   "selection.legend": {
-    "es": "Amarillo continuo: superficie visible. Discontinuo: geometría CAD oculta detrás de otra pieza.",
-    "en": "Solid yellow: visible surface. Dashed: CAD geometry hidden behind another part."
+    "es": "Amarillo: borde de la superficie visible de la pieza seleccionada. Las zonas tapadas no se resaltan.",
+    "en": "Yellow: boundary of the selected part’s visible surface. Occluded areas are not highlighted."
   },
   "selection.minimizeCard": {
     "es": "Minimizar ficha para ver la placa",
@@ -890,5 +914,169 @@
   "release.checkAI": {
     "es": "Comprobar disponibilidad de IA (sin inferencia)",
     "en": "Check AI availability (no inference)"
+  },
+  "discovery.toggle": {
+    "es": "Resaltar piezas con ficha",
+    "en": "Highlight parts with a card"
+  },
+  "discovery.legend": {
+    "es": "Las piezas resaltadas tienen ficha. Amarillo: selección.",
+    "en": "Outlined parts have a card. Yellow: selected."
+  },
+  "discovery.hidden": {
+    "es": "Marcas ocultas. Podés seguir tocando las piezas.",
+    "en": "Outlines hidden. You can still select parts."
+  },
+  "discovery.empty": {
+    "es": "Esta placa aún no tiene fichas educativas disponibles.",
+    "en": "This board has no educational cards yet."
+  },
+  "discovery.available": {
+    "es": "Ficha educativa disponible",
+    "en": "Educational card available"
+  },
+  "discovery.pending": {
+    "es": "Ficha educativa pendiente",
+    "en": "Educational card pending"
+  },
+  "discovery.proposed": {
+    "es": "Ficha propuesta · pendiente de revisión",
+    "en": "Proposed card · review pending"
+  },
+  "discovery.none": {
+    "es": "Esta pieza no tiene información asociada.",
+    "en": "No information is linked to this part."
+  },
+  "discovery.options": {
+    "es": "Opciones del visor",
+    "en": "Viewer options"
+  },
+  "generation.title": {
+    "es": "Información de generación",
+    "en": "Generation information"
+  },
+  "enrichment.cadGraphics": {
+    "es": "Marcas extraídas del STEP del fabricante: geometría y marco de coordenadas comprobados. No requieren un diseño eléctrico.",
+    "en": "Artwork extracted from the manufacturer STEP: geometry and coordinate frame checked. An electrical design is not required."
+  },
+  "generation.backsideReviewed": {
+    "es": "Foto del reverso y orientación elegidas mediante revisión manual. Alineación recalculada y contrastada con rasgos físicos; no es identificación automática ni una medición del volumen.",
+    "en": "Rear photo and orientation selected by manual review. Alignment recomputed and checked against physical features; this is neither automatic identification nor a volume measurement."
+  },
+  "generation.backsidePending": {
+    "es": "Reverso sin marcas verificadas: falta una foto elegida y alineada con evidencia suficiente. La reconstrucción del frente se conserva.",
+    "en": "No verified rear artwork: a sufficiently supported photo choice and alignment are missing. The front reconstruction is preserved."
+  },
+  "generation.backsideGemini": {
+    "es": "Gemini propuso la foto del reverso y su orientación. El programa recalculó la alineación y pasó los controles geométricos. No hubo revisión humana; la interpretación visual sigue siendo aproximada.",
+    "en": "Gemini proposed the rear photograph and its orientation. The program recomputed alignment and passed the geometric checks. No human review was performed; visual interpretation remains approximate."
+  },
+  "generation.backsideSource": {
+    "es": "La fuente identifica explícitamente la foto del reverso. Solo una orientación pasó los controles geométricos; no fue necesaria una inferencia de Gemini.",
+    "en": "The source explicitly identifies the rear photograph. Only one orientation passed the geometric checks; no Gemini inference was needed."
+  },
+  "generation.photoModel": {
+    "es": "Representación aproximada generada a partir de fotografías y documentación. No es un CAD del fabricante.",
+    "en": "Approximate representation generated from photographs and documentation. This is not manufacturer CAD."
+  },
+  "generation.illustrative": {
+    "es": "Espesor representado del PCB: {thickness} mm. Relieve de las piezas: {relief} mm. Son valores ilustrativos para facilitar la exploración, no medidas reales ni cotas del fabricante. Las alturas físicas no están determinadas.",
+    "en": "Displayed PCB thickness: {thickness} mm. Component relief: {relief} mm. These are illustrative values for exploration, not real measurements or manufacturer dimensions. Physical heights are undetermined."
+  },
+  "navigation.home": {
+    "es": "Inicio",
+    "en": "Home"
+  },
+  "navigation.back": {
+    "es": "Atrás",
+    "en": "Back"
+  },
+  "navigation.openBook": {
+    "es": "Abrir libro",
+    "en": "Open book"
+  },
+  "delivery.consent": {
+    "es": "Para analizar esta foto en Gemini Cloud, autorizá el envío de la imagen. Después continuará automáticamente.",
+    "en": "To analyse this photo with Gemini Cloud, consent to sending the image. Processing will then continue automatically."
+  },
+  "delivery.ambiguous": {
+    "es": "La identidad no es concluyente. Repetí la captura mostrando el nombre impreso o elegí manualmente. {reason}",
+    "en": "Identity is inconclusive. Retake with the printed model visible or choose manually. {reason}"
+  },
+  "delivery.catalogue": {
+    "es": "Identidad obtenida. Consultando el catálogo y las fuentes…",
+    "en": "Identity obtained. Checking catalogue and sources…"
+  },
+  "delivery.verifying": {
+    "es": "Comprobando las propuestas contra los píxeles de esta foto…",
+    "en": "Checking proposals against this photo’s pixels…"
+  },
+  "delivery.finished": {
+    "es": "{board} · {count} regiones respaldadas de {total} propuestas. Tocá una marca o explorá el modelo.",
+    "en": "{board} · {count} supported regions from {total} proposals. Tap a mark or explore the model."
+  },
+  "delivery.proposal": {
+    "es": "Identidad propuesta por visión · ubicación con respaldo local",
+    "en": "Vision-proposed identity · location supported by local pixels"
+  },
+  "delivery.identityBasis": {
+    "es": "Propuesta de Gemini vinculada por nombre o inscripción a la documentación; no es una probabilidad calibrada.",
+    "en": "Gemini proposal matched by name or marking to documentation; not a calibrated probability."
+  },
+  "delivery.pixelBasis": {
+    "es": "Segmentación local, estabilidad de semillas y soporte de bordes en la captura. No proviene de coordenadas CAD ni demuestra altura.",
+    "en": "Local segmentation, seed stability and boundary support in the capture. No CAD coordinates or height inference."
+  },
+  "delivery.stage": {
+    "es": "{stage}: {status}",
+    "en": "{stage}: {status}"
+  },
+  "delivery.openDocumentation": {
+    "es": "Ver documentación y pendientes",
+    "en": "View documentation and missing resources"
+  },
+  "delivery.documentationOnly": {
+    "es": "{board} identificada. Expediente guardado; faltan fuentes verificables para preparar el modelo 3D. Consultá la documentación y los motivos pendientes.",
+    "en": "{board} identified. Dossier saved; verified sources for the 3D model are missing. Open the documentation and unresolved reasons."
+  },
+  "delivery.manual": {
+    "es": "Elegir placa manualmente",
+    "en": "Choose board manually"
+  },
+  "entry.explore": {
+    "es": "Explorar placas",
+    "en": "Explore boards"
+  },
+  "entry.camera": {
+    "es": "Usar cámara",
+    "en": "Use camera"
+  },
+  "entry.catalog": {
+    "es": "Elegir del catálogo",
+    "en": "Choose from catalogue"
+  },
+  "entry.close": {
+    "es": "Cerrar opciones",
+    "en": "Close options"
+  },
+  "photo.noBoard": {
+    "es": "No detecté una placa en esta foto",
+    "en": "I did not detect a board in this photo"
+  },
+  "photo.unknownBoard": {
+    "es": "Veo una placa, pero no pude identificar el modelo",
+    "en": "I can see a board, but could not identify its model"
+  },
+  "photo.uncertainPresence": {
+    "es": "No puedo confirmar si hay una placa. Probá con otra foto más nítida.",
+    "en": "I cannot confirm whether there is a board. Try another, clearer photo."
+  },
+  "hosted.preparationPending": {
+    "es": "La preparación de placas nuevas todavía no está habilitada en esta demo pública.",
+    "en": "Preparing new boards is not yet enabled in this public demo."
+  },
+  "hosted.verificationPending": {
+    "es": "Placa identificada. La verificación de componentes aún requiere el backend; no se muestran cajas sin verificar.",
+    "en": "Board identified. Component verification still requires the backend; unverified boxes are not shown."
   }
 }

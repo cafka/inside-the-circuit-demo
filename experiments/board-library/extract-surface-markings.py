@@ -87,5 +87,5 @@ def extract(old_file,new_file,out,max_ink_mm=.05,resolution=1024):
     (out/'markings-extraction.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');return report
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('old');parser.add_argument('new');parser.add_argument('output');args=parser.parse_args()
-    report=extract(args.old,args.new,Path(args.output));print(json.dumps({k:v for k,v in report.items() if k!='layers'}));print(json.dumps(report['layers']))
+    parser=argparse.ArgumentParser();parser.add_argument('old');parser.add_argument('new');parser.add_argument('output');parser.add_argument('--max-ink-mm',type=float,default=.05);parser.add_argument('--resolution',type=int,default=1024);args=parser.parse_args()
+    report=extract(args.old,args.new,Path(args.output),args.max_ink_mm,args.resolution);print(json.dumps({k:v for k,v in report.items() if k!='layers'}));print(json.dumps(report['layers']))

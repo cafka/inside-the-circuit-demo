@@ -1,17 +1,27 @@
 {
   "schema": "independent-library-lock/1",
   "repository": "cafka/interactive-electronics-books",
-  "commit": "3b77d06dcb899d922be0afa0cfad8d95557bd87a",
+  "commit": "2486fb2301e4648849b7f6da568a468cde681def",
   "files": [
+    {
+      "path": "arduino/cat_feeder/cat_feeder.ino",
+      "sha": "54b8503f30edd45f1e92677a791dfb75b1c81b6d",
+      "size": 27899
+    },
     {
       "path": "arduino/door_alarm/door_alarm.ino",
       "sha": "943fdebc1cb3d32d0b516a7e7d3fef6b7aabb341",
       "size": 4413
     },
     {
+      "path": "arduino/plant_watering/plant_watering.ino",
+      "sha": "62d5e14866b9f69a897a30c7b595d7aa84a8df0a",
+      "size": 11251
+    },
+    {
       "path": "index.html",
-      "sha": "74b02f1ea361c4f9796ea2205630e5bc3562fd00",
-      "size": 5345
+      "sha": "4d05911511dd8f35d7f2d2ae605e40ec048fd90e",
+      "size": 7032
     },
     {
       "path": "python/led_blink.py",
@@ -39,14 +49,84 @@
       "size": 10613
     },
     {
+      "path": "src/books/coral/boardModel.js",
+      "sha": "9edc8d66f8388ed8569a1d9a05551a34c2a47285",
+      "size": 4171
+    },
+    {
+      "path": "src/books/coral/chapter1.js",
+      "sha": "2cb812c1235bf69b7c088e17befc95db4a7e40b4",
+      "size": 36871
+    },
+    {
+      "path": "src/books/coral/cover.js",
+      "sha": "f8e92f7536af85b3c99ce9e56eb8d227f5f03e06",
+      "size": 4455
+    },
+    {
+      "path": "src/books/coral/index.js",
+      "sha": "8e6e6a8fd7636c2ffdb7306eb08657885a9c4a84",
+      "size": 903
+    },
+    {
+      "path": "src/books/coral/model/LICENSE-coral-mechanicals.txt",
+      "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "size": 11357
+    },
+    {
+      "path": "src/books/coral/model/dev_board_micro.bin",
+      "sha": "55fc8dff7745d78f8242ca9f57b3637639c5213d",
+      "size": 2301944
+    },
+    {
+      "path": "src/books/coral/model/dev_board_micro.json",
+      "sha": "b49f95f1a7cb074daba65af8dd63fa59fb19b64e",
+      "size": 7420
+    },
+    {
+      "path": "src/books/coral/pageContent.js",
+      "sha": "5e843710147366f7d51e8c393edcab227f8150c2",
+      "size": 4049
+    },
+    {
+      "path": "src/books/coral/presence.js",
+      "sha": "34cc33c4b7ab08be6369af0dd79cb444afb7009b",
+      "size": 8332
+    },
+    {
+      "path": "src/books/coral/presenceScene.js",
+      "sha": "805936bb518cb24b816cc3dc8fc24070401e0cf3",
+      "size": 24135
+    },
+    {
+      "path": "src/books/esp32/armKinematics.js",
+      "sha": "bfd04fa9db00766088bf38e778766568b91549d0",
+      "size": 5678
+    },
+    {
       "path": "src/books/esp32/board.js",
       "sha": "d30bf2584491145ced9c00c56c110908efd1ac6c",
       "size": 9709
     },
     {
+      "path": "src/books/esp32/catFeeder.js",
+      "sha": "1ba1bde13bd62e4a4473dd9c69c03ee80940e5d4",
+      "size": 29416
+    },
+    {
       "path": "src/books/esp32/chapter1.js",
-      "sha": "b0745dd2872cf35cac6f54e97213d9b669b00e1f",
-      "size": 48284
+      "sha": "2dbe557cbfce7b78c384f9019d09c495b8a12f14",
+      "size": 49235
+    },
+    {
+      "path": "src/books/esp32/chapter2.js",
+      "sha": "9422664ba163119c8a6cbd55f55216a8775a61a0",
+      "size": 61395
+    },
+    {
+      "path": "src/books/esp32/chapter3.js",
+      "sha": "ab8ef83b6b30b2d2f78dac7127eadf121514187f",
+      "size": 82898
     },
     {
       "path": "src/books/esp32/cover.js",
@@ -59,24 +139,64 @@
       "size": 5728
     },
     {
+      "path": "src/books/esp32/feederParts.js",
+      "sha": "2b19407c728812f3648a12cd99277149b411f317",
+      "size": 7826
+    },
+    {
+      "path": "src/books/esp32/feederScene.js",
+      "sha": "c98468dc47f558aa820b59d729a4f06745e83c38",
+      "size": 29962
+    },
+    {
+      "path": "src/books/esp32/feederWorld.js",
+      "sha": "1bf86501685e3ca50c27659f74eab0c1d21bbbbb",
+      "size": 9085
+    },
+    {
+      "path": "src/books/esp32/ide.js",
+      "sha": "0d44276e3fadae4fb048fd962dedb9282c677521",
+      "size": 707
+    },
+    {
       "path": "src/books/esp32/index.js",
-      "sha": "0a44430a2f11c68112bba52cbcd9e963ba8ad2f1",
-      "size": 729
+      "sha": "5ac5e88261773ae388a87a33c90a076cbf020949",
+      "size": 996
     },
     {
       "path": "src/books/esp32/pageContent.js",
-      "sha": "f91afae54dc677769ab7fa6331cb716d4f857717",
-      "size": 5796
+      "sha": "e51268ef9e33142f93ea8eaf9fed69a99fe3c986",
+      "size": 24361
+    },
+    {
+      "path": "src/books/esp32/plantParts.js",
+      "sha": "b82c1bd6d8c37e1931cf0f9553df7e044a7aad7b",
+      "size": 11211
+    },
+    {
+      "path": "src/books/esp32/plantScene.js",
+      "sha": "5712aebe63aea3514da89f8a7639d6555315bced",
+      "size": 39774
+    },
+    {
+      "path": "src/books/esp32/plantWatering.js",
+      "sha": "d595db96e1648bf18a8d880b1b8c82af8190fa7b",
+      "size": 11190
+    },
+    {
+      "path": "src/books/esp32/plantWorld.js",
+      "sha": "48b67731846f29bfbc348a8cdb07918e6c6ed89c",
+      "size": 4846
     },
     {
       "path": "src/books/esp32/scene.js",
-      "sha": "fa2cf15e312370b08fd5752db7f4e36b0fc4491a",
-      "size": 31679
+      "sha": "fedbc75779b3abf74918dc5b6449c6b183f53863",
+      "size": 31700
     },
     {
       "path": "src/books/index.js",
-      "sha": "61639e68db2eeadb4b597f05402e609cb84b8135",
-      "size": 621
+      "sha": "792d40dca3806aa541202dc0bbf7856198af879a",
+      "size": 666
     },
     {
       "path": "src/books/raspberry-pi/index.js",
@@ -97,6 +217,11 @@
       "path": "src/circuitTraffic.js",
       "sha": "21ef34b87b3c1c10892977769ac81771f54325d3",
       "size": 13604
+    },
+    {
+      "path": "src/guide.js",
+      "sha": "83a25065d516aa9781c3dfc48070d35d366baf02",
+      "size": 18164
     },
     {
       "path": "src/lessons/index.js",
@@ -125,13 +250,13 @@
     },
     {
       "path": "src/main.js",
-      "sha": "b44f57c32bca13d1064dffe595bc265349819cc3",
-      "size": 33394
+      "sha": "8252314a7794cd2ad047f64153333a2ebba608cc",
+      "size": 56511
     },
     {
       "path": "src/pageContent.js",
-      "sha": "c4acd8f2f863b3ec9aa935e167320c5faedea496",
-      "size": 17649
+      "sha": "e7f90b6ec37c28e0ffc7f68f0a6feb136598175b",
+      "size": 17647
     },
     {
       "path": "src/piModel.js",
@@ -165,13 +290,13 @@
     },
     {
       "path": "src/ui.js",
-      "sha": "47d87048cae9379fb00874454f96dd5966f6e72f",
-      "size": 8817
+      "sha": "0a5bd33a6d45e151a057d28d5b8be1f09d764d18",
+      "size": 8903
     },
     {
       "path": "styles.css",
-      "sha": "239ecc7139e7c6f8a7ff6e3e03d4677bd61c2218",
-      "size": 37520
+      "sha": "efe938a89c320bd2c8957b8b1f668010f3c1b522",
+      "size": 50063
     },
     {
       "path": "vendor/LICENSE-three.txt",

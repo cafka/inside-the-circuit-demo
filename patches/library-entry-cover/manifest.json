@@ -1,0 +1,22 @@
+{
+  "schema": "pinned-library-patch/1",
+  "baseCommit": "2486fb2301e4648849b7f6da568a468cde681def",
+  "variant": "2486fb2301e4648849b7f6da568a468cde681def-cover-entry-v1",
+  "path": "src/main.js",
+  "baseBlob": "8252314a7794cd2ad047f64153333a2ebba608cc",
+  "patchedBlob": "7b735c982c5c913a4c42e91df84f77b16b2e833f",
+  "replacements": [
+    {
+      "before": "const opened = params.has('open');",
+      "after": "// Explicit integration entry: keep the selected lesson, but wait for a user tap.\nconst coverEntry = params.get('entry') === 'cover';\nconst opened = !coverEntry && params.has('open');"
+    },
+    {
+      "before": "libraryOpen = !opened && !params.has('book');",
+      "after": "libraryOpen = !coverEntry && !opened && !params.has('book');"
+    },
+    {
+      "before": "if (!opened && params.has('book')) openBook();",
+      "after": "if (!coverEntry && !opened && params.has('book')) openBook();"
+    }
+  ]
+}

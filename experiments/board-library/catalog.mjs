@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {enrichCatalog} from './catalog-enrichment.mjs';
 export const DIR=path.dirname(fileURLToPath(import.meta.url)),ROOT=path.resolve(DIR,'../..');
 export const STORE=path.resolve(process.env.ITC_BOARD_STORE||path.join(ROOT,'.local/release/catalog'));
 export const profiles=JSON.parse(fs.readFileSync(path.join(DIR,'profiles.json')));
@@ -11,14 +12,15 @@ export function saveJSON(file,data){fs.mkdirSync(path.dirname(file),{recursive:t
 export function readBoard(id){
  const d=boardDir(id),record=JSON.parse(fs.readFileSync(path.join(d,'record.json'))),auditPath=path.join(d,'cad-audit.json');let cadAudit=null;
  if(fs.existsSync(auditPath)){const audit=JSON.parse(fs.readFileSync(auditPath));if(audit.sourceSHA256===record.conversion?.sourceSHA256&&audit.policy==='missing-cad-face/1'&&audit.missingFaces?.length===record.conversion?.missingFaces)cadAudit=audit;}
- return {...record,cadAudit,review:fs.existsSync(path.join(d,'review.json'))?JSON.parse(fs.readFileSync(path.join(d,'review.json'))):{revision:0,materials:{},components:[],history:[]}};
+ const enriched=enrichCatalog(record,JSON.parse(fs.readFileSync(path.join(DIR,'catalog-enrichment.json'))));
+ return {...enriched,cadAudit,review:fs.existsSync(path.join(d,'review.json'))?JSON.parse(fs.readFileSync(path.join(d,'review.json'))):{revision:0,materials:{},components:[],history:[]}};
 }
 export function listBoards(){if(!fs.existsSync(STORE))return[];return fs.readdirSync(STORE).filter(safeId).flatMap(id=>{try{const b=readBoard(id),merged=[...b.components.filter(c=>!b.review.components.some(m=>m.id===c.id)),...b.review.components];return[{id,identity:b.identity,coverage:{...b.coverage,boundComponents:merged.filter(c=>c.nodeIndices.length).length},source:b.source,preparedAt:b.preparedAt,modelAvailable:b.modelAvailable!==false,preparationStatus:b.preparationStatus||'ready'}];}catch{return[];}});}
 const normalize=s=>String(s).normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 export function identifyName(name) {
   const q=normalize(name);if(!q)return{status:'unknown',candidates:[],confidence:null};
   const saved=listBoards().filter(b=>{const p=profiles.find(p=>p.id===b.id);return [b.identity.model,b.identity.manufacturer+' '+b.identity.model,readBoard(b.id).onboarding?.input,...(p?.aliases||[])].filter(Boolean).some(v=>normalize(v)===q);});
-  if(saved.length)return {status:saved.length===1?'identified':'ambiguous',confidence:'saved_documentation_identity',probability:null,basis:'persistent_catalog',candidates:saved.map(b=>({id:b.id,...b.identity,saved:true,modelAvailable:b.modelAvailable})),limitations:['Physical hardware revision is not inferred from a name.']};
+  if(saved.length)return {status:saved.length===1?'identified':'ambiguous',confidence:'saved_documentation_identity',probability:null,basis:'persistent_catalog',candidates:saved.map(b=>({id:b.id,...b.identity,saved:true,modelAvailable:b.modelAvailable,requestedName:readBoard(b.id).onboarding?.input||null})),limitations:['Physical hardware revision is not inferred from a name.']};
   const exact=profiles.filter(p=>[p.id,...p.aliases,p.identity.model].some(a=>normalize(a)===q));
   const candidates=exact.length?exact:profiles.filter(p=>normalize(p.identity.manufacturer+' '+p.identity.model).includes(q));
   return{status:exact.length===1?'identified':candidates.length?'ambiguous':'unknown',

@@ -1,7 +1,7 @@
 {
-  "url": "/library-assets/3b77d06dcb899d922be0afa0cfad8d95557bd87a/index.html",
+  "url": "/library-assets/2486fb2301e4648849b7f6da568a468cde681def-cover-entry-v1/index.html",
   "repository": "cafka/interactive-electronics-books",
-  "verifiedCommit": "3b77d06dcb899d922be0afa0cfad8d95557bd87a",
+  "verifiedCommit": "2486fb2301e4648849b7f6da568a468cde681def",
   "sourceRepository": "cafka/raspberry-pi-interactive-book",
   "sourceCommit": "e038d667017139122feba32d4e88e72d01244248",
   "languageSupport": [
@@ -23,10 +23,20 @@
       "manufacturer": "Espressif",
       "model": "ESP32-DevKitC V4",
       "module": "ESP32-WROOM-32E",
-      "chapters": 1,
+      "chapters": 3,
       "compatibility": "not_Arduino_Nano_ESP32",
       "pinoutSource": "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html"
+    },
+    {
+      "id": "coral",
+      "manufacturer": "Coral",
+      "model": "Dev Board Micro",
+      "chapters": 1,
+      "compatibility": "exact_board_coral_dev_board_micro",
+      "identitySource": "https://github.com/cafka/interactive-electronics-books/blob/2486fb2301e4648849b7f6da568a468cde681def/src/books/coral/index.js"
     }
   ],
-  "externalUrl": "https://cafka.github.io/interactive-electronics-books/"
+  "externalUrl": "https://cafka.github.io/interactive-electronics-books/",
+  "localPatch": "patches/library-entry-cover/manifest.json",
+  "engineCommit": "748ad8b7cdd156f857ec23a9e69440ed192a8749"
 }

@@ -1,0 +1,9 @@
+{
+  "version": "component-parallax-1",
+  "appearancePolicy": "experiments/visual-anchors/policy-v1.json",
+  "localSearch": {"radiusDiagonalFraction": 0.65, "minimumRadiusPixels": 12, "maximumRadiusPixels": 100, "scaleFactors": [0.9,1.0,1.1], "angleOffsetsDegrees": [-7.5,0,7.5], "peaksPerVariant": 3},
+  "segmentation": {"paddingDiagonalFraction": 0.3, "minimumPaddingPixels": 8, "seedFractions": [0.35,0.55], "iterations": 5, "randomSeed": 20261122, "minimumStabilityIoU": 0.8, "minimumAreaRatio": 0.3, "maximumAreaRatio": 2.5, "cannyLow": 50, "cannyHigh": 140, "edgeTolerancePixels": 2.0, "minimumEdgeSupport": 0.65, "minimumQuadrantSupport": 0.4, "minimumDominantFraction": 0.85},
+  "camera": {"maximumPlaneDisagreementPixels": 1.0},
+  "measurement": {"threads": 1, "repetitions": 1},
+  "limitations": ["Search radius is a bounded image-search budget, never a physical height bound", "Local NCC agreement and segmentation support do not measure height or prove identity", "No component result may modify or validate the PCB registration"]
+}
