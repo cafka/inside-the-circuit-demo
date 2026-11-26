@@ -1,5 +1,7 @@
 # RC1 security, privacy and rights review
 
+> Historical RC1 audit. V4 subsequently created a separate public source repository and an authenticated HTTPS preview. See [PUBLICATION_V4.md](PUBLICATION_V4.md) and `release/evidence/public-v4-security.json` for the current publication. The original research repository remains private.
+
 The development repository remains private. No visibility change, public repository creation, deployment, billing activation or VM creation occurred. `main` is unchanged. A clean candidate is an export for review, not a publication.
 
 ## Full reachable history

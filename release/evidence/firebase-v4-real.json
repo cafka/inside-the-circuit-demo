@@ -1,0 +1,87 @@
+{
+  "inputKind": "rendered_CAD_screenshot_not_physical_photo",
+  "invalidAppCheck": {
+    "httpStatus": 401,
+    "ms": 607,
+    "response": {
+      "error": {
+        "code": 401,
+        "message": "Firebase App Check token is invalid.",
+        "status": "UNAUTHENTICATED"
+      }
+    }
+  },
+  "transferMs": 438.69999998807907,
+  "observation": {
+    "schema": "automatic-photo-onboarding/1",
+    "captureSHA256": "4e0ceeff4c737d0dfaf7ebcb888cc6713645c2e55dc05a5e86cab08d335a395a",
+    "captureMimeType": "image/jpeg",
+    "inputFileNameSent": false,
+    "environment": {
+      "schemaVersion": "itc-identity-environment/1.0.0",
+      "evidenceKind": "real_environment_no_inference",
+      "observedAtUTC": "2026-11-26T02:42:56.790Z",
+      "secureContext": true,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36",
+      "logicalCPU": 8,
+      "reportedDeviceMemoryGiB": 4,
+      "promptAPIPresent": false,
+      "imageAvailability": "api_not_exposed",
+      "nanoGeneration": "UNVERIFIED",
+      "modelCalls": 0,
+      "modelDownloadsStarted": 0
+    },
+    "route": {
+      "lane": "cloud",
+      "reason": "configured_cloud_with_existing_consent"
+    },
+    "status": "invalid_response",
+    "inferenceSource": "in_cloud",
+    "raw": "{\n  \"schemaVersion\": \"itc-board-identity/1.0.0\",\n  \"manufacturer\": \"Raspberry Pi Foundation\",\n  \"family\": \"Raspberry Pi\",\n  \"model\": \"Raspberry Pi 5\",\n  \"hardwareRevision\": null,\n  \"boardId\": null,\n  \"status\": \"partial\",\n  \"visualEvidence\": [\n    \"Green PCB layout with characteristic Raspberry Pi 5 component arrangement including dual micro-HDMI ports, USB-C power connector, Ethernet and dual USB ports, and a 40-pin GPIO header\",\n    \"Printed text on the board surface reads Raspberry Pi 5\"\n  ],\n  \"alternatives\": [],\n  \"limitations\": [\n    \"Board revision and specific board ID are not visible in the provided view\",\n    \"Image contains rendered UI elements and text from an external web application interface\"\n  ]\n}",
+    "validation": {
+      "valid": false,
+      "errors": [
+        "partial_must_abstain_from_model_and_revision"
+      ],
+      "identity": null,
+      "recovery": null
+    },
+    "modelCalls": 1,
+    "timingsMs": {
+      "preparation": 11.400000005960464,
+      "firebaseMs": 2029.1000000238419,
+      "initializationMs": 2030.6000000238419,
+      "inferenceMs": 19928.19999998808
+    },
+    "costUSD": null,
+    "attempts": [
+      {
+        "lane": "cloud",
+        "status": "invalid_response",
+        "timingsMs": {
+          "firebaseMs": 2029.1000000238419,
+          "initializationMs": 2030.6000000238419,
+          "inferenceMs": 19928.19999998808
+        }
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 1456,
+      "candidatesTokenCount": 199,
+      "totalTokenCount": 1655,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 356
+        },
+        {
+          "modality": "IMAGE",
+          "tokenCount": 1100
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": null,
+    "totalMs": 21972.100000023842
+  }
+}

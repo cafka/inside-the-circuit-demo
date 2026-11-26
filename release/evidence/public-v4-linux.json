@@ -1,0 +1,64 @@
+{
+  "schema": "publication-linux-verification/1",
+  "observedAtUTC": "2026-11-26T02:48:17.540813+00:00",
+  "environment": "Google Cloud Shell, not Compute Engine VM",
+  "node": "26.13.0",
+  "python": "3.12.3",
+  "installation": [
+    {
+      "stage": "anonymous_clone",
+      "ms": 14390.74,
+      "exitCode": 0
+    },
+    {
+      "stage": "npm_ci",
+      "ms": 9259.38,
+      "exitCode": 0
+    },
+    {
+      "stage": "build",
+      "ms": 465.68,
+      "exitCode": 0
+    },
+    {
+      "stage": "tests",
+      "ms": 677.89,
+      "exitCode": 0
+    },
+    {
+      "stage": "library",
+      "ms": 1191.91,
+      "exitCode": 0
+    },
+    {
+      "stage": "restore_cold",
+      "ms": 8155.86,
+      "exitCode": 1
+    }
+  ],
+  "testsPassed": 33,
+  "knownNpmVulnerabilities": 0,
+  "restoredModels": [
+    "raspberry-pi-5",
+    "discovered-303d5ef190ffa846"
+  ],
+  "rejectedGeneratedModels": {
+    "arduino-nano-esp32": "generated_model_differs_review_required",
+    "discovered-1d4f241a74545d8a": "generated_model_differs_review_required"
+  },
+  "warmBundledRestore": {
+    "exitCode": 0,
+    "processMs": 1194.9048650000123
+  },
+  "httpCatalogueBoardCount": 2,
+  "finalBillingAndComputeRequery": {
+    "status": "blocked",
+    "reason": "gcloud had no active authenticated account; earlier successful verification was billingEnabled false and empty VM/disk/address lists",
+    "resourcesCreatedDuringPublication": {
+      "computeVM": 0,
+      "computeDisk": 0,
+      "staticIP": 0
+    },
+    "billingActivatedDuringPublication": false
+  }
+}

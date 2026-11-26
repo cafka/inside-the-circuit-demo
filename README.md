@@ -8,7 +8,7 @@ Inside the Circuit is an educational application for curious, practical and crea
 
 The project combines hybrid AI, custom visual and geometric algorithms, manufacturers' technical documentation and interactive 3D books. The aim is not simply to recognize a board, but to make the electronics inside it understandable.
 
-> **#BuildHybridAI 2026 — integration in progress.** The examples and measurements below describe demonstrated development results as of 25 November 2026. The unified mobile deployment, full camera-to-model workflow and library integration are not yet validated as a single release.
+> **#BuildHybridAI 2026 — integration in progress.** The examples and measurements below describe demonstrated development results as of 25 November 2026. The public source distribution and temporary authenticated HTTPS preview are available. Cloud inference and App Check have been exercised; the full physical-photo-to-model workflow and real-phone performance remain unvalidated. See the [release verification](docs/PUBLICATION_V4.md).
 
 ## 1. From curiosity to hands-on learning
 
@@ -146,12 +146,12 @@ The evidence demonstrates adaptation to different conditions and preservation of
 | Generate interactive representations | Converts official CAD or generates meshes from images and documents. Does not necessarily produce complete volumes or manufacturing-ready CAD. |
 | Locate components | Associates image regions or meshes with cards; does not guarantee every identity, outline or hidden-component detection. |
 | Explain electronics | EN/ES cards with provenance and evidence status; some are proposals awaiting review. Does not automatically verify every electrical connection. |
-| Experiment | Independent educational books and simulations; they do not control real hardware or necessarily run the neural model they explain. Integrated navigation is pending validation. |
+| Experiment | Independent educational books and simulations; they do not control real hardware or necessarily run the neural model they explain. Pinned Pi book loading, lesson reading and return navigation were observed; other chapters remain unverified. |
 | Handle uncertainty | Rejects unsupported heights, retains unresolved associations and separates facts from estimates; does not provide calibrated accuracy probabilities. |
 
 ## 7. Results and performance
 
-Four boards have been demonstrated across development catalogs: Raspberry Pi 5, Arduino Nano ESP32, Google Coral Dev Board Micro and Pimoroni Motor 2040. All four are now restored into one persistent local catalog with verified model hashes.
+Four boards have been demonstrated across development catalogs: Raspberry Pi 5, Arduino Nano ESP32, Google Coral Dev Board Micro and Pimoroni Motor 2040. All four were restored into one persistent Windows catalog with verified model hashes. The clean Linux installation restores Pi and Coral; Nano and Motor stop on generated-model hash differences. Their hash checks have not been bypassed.
 
 | Measured operation | Result | Context |
 | --- | ---: | --- |
@@ -168,7 +168,7 @@ The Motor 2040 trial recorded an estimated US$0.275 in known inference usage; de
 
 The immediate priorities are **generation time and presentation time**: reduce the wait when onboarding an unfamiliar board, and show useful content sooner while the rest of the model is being prepared. Cache reuse, progressive presentation and avoiding redundant requests are directions to evaluate, not claimed implemented features.
 
-Additional work includes measuring end-to-end performance on a real phone and Google Cloud VM, validating the live Cloud fallback, validating all pinned-library reading controls, and refining component geometry where evidence permits. Educational associations and camera overlays require further independent validation.
+Additional work includes measuring end-to-end performance on a real phone and Google Cloud VM, resolving the rejected structured identity in the live Cloud trial, validating the remaining pinned-library reading controls, and refining component geometry where evidence permits. Educational associations and camera overlays require further independent validation.
 
 ## 9. Installation and technical documentation
 
@@ -197,8 +197,9 @@ cd inside-the-circuit-demo
 npm ci
 npm run build
 npm run library:sync
-# For all four models: install Python dependencies first; see INSTALLATION.md.
-npm run catalog:restore
+# Pi and Coral: bundled rights-reviewed models; no Python required.
+npm run catalog:restore -- --bundled
+# For Nano and Motor generation and current Linux limits, see INSTALLATION.md.
 npm start
 ```
 
@@ -210,4 +211,4 @@ The public source distribution contains the frontend, Node backend, CAD/ECAD and
 
 Project code: MIT (see the repository's `LICENSE`). External CAD, photographs, documentation, fonts, libraries and other assets retain their respective licenses; the project license does not grant redistribution rights to third-party material. The book engine is maintained independently. No affiliation or endorsement by the board manufacturers is implied.
 
-Development evidence: `docs/PHOTO_TO_EDUCATIONAL_BOARD.md`, `docs/SELECTION_FIXED_CAMERA.md` and `docs/NO_CAD_BOARD_RECONSTRUCTION.md` in the development repository. A public release should include a rights-reviewed subset of the evidence, reproducible source acquisition and appropriate third-party notices.
+Historical evidence is indexed in [HISTORY_INDEX.md](docs/HISTORY_INDEX.md). The public release includes source-acquisition recipes, third-party notices and a rights-reviewed evidence subset. [Current verification, HTTPS access and measured limits](docs/PUBLICATION_V4.md) distinguish the publication from historical trials.

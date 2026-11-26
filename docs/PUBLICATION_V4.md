@@ -1,47 +1,97 @@
 # Publicación v4 — comprobación de entrega
 
-Fecha de revisión: 25/11/2026, Uruguay. Documentación recibida: `Inside_the_Circuit_README_v4.zip`, SHA-256 `60b6f349021053c37d6d49e179a62fa8cd7e7e0607e3ac88705e32317dd38b88`.
+Revisión: 25/11/2026, Uruguay. Paquete recibido: `Inside_the_Circuit_README_v4.zip`, SHA-256 `60b6f349021053c37d6d49e179a62fa8cd7e7e0607e3ac88705e32317dd38b88`.
 
-## Distribución y documentación
+## Acceso y estado de publicación
 
-Repositorio de presentación: https://github.com/cafka/inside-the-circuit-demo . Se exporta una distribución con historia nueva; el repositorio de investigación permanece privado y su `main` no se modifica. Incluye código frontend y backend, generación CAD/ECAD y sin CAD, adaptador Firebase AI Logic, políticas, dependencias, pruebas, licencia MIT y avisos de terceros. Los caminos `experiments/board-library` conservan su nombre para evitar una refactorización durante la entrega: contienen el motor integrado, no una dependencia privada.
+- **Código público:** [cafka/inside-the-circuit-demo](https://github.com/cafka/inside-the-circuit-demo). Historia nueva e independiente; el repositorio de investigación permanece privado y su `main` no se modifica.
+- **Vista HTTPS temporal:** [abrir Inside the Circuit](https://8080-cs-582373947824-default.cs-us-east1-pkhd.cloudshell.dev/). Requiere la misma cuenta Google de Cloud Shell. No es alojamiento permanente ni una URL anónima para jueces.
+- Código de la prueba real: publicación `6c85131` y anteriores de este repositorio nuevo. El commit posterior de documentación conserva los resultados; `release/evidence/public-v4-remote.json` registra la comprobación de publicación sin inventar un SHA autorreferente.
+- Devpost no fue enviado: lo presenta la autora.
 
-Se preservan los diez diagramas bilingües, la estructura narrativa y las tablas de v4. `generate_diagrams.py` los regenera con Python estándar. Solo se actualizan hechos de integración: catálogo unificado, relieve ilustrativo, biblioteca fijada, comandos y verificación. Las métricas históricas de Coral y Motor siguen identificadas como tales. `review-only/` nunca entra en la distribución.
+Para revisar: enlace HTTPS → Cámara → Modelos 3D → Coral o Raspberry Pi 5. No hace falta cámara para el catálogo. Seleccionar una pieza abre su ficha sin mover la cámara. Biblioteca abre la publicación independiente fijada. Cámara y uso táctil en teléfono físico siguen pendientes.
+
+La vista previa se inició aproximadamente a las 23:42 de Uruguay, con máximo de dos horas. Cloud Shell puede suspenderse antes por inactividad. `node scripts/start-cloudshell-preview.mjs` vuelve a imprimir la URL al reiniciarlo. No se promete disponibilidad permanente. [Cloud Shell documenta el acceso HTTPS limitado a la cuenta autenticada](https://docs.cloud.google.com/shell/docs/using-web-preview).
+
+## Documentación y código
+
+Se preservan los diez diagramas bilingües, las fuentes reproducibles, estructura narrativa y tablas v4, incluida la distinción entre CAD original de Coral y enriquecimiento. `python docs/readme-assets/generate_diagrams.py` reprodujo los diez SVG byte a byte. Solo se actualizó la leyenda del relieve ilustrativo de Motor. `review-only/` no se publicó.
+
+Se incluyen frontend, backend Node, generadores CAD/ECAD y sin CAD, adaptador Firebase AI Logic, políticas, dependencias fijadas, pruebas, MIT y avisos de terceros. `experiments/board-library` contiene el motor integrado: se conserva el nombre para evitar refactorizar durante la entrega. La localización fotográfica histórica requiere tres recursos privados excluidos y declara su indisponibilidad.
+
+La [captura Pi](readme-assets/pi5-explorer.jpg) procede de la aplicación actual. Nano volvió a abrir localmente con su ficha USB-C, pero la captura automática falló por timeout. Su modelo y captura no se publican porque el STEP separado carece de licencia explícita; no se creó una imagen sustitutiva. Las capturas Coral siguientes son reales del HTTPS:
+
+![Coral HTTPS y ficha USB](../release/evidence/coral-v4-https.jpg)
+
+![Coral en viewport 390 × 844 de Chrome de escritorio](../release/evidence/coral-v4-https-mobile.jpg)
+
+## Firebase y App Check: prueba real
+
+Proyecto `itc-nano-lab-20261121`, número `970731928304`. Nueva aplicación web de vista previa, reCAPTCHA Enterprise con dominios explícitos y puntuación mínima 0,5; sin token debug. App Check de Firebase AI Logic consultado como **ENFORCED**. Configuración activa fuera de Git.
+
+La ruta `/release-check/` ejecuta una prueba explícita sin selector de archivos Windows. Usa el adaptador/enrutador reales y nombre de archivo neutral. **La entrada es una captura CAD Pi, no una fotografía física ni una evaluación independiente de precisión.** Contiene texto de interfaz: acertar un nombre tampoco demostraría reconocimiento autónomo.
+
+Una solicitud real Firebase AI Logic, modelo configurado `gemini-3.5-flash-lite`, devolvió `inferenceSource: in_cloud`. El SDK no informó `modelVersion`. Propuso Raspberry Pi 5 y simultáneamente `status: partial` con modelo no nulo. El validador rechazó `partial_must_abstain_from_model_and_revision`: **inferencia real comprobada; identidad aceptada: ninguna**. No se relajó el contrato ni se repitió la llamada para buscar un acierto.
+
+Un token App Check deliberadamente inválido recibió **HTTP 401**, `Firebase App Check token is invalid`: rechazo del servidor comprobado. [Respuesta original completa, uso y tiempos](../release/evidence/firebase-v4-real.json).
+
+| Etapa de la misma solicitud | Tiempo |
+|---|---:|
+| Transferencia de imagen de prueba al navegador | 438,7 ms |
+| Preparación | 11,4 ms |
+| Inicialización, incluida Firebase/App Check | 2.030,6 ms |
+| Inferencia Cloud | 19.928,2 ms |
+| Total del enrutador, sin transferencia previa | 21.972,1 ms |
+| Petición separada con token inválido | 607,0 ms |
+
+Uso: 1.456 tokens de entrada (1.100 imagen/356 texto), 199 de salida, 1.655 total. `costUSD:null`: el SDK no comunica precio facturado. Última consulta autenticada: `billingEnabled:false`, cuenta de facturación desvinculada y cero VM/discos/IP Compute Engine. No se activó facturación ni creó VM; se utilizó la ruta gratuita disponible. No se obtuvo importe final de consola ni se afirma que la estimación sea una factura. [Condiciones de Firebase AI Logic](https://firebase.google.com/docs/ai-logic/pricing).
+
+La consulta de cierre de las 23:48 de Uruguay falló: gcloud ya no tenía cuenta activa. El recibo conserva ese fallo y no lo presenta como nueva verificación exitosa; backend y Firebase web continuaban funcionando. Alertas presupuestarias y límites de sesión no son un tope global de gasto.
+
+## Instalación limpia y mediciones
+
+Windows, directorio público nuevo: npm ci, 128 paquetes/129 auditados, cero vulnerabilidades conocidas; build correcto y **33/33 pruebas**, 772,24 ms. El catálogo Windows conserva los cuatro modelos aprobados.
+
+Cloud Shell: clonación anónima, Node 26.13.0, Python 3.12.3 y entorno Python nuevo. **No es la antigua e2-standard-8**. No había VM que reutilizar y no se creó otra; las mediciones de VM solicitadas quedan pendientes.
+
+| Operación en Cloud Shell | Tiempo de proceso | Resultado |
+|---|---:|---|
+| Clonación anónima | 14.390,74 ms | Correcta |
+| npm ci | 9.259,38 ms | 129 paquetes/130 auditados, cero vulnerabilidades conocidas |
+| Compilación | 465,68 ms | Correcta |
+| Pruebas | 677,89 ms | 33 aprobadas |
+| Biblioteca, descarga/verificación | 1.191,91 ms | 36 archivos |
+| Primera restauración completa | 8.155,86 ms | Detenida en Nano por hash distinto |
+| Restauración de modelos incluidos en caché | 1.194,90 ms | Pi y Coral verificados |
+
+`npm run catalog:restore -- --bundled` restaura Pi y Coral sin Python. **Nano y Motor fallan en Linux** con `generated_model_differs_review_required`; no instalan registros no verificados. Nano conserva posiciones/estructura JSON, pero cambian triangulación y normales: la equivalencia no está establecida. Motor permanece sin clasificar. No se omiten hashes ni se declara reproducible el catálogo Linux completo. [Recibo](../release/evidence/public-v4-linux.json) y [comandos](INSTALLATION.md).
+
+Coral HTTPS, Chrome escritorio, GLB de 3.593.520 bytes: carga+parseo 399,7 ms; primer cuadro 4.496,7 ms; trabajo de selección 18,4 ms; dos cuadros posteriores 103,5 ms. Carga+parseo **no** es transferencia aislada; requestAnimationFrame no mide latencia física de pantalla. No hubo regeneración: modelo verificado reutilizado. [Estado completo](../release/evidence/coral-v4-https-state.json). Viewport y documento 390 × 844 sin desbordamiento; emulación escritorio, no teléfono. Estos tiempos no se suman a la generación histórica ni se confunden con inferencia.
 
 ## Biblioteca independiente
 
-Publicación fijada: `cafka/interactive-electronics-books@3b77d06dcb899d922be0afa0cfad8d95557bd87a`. `npm run library:sync` verifica 36 archivos por hash Git y tamaño, descargados fuera de Git; no hay una copia manual ni cambios al repositorio Kiro. Actualizar con `node scripts/sync-library.mjs --revision <SHA-completo-revisado>` y revisar el lock. Primera descarga: 3.033,70 ms. Registro: cuatro capítulos Pi y uno ESP32-DevKitC; no Coral ni Nano compatible. La carga, apertura del libro Pi, lectura accesible de la lección 1 y regreso se comprobaron. La transición demoró más que los 10 s de la prueba anterior; no se midió su latencia exacta. Idioma y tema continúan independientes.
+Publicación `cafka/interactive-electronics-books@3b77d06dcb899d922be0afa0cfad8d95557bd87a`. `npm run library:sync` verifica 36 archivos por hash Git/tamaño y los guarda fuera de Git. Actualización reproducible: `node scripts/sync-library.mjs --revision <SHA-completo-revisado>`, revisar el lock. Kiro permanece en su repositorio sin cambios.
 
-## Firebase y acceso HTTPS
+Primera descarga Windows: 3.033,70 ms. Cuatro capítulos Pi y uno ESP32-DevKitC, sin Coral ni Nano compatible. Se observaron apertura Pi, lectura de lección 1 y regreso. Transición superior a los 10 s de la comprobación previa, sin medición exacta. Otros capítulos no verificados; idioma y tema independientes.
 
-Proyecto comprobado: `itc-nano-lab-20261121`, número `970731928304`. Consulta real: **billingEnabled:false**, sin VM, discos ni direcciones IP de Compute Engine. App Check de Firebase AI Logic: **ENFORCED**. La primera consulta omitía el proyecto de cuota y devolvió 403; repetir con `x-goog-user-project` confirmó el estado.
+## Seguridad y licencias
 
-Se registró una aplicación web para la vista previa y reCAPTCHA Enterprise con dominios explícitos y puntuación mínima 0,5. Configuración privada fuera de Git; sin token debug. La facturación sigue desactivada. La obtención de un token válido y una inferencia real desde HTTPS requieren su prueba final; la configuración por sí sola no cuenta como una inferencia exitosa.
+Exportación por lista explícita: excluye historia privada, fotos/videos de investigación, archivos personales, configuración activa y experimentos descartados. [Auditoría de objetos Git](../release/evidence/public-v4-security.json) registra recuentos/alcance sin valores secretos. Un escáner por patrones no garantiza ausencia absoluta de secretos.
 
-El backend conserva escucha en loopback y permite un origen HTTPS exacto detrás de un proxy autenticado. `node scripts/start-cloudshell-preview.mjs` lo ejecuta en Cloud Shell con límite de dos horas. El enlace es temporal y exige la misma cuenta Google: no equivale a un despliegue público persistente. Las mediciones de Cloud Shell se identificarán como tales, nunca como las de la VM e2-standard-8 eliminada. No se ha creado una nueva VM ni activado facturación.
+- Código propio MIT; atribuciones Kiro conservadas.
+- Pi CAD/gráficos MIT: modelo y captura incluidos.
+- Coral CAD/ECAD Apache-2.0; derivados identificados; capturas aportadas para publicación o tomadas del modelo autorizado.
+- Nano: arte eléctrico CC BY-SA 4.0 atribuido; STEP sin aviso explícito, GLB/captura retenidos; adquisición oficial local documentada.
+- Motor: fotos/texturas/capturas excluidas por derechos no confirmados; diagrama conceptual y restauración local conservados.
+- Biblioteca Kiro: sin licencia abierta elegida en la publicación revisada; consumo por versión, código no incorporado bajo MIT.
+- PyMuPDF AGPL/comercial: opcional para extracción documental, no instalado en Cloud Shell. El servicio público que lo use necesita resolver sus obligaciones.
 
-## Pruebas y mediciones
+## Pendientes concretos
 
-Compilación local correcta; **33/33 pruebas focalizadas**, 1.097,99 ms. Los dobles de inferencia se etiquetan explícitamente. El nuevo control de origen rechaza hosts/orígenes ajenos y la configuración pública omite secretos. Se registra tiempo de trabajo de selección y tiempo hasta cuadro presentado por separado de carga de modelo. Estos campos no son una medida de precisión.
+1. Hosting permanente, autenticación y almacenamiento multiusuario; Cloud Shell no resuelve esa entrega.
+2. Teléfono físico y una identidad fotográfica aceptada; esta prueba CAD solo verificó transporte y rechazo.
+3. Portabilidad Nano/Motor, captura Nano actual y derechos del STEP/Motor.
+4. Generación y recursos medidos en una VM autorizada: la anterior ya no existe; crear otra requiere autorización de recurso pago.
+5. Biblioteca Coral publicada por Kiro, otros capítulos y obligaciones de PyMuPDF si se habilita extracción documental pública.
 
-La captura actual de Raspberry Pi conserva el modelo y la selección BCM2712. Nano abrió desde el catálogo con sus cuatro asociaciones; la captura automática sufrió timeout del navegador y no se inventó una imagen de sustitución. La prueba completa en teléfono físico debe realizarla la usuaria con el enlace HTTPS.
-
-## Auditoría y licencias
-
-La exportación por lista explícita excluye historia privada, fotos/videos de investigación, archivos personales, configuración activa y campañas de pruebas descartadas. Se escanean patrones de claves y rutas personales antes de copiar. El escáner no constituye garantía absoluta de ausencia de secretos.
-
-- Código propio MIT; se conservan las atribuciones del código recuperado de Kiro.
-- Pi CAD y gráficos: aviso MIT del fabricante; captura actual autorizada por esa licencia.
-- Coral CAD/ECAD: Apache-2.0; modelo enriquecido y capas identificados como derivados. Capturas Coral/autoría del libro proporcionadas expresamente para publicación por la autora.
-- Nano: arte eléctrico CC BY-SA 4.0, atribuido. El STEP separado no contiene un aviso explícito: su GLB y su captura no se redistribuyen hasta aclararlo; se conserva adquisición local desde la fuente oficial.
-- Motor: fotos, texturas y capturas excluidas por falta de permiso afirmativo de redistribución; permanece esquema conceptual y restauración local fijada por hashes.
-- Biblioteca Kiro: sin licencia abierta elegida en el README revisado; se consume su publicación por versión, sin añadir su código al repositorio MIT.
-- Dependencias nativas conservan sus licencias; PyMuPDF es AGPL/comercial, opcional para extracción documental. Un servicio público que lo utilice requiere revisar sus obligaciones; no se lo presenta como MIT.
-
-## Pendientes explícitos
-
-Confirmar derechos de redistribución del STEP Nano y fotos Motor; verificar los demás capítulos de la biblioteca y uso táctil físico. El laboratorio no tiene VM que reutilizar: medir en Compute Engine requeriría una autorización concreta de recurso pago. Hosting permanente, costes y almacenamiento multiusuario no se resuelven con un enlace temporal. La autora presenta Devpost personalmente.
-
-## Instalación limpia de la distribución publicada
-
-Windows, directorio nuevo: `npm ci` instaló 128 paquetes, auditó 129 y encontró cero vulnerabilidades conocidas; compilación correcta; 33/33 pruebas, 772,24 ms. Publicación inicial `fde7839da4296efa6854ac1bc35f8c0cb68f3a94`, rama `main` del repositorio público nuevo, verificada con `git ls-remote`. Consulta HTTP anónima a GitHub: 200, `private:false`. No es la rama main del repositorio de investigación.
+No se iniciaron investigaciones de reconocimiento ni se alteraron geometrías, umbrales o selección para la publicación.

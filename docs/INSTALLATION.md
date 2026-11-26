@@ -3,7 +3,7 @@
 ## Requirements
 
 - Node 24.12 or later and npm. Versions/integrity: `package-lock.json`.
-- Python 3.14 for local CAD/photo generation. The viewer/server does not itself require Python when all models exist.
+- Python 3.14 was used on Windows; Python 3.12.3 installed the minimal native toolchain on Linux. Exact generated-model portability is not established (see below). Python is needed for local CAD/photo generation. The viewer/server does not itself require Python when all models exist.
 - Modern WebGL browser. Camera requires localhost or HTTPS and user permission. Nano requires actual installed multimodal capability; no browser version promises its availability.
 - Internet for external resources, the independent books and authorized Cloud inference. No GPU/VM is provisioned by setup.
 
@@ -16,7 +16,7 @@ python -m venv .local/venv
 python -m pip install -r requirements-release.txt
 npm run build
 npm run library:sync
-npm run catalog:restore
+npm run catalog:restore -- --bundled
 npm start
 ```
 
@@ -36,6 +36,10 @@ Open **http://127.0.0.1:4188/**. Keep one server. `PORT` changes the port; `ITC_
 The existing catalogue is never overwritten. A changed upstream resource or generated hash stops with an explicit error. No Gemini call occurs. `restoration-receipt.json` records per-board time and downloads/cache reads. `ITC_RESOURCE_CACHE` optionally points to a directory whose filenames are SHA-256 values; each cached input is still verified. The empty-directory test used this mode, not a fresh network acquisition.
 
 Public sources can disappear or change; do not bypass hash failures. Inspect and version new source evidence first. The Node service resolves model names from the shared record format; it does not infer board identity from a file's name.
+
+## Verified platform limits
+
+The default quick start above restores only the bundled Pi and Coral models. Use `npm run catalog:restore -- --board=<catalogue-id>` for one other manifest entry, or omit flags for all four. Windows restored all four approved hashes. In a fresh Cloud Shell Linux clone (Node 26.13.0, Python 3.12.3), npm install, build and 33 tests passed; Pi and Coral restored. Nano and Motor generation stopped at `generated_model_differs_review_required`. No unverified record was installed. Nano has matching positions and JSON structure, but different triangulation and normal bytes; equivalence has **not** been established. Motor divergence remains unclassified. Do not bypass those checks or describe the complete catalogue as Linux-reproducible yet.
 
 ## Firebase and consent
 
@@ -63,9 +67,9 @@ The current adapter restricts project/app identity to the existing lab as an exp
 npm run test:release
 ```
 
-These tests require no cloud and label inference doubles explicitly. Recorded real calls remain historical. Current photo-component localization requires three private inherited reference assets; the clean public distribution does not ship them. Without authorized local fixtures it reports localization unavailable. Name-based 3D exploration, CAD enrichment and the saved catalogue remain usable.
+These tests require no cloud and label inference doubles explicitly. The v4 HTTPS trial contains one new real Cloud call and an invalid-App-Check probe; see `release/evidence/firebase-v4-real.json`. The call returned a response but its identity schema was rejected. This is not a successful physical-photo recognition trial. Current photo-component localization requires three private inherited reference assets; the clean public distribution does not ship them. Without authorized local fixtures it reports localization unavailable. Name-based 3D exploration, CAD enrichment and the saved catalogue remain usable.
 
-For future deployment, add authenticated administration, shared storage, HTTPS/secure camera context, durable jobs, runtime permissions, rate limits and per-user consent. Do not expose the current loopback-only administrative server by simply changing its bind address. No deployment or new infrastructure was performed in RC1.
+For future deployment, add authenticated administration, shared storage, HTTPS/secure camera context, durable jobs, runtime permissions, rate limits and per-user consent. Do not expose the current loopback-only administrative server by simply changing its bind address. RC1 had no deployment. V4 adds the temporary authenticated preview described below, without a new paid VM or billing activation.
 
 ## Temporary authenticated HTTPS preview
 

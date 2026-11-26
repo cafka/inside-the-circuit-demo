@@ -1,0 +1,16 @@
+{
+  "diagramCount": 10,
+  "byteIdenticalAfterRegeneration": true,
+  "hashes": {
+    "architecture-en.svg": "d08fc3c6a3f2d759e37d98e04df7783d7dabe62187f6f793b0cfb144bf9caf74",
+    "architecture-es.svg": "dafcbefc3b775a241cbf5f809e2564895d084df724e81202f93e2d8b70d0ef5f",
+    "deployment-en.svg": "0def84aa8b3646b50e01e55fb7edd83111c4956c2b0d4f8aa58e6df9e8284766",
+    "deployment-es.svg": "edd55a546298b66ba89eec9eb765785056e12d09279d5bee6ccf15c5af0b5dd1",
+    "reconstruction-en.svg": "da39358dc0c4341b8aa34a28f49017e0210a92cdacfab2e78eb7ddc262e8515a",
+    "reconstruction-es.svg": "4b02540eaff820839d4f2d9a7c08db72560b75a2ccb0703c0ca4f0fe5e296a38",
+    "three-scenarios-en.svg": "4c5f27b339a2e2606a82d31708a180c427d9df7dc478d461bfbdf7f990b2c04a",
+    "three-scenarios-es.svg": "44e704c87d73a1c1d8e17dd4d30eb7c854e9406065cc22ec2337a0dc780b3ea1",
+    "user-journey-en.svg": "e5df85a5a12fe91d88f32e5c0f05d7f4d277683c8f2ed7e6970c8ac5025274c8",
+    "user-journey-es.svg": "ec0d0419dd61e0ca2e2a4bf14bb9362fb358f068069f6c34feecfc0c5a7603e0"
+  }
+}

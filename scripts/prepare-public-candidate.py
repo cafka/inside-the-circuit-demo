@@ -18,7 +18,7 @@ files += [f for d in ['assets','locales'] for f in (root/'experiments/board-libr
 files += [root/p for p in ['release/catalog-manifest.json','scripts/restore-release-catalog.mjs','scripts/setup-release.mjs','scripts/audit-release-history.py','scripts/prepare-public-candidate.py','tests/release.test.mjs','tests/reconstruction.test.mjs','tests/helpers/identity.mjs','docs/ARCHITECTURE.md','docs/INSTALLATION.md','docs/RELEASE_RC1.md','docs/RELEASE_SECURITY_LICENSES.md','docs/LIBRARY_INTEGRATION.md','docs/HISTORY_INDEX.md']]
 files += [f for f in (root/'release/evidence').rglob('*') if f.is_file()]
 files += list((root/'tests').glob('release*.test.mjs'))
-files += [root/'scripts/sync-library.mjs']
+files += [root/'scripts/sync-library.mjs',root/'scripts/glb-fingerprint.py']
 files += [f for f in [root/'docs/PUBLICATION_V4.md',root/'scripts/start-cloudshell-preview.mjs'] if f.exists()]
 # No research screenshots, arbitrary .local data, notebooks or old Git objects.
 rows=[];issues=[]

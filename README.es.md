@@ -8,7 +8,7 @@ Inside the Circuit es una aplicación educativa pensada para personas curiosas, 
 
 El proyecto combina inteligencia artificial híbrida, algoritmos propios de procesamiento visual y geométrico, documentación técnica de fabricantes y libros interactivos en 3D. El objetivo no es simplemente reconocer una placa, sino comprender la electrónica que contiene.
 
-> **#BuildHybridAI 2026 — integración en curso.** Los ejemplos y mediciones corresponden a resultados de desarrollo demostrados al 25 de noviembre de 2026. El despliegue móvil unificado, el recorrido completo desde cámara y la integración de la biblioteca aún no se han validado como una única versión.
+> **#BuildHybridAI 2026 — integración en curso.** Los ejemplos y mediciones corresponden a resultados demostrados al 25 de noviembre de 2026. Ya están disponibles la distribución pública de código y una vista HTTPS temporal autenticada. Se ejecutaron inferencia Cloud y App Check; el recorrido completo desde una foto física y el rendimiento en teléfono siguen pendientes. Ver la [comprobación de publicación](docs/PUBLICATION_V4.md).
 
 ## 1. De la curiosidad a la práctica
 
@@ -122,7 +122,7 @@ El catálogo es pequeño deliberadamente: estos casos permiten probar distintas 
 | <img src="docs/readme-assets/nano-pending-es.svg" width="220" alt="Captura actual de Nano ESP32 pendiente"> | **Arduino Nano ESP32 (ABX00083)** — STEP oficial y diseño eléctrico; perfil preparado. | Enriquecimiento de un CAD visualmente incompleto: sustrato azul, 30 contactos, taladros y serigrafía de ambas caras. Cuatro componentes documentados; selección USB-C verificada. |
 | <img src="docs/readme-assets/motor-fallback-es.svg" width="220" alt="Diagrama conceptual de Motor 2040, no captura"> | **Pimoroni Motor 2040** — fotografías y documentación, sin CAD utilizable. | Descubrimiento por nombre, Gemini Cloud real, generación de superficies texturizadas y 13 regiones seleccionables con fichas propuestas; sin alturas individuales verificadas. |
 
-*La captura real de Motor 2040 se conserva en el paquete de revisión, fuera de los recursos previstos para publicación, porque incluye texturas derivadas de una fotografía del fabricante sin licencia de redistribución confirmada. La imagen de la tabla es un esquema conceptual, no un resultado renderizado. Las capturas actuales de Pi y Nano se incorporarán tras su revisión de derechos.*
+*La captura real de Motor 2040 se conserva en el paquete de revisión, fuera de los recursos previstos para publicación, porque incluye texturas derivadas de una fotografía del fabricante sin licencia de redistribución confirmada. La imagen de la tabla es un esquema conceptual, no un resultado renderizado. La captura de Pi procede de la aplicación actual. La captura de Nano permanece fuera de la publicación: el STEP separado no incluye un aviso explícito de redistribución. Su arte eléctrico CC BY-SA se atribuye por separado.*
 
 ### Cobertura de las pruebas
 
@@ -146,12 +146,12 @@ La evidencia muestra adaptación a distintas condiciones y conservación de func
 | Generar representaciones interactivas | Convierte CAD oficial o genera mallas propias desde imágenes y documentación. No produce necesariamente volúmenes completos ni CAD apto para fabricación. |
 | Localizar componentes | Asocia regiones de imagen o mallas con fichas; no garantiza la identidad de cada pieza, la exactitud de todos los contornos ni la detección de componentes ocultos. |
 | Explicar electrónica | Fichas ES/EN con procedencia y estado de evidencia; algunas son propuestas pendientes de revisión. No verifica automáticamente todas las conexiones eléctricas. |
-| Experimentar | Libros y simulaciones educativas independientes; no controla hardware real ni ejecuta necesariamente el modelo neuronal que explica. La navegación integrada sigue en validación. |
+| Experimentar | Libros y simulaciones educativas independientes; no controla hardware real ni ejecuta necesariamente el modelo neuronal que explica. Se comprobaron la apertura del libro Pi fijado, la lectura de una lección y el regreso; los demás capítulos siguen pendientes. |
 | Gestionar incertidumbre | Rechaza alturas sin evidencia, conserva asociaciones no resueltas y distingue hechos de estimaciones; no ofrece probabilidades de precisión calibradas. |
 
 ## 7. Resultados y rendimiento
 
-Se han demostrado cuatro placas en distintos catálogos de desarrollo: Raspberry Pi 5, Arduino Nano ESP32, Google Coral Dev Board Micro y Pimoroni Motor 2040. Las cuatro ya se restauran en un catálogo local persistente con hashes de modelo verificados.
+Se han demostrado cuatro placas en distintos catálogos de desarrollo: Raspberry Pi 5, Arduino Nano ESP32, Google Coral Dev Board Micro y Pimoroni Motor 2040. Las cuatro se restauraron en un catálogo Windows persistente con hashes verificados. La instalación Linux limpia restaura Pi y Coral; Nano y Motor se detienen por diferencias en los hashes de los modelos generados. No se omitieron esas comprobaciones.
 
 | Operación medida | Resultado | Contexto |
 | --- | ---: | --- |
@@ -168,7 +168,7 @@ La prueba de Motor 2040 registró un gasto conocido estimado de US$0,275 por inf
 
 Las prioridades inmediatas son **los tiempos de generación y los tiempos de presentación**: reducir la espera al incorporar una placa desconocida y mostrar contenido útil antes, mientras se termina de preparar el modelo. La reutilización de caché, la presentación progresiva y la eliminación de consultas redundantes son líneas de mejora a evaluar, no funcionalidades que se declaren implementadas.
 
-También queda medir el rendimiento integral en un teléfono real y una VM de Google Cloud, validar la alternativa Cloud en vivo, validar todos los controles de lectura de la biblioteca fijada, y refinar el espesor, la cara posterior y la geometría de componentes cuando exista evidencia. Las asociaciones educativas y los contornos sobre fotografías requieren mayor validación independiente.
+También queda medir el rendimiento integral en un teléfono real y una VM de Google Cloud, resolver la identidad estructurada rechazada en la prueba Cloud real, validar los controles de lectura restantes de la biblioteca fijada, y refinar el espesor, la cara posterior y la geometría de componentes cuando exista evidencia. Las asociaciones educativas y los contornos sobre fotografías requieren mayor validación independiente.
 
 ## 9. Instalación y documentación técnica
 
@@ -197,8 +197,9 @@ cd inside-the-circuit-demo
 npm ci
 npm run build
 npm run library:sync
-# Para los cuatro modelos: instalar antes Python; ver INSTALLATION.md.
-npm run catalog:restore
+# Pi y Coral: modelos incluidos con derechos revisados; no requieren Python.
+npm run catalog:restore -- --bundled
+# Generación de Nano/Motor y límites actuales de Linux: INSTALLATION.md.
 npm start
 ```
 
