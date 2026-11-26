@@ -1,0 +1,101 @@
+{
+  "provenance": "Official sources and historical front observation only; no rear selection or alignment",
+  "sources": [
+    {
+      "id": "source-2",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-1_1ce53b9e-8c9c-4554-8f1b-675027bf632d.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "b7f077d5a83f783dffa52a3a80a3ee31c7757170109b5d685b9be9ab6aa788fa",
+      "decodedSHA256": "d9d31de8f387ba3dbbb4760bfc9cd9256c00138699930c2110a7a6f4a31fc926",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-3",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-2_0c65f283-391a-4dde-990e-9253e2fca6b0.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "6d0dcc60e1aa07980c7a67eaead27ec616b50dae3b35ebf39a36780d80c0d197",
+      "decodedSHA256": "e2d93238b4847e98b7fea473b9d4643f647b728a73cbc1cbb62fc692f2a214ff",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-4",
+      "url": "https://shop.pimoroni.com/cdn/shop/products/motor-2040-3_3970f5e6-faa7-4ca5-9f72-095c7fe5486c.jpg?crop=center&height=1500&v=1655198615&width=1500",
+      "sha256": "79b98cf0d91f8b2c5f523af2ab119fe984961ef6ca99fc503fdab0d9f03d8672",
+      "decodedSHA256": "68c8083d30ac509a665dc928b4734c20c87ad759e57a95345d7ef387ad1f105d",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-6",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/motor_2040_drawing.png?v=1655393482",
+      "sha256": "77ebf1f393c53f72b0ba95ce816144e8af1608c2f2f7011f335251e5b7c33314",
+      "decodedSHA256": "f92f36f70236bfa9b3ee8edeb8bc228845056ecb5813d7bea00ccb6ea02ceec4",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-7",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/motor2040_power_diagram_1_600x600.png?v=1654859595",
+      "sha256": "04ccdd207b861888488ce5b93974b87b5f93c0b7a51c4fe131326dbdcdf524ed",
+      "decodedSHA256": "ae1bfd9d3f74d7acb1d3ed8614f06596800c14e2f06f86d5bdcaa3fcf62ed532",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    },
+    {
+      "id": "source-8",
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/products/motor-2040-1_1ce53b9e-8c9c-4554-8f1b-675027bf632d.jpg?v=1655198615",
+      "sha256": "c6a01be7a1a53b6cb3c4561681682687d69bafd4916f203bef76ddcfa54201f1",
+      "decodedSHA256": "8742172fb8d4bb6acb9c5aa8ccd7947fadb24cbc7aa8dfe9fa8647e58ef91060",
+      "mimeType": "image/png",
+      "license": {
+        "id": null,
+        "status": "undetermined",
+        "redistributionAuthorized": false
+      }
+    }
+  ],
+  "front": {
+    "referenceImageId": "source-3",
+    "board": {
+      "corners": [
+        [
+          111,
+          214
+        ],
+        [
+          894,
+          214
+        ],
+        [
+          894,
+          788
+        ],
+        [
+          111,
+          788
+        ]
+      ]
+    }
+  },
+  "requestSHA256": "ac852e95cca91e52717ae1f8c8a13aea338b43bec4f10979e381bd0c9793d28a"
+}
