@@ -62,6 +62,8 @@ const server=http.createServer(async(req,res)=>{
     if(parts[0]==='api'&&parts[1]==='boards'&&parts.length===3)return json(res,200,readBoard(parts[2]));
     if(cameraAssets[url.pathname]){const relative=cameraAssets[url.pathname],entry=fixtureManifest.assets.find(a=>a.localPath===relative);if(!entry)throw Error('unknown_local_recognition_asset');const bytes=fs.readFileSync(path.join(ROOT,'.local/fixtures',relative));if(crypto.createHash('sha256').update(bytes).digest('hex')!==entry.sha256)throw Error('local_recognition_asset_hash_mismatch');res.writeHead(200,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','Cross-Origin-Resource-Policy':'same-origin'});res.end(req.method==='HEAD'?undefined:bytes);return;}
     let file,contentType,gzip=false;
+    const checks={'/release-check/':['experiments/board-library/release-check.html','text/html; charset=utf-8'],'/release-check.js':['experiments/board-library/public/release-check.js','text/javascript; charset=utf-8'],'/release-check.js.LEGAL.txt':['experiments/board-library/public/release-check.js.LEGAL.txt','text/plain'],'/release-check/reference.jpg':['docs/readme-assets/pi5-explorer.jpg','image/jpeg']};
+    if(checks[url.pathname]){const [relative,type]=checks[url.pathname];res.writeHead(200,{'Content-Type':type,'Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});fs.createReadStream(path.join(ROOT,relative)).pipe(res);return;}
     if(parts[0]==='library-assets'){
       const relative=parts.slice(2).join('/'),entry=libraryLock.files.find(f=>f.path===relative);
       if(parts[1]!==libraryLock.commit||!entry)return json(res,404,{error:'unknown_library_asset'});
