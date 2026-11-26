@@ -8,7 +8,7 @@ import {saveJSON,ROOT} from '../experiments/board-library/catalog.mjs';
 const [workArg,configArg,portArg='4208']=process.argv.slice(2);if(!workArg||!configArg)throw Error('Usage: node scripts/test-backside-firebase.mjs ISOLATED_WORK EXISTING_RUNTIME_CONFIG [PORT]');
 const work=path.resolve(workArg),port=Number(portArg),origin=process.env.ITC_OPERATOR_ORIGIN||`http://localhost:${port}`,config=publicRuntimeConfig(JSON.parse(fs.readFileSync(configArg)));
 const allowedHost=new URL(origin).host;
-if(!/^http:\/\/localhost:\d+$/.test(origin)&&!/^https:\/\/[a-z0-9-]+\.cloudshell\.dev$/.test(origin))throw Error('trusted_operator_origin_required');
+if(!/^http:\/\/localhost:\d+$/.test(origin)&&!/^https:\/\/[a-z0-9.-]+\.cloudshell\.dev$/.test(origin))throw Error('trusted_operator_origin_required');
 if(!config.cloudEnabled)throw Error('cloud_disabled_by_operator');
 if(fs.existsSync(path.join(work,'gemini-backside.json')))throw Error('use_fresh_test_work_not_previous_result');
 const manifest=JSON.parse(fs.readFileSync(path.join(work,'input-manifest.json'))),observations=JSON.parse(fs.readFileSync(path.join(work,'observations.json'))),request=buildBacksideRequest(work,manifest.sources,observations);
