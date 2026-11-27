@@ -1,0 +1,12 @@
+{
+  "schema":"itc-visual-anchor-policy/1", "version":"1.0.0",
+  "prepare":{"maxLongEdge":640,"searchLongEdge":320},
+  "search":{"angleStepDegrees":15,"boardDiagonalFractions":[0.25,0.35,0.5,0.7,1.0,1.4],"peaksPerMap":2,"retainedCandidates":100,"refinePeaks":4,"refineAngleOffsets":[-7.5,-3.75,0,3.75,7.5],"refineScaleFactors":[0.9,1.0,1.1],"refineRadiusFraction":0.015,"minimumTemplateSide":5,"blurLongSideFraction":0.02,"sceneRivalSeparationTemplateDiagonal":0.65},
+  "appearance":{"minimumNCC":0.6,"minimumSceneMargin":0.07,"minimumReferenceMargin":0.07,"minimumStd":0.035,"maxPeakRadiusDiagonalFraction":0.02,"peakScoreDrop":0.02},
+  "association":{"minimumSpanFraction":0.15,"minimumHullFraction":0.03,"reserveEvery":3,"maxAnchorOverlap":0.1},
+  "models":[{"name":"similarity","fitMinimum":2,"reserveMinimum":1},{"name":"affine","fitMinimum":3,"reserveMinimum":2},{"name":"homography","fitMinimum":4,"reserveMinimum":3}],
+  "geometry":{"fitErrorDiagonalFraction":0.006,"reserveErrorDiagonalFraction":0.006,"maximumReserveErrorDiagonalFraction":0.012,"minimumFitInlierFraction":0.75,"seed":20261122,"ransacIterations":2000,"confidence":0.995},
+  "boundaryPolicy":"experiments/global-registration/policy-v1.2.json",
+  "measurement":{"threads":1,"repetitions":1},
+  "status":"experimental heuristics frozen before real cases; unchanged historical component and boundary thresholds"
+}

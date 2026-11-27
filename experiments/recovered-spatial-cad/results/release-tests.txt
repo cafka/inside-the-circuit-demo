@@ -1,0 +1,47 @@
+
+> inside-the-circuit@1.0.0-rc.1 test:release
+> node --test tests/release*.test.mjs experiments/board-library/photo-onboarding-test.mjs experiments/board-library/name-onboarding-test.mjs experiments/board-library/selection-whole-policy-test.mjs tests/reconstruction.test.mjs
+
+✔ Public fetch rejects local endpoints and credentials, including alternate IPv4 syntax (14.8456ms)
+✔ An image does not swallow subsequent anchors or turn page prose into its label (4.2508ms)
+✔ Generic model selection excludes enclosures, accessories and library parts (1.6966ms)
+✔ Tutorial titles are not mistaken for model names (0.6744ms)
+✔ Document identity rejects added variant tokens even with complete query coverage (1.0695ms)
+✔ Name-only search does not need a prepared manufacturer profile (9.6118ms)
+✔ Repository links preserve their requested branch and pin raw assets to a commit, not a tree object (1.771ms)
+✔ Exact documented designator binds using the original binder; no invented example (1.9958ms)
+✔ Missing, repeated and near-matching designators do not gain identities (1.0699ms)
+✔ New engines contain no trial board name, manual profile or source coordinates (13.6431ms)
+✔ Automatic route prefers installed multimodal local; never downloads a model (2.8614ms)
+✔ Cloud requires existing configuration, explicit consent and remaining request allowance (0.7705ms)
+✔ Blocked real path never constructs an inference adapter and retains input hash (29.199ms)
+✔ Known identity opens saved record; new identity launches discovery automatically (2.2914ms)
+✔ Ambiguity, invalid responses and manufacturer conflicts do not start preparation (0.7089ms)
+✔ Neutral prompt contains no trial board or fixed catalogue (0.6128ms)
+✔ An incomplete saved dossier resumes only its exact previously requested identity (1.2523ms)
+✔ A failed Cloud attempt leaves cost unknown rather than claiming zero charge (6.5459ms)
+✔ Tap jitter never reaches OrbitControls; intentional drag and multitouch do (2.9758ms)
+✔ Nearby options require independent visible samples, not overlap of projected boxes (4.0921ms)
+✔ Several nearby pieces stay alternatives; no nearest identity is silently selected (0.8966ms)
+✔ unknown heights remain acceptable; invented scale and unsupported heights rejected (1.804ms)
+✔ out of image coordinates rejected (0.2279ms)
+✔ photo suffix does not imply another hardware variant; CAD variant protection stays (0.544ms)
+✔ a model cannot certify its own typical height; original response is preserved (1.3569ms)
+✔ degenerate object polygon is rejected regardless of its semantic name (0.4303ms)
+✔ Enterprise App Check provider survives public configuration without debug credentials (2.6269ms)
+✔ Preview proxy allows only the explicit HTTPS host and origin (3.6299ms)
+✔ Pinned library URL matches its immutable publication lock (6.585ms)
+✔ Runtime endpoint omits operator secrets and respects a zero request allowance (2.4991ms)
+✔ Controlled double: authorized fallback follows local technical failure, preserving both attempts (15.9775ms)
+✔ Controlled double: unknown local identity does not spend Cloud allowance (3.8776ms)
+✔ Every frozen catalogue association resolves to original geometry without a duplicate owner (31.4049ms)
+✔ Educational height is explicitly policy-driven and does not invent physical measurements (8.8684ms)
+✔ Library compatibility does not treat all ESP32 boards as pin-compatible (2.0767ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 35
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1491.9812

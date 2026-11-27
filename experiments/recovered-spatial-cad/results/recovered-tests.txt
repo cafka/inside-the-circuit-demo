@@ -1,0 +1,13 @@
+test_duplicate_boxes_one_region (test_dynamic.DynamicContracts.test_duplicate_boxes_one_region) ... ok
+test_exact_solver_matches_bruteforce (test_dynamic.DynamicContracts.test_exact_solver_matches_bruteforce) ... ok
+test_failed_reverse_flow_rejects_motion (test_dynamic.DynamicContracts.test_failed_reverse_flow_rejects_motion) ... ok
+test_missing_neighbors_do_not_force_assignment (test_dynamic.DynamicContracts.test_missing_neighbors_do_not_force_assignment) ... ok
+test_more_than_five_neighbors (test_dynamic.DynamicContracts.test_more_than_five_neighbors) ... ok
+test_no_catalog_size_cap_thirteen_objects_twelve_neighbors (test_dynamic.DynamicContracts.test_no_catalog_size_cap_thirteen_objects_twelve_neighbors) ... ok
+test_rotation_and_renaming (test_dynamic.DynamicContracts.test_rotation_and_renaming) ... ok
+test_temporal_full_resolution_and_translation (test_dynamic.DynamicContracts.test_temporal_full_resolution_and_translation) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.678s
+
+OK

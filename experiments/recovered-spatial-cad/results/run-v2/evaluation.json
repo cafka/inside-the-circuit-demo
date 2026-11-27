@@ -1,0 +1,397 @@
+{
+  "evaluationOnly": true,
+  "historicalAssociationsCount": 16,
+  "records": [
+    {
+      "case": "a",
+      "cadCandidate": "P012",
+      "originalGeminiCandidate": "P012",
+      "originalGeminiName": "GPIO Header",
+      "historicalCADReference": [
+        {
+          "id": "gpio",
+          "label": "Conector GPIO",
+          "sourcePartsFound": [
+            "OBJ3741",
+            "OBJ3745",
+            "OBJ3747",
+            "OBJ3749",
+            "OBJ3751",
+            "OBJ3753",
+            "OBJ3755",
+            "OBJ3757",
+            "OBJ3759",
+            "OBJ3761",
+            "OBJ3763",
+            "OBJ3765",
+            "OBJ3767",
+            "OBJ3769",
+            "OBJ3771",
+            "OBJ3773",
+            "OBJ3775",
+            "OBJ3777",
+            "OBJ3779",
+            "OBJ3781",
+            "OBJ3783",
+            "OBJ3785",
+            "OBJ3787",
+            "OBJ3789",
+            "OBJ3791",
+            "OBJ3793",
+            "OBJ3795",
+            "OBJ3797",
+            "OBJ3799",
+            "OBJ3801",
+            "OBJ3803",
+            "OBJ3805",
+            "OBJ3807",
+            "OBJ3809",
+            "OBJ3811",
+            "OBJ3813",
+            "OBJ3815",
+            "OBJ3817",
+            "OBJ3819",
+            "OBJ3821",
+            "OBJ3823"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.5227992843040461,
+      "boundarySupport": 0.36165335699497186,
+      "competingBoundaryMargin": -0.20711328009464663,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "a",
+      "cadCandidate": "P016",
+      "originalGeminiCandidate": "P016",
+      "originalGeminiName": "Ethernet Jack",
+      "historicalCADReference": [
+        {
+          "id": "ethernet",
+          "label": "Puerto de red Ethernet",
+          "sourcePartsFound": [
+            "OBJ4351",
+            "OBJ4353",
+            "OBJ4355",
+            "OBJ4357"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.8287644987164171,
+      "boundarySupport": 0.4758718702095044,
+      "competingBoundaryMargin": -0.021844660194174748,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "a",
+      "cadCandidate": "P017",
+      "originalGeminiCandidate": "P017",
+      "originalGeminiName": "RP1 Southbridge",
+      "historicalCADReference": [
+        {
+          "id": "rp1",
+          "label": "Controlador de entrada y salida",
+          "sourcePartsFound": [
+            "OBJ4365",
+            "OBJ4369"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.6097919897966229,
+      "boundarySupport": 0.6732456140350878,
+      "competingBoundaryMargin": -0.22807017543859642,
+      "rejections": [
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "a",
+      "cadCandidate": "P023",
+      "originalGeminiCandidate": "P023",
+      "originalGeminiName": "USB Type-C Port",
+      "historicalCADReference": [
+        {
+          "id": "usb-c-power",
+          "label": "Entrada de alimentación USB-C",
+          "sourcePartsFound": [
+            "OBJ5141",
+            "OBJ5143"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.831326762339323,
+      "boundarySupport": 0.672496025437202,
+      "competingBoundaryMargin": -0.09304451510333844,
+      "rejections": [
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P005",
+      "originalGeminiCandidate": "P008",
+      "originalGeminiName": "MIPI Camera/Display Connector",
+      "historicalCADReference": [
+        {
+          "id": "bcm2712",
+          "label": "BCM2712",
+          "sourcePartsFound": [
+            "OBJ1927"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": false,
+      "geometricMargin": 0.14642898297509532,
+      "boundarySupport": 0.2998196095076401,
+      "competingBoundaryMargin": -0.06463992642897565,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P008",
+      "originalGeminiCandidate": "P007",
+      "originalGeminiName": "MIPI Camera/Display Connector",
+      "historicalCADReference": [
+        {
+          "id": "mipi-0",
+          "label": "Conector de cámara o pantalla 0",
+          "sourcePartsFound": [
+            "OBJ3633",
+            "OBJ3639"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": false,
+      "geometricMargin": 0.06588120057429592,
+      "boundarySupport": 0.39955357142857145,
+      "competingBoundaryMargin": 0.06494677197802196,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P010",
+      "originalGeminiCandidate": "P010",
+      "originalGeminiName": "Dual USB 3.0 Ports",
+      "historicalCADReference": [
+        {
+          "id": "usb3",
+          "label": "Puertos USB 3.0",
+          "sourcePartsFound": [
+            "OBJ3725_1",
+            "OBJ3725_2",
+            "OBJ3725_3"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.487108511500395,
+      "boundarySupport": 0.25268479800251026,
+      "competingBoundaryMargin": -0.049970802821722726,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P011",
+      "originalGeminiCandidate": "P011",
+      "originalGeminiName": "Dual USB 2.0 Ports",
+      "historicalCADReference": [
+        {
+          "id": "usb2",
+          "label": "Puertos USB 2.0",
+          "sourcePartsFound": [
+            "OBJ3733_1",
+            "OBJ3733_2",
+            "OBJ3733_3"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.5241879017400635,
+      "boundarySupport": 0.2664193807393613,
+      "competingBoundaryMargin": -0.10787637727803306,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P012",
+      "originalGeminiCandidate": "P012",
+      "originalGeminiName": "GPIO Header",
+      "historicalCADReference": [
+        {
+          "id": "gpio",
+          "label": "Conector GPIO",
+          "sourcePartsFound": [
+            "OBJ3741",
+            "OBJ3745",
+            "OBJ3747",
+            "OBJ3749",
+            "OBJ3751",
+            "OBJ3753",
+            "OBJ3755",
+            "OBJ3757",
+            "OBJ3759",
+            "OBJ3761",
+            "OBJ3763",
+            "OBJ3765",
+            "OBJ3767",
+            "OBJ3769",
+            "OBJ3771",
+            "OBJ3773",
+            "OBJ3775",
+            "OBJ3777",
+            "OBJ3779",
+            "OBJ3781",
+            "OBJ3783",
+            "OBJ3785",
+            "OBJ3787",
+            "OBJ3789",
+            "OBJ3791",
+            "OBJ3793",
+            "OBJ3795",
+            "OBJ3797",
+            "OBJ3799",
+            "OBJ3801",
+            "OBJ3803",
+            "OBJ3805",
+            "OBJ3807",
+            "OBJ3809",
+            "OBJ3811",
+            "OBJ3813",
+            "OBJ3815",
+            "OBJ3817",
+            "OBJ3819",
+            "OBJ3821",
+            "OBJ3823"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.5621541129076384,
+      "boundarySupport": 0.09422305517196028,
+      "competingBoundaryMargin": 0.009638653251791932,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P016",
+      "originalGeminiCandidate": "P016",
+      "originalGeminiName": "Ethernet Jack",
+      "historicalCADReference": [
+        {
+          "id": "ethernet",
+          "label": "Puerto de red Ethernet",
+          "sourcePartsFound": [
+            "OBJ4351",
+            "OBJ4353",
+            "OBJ4355",
+            "OBJ4357"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": true,
+      "geometricMargin": 0.6172698145738558,
+      "boundarySupport": 0.10658342595165324,
+      "competingBoundaryMargin": -0.033844966855872655,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    },
+    {
+      "case": "b",
+      "cadCandidate": "P020",
+      "originalGeminiCandidate": "P005",
+      "originalGeminiName": "RP1 Southbridge Heatsink",
+      "historicalCADReference": [
+        {
+          "id": "ram",
+          "label": "Memoria RAM",
+          "sourcePartsFound": [
+            "OBJ11"
+          ],
+          "sourcePartsMissing": []
+        }
+      ],
+      "unchangedOriginalPair": false,
+      "geometricMargin": 0.11088007248412524,
+      "boundarySupport": 0.03706624605678233,
+      "competingBoundaryMargin": -0.0015772870662460609,
+      "rejections": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position",
+        "independent_geometry_failed"
+      ],
+      "verified": false
+    }
+  ],
+  "confirmedPhotoCADLinks": 0,
+  "acceptedFalsePositives": 0,
+  "visualPrecision": null,
+  "limitation": "Zero accepted links does not measure precision. The old table is a CAD identity reference, not independently annotated photo ground truth. No new human annotation was used to fit or tune."
+}

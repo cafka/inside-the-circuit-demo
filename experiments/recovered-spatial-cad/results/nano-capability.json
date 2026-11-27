@@ -1,0 +1,94 @@
+{
+  "inputSHA256": "9aa2fc4562b28fdffd78942ef9f2432d4416b7ed8e826063b74643f5a6ca16db",
+  "historicalAssociationsRead": false,
+  "status": "capability_unmet",
+  "reason": "No axis-aligned thin support found; generic capability unmet",
+  "envelopeMm": [
+    44.29195515414944,
+    11.700000450578699,
+    17.780076237937614
+  ],
+  "largestFootprints": [
+    {
+      "dimensionsMm": [
+        43.18000003695488,
+        1.6060038469731808,
+        17.7800003439188
+      ],
+      "footprintFraction": 0.9748907126231046,
+      "thicknessRatio": 0.09032642384185745
+    },
+    {
+      "dimensionsMm": [
+        14.300000046532723,
+        0.48199802404269576,
+        10.400000198837997
+      ],
+      "footprintFraction": 0.18884735920701845,
+      "thicknessRatio": 0.04634596296416897
+    },
+    {
+      "dimensionsMm": [
+        10.400001492519614,
+        1.3500013710920513,
+        9.750000857636941
+      ],
+      "footprintFraction": 0.12875959001947326,
+      "thicknessRatio": 0.13846166690689343
+    },
+    {
+      "dimensionsMm": [
+        6.800000371268296,
+        3.620000439696016,
+        9.540000080199317
+      ],
+      "footprintFraction": 0.0823756480920828,
+      "thicknessRatio": 0.5323529767720931
+    },
+    {
+      "dimensionsMm": [
+        8.000000825069765,
+        0.09999999747378752,
+        8.000000825069769
+      ],
+      "footprintFraction": 0.0812683782399076,
+      "thicknessRatio": 0.012499998395052097
+    }
+  ],
+  "elapsedMs": 89.9313,
+  "policy": {
+    "version": "multimodal-cad-association/1",
+    "candidateMinimumFootprintRatio": 0.002,
+    "candidateMaximumFootprintRatio": 0.2,
+    "supportMinimumFootprintRatio": 0.55,
+    "supportMaximumThicknessRatio": 0.08,
+    "minimumVisiblePixels": 80,
+    "renderWidth": 1280,
+    "renderHeight": 960,
+    "maximumCandidates": 80,
+    "holdoutFraction": 0.35,
+    "minimumFitObjects": 6,
+    "minimumHoldoutObjects": 2,
+    "ransacPixelDiagonalRatio": 0.018,
+    "maximumHoldoutDiagonalRatio": 0.025,
+    "minimumSpatialCoverage": 0.2,
+    "minimumObservedMaskIoU": 0.55,
+    "minimumCompetingMaskMargin": 0.15,
+    "focalDiagonalMultipliers": [
+      0.7,
+      1,
+      1.5,
+      2
+    ],
+    "model": "gemini-3.5-flash-lite",
+    "maximumNewCalls": 3,
+    "maximumOutputTokens": 8192,
+    "illustrativeHeightsAllowed": false,
+    "capabilities": [
+      "native CAD scene with physical units",
+      "approximately axis-aligned planar support in CAD world",
+      "known camera intrinsics or explicitly approximate focal hypotheses",
+      "no inferred metric height from photograph"
+    ]
+  }
+}

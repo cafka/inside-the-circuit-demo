@@ -1,0 +1,4278 @@
+{
+  "schema": "recovered-spatial-cad/1",
+  "physicalDimensionsFromCAD": [
+    85.00000089406967,
+    56.0000017285347
+  ],
+  "units": "mm",
+  "historicalAnswersUsed": false,
+  "rgbIdentityComparison": false,
+  "grabCutUsed": false,
+  "newPhotoDetection": false,
+  "anchors": [
+    {
+      "id": "P012",
+      "reference": [
+        32.48306259793243,
+        -52.56220095870773
+      ],
+      "xy": [
+        780.8000000000001,
+        715.667
+      ],
+      "areaMm2": 258.06399849361253,
+      "uniqueness": 0.7533491679239411,
+      "quality": 0.5713371721049264,
+      "heightMm": 3.876000015869737,
+      "metricPlaneCorrespondence": false,
+      "priorityFactors": {
+        "size": 0.8660220153628045,
+        "uniqueness": 0.7533491679239411,
+        "quality": 0.5713371721049264,
+        "reference": 1.0
+      },
+      "priority": 0.8067776886388688
+    },
+    {
+      "id": "P016",
+      "reference": [
+        77.236406494683,
+        -10.295153945109954
+      ],
+      "xy": [
+        349.44,
+        321.581
+      ],
+      "areaMm2": 344.0880238856081,
+      "uniqueness": 0.030052366740953414,
+      "quality": 0.6064349557727041,
+      "heightMm": 14.635999758601244,
+      "metricPlaneCorrespondence": false,
+      "priorityFactors": {
+        "size": 1.0,
+        "uniqueness": 0.030052366740953414,
+        "quality": 0.6064349557727041,
+        "reference": 1.0
+      },
+      "priority": 0.38118126502132477
+    },
+    {
+      "id": "P023",
+      "reference": [
+        11.135203152930721,
+        -2.5790601698081312
+      ],
+      "xy": [
+        1004.8000000000001,
+        203.867
+      ],
+      "areaMm2": 69.55319950539915,
+      "uniqueness": 0.025662682085950007,
+      "quality": 0.7923809523809524,
+      "heightMm": 4.595999910369516,
+      "metricPlaneCorrespondence": false,
+      "priorityFactors": {
+        "size": 0.4495973862671458,
+        "uniqueness": 0.025662682085950007,
+        "quality": 0.7923809523809524,
+        "reference": 1.0
+      },
+      "priority": 0.28223691805758744
+    },
+    {
+      "id": "P017",
+      "reference": [
+        58.374843932834104,
+        -35.15812277663806
+      ],
+      "xy": [
+        506.88,
+        536.537
+      ],
+      "areaMm2": 144.00000250339508,
+      "uniqueness": 0.0,
+      "quality": 0.5538793103448276,
+      "heightMm": 2.5259999808520632,
+      "metricPlaneCorrespondence": false,
+      "priorityFactors": {
+        "size": 0.6469138828803863,
+        "uniqueness": 0.0,
+        "quality": 0.5538793103448276,
+        "reference": 1.0
+      },
+      "priority": 0.16014351339171531
+    }
+  ],
+  "rejectedProposals": [],
+  "attempts": [
+    {
+      "model": "similarity",
+      "fitIds": [
+        "P012",
+        "P016"
+      ],
+      "fitResidualsPx": [
+        2.4641144327968352e-05,
+        1.7451515800972564e-05
+      ],
+      "fitRejections": []
+    }
+  ],
+  "geometry": {
+    "model": "similarity",
+    "matrix": [
+      [
+        -9.490152802816896,
+        -0.15718945618394756,
+        1080.806992718838
+      ],
+      [
+        0.15718945618394756,
+        -9.490152802816896,
+        211.73766428217223
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "fitIds": [
+      "P012",
+      "P016"
+    ],
+    "reserveIds": [
+      "P023",
+      "P017"
+    ],
+    "fitResidualsPx": [
+      2.4641144327968352e-05,
+      1.7451515800972564e-05
+    ],
+    "reserveResidualsPx": [
+      44.93184305895012,
+      31.20504872800315
+    ],
+    "reservedPassed": false,
+    "referenceSpanFraction": 0.604759053562087,
+    "outline": [
+      [
+        1089.6096025368465,
+        743.1862376439768
+      ],
+      [
+        282.94660581255255,
+        756.5473415601507
+      ],
+      [
+        274.14399599454407,
+        225.0987681983461
+      ],
+      [
+        1080.806992718838,
+        211.73766428217223
+      ]
+    ],
+    "orientationDegrees": 179.0510722926019,
+    "status": "rejected_reserved_objects",
+    "metricPCBValidated": false
+  },
+  "neighborhood": {
+    "objects": [
+      {
+        "id": "P001",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            468.11558534837593,
+            674.2157771032086
+          ],
+          [
+            427.3079269104031,
+            674.8916917877541
+          ],
+          [
+            426.16044385320663,
+            605.6135746938556
+          ],
+          [
+            466.96810229117943,
+            604.9376600093101
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P002",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            920.5904411214449,
+            281.7899705304486
+          ],
+          [
+            882.629828107145,
+            282.4187283850488
+          ],
+          [
+            882.0325081635741,
+            246.35614712626307
+          ],
+          [
+            919.993121177874,
+            245.7273892716629
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P003",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            1001.0249161696997,
+            381.0809166393117
+          ],
+          [
+            953.5741532162224,
+            381.86686390266414
+          ],
+          [
+            952.7882059528699,
+            334.41610094918684
+          ],
+          [
+            1000.2389689063473,
+            333.6301536858344
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P004",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            469.74543478911096,
+            743.9605401733884
+          ],
+          [
+            433.68285353032536,
+            744.5578601169592
+          ],
+          [
+            432.7397167850236,
+            687.6169428051079
+          ],
+          [
+            468.8022980438092,
+            687.019622861537
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P005",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            851.7869010916046,
+            512.1796637763663
+          ],
+          [
+            690.4542946760309,
+            514.8518846767163
+          ],
+          [
+            687.7820737756809,
+            353.5192782611427
+          ],
+          [
+            849.1146801912546,
+            350.84705736079263
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P006",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            797.0927016880584,
+            276.24131124230223
+          ],
+          [
+            749.6419387345811,
+            277.0272585056547
+          ],
+          [
+            749.0446187910102,
+            240.96467724686897
+          ],
+          [
+            796.4953817444874,
+            240.17872998351652
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P007",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            577.5822540312276,
+            379.9782693913142
+          ],
+          [
+            543.9183050718447,
+            380.5358597631319
+          ],
+          [
+            541.2932412210312,
+            222.05031202882148
+          ],
+          [
+            574.957190180414,
+            221.49272165700376
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P008",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            636.4212014086925,
+            379.00369476297374
+          ],
+          [
+            602.7572524493095,
+            379.56128513479143
+          ],
+          [
+            600.132188598496,
+            221.075737400481
+          ],
+          [
+            633.7961375578789,
+            220.5181470286633
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P009",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            518.0613727052613,
+            484.41279071414544
+          ],
+          [
+            437.5347551888759,
+            485.74658749052367
+          ],
+          [
+            436.2009584124977,
+            405.2199699741384
+          ],
+          [
+            516.7275759288831,
+            403.88617319776023
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P010",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            417.73405788552327,
+            566.83383886566
+          ],
+          [
+            251.37168079638718,
+            569.5893700069867
+          ],
+          [
+            249.09243374730454,
+            431.9821583257419
+          ],
+          [
+            415.45481083644063,
+            429.2266271844153
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P011",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            421.89202787453496,
+            737.6305560693647
+          ],
+          [
+            256.288864371444,
+            740.3735120316403
+          ],
+          [
+            254.00961732236135,
+            602.7663003503957
+          ],
+          [
+            419.6127808254523,
+            600.0233443881201
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P012",
+        "region": "P012",
+        "observationIndex": 2,
+        "originalLabels": [
+          "P012"
+        ],
+        "projectedPolygon": [
+          [
+            1022.0786125765626,
+            735.1917198869779
+          ],
+          [
+            539.9788560197334,
+            743.1769441646195
+          ],
+          [
+            539.1803335773297,
+            694.9669676250971
+          ],
+          [
+            1021.2800901341591,
+            686.9817433474556
+          ]
+        ],
+        "neighborhood": [
+          "P017",
+          "P023",
+          "P016"
+        ],
+        "neighborCount": 3,
+        "neighborSteps": [
+          {
+            "neighbor": "P017",
+            "region": "P017",
+            "neighborhoodSize": 1,
+            "evidence": {
+              "vectorErrorNormalized": 0.0858443760483127,
+              "separationLogError": 0.09496355326098813,
+              "directionOrderCost": 1.748103010268398e-05,
+              "relativeSizeLogError": 0.08696728321812772,
+              "information": 0.4569189209621462,
+              "reliability": 1.0,
+              "cost": 0.030852266892192216
+            }
+          },
+          {
+            "neighbor": "P023",
+            "region": "P023",
+            "neighborhoodSize": 2,
+            "evidence": {
+              "vectorErrorNormalized": 0.09180824699779107,
+              "separationLogError": 0.08414559403979271,
+              "directionOrderCost": 0.00033193605232118006,
+              "relativeSizeLogError": 0.03546639031708645,
+              "information": 0.8562950892426505,
+              "reliability": 1.0,
+              "cost": 0.052848356396943734
+            }
+          },
+          {
+            "neighbor": "P016",
+            "region": "P016",
+            "neighborhoodSize": 3,
+            "evidence": {
+              "vectorErrorNormalized": 0.0021501546841137184,
+              "separationLogError": 0.0013879517047836565,
+              "directionOrderCost": 1.3515880534775704e-06,
+              "relativeSizeLogError": 0.3063989850649821,
+              "information": 0.7841892929793515,
+              "reliability": 1.0,
+              "cost": 0.020948101971800002
+            }
+          }
+        ],
+        "excludedNeighbors": [
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": 0.5227993172201124,
+        "alternativeSearchExact": true,
+        "status": "structurally_preferred_not_visually_confirmed",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P013",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            523.1601446703094,
+            335.2669945128049
+          ],
+          [
+            474.9501681307871,
+            336.0655169552084
+          ],
+          [
+            474.1516456883836,
+            287.85554041568616
+          ],
+          [
+            522.3616222279059,
+            287.0570179732826
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P014",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            1023.0586609740268,
+            679.7377906791438
+          ],
+          [
+            920.5650080450156,
+            681.4354368499658
+          ],
+          [
+            918.5215450724627,
+            558.0634478678887
+          ],
+          [
+            1021.015198001474,
+            556.3658016970668
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P016",
+        "region": "P016",
+        "observationIndex": 1,
+        "originalLabels": [
+          "P016"
+        ],
+        "projectedPolygon": [
+          [
+            453.04954762906993,
+            395.0460401913382
+          ],
+          [
+            248.0622417710474,
+            398.4413325329822
+          ],
+          [
+            245.55821362516667,
+            247.2631918111725
+          ],
+          [
+            450.5455194831892,
+            243.86789946952854
+          ]
+        ],
+        "neighborhood": [
+          "P017",
+          "P012",
+          "P023"
+        ],
+        "neighborCount": 3,
+        "neighborSteps": [
+          {
+            "neighbor": "P017",
+            "region": "P017",
+            "neighborhoodSize": 1,
+            "evidence": {
+              "vectorErrorNormalized": 0.10341075291279606,
+              "separationLogError": 0.10352047406096551,
+              "directionOrderCost": 0.0005670382757667625,
+              "relativeSizeLogError": 0.2194317018468541,
+              "information": 0.6994051481646043,
+              "reliability": 1.0,
+              "cost": 0.061164423478765766
+            }
+          },
+          {
+            "neighbor": "P012",
+            "region": "P012",
+            "neighborhoodSize": 2,
+            "evidence": {
+              "vectorErrorNormalized": 0.0021501546841137184,
+              "separationLogError": 0.0013879517047836565,
+              "directionOrderCost": 1.3515880534775704e-06,
+              "relativeSizeLogError": 0.3063989850649821,
+              "information": 0.7841892929793515,
+              "reliability": 1.0,
+              "cost": 0.020948101971800002
+            }
+          },
+          {
+            "neighbor": "P023",
+            "region": "P023",
+            "neighborhoodSize": 3,
+            "evidence": {
+              "vectorErrorNormalized": 0.07335943212065514,
+              "separationLogError": 0.052916548515703536,
+              "directionOrderCost": 0.00115170959689892,
+              "relativeSizeLogError": 0.3418653753820685,
+              "information": 1.0,
+              "reliability": 1.0,
+              "cost": 0.07096467802625823
+            }
+          }
+        ],
+        "excludedNeighbors": [
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": 0.8287644834136891,
+        "alternativeSearchExact": true,
+        "status": "structurally_preferred_not_visually_confirmed",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P017",
+        "region": "P017",
+        "observationIndex": 0,
+        "originalLabels": [
+          "P017"
+        ],
+        "projectedPolygon": [
+          [
+            589.0344577232594,
+            610.0353914143559
+          ],
+          [
+            475.15262309955654,
+            611.9216649049594
+          ],
+          [
+            473.2663496089531,
+            498.0398302812565
+          ],
+          [
+            587.1481842326559,
+            496.15355679065306
+          ]
+        ],
+        "neighborhood": [
+          "P016",
+          "P012",
+          "P023"
+        ],
+        "neighborCount": 3,
+        "neighborSteps": [
+          {
+            "neighbor": "P016",
+            "region": "P016",
+            "neighborhoodSize": 1,
+            "evidence": {
+              "vectorErrorNormalized": 0.10341075291279606,
+              "separationLogError": 0.10352047406096551,
+              "directionOrderCost": 0.0005670382757667625,
+              "relativeSizeLogError": 0.2194317018468541,
+              "information": 0.6994051481646043,
+              "reliability": 1.0,
+              "cost": 0.061164423478765766
+            }
+          },
+          {
+            "neighbor": "P012",
+            "region": "P012",
+            "neighborhoodSize": 2,
+            "evidence": {
+              "vectorErrorNormalized": 0.0858443760483127,
+              "separationLogError": 0.09496355326098813,
+              "directionOrderCost": 1.748103010268398e-05,
+              "relativeSizeLogError": 0.08696728321812772,
+              "information": 0.4569189209621462,
+              "reliability": 1.0,
+              "cost": 0.030852266892192216
+            }
+          },
+          {
+            "neighbor": "P023",
+            "region": "P023",
+            "neighborhoodSize": 3,
+            "evidence": {
+              "vectorErrorNormalized": 0.10511870208280745,
+              "separationLogError": 0.0964009593047211,
+              "directionOrderCost": 0.00036705299070394215,
+              "relativeSizeLogError": 0.12243367353521428,
+              "information": 1.0,
+              "reliability": 1.0,
+              "cost": 0.07749837758734536
+            }
+          }
+        ],
+        "excludedNeighbors": [
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": 0.6097920399811692,
+        "alternativeSearchExact": true,
+        "status": "structurally_preferred_not_visually_confirmed",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P018",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            1088.3235238305338,
+            407.63858348428437
+          ],
+          [
+            1055.1079891002203,
+            408.18874657961067
+          ],
+          [
+            1054.4006365778425,
+            365.48306080532046
+          ],
+          [
+            1087.616171308156,
+            364.9328977099942
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P019",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            1076.1120195310466,
+            561.5760400065718
+          ],
+          [
+            1042.4480705716637,
+            562.1336303783895
+          ],
+          [
+            1040.294575020304,
+            432.118536880808
+          ],
+          [
+            1073.9585239796868,
+            431.56094650899024
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P020",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            841.9598070918435,
+            635.2736240540283
+          ],
+          [
+            704.3525954105987,
+            637.552871103111
+          ],
+          [
+            702.7807008838939,
+            542.6513451961565
+          ],
+          [
+            840.3879125651385,
+            540.3720981470739
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P021",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            744.0036682121947,
+            282.5281952892693
+          ],
+          [
+            675.7420105675725,
+            283.6588422942562
+          ],
+          [
+            674.4059001997441,
+            202.99254405806576
+          ],
+          [
+            742.6675578443662,
+            201.86189705307885
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P022",
+        "region": null,
+        "observationIndex": -1,
+        "originalLabels": [],
+        "projectedPolygon": [
+          [
+            871.1717157699411,
+            280.4218565764044
+          ],
+          [
+            802.910058125319,
+            281.5525035813913
+          ],
+          [
+            801.5739477574905,
+            200.88620534520084
+          ],
+          [
+            869.8356054021127,
+            199.75555834021395
+          ]
+        ],
+        "neighborhood": [],
+        "neighborCount": 0,
+        "neighborSteps": [],
+        "excludedNeighbors": [
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P023",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P017",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P012",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P016",
+            "reasons": [
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation",
+              "target_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": null,
+        "alternativeSearchExact": null,
+        "status": "ambiguous",
+        "visualIdentityConfirmed": false
+      },
+      {
+        "id": "P023",
+        "region": "P023",
+        "observationIndex": 3,
+        "originalLabels": [
+          "P023"
+        ],
+        "projectedPolygon": [
+          [
+            1017.9725713687873,
+            275.2407534470753
+          ],
+          [
+            933.1306044857447,
+            276.6460271990389
+          ],
+          [
+            931.9076705372343,
+            202.81263963686214
+          ],
+          [
+            1016.7496374202767,
+            201.4073658848986
+          ]
+        ],
+        "neighborhood": [
+          "P012",
+          "P017",
+          "P016"
+        ],
+        "neighborCount": 3,
+        "neighborSteps": [
+          {
+            "neighbor": "P012",
+            "region": "P012",
+            "neighborhoodSize": 1,
+            "evidence": {
+              "vectorErrorNormalized": 0.09180824699779107,
+              "separationLogError": 0.08414559403979271,
+              "directionOrderCost": 0.00033193605232118006,
+              "relativeSizeLogError": 0.03546639031708645,
+              "information": 0.8562950892426505,
+              "reliability": 1.0,
+              "cost": 0.052848356396943734
+            }
+          },
+          {
+            "neighbor": "P017",
+            "region": "P017",
+            "neighborhoodSize": 2,
+            "evidence": {
+              "vectorErrorNormalized": 0.10511870208280745,
+              "separationLogError": 0.0964009593047211,
+              "directionOrderCost": 0.00036705299070394215,
+              "relativeSizeLogError": 0.12243367353521428,
+              "information": 1.0,
+              "reliability": 1.0,
+              "cost": 0.07749837758734536
+            }
+          },
+          {
+            "neighbor": "P016",
+            "region": "P016",
+            "neighborhoodSize": 3,
+            "evidence": {
+              "vectorErrorNormalized": 0.07335943212065514,
+              "separationLogError": 0.052916548515703536,
+              "directionOrderCost": 0.00115170959689892,
+              "relativeSizeLogError": 0.3418653753820685,
+              "information": 1.0,
+              "reliability": 1.0,
+              "cost": 0.07096467802625823
+            }
+          }
+        ],
+        "excludedNeighbors": [
+          {
+            "id": "P002",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P003",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P022",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P018",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P006",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P021",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P019",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P005",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P008",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P014",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P020",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P007",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P013",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P009",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P001",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P010",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P004",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          },
+          {
+            "id": "P011",
+            "reasons": [
+              "neighbor_without_observation"
+            ]
+          }
+        ],
+        "globalAlternativeMargin": 0.831326760547519,
+        "alternativeSearchExact": true,
+        "status": "structurally_preferred_not_visually_confirmed",
+        "visualIdentityConfirmed": false
+      }
+    ],
+    "solver": {
+      "cost": 23.222445514822883,
+      "assignment": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        2,
+        -1,
+        -1,
+        1,
+        0,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        3
+      ],
+      "nodes": 47,
+      "exact": true
+    },
+    "fullBoardReference": true,
+    "fixedNeighborCount": null,
+    "metricPlaneValidated": false,
+    "timingMs": 76.28499995917082
+  },
+  "contours": [
+    {
+      "support": 0.3745193729665779,
+      "sideSupport": [
+        0.45962732919254656,
+        0.0,
+        0.2629399585921325,
+        0.7755102040816326
+      ],
+      "tolerancePixels": 4.0,
+      "competitorSupport": [
+        0.5796362023070097,
+        0.30050280981958,
+        0.40527950310559,
+        0.4783348121857438
+      ],
+      "margin": -0.20511682934043185,
+      "accepted": false,
+      "reasons": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position"
+      ],
+      "id": "P012",
+      "observedRegion": "P012",
+      "globalMargin": 0.5227993172201124,
+      "associationStatus": "structurally_preferred_not_visually_confirmed",
+      "visualIdentityConfirmed": false,
+      "structurallySupported": false
+    },
+    {
+      "support": 0.4832332652018395,
+      "sideSupport": [
+        0.1553398058252427,
+        0.013157894736842105,
+        0.9223300970873787,
+        0.8421052631578947
+      ],
+      "tolerancePixels": 4.0,
+      "competitorSupport": [
+        0.5226271078180889,
+        0.4194398313745529,
+        0.5235213336739908,
+        0.41602261113949923
+      ],
+      "margin": -0.04028806847215127,
+      "accepted": false,
+      "reasons": [
+        "insufficient_projected_boundary",
+        "missing_or_occluded_side",
+        "competing_boundary_position"
+      ],
+      "id": "P016",
+      "observedRegion": "P016",
+      "globalMargin": 0.8287644834136891,
+      "associationStatus": "structurally_preferred_not_visually_confirmed",
+      "visualIdentityConfirmed": false,
+      "structurallySupported": false
+    },
+    {
+      "support": 0.6798245614035088,
+      "sideSupport": [
+        0.8771929824561403,
+        0.3508771929824561,
+        0.9210526315789473,
+        0.5701754385964912
+      ],
+      "tolerancePixels": 4.0,
+      "competitorSupport": [
+        0.9035087719298246,
+        0.6557017543859649,
+        0.6644736842105262,
+        0.4451754385964912
+      ],
+      "margin": -0.22368421052631582,
+      "accepted": false,
+      "reasons": [
+        "missing_or_occluded_side",
+        "competing_boundary_position"
+      ],
+      "id": "P017",
+      "observedRegion": "P017",
+      "globalMargin": 0.6097920399811692,
+      "associationStatus": "structurally_preferred_not_visually_confirmed",
+      "visualIdentityConfirmed": false,
+      "structurallySupported": false
+    },
+    {
+      "support": 0.6796899841017487,
+      "sideSupport": [
+        0.5176470588235295,
+        0.9324324324324325,
+        0.6470588235294118,
+        0.6216216216216216
+      ],
+      "tolerancePixels": 4.0,
+      "competitorSupport": [
+        0.6329491255961844,
+        0.7403815580286168,
+        0.7761128775834658,
+        0.7009141494435612
+      ],
+      "margin": -0.09642289348171706,
+      "accepted": false,
+      "reasons": [
+        "competing_boundary_position"
+      ],
+      "id": "P023",
+      "observedRegion": "P023",
+      "globalMargin": 0.831326760547519,
+      "associationStatus": "structurally_preferred_not_visually_confirmed",
+      "visualIdentityConfirmed": false,
+      "structurallySupported": false
+    }
+  ],
+  "verifiedPhotoCADLinks": 0,
+  "newVerifiedCards": 0,
+  "metricPCBValidated": false,
+  "timingMs": {
+    "edgeMap": 14.645999995991588,
+    "geometry": 0.3856000257655978,
+    "association": 76.28499995917082,
+    "total": 102.20050002681091
+  },
+  "case": "a-180",
+  "operation": "rotate180",
+  "imageSHA256": "29c5e99fe2d9cc29b137301f5540bcbb23a5954ceef7c8e100988d4e0d4da688",
+  "processedPixelsSHA256": "fe0a1fa9c81a9f46a8dbf3a67ddd21f17f5333f938010f787dfa0132934dc507",
+  "responseSHA256": "79fd104d04134c42c018954f758ec3541f4796643b3c9d0f63ddf74789a40186",
+  "proposalCount": 4,
+  "newInferenceCalls": 0,
+  "newCloudCostUSD": 0,
+  "officialReferenceSHA256": "328bf630ffd2f8c10308aa8895cedf6b23fcd8ff45eff651f21175cde50a7ba5"
+}

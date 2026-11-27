@@ -1,0 +1,315 @@
+{
+  "cases": [
+    {
+      "case": "a",
+      "proposals": 4,
+      "anchors": 4,
+      "geometry": {
+        "model": "similarity",
+        "matrix": [
+          [
+            9.490152973015327,
+            0.15718927597385987,
+            199.19299228035652
+          ],
+          [
+            -0.15718927597385987,
+            9.490152973015327,
+            641.2623235512675
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fitIds": [
+          "P012",
+          "P016"
+        ],
+        "reserveIds": [
+          "P023",
+          "P017"
+        ],
+        "fitResidualsPx": [
+          1.2959452129084174e-05,
+          1.7451516231272068e-05
+        ],
+        "reserveResidualsPx": [
+          44.9318428694214,
+          31.205052100796138
+        ],
+        "reservedPassed": false,
+        "referenceSpanFraction": 0.604759053562087,
+        "outline": [
+          [
+            190.39039255411325,
+            109.81374065835053
+          ],
+          [
+            997.0534037452741,
+            96.45265206003421
+          ],
+          [
+            1005.8560034715173,
+            627.9012349529513
+          ],
+          [
+            199.19299228035652,
+            641.2623235512675
+          ]
+        ],
+        "orientationDegrees": -0.9489266026822989,
+        "status": "rejected_reserved_objects",
+        "metricPCBValidated": false
+      },
+      "neighborhoodAssigned": 4,
+      "contoursPassing": 0,
+      "structurallySupported": 0,
+      "verifiedLinks": 0,
+      "timeMs": {
+        "edgeMap": 31.557500013150275,
+        "geometry": 26.52840001974255,
+        "association": 88.77999999094754,
+        "total": 164.8955999989994
+      }
+    },
+    {
+      "case": "b",
+      "proposals": 7,
+      "anchors": 5,
+      "geometry": {
+        "model": "affine",
+        "matrix": [
+          [
+            21.765354998283325,
+            -20.283800989490757,
+            -200.30263252427164
+          ],
+          [
+            1.7025508615165341,
+            17.49403250853899,
+            1454.0447865935614
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fitIds": [
+          "P012",
+          "P016",
+          "P011"
+        ],
+        "reserveIds": [
+          "P005",
+          "P010"
+        ],
+        "fitResidualsPx": [
+          1.9839382679756255e-05,
+          6.667606089389569e-05,
+          6.686264729480814e-05
+        ],
+        "reserveResidualsPx": [
+          340.3700828618552,
+          364.6343248105782
+        ],
+        "reservedPassed": false,
+        "referenceSpanFraction": 0.604759053562087,
+        "outline": [
+          [
+            935.5902579484647,
+            474.37893587633585
+          ],
+          [
+            2785.6454522622907,
+            619.0957606274403
+          ],
+          [
+            1649.7525617895549,
+            1598.7616113446659
+          ],
+          [
+            -200.30263252427164,
+            1454.0447865935614
+          ]
+        ],
+        "orientationDegrees": 4.472738627254335,
+        "status": "rejected_reserved_objects",
+        "metricPCBValidated": false
+      },
+      "neighborhoodAssigned": 7,
+      "contoursPassing": 0,
+      "structurallySupported": 0,
+      "verifiedLinks": 0,
+      "timeMs": {
+        "edgeMap": 92.19700004905462,
+        "geometry": 8.17549997009337,
+        "association": 4406.2898000120185,
+        "total": 4531.09260002384
+      }
+    },
+    {
+      "case": "a-180",
+      "proposals": 4,
+      "anchors": 4,
+      "geometry": {
+        "model": "similarity",
+        "matrix": [
+          [
+            -9.490152802816896,
+            -0.15718945618394756,
+            1080.806992718838
+          ],
+          [
+            0.15718945618394756,
+            -9.490152802816896,
+            211.73766428217223
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fitIds": [
+          "P012",
+          "P016"
+        ],
+        "reserveIds": [
+          "P023",
+          "P017"
+        ],
+        "fitResidualsPx": [
+          2.4641144327968352e-05,
+          1.7451515800972564e-05
+        ],
+        "reserveResidualsPx": [
+          44.93184305895012,
+          31.20504872800315
+        ],
+        "reservedPassed": false,
+        "referenceSpanFraction": 0.604759053562087,
+        "outline": [
+          [
+            1089.6096025368465,
+            743.1862376439768
+          ],
+          [
+            282.94660581255255,
+            756.5473415601507
+          ],
+          [
+            274.14399599454407,
+            225.0987681983461
+          ],
+          [
+            1080.806992718838,
+            211.73766428217223
+          ]
+        ],
+        "orientationDegrees": 179.0510722926019,
+        "status": "rejected_reserved_objects",
+        "metricPCBValidated": false
+      },
+      "neighborhoodAssigned": 4,
+      "contoursPassing": 0,
+      "structurallySupported": 0,
+      "verifiedLinks": 0,
+      "timeMs": {
+        "edgeMap": 16.475000011269003,
+        "geometry": 0.4783999756909907,
+        "association": 84.21100000850856,
+        "total": 114.06150000402704
+      }
+    },
+    {
+      "case": "blank",
+      "proposals": 4,
+      "anchors": 4,
+      "geometry": {
+        "model": "similarity",
+        "matrix": [
+          [
+            9.490152973015327,
+            0.15718927597385987,
+            199.19299228035652
+          ],
+          [
+            -0.15718927597385987,
+            9.490152973015327,
+            641.2623235512675
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "fitIds": [
+          "P012",
+          "P016"
+        ],
+        "reserveIds": [
+          "P023",
+          "P017"
+        ],
+        "fitResidualsPx": [
+          1.2959452129084174e-05,
+          1.7451516231272068e-05
+        ],
+        "reserveResidualsPx": [
+          44.9318428694214,
+          31.205052100796138
+        ],
+        "reservedPassed": false,
+        "referenceSpanFraction": 0.604759053562087,
+        "outline": [
+          [
+            190.39039255411325,
+            109.81374065835053
+          ],
+          [
+            997.0534037452741,
+            96.45265206003421
+          ],
+          [
+            1005.8560034715173,
+            627.9012349529513
+          ],
+          [
+            199.19299228035652,
+            641.2623235512675
+          ]
+        ],
+        "orientationDegrees": -0.9489266026822989,
+        "status": "rejected_reserved_objects",
+        "metricPCBValidated": false
+      },
+      "neighborhoodAssigned": 4,
+      "contoursPassing": 0,
+      "structurallySupported": 0,
+      "verifiedLinks": 0,
+      "timeMs": {
+        "edgeMap": 13.767199998255819,
+        "geometry": 0.44649996561929584,
+        "association": 82.97350001521409,
+        "total": 109.99709996394813
+      }
+    }
+  ],
+  "codeAndPolicies": {
+    "experiments/recovered-spatial-cad/engine.py": "442e6b906f43afab2d413d2a9253b50ed8e7c17c936bfd8a7ff69cb7ff37b7b5",
+    "experiments/recovered-spatial-cad/PROTOCOL.md": "c916da54332000708fe7e69cad0e9d0aca21bc37314de1510ae2f56c10201ab3",
+    "experiments/dynamic-neighborhood/engine.py": "e50d684ecd743cbce58431e0abfe9b4b3f27af095dd6097bd9eff989a529adc2",
+    "src/visual-anchors/engine.py": "daab6318dc24f58b2f7cae21e2d9d5e35d84af2676ea4a224d6adaf5df9e8f3c",
+    "experiments/visual-anchors/policy-v1.json": "748e207065b0a9154b9f9e522904f10bad0d37bf771b2783f794233025a9ae85",
+    "experiments/dynamic-neighborhood/policy.json": "649cd81dfb27e952ffe51a5a09f16b6ed142bf6ec015690fe14103bfee24b085",
+    "experiments/component-parallax/policy.json": "92732aebc713250fc9e3e562779630dea922b5d02e32c39d77c0986e986dfed7",
+    "experiments/pcb-perimeter/policy.json": "c5cf646876628a17d63db045fbf40a987cc8250cf1513db5f0ac474f2246fc45"
+  },
+  "newCloudCostUSD": 0,
+  "inferenceType": "saved Gemini replay; new geometry computation",
+  "historicalTableRead": false
+}

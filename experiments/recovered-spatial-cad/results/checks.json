@@ -1,0 +1,15 @@
+{
+  "originalFilesChecked": 334,
+  "originalFilesChanged": [],
+  "realGeometryDecisionsUnchangedBetweenRuns": true,
+  "tests": {
+    "adapter": 6,
+    "recoveredNeighborhood": 8,
+    "release": 35
+  },
+  "newCloudCalls": 0,
+  "newCloudCostUSD": 0,
+  "newDeployment": false,
+  "mainSHA": "2633677fda6c538f695760238ce47a23f048cf67",
+  "historicalAnswersOnlyUsedAfterRun": true
+}

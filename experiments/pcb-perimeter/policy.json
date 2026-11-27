@@ -1,0 +1,9 @@
+{
+ "version":"autonomous-pcb-perimeter-1",
+ "appearancePolicy":"experiments/visual-anchors/policy-v1.json",
+ "priorityWeights":{"size":0.25,"uniqueness":0.30,"quality":0.20,"reference":0.25},
+ "referenceReliability":{"pcb":1.0,"unknown_height":0.35},
+ "geometry":{"residualDiagonalFraction":0.006,"minimumSpanFraction":0.15,"minimumHullFraction":0.03,"maximumScaleRatio":1.4,"maximumAngleDifference":20,"maximumHypotheses":64},
+ "boundary":{"bandDiagonalFraction":0.02,"bandMinPixels":6,"bandMaxPixels":24,"samplesPerSide":64,"normalAlignment":0.65,"cannyLow":50,"cannyHigh":140,"insideProbability":0.5,"outsideProbability":0.25,"colorSigmaFloor":0.025,"colorSigmaMultiplier":3,"lineResidualPixels":2.5,"maximumAngleDegrees":8,"minimumCoverage":0.45,"minimumSpan":0.55,"minimumMargin":0.1,"minimumHeldoutCoverage":0.35,"lineProposalBudget":512,"probePixels":4,"anchorExclusionHalo":3},
+ "evaluation":{"cases":["diagnosis-57136815ee80","video3_t019045ms","diagnosis-5cdecd8b51eb"],"repetitions":1,"freezeBeforeReal":true,"notBlind":"All available photographs were previously inspected; no new policy parameter is fitted to these three cases."}
+}
