@@ -1,0 +1,30 @@
+{
+  "filesChecked": 334,
+  "changed": [],
+  "baseline": ".local/jury-demo/originals.json",
+  "method": "Read-only SHA256 against preserved pre-experiment inventory",
+  "diffScope": [
+    "experiments/multimodal-cad/PROTOCOL.md",
+    "experiments/multimodal-cad/browser-client.mjs",
+    "experiments/multimodal-cad/browser-server.mjs",
+    "experiments/multimodal-cad/client.mjs",
+    "experiments/multimodal-cad/contract.mjs",
+    "experiments/multimodal-cad/dependencies.mjs",
+    "experiments/multimodal-cad/fixtures/CAD-LICENSE.txt",
+    "experiments/multimodal-cad/fixtures/NOTICE.md",
+    "experiments/multimodal-cad/fixtures/back-labelled.png",
+    "experiments/multimodal-cad/fixtures/candidates.json",
+    "experiments/multimodal-cad/fixtures/front-labelled.png",
+    "experiments/multimodal-cad/fixtures/render.json",
+    "experiments/multimodal-cad/fixtures/target-a.jpg",
+    "experiments/multimodal-cad/fixtures/target-b.jpg",
+    "experiments/multimodal-cad/history-audit.py",
+    "experiments/multimodal-cad/policy.json",
+    "experiments/multimodal-cad/prepare.mjs",
+    "experiments/multimodal-cad/render.mjs",
+    "experiments/multimodal-cad/results/history-events.json",
+    "experiments/multimodal-cad/results/input-manifest.json",
+    "experiments/multimodal-cad/server.mjs",
+    "experiments/multimodal-cad/verify.py"
+  ]
+}

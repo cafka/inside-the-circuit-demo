@@ -1,0 +1,19 @@
+{
+  "source": "Observed Cloud Shell terminal output via CUA, 2026-11-26",
+  "project": "itc-nano-lab-20261121",
+  "billingWasAlreadyEnabled": true,
+  "billingChanged": false,
+  "ownedPID": 2601,
+  "ownedPIDExistsAfterStop": false,
+  "port8080ConnectResult": 111,
+  "generationReservations": 3,
+  "newVMsOrPersistentServices": 0,
+  "invoiceCostObserved": false,
+  "documentCanonicalSHA256": "e2079cd8459fa6eeb4ae30a7ffb24c19c8b5eba97c1765f83d938c20f54fe2d6",
+  "remoteResponseSHA256": {
+    "baseline-target-a.json": "70519dea3e6bd7594b911183d4a0399bfeae2c116a5bb8755d5c0da154a405e5",
+    "cad-target-a.json": "79fd104d04134c42c018954f758ec3541f4796643b3c9d0f63ddf74789a40186",
+    "cad-target-b.json": "dd358908cbf54bb0fee472053087c1f546f0d27877625e32678f16c977cbe1c0"
+  },
+  "exportedResponseHashesMatchRemote": true
+}

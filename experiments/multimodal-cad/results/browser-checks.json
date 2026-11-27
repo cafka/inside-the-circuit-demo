@@ -1,0 +1,21 @@
+{
+  "surface": "local static diagnostic, not integrated application",
+  "url": "http://127.0.0.1:4215/review.html",
+  "desktopBrowser": true,
+  "realPhone": false,
+  "checks": [
+    {
+      "action": "Open A",
+      "observed": "4 proposals / 3 pixel passing / 0 verified links"
+    },
+    {
+      "action": "Click P017",
+      "observed": "Propuesta pendiente with literal proposal and cadLinkVerified false"
+    },
+    {
+      "action": "Select B",
+      "observed": "7 proposals / 1 pixel passing / 0 verified links; actual CAD and photo displayed"
+    }
+  ],
+  "integratedCardClicksThisRun": 0
+}

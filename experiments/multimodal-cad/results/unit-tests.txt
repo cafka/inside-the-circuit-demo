@@ -1,0 +1,12 @@
+✔ two different synthetic layouts use the same extractor with no board names (58.8937ms)
+✔ extraction explicitly abstains without a supported planar substrate (1.1934ms)
+✔ duplicate identities and contradictory abstention coordinates are rejected (0.8338ms)
+✔ changing evaluation files cannot affect the input packet; inference process cannot read them (295.7201ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 737.7912

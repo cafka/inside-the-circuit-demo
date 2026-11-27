@@ -1,0 +1,34 @@
+{
+  "reviewer": "Codex, post-inference visual inspection and historical CAD group comparison",
+  "notBlindIndependentGroundTruth": true,
+  "fedBackToInferenceOrThresholds": false,
+  "caseA": {
+    "coarseCADIdentitiesAgreeWithHistorical": 4,
+    "independentlyVerifiedPhotoCADLinks": 0,
+    "observations": [
+      "Ethernet box covers a printed subregion rather than the complete shell.",
+      "GPIO box truncates the header ends.",
+      "RP1 QFP package description is unsupported.",
+      "USB-C data-input lesson is not entailed by the cited power line."
+    ]
+  },
+  "caseB": {
+    "coarseCADIdentitiesAgreeWithHistorical": 4,
+    "incorrectCADIdentity": {
+      "id": "P005",
+      "predicted": "RP1 Southbridge Heatsink",
+      "historical": "BCM2712"
+    },
+    "ambiguousRepeatedIds": [
+      "P007",
+      "P008"
+    ],
+    "independentlyVerifiedPhotoCADLinks": 0,
+    "observations": [
+      "Ethernet box covers the front/side rather than the complete upper enclosure.",
+      "USB box boundaries do not establish correct full-shell ownership."
+    ]
+  },
+  "visualPrecisionOrIoU": null,
+  "reason": "No independently annotated target instance masks; partial-box observations are qualitative."
+}

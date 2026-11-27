@@ -1,0 +1,16 @@
+{
+  "scope": [
+    "experiments/multimodal-cad",
+    "docs/MULTIMODAL_CAD_ASSOCIATION.md"
+  ],
+  "credentialsPatternScanFindings": [],
+  "personalAbsolutePathsOrEmailFindings": [],
+  "privateSessionLogPublished": false,
+  "privatePhotographsPublished": false,
+  "newImagesRights": "CAD MIT; target A CC BY-SA 4.0; target B CC BY 4.0; attributions in fixtures/NOTICE.md",
+  "manufacturerPhotoOrFullPDFRepublished": false,
+  "historicalScriptSnapshotIsExact": true,
+  "mainAtCheck": "2633677fda6c538f695760238ce47a23f048cf67",
+  "noNewDeployment": true,
+  "limitations": "Pattern scan and scoped review, not a formal security certification; model outputs are untrusted proposals."
+}

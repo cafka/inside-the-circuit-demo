@@ -1,0 +1,19 @@
+{
+  "python": "3.14.3",
+  "os": "Windows-11-10.0.26300-SP0",
+  "architecture": "AMD64",
+  "node": "v24.14.0",
+  "numpy": "2.5.5",
+  "opencv": "4.13.0",
+  "pillow": "12.3.0",
+  "firebase": "13.4.0",
+  "three": "0.187.0",
+  "PDFExtractionCloudShell": "PyMuPDF 1.26.6",
+  "opencvThreads": 1,
+  "inferenceLocation": "Chrome Firebase SDK; Cloud Shell authenticated preview",
+  "verificationLocation": "Local Windows CPU",
+  "newLocalAIModelInstalled": false,
+  "cpu": "AMD Ryzen 7 3700U with Radeon Vega Mobile Gfx",
+  "RAMMeasuredBytes": null,
+  "RAMMeasurementLimitation": "CIM query unavailable in this execution environment"
+}

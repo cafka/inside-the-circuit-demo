@@ -1,0 +1,164 @@
+{
+  "schema": "multimodal-cad-summary/1",
+  "cases": [
+    {
+      "case": "a",
+      "photographSHA256": "29c5e99fe2d9cc29b137301f5540bcbb23a5954ceef7c8e100988d4e0d4da688",
+      "proposals": 4,
+      "unambiguousProposals": 4,
+      "pixelAccepted": 3,
+      "fitObjects": 1,
+      "heldoutObjects": 2,
+      "pose": {
+        "status": "undetermined",
+        "reason": "insufficient_fit_objects",
+        "fitCount": 1,
+        "holdoutCount": 2
+      },
+      "inferenceMs": 6583.699999988079,
+      "pixelAndPoseMs": 3962.5516000087373,
+      "items": [
+        {
+          "id": "P017",
+          "name": "RP1 Southbridge",
+          "pixelAccepted": true,
+          "reasons": [],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P016",
+          "name": "Ethernet Jack",
+          "pixelAccepted": true,
+          "reasons": [],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P012",
+          "name": "GPIO Header",
+          "pixelAccepted": false,
+          "reasons": [
+            "unstable_with_seed_change"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P023",
+          "name": "USB Type-C Port",
+          "pixelAccepted": true,
+          "reasons": [],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        }
+      ]
+    },
+    {
+      "case": "b",
+      "photographSHA256": "f55f15b1453215bbed6f9e3691c24b417aea42b4514b4e0815e8609ed5577a3b",
+      "proposals": 7,
+      "unambiguousProposals": 5,
+      "pixelAccepted": 1,
+      "fitObjects": 0,
+      "heldoutObjects": 1,
+      "pose": {
+        "status": "undetermined",
+        "reason": "insufficient_fit_objects",
+        "fitCount": 0,
+        "holdoutCount": 1
+      },
+      "inferenceMs": 11307.40000000596,
+      "pixelAndPoseMs": 6758.541699964553,
+      "items": [
+        {
+          "id": "P016",
+          "name": "Ethernet Jack",
+          "pixelAccepted": true,
+          "reasons": [],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P010",
+          "name": "Dual USB 3.0 Ports",
+          "pixelAccepted": false,
+          "reasons": [
+            "unstable_with_seed_change"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P011",
+          "name": "Dual USB 2.0 Ports",
+          "pixelAccepted": false,
+          "reasons": [
+            "segmentation_reaches_search_limit"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P012",
+          "name": "GPIO Header",
+          "pixelAccepted": false,
+          "reasons": [
+            "segmentation_reaches_search_limit"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P005",
+          "name": "RP1 Southbridge Heatsink",
+          "pixelAccepted": false,
+          "reasons": [
+            "unstable_with_seed_change",
+            "segmentation_reaches_search_limit"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P007",
+          "name": "MIPI Camera/Display Connector",
+          "pixelAccepted": false,
+          "reasons": [
+            "alternative_identity"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        },
+        {
+          "id": "P008",
+          "name": "MIPI Camera/Display Connector",
+          "pixelAccepted": false,
+          "reasons": [
+            "alternative_identity"
+          ],
+          "cadLinkVerified": false,
+          "cardStatus": "proposal_pending_geometry_and_documentary_review"
+        }
+      ]
+    }
+  ],
+  "historicalClearCardsOpened": 3,
+  "newVerifiedCADLinks": 0,
+  "newVerifiedCards": 0,
+  "modelVersionReturned": null,
+  "apiCostEstimateUSD": 0.0192092,
+  "costIsInvoice": false,
+  "mainOrDeploymentChanged": false,
+  "newBaseline": {
+    "proposed": 8,
+    "pixelAccepted": 7,
+    "cardEligibleIds": [
+      "ethernet",
+      "usb-c-power",
+      "rp1"
+    ],
+    "freshBrowserCardClicks": 0,
+    "note": "Same JPEG as case A; eligibility replay after real new inference, not a click measurement."
+  }
+}
